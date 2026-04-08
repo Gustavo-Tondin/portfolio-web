@@ -67,7 +67,15 @@
 
     <!-- Imagen fija que transiciona de hero a about -->
     <div class="scroll-image" id="scrollImage">
-        <img src="media/hero-banner.jpg" alt="Gustavo Tondin" loading="eager"/>
+        <picture>
+            <!-- Imagem mobile: portrait 1080×1920 (9:16) -->
+            <source
+                srcset="media/hero-banner-mobile.jpg"
+                media="(max-width: 720px)"
+            >
+            <!-- Imagem desktop: landscape, qualquer resolução -->
+            <img src="media/hero-banner.jpg" alt="Gustavo Tondin" loading="eager"/>
+        </picture>
     </div>
 
     <!-- Hero ======================================================================================= -->

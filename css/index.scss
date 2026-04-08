@@ -252,6 +252,7 @@ a, .link, button {
 ============================================================ */
 
 /* imagen de fondo que se reduce ================================================================================================= */
+/* Unificadas as classes duplicadas no CSS original */
 .scroll-image {
     position: fixed;
     top: 0;
@@ -263,6 +264,11 @@ a, .link, button {
     overflow: hidden;
     will-change: transform, width, height, top, left, border-radius;
 
+    @media (max-width: 720px) {
+        position: absolute; /* No mobile ele precisa ser absoluto para sumir conforme damos scroll */
+    }
+
+    & picture,
     & img {
         width: 100%;
         height: 100%;
@@ -436,25 +442,22 @@ a, .link, button {
 /* Sobre mí ======================================================================================= */
 
 .about {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: clamp(2rem, 5vw, 4rem);
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
 
-    &__image {
-        flex: 1 1 300px;
-        height: 36rem;
-        overflow: hidden;
+    @media (max-width: 720px) {
+        grid-template-columns: 1fr;
+    }
 
-        @media (max-width: 720px) {
-            height: 20rem;
-        }
+    &__image {
+        height: 28rem;
+        overflow: hidden;
     }
 
     &__content {
-        flex: 1 1 300px;
         padding-top: 0.5rem;
         opacity: 0;
         transform: translateY(40px);
