@@ -1,268 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
     <title>Gustavo Tondin — Diseñador Gráfico y Web</title>
-    <meta name="title" content="Gustavo Tondin — Diseñador Gráfico y Web" />
-    <meta name="description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital." />
+    <meta name="description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital."/>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
-    <meta property="og:title" content="Gustavo Tondin — Diseñador Gráfico y Web<" />
-    <meta property="og:description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital." />
-    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="og:title" content="Gustavo Tondin — Diseñador Gráfico y Web"/>
+    <meta property="og:description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital."/>
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
-    <meta property="twitter:title" content="Gustavo Tondin — Diseñador Gráfico y Web<" />
-    <meta property="twitter:description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital." />
-    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="twitter:title" content="Gustavo Tondin — Diseñador Gráfico y Web"/>
+    <meta property="twitter:description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital."/>
 
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet"/>
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="css/index.css" />
     <script defer src="js/index.js"></script>
-
-    <!-- typefaces -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin>
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- ========== SITE HEADER (sticky, aparece ao scrollar) ========== -->
-    <header class="site-header" id="siteHeader">
-        <a href="#" class="header-logo">tonda</a>
-        <nav>
-            <ul class="header-nav">
-                <li><a href="#about" class="nav-link">Sobre m&iacute;</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-                <li>
-                    <button class="nav-link nav-link--bordered" id="openMenuHeader" aria-label="Abrir portfolio">
-                        Portfolio
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- ========== NAVIGATION OVERLAY (menu portfolio fullscreen) ========== -->
-    <div class="navigation" id="navigation">
-        <div class="nav-top">
-            <span class="nav-top-logo">tonda</span>
-            <button class="close-button" id="closeMenu" aria-label="Cerrar menu">
-                <span class="close-label">Cerrar</span>
-                <span class="close-x">&times;</span>
-            </button>
-        </div>
-
-        <ul class="main-links" style="--total: 5;">
-            <li class="main-link-item" style="--index: 0;">
-                <a href="#portfolio" style="--bg: #2d4a3e;">
-                    <span class="main-link-subtitle">todos los trabajos</span>
-                    <span class="main-link-title">Portfolio</span>
-                    <span class="main-link-bg-text">Portfolio</span>
-                </a>
+<!-- HEADER ======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="#" class="header__logo">
+        <img src="media/tonda.svg" alt="Tonda — logotipo de Gustavo Tondin">
+    </a>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a href="#about" class="nav-link">Sobre mí</a>
             </li>
-            <li class="main-link-item" style="--index: 1;">
-                <a href="#" style="--bg: #7b8da0;">
-                    <span class="main-link-subtitle">identidad visual</span>
-                    <span class="main-link-title">Branding</span>
-                    <span class="main-link-bg-text">Archivos</span>
-                </a>
+            <li class="header__nav-item">
+                <a href="#contact" class="nav-link">Contacto</a>
             </li>
-            <li class="main-link-item" style="--index: 2;">
-                <a href="#" style="--bg: #c05a2c;">
-                    <span class="main-link-subtitle">sitios y apps</span>
-                    <span class="main-link-title">Web Design</span>
-                    <span class="main-link-bg-text">Archivos</span>
-                </a>
+            <li class="header__nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
-            <li class="main-link-item" style="--index: 3;">
-                <a href="#" style="--bg: #c49a2a;">
-                    <span class="main-link-subtitle">piezas visuales</span>
-                    <span class="main-link-title">Dise&ntilde;o Gr&aacute;fico</span>
-                    <span class="main-link-bg-text">Archivos</span>
-                </a>
-            </li>
-            <li class="main-link-item" style="--index: 4;">
-                <a href="#" style="--bg: #7a9a7e;">
-                    <span class="main-link-subtitle">captura visual</span>
-                    <span class="main-link-title">Fotograf&iacute;a</span>
-                    <span class="main-link-bg-text">Archivos</span>
-                </a>
+            <li class="header__nav-item header__nav-item--menu">
+                <button class="nav-link nav-link--bordered" id="openMenuHeader" aria-label="Abrir menú de navegación">
+                    Menu
+                    <span class="nav-link__circle"></span>
+                </button>
             </li>
         </ul>
+    </nav>
+</header>
+
+<!-- MAIN ======================================================================================= -->
+<main>
+
+    <!-- Imagen fija que transiciona de hero a about -->
+    <div class="scroll-image" id="scrollImage">
+        <img src="media/hero-banner.jpg" alt="Gustavo Tondin" loading="eager"/>
     </div>
 
-    <!-- ========== MAIN CONTENT ========== -->
-    <main>
-
-        <!-- HERO -->
-        <section class="hero" id="hero">
-            <div class="hero-top">
-                <h1 class="hero-title">Gustavo Tondin</h1>
-                <p class="hero-location">Valencia &middot; Espa&ntilde;a</p>
-            </div>
-
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="media/hero-photo.jpg" alt="Gustavo Tondin" loading="eager">
-                </div>
-
-                <div class="hero-info">
-                    <p class="hero-tagline">
-                        Dise&ntilde;ador estrat&eacute;gico<br>
-                        enfocado en darle<br>
-                        <strong><em>autoridad</em></strong> a marcas.
-                    </p>
-                    <button class="hero-cta" id="openMenuHero" aria-label="Ver portfolio">
-                        Portfolio <span class="arrow">&nearr;</span>
-                    </button>
-                </div>
-            </div>
-
-            <nav class="hero-side-nav">
-                <a href="#about">Sobre m&iacute;</a>
-                <a href="#contact">Contacto</a>
-            </nav>
-        </section>
-
-        <!-- SOBRE MI -->
-        <section class="about section" id="about">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="media/about-photo.jpg" alt="Gustavo Tondin" loading="lazy">
-                </div>
-                <div class="about-content">
-                    <span class="label">Hola, yo soy</span>
-                    <h2>Gustavo Tondin</h2>
-                    <p>
-                        Soy dise&ntilde;ador gr&aacute;fico y web con base en Valencia. Llevo m&aacute;s de cinco a&ntilde;os en branding,
-                        dise&ntilde;o digital y desarrollo web, uniendo estrategia, est&eacute;tica y c&oacute;digo.
-                    </p>
-                    <p>
-                        Mi enfoque: entender qu&eacute; necesita una marca, darle identidad visual s&oacute;lida y construir la
-                        presencia digital que le respalde. No dise&ntilde;o por decorar. Dise&ntilde;o para que las marcas
-                        comuniquen, conecten y crezcan.
-                    </p>
-                    <p>
-                        He trabajado con startups, negocios y empresas en Brasil y Espa&ntilde;a. Siempre con el
-                        mismo principio: cada pieza tiene un porqu&eacute;.
-                    </p>
-
-                    <div class="about-cards">
-                        <div class="about-card">
-                            <h4>Entender</h4>
-                            <p>Escuchar, analizar y definir d&oacute;nde empezar.</p>
-                        </div>
-                        <div class="about-card">
-                            <h4>Dise&ntilde;ar</h4>
-                            <p>Explorar soluciones claras y coherentes.</p>
-                        </div>
-                        <div class="about-card">
-                            <h4>Aplicar</h4>
-                            <p>Llevarlo a lo real, con cuidado en los detalles.</p>
-                        </div>
-                    </div>
-
-                    <a href="#contact" class="link-arrow">M&aacute;s informaci&oacute;n <span>&nearr;</span></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- MARQUEE -->
-        <div class="marquee">
-            <div class="marquee-track">
-                <span class="marquee-item">&lt;branding&gt;</span>
-                <span class="marquee-item">&lt;web_design&gt;</span>
-                <span class="marquee-item">&lt;dise&ntilde;o_gr&aacute;fico&gt;</span>
-                <span class="marquee-item">&lt;fotograf&iacute;a&gt;</span>
-                <span class="marquee-item">&lt;branding&gt;</span>
-                <span class="marquee-item">&lt;web_design&gt;</span>
-                <span class="marquee-item">&lt;dise&ntilde;o_gr&aacute;fico&gt;</span>
-                <span class="marquee-item">&lt;fotograf&iacute;a&gt;</span>
-            </div>
+    <!-- Hero ======================================================================================= -->
+    <section class="hero" id="hero">
+        <div class="hero__top">
+            <h1 class="hero__title">Gustavo Tondin</h1>
+            <p class="hero__location">Valencia — España</p>
         </div>
 
-        <!-- PORTFOLIO -->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="portfolio-title">Portfolio</h2>
-            <div class="portfolio-grid">
-                <!-- Placeholder cards para projetos futuros -->
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image"></div>
-                    <h3>Proyecto 01</h3>
-                    <span class="label">Branding</span>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image"></div>
-                    <h3>Proyecto 02</h3>
-                    <span class="label">Web Design</span>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image"></div>
-                    <h3>Proyecto 03</h3>
-                    <span class="label">Dise&ntilde;o Gr&aacute;fico</span>
-                </article>
-                <article class="portfolio-card">
-                    <div class="portfolio-card-image"></div>
-                    <h3>Proyecto 04</h3>
-                    <span class="label">Fotograf&iacute;a</span>
-                </article>
-            </div>
-        </section>
+        <div class="hero__info">
+            <button class="nav-link nav-link--light nav-link--bordered" id="openMenuHero" aria-label="Ver portfolio">
+                Portfolio
+                <span class="nav-link__circle"></span>
+            </button>
+            <p class="hero__tagline">
+                Diseñador <em class="hero__highlight">estratégico</em><br />
+                enfocado en darle<br />
+                <em class="hero__highlight">autoridad</em> a marcas.
+            </p>
+        </div>
 
-        <!-- CONTACT -->
-        <section class="contact section" id="contact">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="label">04 &mdash; Contact</span>
-                    <h2>&iquest;Tienes un<br>proyecto<br>en mente?</h2>
-                    <p class="contact-subtitle">escr&iacute;beme y hablamos.</p>
-                    <div class="contact-social">
-                        <a href="#" class="social-link">Linkedin</a>
-                        <a href="#" class="social-link">Behance</a>
-                        <a href="mailto:hola@tonda.design" class="social-link">Email</a>
+        <nav class="hero__side-nav">
+            <a href="#about" class="nav-link nav-link--light">Sobre mí</a>
+            <a href="#contact" class="nav-link nav-link--light">Contacto</a>
+        </nav>
+    </section>
+
+    <!-- Sobre Mí ======================================================================================= -->
+    <section class=" section" id="about">
+        <div class="about">
+            <div class="about__image" id="aboutImageTarget"></div>
+
+            <div class="about__content">
+                <span class="label">Hola, yo soy</span>
+                <h2 class="about__title">Gustavo Tondin</h2>
+                <p class="about__text">Soy diseñador gráfico y web con base en Valencia. Llevo más de cinco años en branding, diseño digital y desarrollo web, uniendo estrategia, estética y código.</p>
+                <p class="about__text">Mi enfoque: entender qué necesita una marca, darle identidad visual sólida y construir la presencia digital que le respalde. No diseño por decorar. Diseño para que las marcas comuniquen, conecten y crezcan.</p>
+                <p class="about__text">He trabajado con startups, negocios y empresas en Brasil y España. Siempre con el mismo principio: cada pieza tiene un porqué.</p>
+
+                <div class="about__cards">
+                    <div class="about__card">
+                        <h4 class="about__card-title">Entender</h4>
+                        <p class="about__card-text">Escuchar, analizar y definir dónde empezar.</p>
+                    </div>
+                    <div class="about__card">
+                        <h4 class="about__card-title">Diseñar</h4>
+                        <p class="about__card-text">Explorar soluciones claras y coherentes.</p>
+                    </div>
+                    <div class="about__card">
+                        <h4 class="about__card-title">Aplicar</h4>
+                        <p class="about__card-text">Llevarlo a lo real, con cuidado en los detalles.</p>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-field">
-                        <label class="label" for="name">Nombre:</label>
-                        <input type="text" id="name" name="name" placeholder="tu nombre aqu&iacute;" required>
-                    </div>
-                    <div class="form-field">
-                        <label class="label" for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required>
-                    </div>
-                    <div class="form-field">
-                        <label class="label" for="message">Mensaje:</label>
-                        <textarea id="message" name="message" placeholder="cu&eacute;ntame sobre tu proyecto" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary btn--lg">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
 
-    </main>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="site-footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <span class="footer-logo">// Tonda</span>
-                <a href="mailto:hola@tonda.design" class="footer-email">hola@tonda.design</a>
-                <p class="footer-desc">Gustavo Tondin &middot; Dise&ntilde;ador gr&aacute;fico y web &middot; Valencia, Espa&ntilde;a</p>
+                <a href="#contact" class="about__link-arrow"> Más información<span>&#8599;</span></a>
             </div>
-            <p class="footer-copy">&copy; 2025 Gustavo Tondin &mdash; Tactile Archivist</p>
         </div>
-    </footer>
+    </section>
+
+    <!-- Áreas de trabajo ======================================================================================= -->
+    <section class="marquee">
+        <div class="marquee__track">
+            <span class="marquee__item">&lt;branding&gt;</span>
+            <span class="marquee__item">&lt;web_design&gt;</span>
+            <span class="marquee__item">&lt;diseño_gráfico&gt;</span>
+            <span class="marquee__item">&lt;fotografía&gt;</span>
+        </div>
+    </section>
+
+    <!-- CV Grid ======================================================================================= -->
+    <section class="cv section" id="cv">
+        <div class="cv__grid">
+
+            <!-- Columna 1: Contacto + Enfoque -->
+            <div class="cv__col">
+                <div class="cv__block">
+                    <h3 class="cv__heading">Contacto</h3>
+                    <p class="cv__text">Valencia, España</p>
+                    <a href="mailto:gus.tondin@alumnos.cei.es" class="cv__link">gus.tondin@alumnos.cei.es</a>
+                    <a href="#" class="cv__link">gustavotondin.com</a>
+                </div>
+
+                <div class="cv__block">
+                    <h3 class="cv__heading">Enfoque</h3>
+                    <p class="cv__text"><strong>Entender antes de diseñar.</strong><br>Busco claridad, coherencia y propósito en cada proyecto.</p>
+                    <p class="cv__text">No diseño por estética — diseño para que las marcas comuniquen mejor.</p>
+                </div>
+            </div>
+
+            <!-- Columna 2: Experiencia + Herramientas -->
+            <div class="cv__col">
+                <div class="cv__block">
+                    <h3 class="cv__heading">Experiencia</h3>
+                    <div class="cv__entry">
+                        <span class="cv__date">2020 — ahora</span>
+                        <h4 class="cv__role">Diseñador gráfico &amp; web</h4>
+                        <p class="cv__detail">Valencia / remoto</p>
+                        <p class="cv__text">Trabajo en branding, diseño digital y desarrollo web, conectando estrategia, estética y ejecución.</p>
+                    </div>
+                    <div class="cv__entry">
+                        <h4 class="cv__role">Proyectos con startups y negocios</h4>
+                        <p class="cv__detail">Brasil &amp; España</p>
+                        <p class="cv__text">Desarrollo de identidad visual, sistemas gráficos y presencia digital.</p>
+                    </div>
+                </div>
+
+                <div class="cv__block">
+                    <h3 class="cv__heading">Herramientas</h3>
+                    <div class="cv__tags">
+                        <span class="cv__tag">Illustrator</span>
+                        <span class="cv__tag">Photoshop</span>
+                        <span class="cv__tag">InDesign</span>
+                        <span class="cv__tag">After Effects</span>
+                        <span class="cv__tag">Webflow</span>
+                        <span class="cv__tag">Figma</span>
+                        <span class="cv__tag">HTML / CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 3: Lo que hago + Soft Skills -->
+            <div class="cv__col">
+                <div class="cv__block">
+                    <h3 class="cv__heading">Lo que hago</h3>
+                    <ul class="cv__list">
+                        <li>Identidad visual</li>
+                        <li>Dirección creativa</li>
+                        <li>Sistemas de marca</li>
+                        <li>Diseño editorial</li>
+                        <li>Web design</li>
+                    </ul>
+                </div>
+
+                <div class="cv__block">
+                    <h3 class="cv__heading">Soft Skills</h3>
+                    <ul class="cv__list">
+                        <li>Pensamiento estratégico</li>
+                        <li>Comunicación clara</li>
+                        <li>Narrativa visual</li>
+                        <li>Organización de proyectos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Columna 4: Intereses + Idiomas -->
+            <div class="cv__col">
+                <div class="cv__block">
+                    <h3 class="cv__heading">Intereses</h3>
+                    <ul class="cv__list">
+                        <li>Storytelling</li>
+                        <li>Cultura visual</li>
+                        <li>Arquitectura</li>
+                        <li>Cine</li>
+                        <li>Juegos</li>
+                    </ul>
+                </div>
+
+                <div class="cv__block">
+                    <h3 class="cv__heading">Idiomas</h3>
+                    <ul class="cv__list">
+                        <li>Portugués — nativo</li>
+                        <li>Español — profesional</li>
+                        <li>Inglés — intermedio/avanzado</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
 
 </body>
 </html>
