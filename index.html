@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Gustavo Tondin — Diseñador Gráfico y Web</title>
-    <meta name="description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital."/>
+    <title>Gustavo Tondin — Diseñador Gráfico y Web en Valencia</title>
+    <meta name="description" content="Branding, web design, artes gráficas y fotografía por Gustavo Tondin en Valencia. Ayudo a marcas a comunicar con autoridad a través de identidad visual y presencia digital."/>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gustavotondin.com/" />
     <meta property="og:title" content="Gustavo Tondin — Diseñador Gráfico y Web"/>
-    <meta property="og:description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital."/>
+    <meta property="og:description" content="Branding y diseño web en Valencia. Identidad visual, web y narrativa de marca para empresas que quieren comunicar con autoridad."/>
+    <meta property="og:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
+    <meta property="og:locale" content="es_ES" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Gustavo Tondin — Diseñador Gráfico y Web"/>
-    <meta property="twitter:description" content="Branding y diseño web en Valencia. Ayudo a marcas a comunicar mejor y convertir más mediante la narrativa de marca y la presencia digital."/>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="media/favicon.svg">
+    <meta property="twitter:description" content="Branding y diseño web en Valencia. Identidad visual, web y narrativa de marca para empresas que quieren comunicar con autoridad."/>
+    <meta property="twitter:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,50 +37,116 @@
 
     <!-- Styles & Scripts -->
     <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/projects-data.js"></script> <!-- Información de los proyectos -->
     <script defer src="js/index.js"></script>
 </head>
 
-<body>
 
-<!-- HEADER ======================================================================================= -->
-<header class="header" id="siteHeader">
-    <a href="#" class="header__logo">
-        <img src="media/tonda.svg" alt="Tonda — logotipo de Gustavo Tondin">
+<body> 
+    
+<!-- ======================================================================================= 
+    HEADER
+======================================================================================= -->
+<header class="header" id="siteHeader" style="view-transition-name: site-header">
+    <a href="index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+        <img src="media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
     </a>
-    <nav class="header__nav">
+    <nav>
         <ul class="header__nav-list">
-            <li class="header__nav-item">
-                <a href="#about" class="nav-link">Sobre mí</a>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
             </li>
-            <li class="header__nav-item">
-                <a href="#contact" class="nav-link">Contacto</a>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="contacto.html" class="nav-link">Contacto</a>
             </li>
-            <li class="header__nav-item">
-                <a href="#portfolio" class="nav-link">Portfolio</a>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
             </li>
             <li class="header__nav-item header__nav-item--menu">
-                <button class="nav-link nav-link--bordered" id="openMenuHeader" aria-label="Abrir menú de navegación">
-                    Menu
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
                     <span class="nav-link__circle"></span>
                 </button>
             </li>
         </ul>
     </nav>
 </header>
+ 
+<!-- =======================================================================================
+    NAVIGATION OVERLAY
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
 
-<!-- MAIN ======================================================================================= -->
-<main>
+    <ul class="main-links">
+        <li class="main-link-item" style="--index: 0;">
+            <a href="branding.html" data-category="branding" aria-current="page">
+                <span class="main-link-subtitle">identidad visual</span>
+                <span class="main-link-title">Branding</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 1;">
+            <a href="web-design.html" data-category="web-design">
+                <span class="main-link-subtitle">sitios y apps</span>
+                <span class="main-link-title">Web Design</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 2;">
+            <a href="artes-graficas.html" data-category="artes-graficas">
+                <span class="main-link-subtitle">piezas visuales</span>
+                <span class="main-link-title">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 3;">
+            <a href="fotografia.html" data-category="fotografia">
+                <span class="main-link-subtitle">captura visual</span>
+                <span class="main-link-title">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- =======================================================================================
+    MAIN
+======================================================================================= -->
+<main style="view-transition-name: content"> <!-- view transitions para mejorar la transición de una página a otra. -->
 
     <!-- Imagen fija que transiciona de hero a about -->
     <div class="scroll-image" id="scrollImage">
         <picture>
-            <!-- Imagem mobile: portrait 1080×1920 (9:16) -->
+            <source
+                srcset="media/hero-banner-mobile.webp"
+                type="image/webp"
+                media="(max-width: 720px)"
+            />
             <source
                 srcset="media/hero-banner-mobile.jpg"
                 media="(max-width: 720px)"
-            >
-            <!-- Imagem desktop: landscape, qualquer resolução -->
-            <img src="media/hero-banner.jpg" alt="Gustavo Tondin" loading="eager"/>
+            />
+            <source
+                srcset="media/hero-banner.webp"
+                type="image/webp"
+            />
+            <img
+                src="media/hero-banner.jpg"
+                width="2400"
+                height="1600"
+                alt="Gustavo Tondin"
+                loading="eager"
+                fetchpriority="high"
+            />
         </picture>
     </div>
 
@@ -86,82 +158,139 @@
         </div>
 
         <div class="hero__info">
-            <button class="nav-link nav-link--light nav-link--bordered" id="openMenuHero" aria-label="Ver portfolio">
+            <a href="portfolio.html" class="nav-link nav-link--light nav-link--bordered">
                 Portfolio
                 <span class="nav-link__circle"></span>
-            </button>
+            </a>
             <p class="hero__tagline">
-                Diseñador <em class="hero__highlight">estratégico</em><br />
+                Diseñador <em class="hero__highlight">estratégico</em
+                ><br />
                 enfocado en darle<br />
                 <em class="hero__highlight">autoridad</em> a marcas.
             </p>
         </div>
 
         <nav class="hero__side-nav">
-            <a href="#about" class="nav-link nav-link--light">Sobre mí</a>
-            <a href="#contact" class="nav-link nav-link--light">Contacto</a>
-        </nav>
+            <a href="sobre-mi.html" class="nav-link nav-link--light"
+                >Sobre mí</a
+            >
+            <a href="contacto.html" class="nav-link nav-link--light">Contacto</a>
+        </nav> 
     </section>
 
     <!-- Sobre Mí ======================================================================================= -->
-    <section class=" section" id="about">
+    <section class="section" id="about">
         <div class="about">
             <div class="about__image" id="aboutImageTarget"></div>
 
             <div class="about__content">
                 <span class="label">Hola, yo soy</span>
                 <h2 class="about__title">Gustavo Tondin</h2>
-                <p class="about__text">Soy diseñador gráfico y web con base en Valencia. Llevo más de cinco años en branding, diseño digital y desarrollo web, uniendo estrategia, estética y código.</p>
-                <p class="about__text">Mi enfoque: entender qué necesita una marca, darle identidad visual sólida y construir la presencia digital que le respalde. No diseño por decorar. Diseño para que las marcas comuniquen, conecten y crezcan.</p>
-                <p class="about__text">He trabajado con startups, negocios y empresas en Brasil y España. Siempre con el mismo principio: cada pieza tiene un porqué.</p>
+                <p class="about__text">
+                    Soy diseñador gráfico y web con base en Valencia.
+                    Llevo más de cinco años en branding, diseño digital
+                    y desarrollo web, uniendo estrategia, estética y
+                    código.
+                </p>
+                <p class="about__text">
+                    Mi enfoque: entender qué necesita una marca, darle
+                    identidad visual sólida y construir la presencia
+                    digital que le respalde. No diseño por decorar.
+                    Diseño para que las marcas comuniquen, conecten y
+                    crezcan.
+                </p>
+                <p class="about__text">
+                    He trabajado con startups, negocios y empresas en
+                    Brasil y España. Siempre con el mismo principio:
+                    cada pieza tiene un porqué.
+                </p>
 
                 <div class="about__cards">
                     <div class="about__card">
                         <h4 class="about__card-title">Entender</h4>
-                        <p class="about__card-text">Escuchar, analizar y definir dónde empezar.</p>
+                        <p class="about__card-text">
+                            Escuchar, analizar y definir dónde empezar.
+                        </p>
                     </div>
                     <div class="about__card">
                         <h4 class="about__card-title">Diseñar</h4>
-                        <p class="about__card-text">Explorar soluciones claras y coherentes.</p>
+                        <p class="about__card-text">
+                            Explorar soluciones claras y coherentes.
+                        </p>
                     </div>
                     <div class="about__card">
                         <h4 class="about__card-title">Aplicar</h4>
-                        <p class="about__card-text">Llevarlo a lo real, con cuidado en los detalles.</p>
+                        <p class="about__card-text">
+                            Llevarlo a lo real, con cuidado en los
+                            detalles.
+                        </p>
                     </div>
                 </div>
 
-                <a href="#contact" class="about__link-arrow"> Más información<span>&#8599;</span></a>
+                <a href="#cv" class="about__link-arrow"
+                    >Más información<span>&#8599;</span></a
+                >
             </div>
         </div>
     </section>
 
     <!-- Áreas de trabajo ======================================================================================= -->
-    <section class="marquee">
+    <!-- data-spotlight activa sirve para mostrar las imagenes correctas en el hover. -->
+    <section class="marquee" aria-label="Áreas de trabajo" data-spotlight>
+        <div class="marquee__spotlight" data-spotlight-wrap aria-hidden="true">
+            <div class="marquee__spotlight-layer" data-spotlight-layer></div>
+        </div>
+        
         <div class="marquee__track">
-            <span class="marquee__item">&lt;branding&gt;</span>
-            <span class="marquee__item">&lt;web_design&gt;</span>
-            <span class="marquee__item">&lt;diseño_gráfico&gt;</span>
-            <span class="marquee__item">&lt;fotografía&gt;</span>
+            <span class="marquee__item marquee__item--branding" data-spotlight-trigger data-category="branding">
+                <span class="marquee__text-base">&lt;branding&gt;</span>
+                <span class="marquee__text-overlay">&lt;branding&gt;</span>
+            </span>
+
+            <span class="marquee__item marquee__item--web-design" data-spotlight-trigger data-category="web-design">
+                <span class="marquee__text-base">&lt;web_design&gt;</span>
+                <span class="marquee__text-overlay">&lt;web_design&gt;</span>
+            </span>
+
+            <span class="marquee__item marquee__item--artes-graficas" data-spotlight-trigger data-category="artes-graficas">
+                <span class="marquee__text-base">&lt;diseño_gráfico&gt;</span>
+                <span class="marquee__text-overlay">&lt;diseño_gráfico&gt;</span>
+            </span>
+
+            <span class="marquee__item marquee__item--fotografia" data-spotlight-trigger data-category="fotografia">
+                <span class="marquee__text-base">&lt;fotografía&gt;</span>
+                <span class="marquee__text-overlay">&lt;fotografía&gt;</span>
+            </span>
         </div>
     </section>
-
+    
     <!-- CV Grid ======================================================================================= -->
     <section class="cv section" id="cv">
         <div class="cv__grid">
-
             <!-- Columna 1: Contacto + Enfoque -->
             <div class="cv__col">
                 <div class="cv__block">
                     <h3 class="cv__heading">Contacto</h3>
                     <p class="cv__text">Valencia, España</p>
-                    <a href="mailto:gus.tondin@alumnos.cei.es" class="cv__link">gus.tondin@alumnos.cei.es</a>
+                    <a
+                        href="mailto:gus.tondin@gmail.com"
+                        class="cv__link"
+                        >gus.tondin@gmail.com</a
+                    >
                     <a href="#" class="cv__link">gustavotondin.com</a>
                 </div>
 
                 <div class="cv__block">
                     <h3 class="cv__heading">Enfoque</h3>
-                    <p class="cv__text"><strong>Entender antes de diseñar.</strong><br>Busco claridad, coherencia y propósito en cada proyecto.</p>
-                    <p class="cv__text">No diseño por estética — diseño para que las marcas comuniquen mejor.</p>
+                    <p class="cv__text">
+                        <strong>Entender antes de diseñar.</strong
+                        ><br />Busco claridad, coherencia y propósito en
+                        cada proyecto.
+                    </p>
+                    <p class="cv__text">
+                        No diseño por estética — diseño para que las
+                        marcas comuniquen mejor.
+                    </p>
                 </div>
             </div>
 
@@ -171,14 +300,25 @@
                     <h3 class="cv__heading">Experiencia</h3>
                     <div class="cv__entry">
                         <span class="cv__date">2020 — ahora</span>
-                        <h4 class="cv__role">Diseñador gráfico &amp; web</h4>
+                        <h4 class="cv__role">
+                            Diseñador gráfico &amp; web
+                        </h4>
                         <p class="cv__detail">Valencia / remoto</p>
-                        <p class="cv__text">Trabajo en branding, diseño digital y desarrollo web, conectando estrategia, estética y ejecución.</p>
+                        <p class="cv__text">
+                            Trabajo en branding, diseño digital y
+                            desarrollo web, conectando estrategia,
+                            estética y ejecución.
+                        </p>
                     </div>
                     <div class="cv__entry">
-                        <h4 class="cv__role">Proyectos con startups y negocios</h4>
+                        <h4 class="cv__role">
+                            Proyectos con startups y negocios
+                        </h4>
                         <p class="cv__detail">Brasil &amp; España</p>
-                        <p class="cv__text">Desarrollo de identidad visual, sistemas gráficos y presencia digital.</p>
+                        <p class="cv__text">
+                            Desarrollo de identidad visual, sistemas
+                            gráficos y presencia digital.
+                        </p>
                     </div>
                 </div>
 
@@ -242,11 +382,19 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <!-- Próxima Sesión ======================================================================================= -->
+    <!-- barra reutilizable: cambia href + data-category + textos para usar en otras páginas -->
+    <section class="next-section" data-next-section aria-label="Siguiente sección">
+        <div class="next-section__inner">
+            <a href="portfolio.html" data-category="portfolio">
+                <span class="main-link-subtitle">próxima sección</span>
+                <span class="main-link-title">Portfolio</span>
+            </a>
+        </div>
+    </section>
 </main>
-
 </body>
 </html>

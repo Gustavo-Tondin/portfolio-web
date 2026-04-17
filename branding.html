@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Branding — Gustavo Tondin · Identidad visual estratégica</title>
+    <meta name="description" content="Proyectos de branding e identidad visual desarrollados por Gustavo Tondin en Valencia. Sistemas de marca coherentes que comunican con claridad y construyen autoridad." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/branding.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gustavotondin.com/branding.html" />
+    <meta property="og:title" content="Branding — Gustavo Tondin" />
+    <meta property="og:description" content="Sistemas de marca y identidad visual para empresas que quieren comunicar con autoridad." />
+    <meta property="og:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Branding — Gustavo Tondin" />
+    <meta property="twitter:description" content="Sistemas de marca y identidad visual para empresas que quieren comunicar con autoridad." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Datos de proyectos: ANTES de index.js (ambos defer → orden garantizado) -->
+    <script defer src="js/projects-data.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+
+<body class="page-branding">
+    <!-- ======================================================================================= 
+    HEADER
+======================================================================================= -->
+<header class="header" id="siteHeader" style="view-transition-name: site-header">
+    <a href="index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+        <img src="media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+ 
+<!-- =======================================================================================
+    NAVIGATION OVERLAY
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
+
+    <ul class="main-links">
+        <li class="main-link-item" style="--index: 0;">
+            <a href="branding.html" data-category="branding" aria-current="page">
+                <span class="main-link-subtitle">identidad visual</span>
+                <span class="main-link-title">Branding</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 1;">
+            <a href="web-design.html" data-category="web-design">
+                <span class="main-link-subtitle">sitios y apps</span>
+                <span class="main-link-title">Web Design</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 2;">
+            <a href="artes-graficas.html" data-category="artes-graficas">
+                <span class="main-link-subtitle">piezas visuales</span>
+                <span class="main-link-title">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 3;">
+            <a href="fotografia.html" data-category="fotografia">
+                <span class="main-link-subtitle">captura visual</span>
+                <span class="main-link-title">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- MAIN =================================================================== -->
+<main id="main-content">
+
+    <!-- SHOWCASE ============================================================
+         Layout de dos columnas: lista de proyectos (izquierda) y galería
+         con scroll-snap (derecha). La sincronización la gestiona el módulo
+         Showcase en js/index.js (IIFE + IntersectionObserver).
+    ====================================================================== -->
+    <section class="showcase" aria-labelledby="showcase-title" data-showcase>
+
+        <!-- regla vertical + línea de progreso -->
+        <div class="showcase__rule" aria-hidden="true"></div>
+        <div class="showcase__progress" data-showcase-progress aria-hidden="true"></div>
+
+        <div class="showcase__wrapper">
+
+            <!-- columna izquierda · lista de proyectos -->
+            <div class="showcase__left">
+                <span class="showcase__eyebrow" id="showcase-title">identidad visual · branding</span>
+
+                <ol class="showcase__list">
+                    <li class="showcase__list-item is-active" data-index="0">
+                        <a href="projects/riwer-labs.html" class="showcase__list-link" data-index="0" title="Riwer Labs — Branding">
+                            <span class="showcase__name">Riwer Labs</span>
+                            <span class="showcase__year">2024</span>
+                        </a>
+                    </li>
+                    <li class="showcase__list-item" data-index="1">
+                        <a href="projects/refiori.html" class="showcase__list-link" data-index="1" title="Refiori — Branding">
+                            <span class="showcase__name">Refiori</span>
+                            <span class="showcase__year">2024</span>
+                        </a>
+                    </li>
+                    <li class="showcase__list-item" data-index="2">
+                        <a href="projects/wote.html" class="showcase__list-link" data-index="2" title="Wotë — Branding">
+                            <span class="showcase__name">Wotë</span>
+                            <span class="showcase__year">2023</span>
+                        </a>
+                    </li>
+                    <li class="showcase__list-item" data-index="3">
+                        <a href="projects/tondafoto.html" class="showcase__list-link" data-index="3" title="Tondafoto — Branding">
+                            <span class="showcase__name">Tondafoto</span>
+                            <span class="showcase__year">2022</span>
+                        </a>
+                    </li>
+                    <li class="showcase__list-item" data-index="4">
+                        <a href="projects/dj-rodmotter.html" class="showcase__list-link" data-index="4" title="DJ RodMotter — Branding">
+                            <span class="showcase__name">DJ RodMotter</span>
+                            <span class="showcase__year">2023</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- columna derecha · galería con scroll-snap -->
+            <div class="showcase__right" data-showcase-scroller>
+
+                <!-- 01 · Riwer Labs — 3 piezas -->
+                <article class="showcase__section" data-index="0" aria-labelledby="sc-riwer-labs">
+                    <div class="showcase__grid showcase__grid--count-3">
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/riwer-labs-01/1200/1600" width="1200" height="1600" loading="lazy" alt="Riwer Labs — logotipo principal sobre fondo claro">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/riwer-labs-02/900/700" width="900" height="700" loading="lazy" alt="Riwer Labs — paleta cromática y tipografía">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/riwer-labs-03/900/700" width="900" height="700" loading="lazy" alt="Riwer Labs — aplicación en papelería corporativa">
+                        </div>
+                    </div>
+                    <div class="showcase__meta">
+                        <span class="showcase__meta-label" id="sc-riwer-labs">Riwer Labs — 2024</span>
+                        <span class="showcase__meta-category">Agencia de IA</span>
+                    </div>
+                </article>
+
+                <!-- 02 · Refiori — 2 piezas -->
+                <article class="showcase__section" data-index="1" aria-labelledby="sc-refiori">
+                    <div class="showcase__grid showcase__grid--count-2">
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/refiori-01/1200/1600" width="1200" height="1600" loading="lazy" alt="Refiori — logotipo manuscrito sobre textura orgánica">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/refiori-02/900/1200" width="900" height="1200" loading="lazy" alt="Refiori — packaging de piezas artesanales">
+                        </div>
+                    </div>
+                    <div class="showcase__meta">
+                        <span class="showcase__meta-label" id="sc-refiori">Refiori — 2024</span>
+                        <span class="showcase__meta-category">Joyería artesanal</span>
+                    </div>
+                </article>
+
+                <!-- 03 · Wotë — 3 piezas -->
+                <article class="showcase__section" data-index="2" aria-labelledby="sc-wote">
+                    <div class="showcase__grid showcase__grid--count-3">
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/wote-01/1200/1600" width="1200" height="1600" loading="lazy" alt="Wotë — logotipo limpio sobre fondo neutro">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/wote-02/900/700" width="900" height="700" loading="lazy" alt="Wotë — etiqueta de producto">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/wote-03/900/700" width="900" height="700" loading="lazy" alt="Wotë — paleta natural de colores">
+                        </div>
+                    </div>
+                    <div class="showcase__meta">
+                        <span class="showcase__meta-label" id="sc-wote">Wotë — 2023</span>
+                        <span class="showcase__meta-category">Cannabidiol</span>
+                    </div>
+                </article>
+
+                <!-- 04 · Tondafoto — 2 piezas -->
+                <article class="showcase__section" data-index="3" aria-labelledby="sc-tondafoto">
+                    <div class="showcase__grid showcase__grid--count-2">
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/tondafoto-01/1200/1600" width="1200" height="1600" loading="lazy" alt="Tondafoto — logotipo minimalista">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/tondafoto-02/900/1200" width="900" height="1200" loading="lazy" alt="Tondafoto — aplicación en tarjeta de visita">
+                        </div>
+                    </div>
+                    <div class="showcase__meta">
+                        <span class="showcase__meta-label" id="sc-tondafoto">Tondafoto — 2022</span>
+                        <span class="showcase__meta-category">Marca personal</span>
+                    </div>
+                </article>
+
+                <!-- 05 · DJ RodMotter — 3 piezas -->
+                <article class="showcase__section" data-index="4" aria-labelledby="sc-dj-rodmotter">
+                    <div class="showcase__grid showcase__grid--count-3">
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/dj-rodmotter-01/1200/1600" width="1200" height="1600" loading="lazy" alt="DJ RodMotter — logotipo principal">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/dj-rodmotter-02/900/700" width="900" height="700" loading="lazy" alt="DJ RodMotter — flyer para evento nocturno">
+                        </div>
+                        <div class="showcase__cell">
+                            <img src="https://picsum.photos/seed/dj-rodmotter-03/900/700" width="900" height="700" loading="lazy" alt="DJ RodMotter — post de redes sociales">
+                        </div>
+                    </div>
+                    <div class="showcase__meta">
+                        <span class="showcase__meta-label" id="sc-dj-rodmotter">DJ RodMotter — 2023</span>
+                        <span class="showcase__meta-category">Identidad DJ</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <!-- redes sociales, contador y pista de scroll (UI fija) -->
+        <div class="showcase__socials" aria-label="Enlaces sociales">
+            <a href="https://www.instagram.com/gustavotondin" title="Instagram de Gustavo Tondin" target="_blank" rel="noopener noreferrer">Ig</a>
+            <a href="https://www.behance.net/gustavotondin" title="Behance de Gustavo Tondin" target="_blank" rel="noopener noreferrer">Be</a>
+        </div>
+
+        <div class="showcase__counter" data-showcase-counter aria-live="polite">01 / 05</div>
+
+        <div class="showcase__hint" data-showcase-hint aria-hidden="true">
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="8" y1="0" x2="8" y2="18" stroke="rgba(27,26,28,0.32)" stroke-width="1"/>
+                <polyline points="3,13 8,19 13,13" fill="none" stroke="rgba(27,26,28,0.32)" stroke-width="1"/>
+            </svg>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Navigation Overlay ====================================================== -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <div class="nav-top">
+        <span class="nav-top-logo">tonda</span>
+        <button class="nav-link nav-link--bordered" type="button" id="closeMenu" aria-label="Cerrar menu">
+            <span class="nav-link__text">Cerrar</span>
+            <span class="nav-link__circle"></span>
+        </button>
+    </div>
+
+    <ul class="main-links">
+        <li class="main-link-item" style="--index: 0;">
+            <a href="branding.html" data-category="branding" title="Branding" aria-current="page">
+                <span class="main-link-subtitle">identidad visual</span>
+                <span class="main-link-title" data-text="Branding">Branding</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 1;">
+            <a href="web-design.html" data-category="web-design" title="Web Design">
+                <span class="main-link-subtitle">sitios y apps</span>
+                <span class="main-link-title" data-text="Web Design">Web Design</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 2;">
+            <a href="artes-graficas.html" data-category="artes-graficas" title="Artes Gráficas">
+                <span class="main-link-subtitle">piezas visuales</span>
+                <span class="main-link-title" data-text="Artes Gráficas">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-link-item" style="--index: 3;">
+            <a href="fotografia.html" data-category="fotografia" title="Fotografía">
+                <span class="main-link-subtitle">captura visual</span>
+                <span class="main-link-title" data-text="Fotografía">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
