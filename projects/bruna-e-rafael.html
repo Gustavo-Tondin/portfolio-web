@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Bruna & Rafael — Fotografía · Gustavo Tondin</title>
+    <meta name="description" content="Bruna & Rafael — proyecto de fotografía desarrollado por Gustavo Tondin." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/projects/bruna-e-rafael.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://gustavotondin.com/projects/bruna-e-rafael.html" />
+    <meta property="og:title" content="Bruna & Rafael — Fotografía · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de fotografía — Bruna & Rafael." />
+    <meta property="og:image" content="https://gustavotondin.com/media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Bruna & Rafael — Fotografía · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de fotografía — Bruna & Rafael." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+
+    <!-- Icons — RemixIcon -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <script defer src="../js/index.js"></script>
+</head>
+
+<body class="page-fotografia page-project">
+
+<!-- =======================================================================================
+    HEADER — mismo componente de las otras páginas del sitio
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="../index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+        <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../sobre-mi.html" class="nav-link">Sobre mí</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../contacto.html" class="nav-link">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- =======================================================================================
+    NAVIGATION OVERLAY — idéntico a las otras páginas (paths con ../)
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="../sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
+
+    <ul class="main-links">
+        <li class="main-links__item" style="--index: 0;">
+            <a href="../branding.html" data-category="branding">
+                <span class="main-links__subtitle">identidad visual</span>
+                <span class="main-links__title">Branding</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 1;">
+            <a href="../web-design.html" data-category="web-design">
+                <span class="main-links__subtitle">sitios y apps</span>
+                <span class="main-links__title">Web Design</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 2;">
+            <a href="../artes-graficas.html" data-category="artes-graficas">
+                <span class="main-links__subtitle">piezas visuales</span>
+                <span class="main-links__title">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 3;">
+            <a href="../fotografia.html" data-category="fotografia" aria-current="page">
+                <span class="main-links__subtitle">captura visual</span>
+                <span class="main-links__title">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- =======================================================================================
+    MAIN — página del proyecto: cabecera + stack continuo de imágenes
+======================================================================================= -->
+<main class="project">
+
+    <!-- cabecera centrada: categoría · título · año -->
+    <header class="project__header">
+        <span class="project__category">Fotografía</span>
+        <h1 class="project__title">Bruna & Rafael</h1>
+        <p class="project__meta">
+            <span>Ensayo de pareja</span>
+            <span class="project__meta-sep" aria-hidden="true"></span>
+            <span>TODO</span>
+        </p>
+    </header>
+
+    <!-- galería: imágenes apiladas verticalmente, sin gaps, max-width 1440px -->
+    <section class="project__gallery" aria-label="Galería del proyecto Bruna & Rafael">
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.jpg" width="1400" height="934" alt="Bruna & Rafael — imagen 00">
+        </picture>
+
+        <!-- Intro — texto de presentación del proyecto (insertado tras la primera imagen) -->
+        <div class="project__intro">
+            <h2 class="project__intro-title">Bruna & Rafael</h2>
+            <p class="project__intro-text">TODO — breve descripción del proyecto, contexto del cliente y objetivos principales del encargo.</p>
+            <p class="project__intro-text">TODO — enfoque conceptual y visual: paleta, tipografía, referentes y decisiones clave.</p>
+            <p class="project__intro-text">TODO — resultados, piezas entregadas y aprendizajes del proceso.</p>
+        </div>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-01.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-01.jpg" width="600" height="900" loading="lazy" alt="Bruna & Rafael — imagen 01">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-02.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-02.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 02">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-03.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-03.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 03">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-04.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-04.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 04">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-05.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-05.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 05">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-06.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-06.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 06">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-07.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-07.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 07">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-08.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-08.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael — imagen 08">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-09.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-09.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael — imagen 09">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-10.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-10.jpg" width="1280" height="1920" loading="lazy" alt="Bruna & Rafael — imagen 10">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-11.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-11.jpg" width="1200" height="800" loading="lazy" alt="Bruna & Rafael — imagen 11">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-12.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-12.jpg" width="1200" height="800" loading="lazy" alt="Bruna & Rafael — imagen 12">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-13.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-13.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 13">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-14.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-14.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael — imagen 14">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-15.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-15.jpg" width="1280" height="1920" loading="lazy" alt="Bruna & Rafael — imagen 15">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-16.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-16.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael — imagen 16">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-17.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-17.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael — imagen 17">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-18.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-18.jpg" width="1200" height="800" loading="lazy" alt="Bruna & Rafael — imagen 18">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-19.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-19.jpg" width="1200" height="800" loading="lazy" alt="Bruna & Rafael — imagen 19">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-20.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-20.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 20">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-21.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-21.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 21">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-22.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-22.jpg" width="1200" height="800" loading="lazy" alt="Bruna & Rafael — imagen 22">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-23.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-23.jpg" width="1200" height="1800" loading="lazy" alt="Bruna & Rafael — imagen 23">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-24.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-24.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 24">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-25.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-25.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 25">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-26.webp">
+            <img src="../media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-26.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 26">
+        </picture>
+
+    </section>
+
+    <!-- =======================================================================================
+        CRÉDITOS — ficha técnica del proyecto (template con placeholders TODO)
+    ======================================================================================= -->
+    <section class="project__credits" aria-labelledby="credits-title-bruna-e-rafael">
+        <h2 id="credits-title-bruna-e-rafael" class="project__credits-title">Créditos</h2>
+        <dl class="project__credits-list">
+            <div class="project__credits-row">
+                <dt>Cliente</dt>
+                <dd>Bruna & Rafael</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Año</dt>
+                <dd>TODO</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Mi rol</dt>
+                <dd>TODO — dirección de arte · diseño · etc.</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Colaboradores</dt>
+                <dd>TODO — Nombre · rol · enlace</dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION — placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html — el IntersectionObserver del js añade .is-ready)
+    ======================================================================================= -->
+    <section class="next-section" data-next-section aria-label="Siguiente proyecto">
+        <div class="main-links__item main-links__item--next" style="--index: 0;">
+            <a href="carol.html" data-category="fotografia" title="Siguiente proyecto — Carol">
+                <span class="main-links__subtitle">siguiente proyecto</span>
+                <span class="main-links__title">Carol</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Veg To Go — Branding · Gustavo Tondin</title>
+    <meta name="description" content="Veg To Go — proyecto de branding desarrollado por Gustavo Tondin." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/projects/veg-to-go.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://gustavotondin.com/projects/veg-to-go.html" />
+    <meta property="og:title" content="Veg To Go — Branding · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de branding — Veg To Go." />
+    <meta property="og:image" content="https://gustavotondin.com/media/projects/branding/veg-to-go/branding-veg-to-go-00.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Veg To Go — Branding · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de branding — Veg To Go." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/projects/branding/veg-to-go/branding-veg-to-go-00.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+
+    <!-- Icons — RemixIcon -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <script defer src="../js/index.js"></script>
+</head>
+
+<body class="page-branding page-project">
+
+<!-- =======================================================================================
+    HEADER — mismo componente de las otras páginas del sitio
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="../index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+        <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../sobre-mi.html" class="nav-link">Sobre mí</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../contacto.html" class="nav-link">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- =======================================================================================
+    NAVIGATION OVERLAY — idéntico a las otras páginas (paths con ../)
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="../sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
+
+    <ul class="main-links">
+        <li class="main-links__item" style="--index: 0;">
+            <a href="../branding.html" data-category="branding" aria-current="page">
+                <span class="main-links__subtitle">identidad visual</span>
+                <span class="main-links__title">Branding</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 1;">
+            <a href="../web-design.html" data-category="web-design">
+                <span class="main-links__subtitle">sitios y apps</span>
+                <span class="main-links__title">Web Design</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 2;">
+            <a href="../artes-graficas.html" data-category="artes-graficas">
+                <span class="main-links__subtitle">piezas visuales</span>
+                <span class="main-links__title">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 3;">
+            <a href="../fotografia.html" data-category="fotografia">
+                <span class="main-links__subtitle">captura visual</span>
+                <span class="main-links__title">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- =======================================================================================
+    MAIN — página del proyecto: cabecera + stack continuo de imágenes
+======================================================================================= -->
+<main class="project">
+
+    <!-- cabecera centrada: categoría · título · año -->
+    <header class="project__header">
+        <span class="project__category">Branding</span>
+        <h1 class="project__title">Veg To Go</h1>
+        <p class="project__meta">
+            <span>Alimentación vegana</span>
+            <span class="project__meta-sep" aria-hidden="true"></span>
+            <span>TODO</span>
+        </p>
+    </header>
+
+    <!-- galería: imágenes apiladas verticalmente, sin gaps, max-width 1440px -->
+    <section class="project__gallery" aria-label="Galería del proyecto Veg To Go">
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/veg-to-go/branding-veg-to-go-00.webp">
+            <img src="../media/projects/branding/veg-to-go/branding-veg-to-go-00.jpg" width="1920" height="1440" alt="Veg To Go — imagen 00">
+        </picture>
+
+        <!-- Intro — texto de presentación del proyecto (insertado tras la primera imagen) -->
+        <div class="project__intro">
+            <h2 class="project__intro-title">Veg To Go</h2>
+            <p class="project__intro-text">TODO — breve descripción del proyecto, contexto del cliente y objetivos principales del encargo.</p>
+            <p class="project__intro-text">TODO — enfoque conceptual y visual: paleta, tipografía, referentes y decisiones clave.</p>
+            <p class="project__intro-text">TODO — resultados, piezas entregadas y aprendizajes del proceso.</p>
+        </div>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/veg-to-go/branding-veg-to-go-01.webp">
+            <img src="../media/projects/branding/veg-to-go/branding-veg-to-go-01.jpg" width="1880" height="1879" loading="lazy" alt="Veg To Go — imagen 01">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/veg-to-go/branding-veg-to-go-02.webp">
+            <img src="../media/projects/branding/veg-to-go/branding-veg-to-go-02.jpg" width="1500" height="1687" loading="lazy" alt="Veg To Go — imagen 02">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/veg-to-go/branding-veg-to-go-03.webp">
+            <img src="../media/projects/branding/veg-to-go/branding-veg-to-go-03.jpg" width="1920" height="1038" loading="lazy" alt="Veg To Go — imagen 03">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/veg-to-go/branding-veg-to-go-04.webp">
+            <img src="../media/projects/branding/veg-to-go/branding-veg-to-go-04.jpg" width="780" height="1920" loading="lazy" alt="Veg To Go — imagen 04">
+        </picture>
+
+    </section>
+
+    <!-- =======================================================================================
+        CRÉDITOS — ficha técnica del proyecto (template con placeholders TODO)
+    ======================================================================================= -->
+    <section class="project__credits" aria-labelledby="credits-title-veg-to-go">
+        <h2 id="credits-title-veg-to-go" class="project__credits-title">Créditos</h2>
+        <dl class="project__credits-list">
+            <div class="project__credits-row">
+                <dt>Cliente</dt>
+                <dd>Veg To Go</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Año</dt>
+                <dd>TODO</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Mi rol</dt>
+                <dd>TODO — dirección de arte · diseño · etc.</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Colaboradores</dt>
+                <dd>TODO — Nombre · rol · enlace</dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION — placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html — el IntersectionObserver del js añade .is-ready)
+    ======================================================================================= -->
+    <section class="next-section" data-next-section aria-label="Siguiente sección">
+        <div class="main-links__item main-links__item--next" style="--index: 0;">
+            <a href="../web-design.html" data-category="web-design" title="Siguiente sección — Web Design">
+                <span class="main-links__subtitle">siguiente sección</span>
+                <span class="main-links__title">Web Design</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

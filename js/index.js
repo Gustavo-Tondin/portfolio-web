@@ -1,264 +1,271 @@
 /*------------------------------------------------------------*\
-    portfolio.js
+        portfolio.js
 
-    Script organizado en IIFEs para evitar conflictos entre módulos.
+        Script organizado en un único IIFE para evitar conflictos entre módulos.
 
-    Estructura:
-        1. Elementos globales compartidos
-        2. Hero Scroll  — morphing de imagen al hacer scroll
-        3. Menu         — toggle con animación de la píldora
-        4. Main Links   — cascada animada al navegar
-        5. Next Section — barra de navegación al pie de página
-        6. Spotlight    — cursor-tracking con rotación de imágenes
-        7. Reveal       — aparición de elementos con IntersectionObserver
-        8. Showcase     — layout de dos columnas de branding.html
-\*------------------------------------------------------------*/
+        Estructura:
+            1. Elementos globales compartidos
+            2. Hero Scroll  — morphing de imagen al hacer scroll
+            3. Menu         — toggle con animación de la píldora
+            4. Main Links   — cascada animada al navegar
+            5. Next Section — card fixo de próxima secção (main-links__item--next)
+            6. Spotlight    — cursor-tracking con rotación de imágenes
+            7. Reveal       — aparición de elementos con IntersectionObserver
+            8. Showcase     — layout de dos columnas de branding.html
+    \*------------------------------------------------------------*/
 
-/* ==================================================================================
-   Módulos 1–7: lógica global del portfolio
-================================================================================== */
 (function () {
-    /* 1. Elementos globales compartidos ====================================================== */
+    /* ==================================================================================
+        1. Elementos globales compartidos
+    ================================================================================== */
 
-    const header     = document.getElementById("siteHeader");
+    const header = document.getElementById("siteHeader");
     const navigation = document.getElementById("navigation");
+    const nextCard = document.querySelector(".main-links__item--next");
+    const nextLink = nextCard?.querySelector("a");
 
-    /* 2. Hero Scroll ====================================================== */
+    /* ==================================================================================
+        2. Hero Scroll: Animación de imagen al hacer scroll
+    ================================================================================== */
 
-    const scrollImage  = document.getElementById("scrollImage");
-    const imageTarget  = document.getElementById("aboutImageTarget");
+    const scrollImage = document.getElementById("scrollImage");
+    const imageTarget = document.getElementById("aboutImageTarget");
     const aboutContent = document.querySelector(".about__content");
-    const heroContent  = document.querySelector(".hero");
+    const heroContent = document.querySelector(".hero");
 
-    /* el efecto scroll solo se activa si todos los elementos necesarios están en el DOM */
+    /* el efecto scroll solo se activa si todos los elementos necesarios están en la página */
     if (scrollImage && imageTarget && heroContent && aboutContent) {
         window.addEventListener("scroll", () => {
             const scrollY = window.scrollY;
-            const vh      = window.innerHeight;
-            const vw      = document.documentElement.clientWidth;
+            const vh = window.innerHeight;
+            const vw = document.documentElement.clientWidth;
 
-            /* cálculo del progreso de la animación en relación con la altura de la pantalla */
+            const isMobile = vw <= 720;
+
             const progress = Math.min(scrollY / (vh * 0.8), 1);
-            const target   = imageTarget.getBoundingClientRect();
-
-            /* ip: la imagen termina antes de que finalice la animación completa */
+            const target = imageTarget.getBoundingClientRect();
             const ip = Math.min(progress / 0.8, 1);
 
             if (ip < 1) {
-                /* estado en transición */
                 scrollImage.style.cssText = `
-                    position: fixed;
-                    top: ${target.top * ip}px;
-                    left: ${target.left * ip}px;
-                    width: ${vw + (target.width - vw) * ip}px;
-                    height: ${vh + (target.height - vh) * ip}px;
-                `;
+                        top: ${(target.top + scrollY) * ip}px;
+                        left: ${target.left * ip}px;
+                        width: ${vw + (target.width - vw) * ip}px;
+                        height: ${vh + (target.height - vh) * ip}px;
+                    `;
             } else {
-                /* estado final: la imagen queda en su posición definitiva */
                 scrollImage.style.cssText = `
-                    position: absolute;
-                    top: ${target.top + scrollY}px;
-                    left: ${target.left}px;
-                    width: ${target.width}px;
-                    height: ${target.height}px;
-                `;
+                        top: ${target.top + scrollY}px;
+                        left: ${target.left}px;
+                        width: ${target.width}px;
+                        height: ${target.height}px;
+                    `;
             }
 
-            /* multiplicación para agilizar la salida del contenido del hero */
             const fade = Math.max(1 - progress * 6, 0);
-            heroContent.style.opacity   = fade;
+            heroContent.style.opacity = fade;
             heroContent.style.transform = `translateY(${-progress * 200}px)`;
 
             header?.classList.toggle("is-visible", progress > 0.4);
             aboutContent.classList.toggle("is-visible", progress > 0.8);
 
-            /* ap: el contenido del about empieza a moverse en 0.8 */
-            const ap = Math.max((progress - 0.8) / 0.2, 0);
-            aboutContent.style.transform = `translateY(${(1 - ap) * 50}px) translateX(${(1 - ap) * 200}px)`;
+            if (!isMobile) { /* el efecto de animación es desactivado en mobile */
+                const ap = Math.max((progress - 0.8) / 0.2, 0);
+                aboutContent.style.transform = `translateY(${(1 - ap) * 50}px) translateX(${(1 - ap) * 200}px)`;
+            } else {
+                aboutContent.style.transform = "";
+            }
         });
     }
 
-    /* 3. Menu ====================================================== */
+    /* ==================================================================================
+        3. Menu: toggle del menú con animación en css.
+    ================================================================================== */
 
-    const menuBtn  = document.getElementById("menuButton");
-    const btnText  = menuBtn?.querySelector(".nav-link__text");
+    /* Elementos del menú de navegación */
+    const menuBtn = document.getElementById("menuButton");
+    const btnText = menuBtn?.querySelector(".nav-link__text");
     const mainLinks = document.querySelector(".main-links");
-    const linkItems = Array.from(document.querySelectorAll(".main-link-item"));
 
-    /* 3.1. Abrir/Cerrar Menu */
+    /* Seleciona todos los ítems de navegación excepto la card de próxima sección */
+    const linkItems = Array.from(
+        document.querySelectorAll(
+            ".main-links__item:not(.main-links__item--next)",
+        ),
+    );
+
+    /* toggle del menú: añade/quita la clase is-menu-open en el header para activar la animación en CSS. */
     const toggleMenu = () => {
         const isOpen = header?.classList.toggle("is-menu-open");
         if (btnText) btnText.textContent = isOpen ? "Cerrar" : "Menu";
-
-        /* sincronizamos el estado ARIA para garantir la accesibilidad */
         menuBtn?.setAttribute("aria-expanded", String(!!isOpen));
         navigation?.setAttribute("aria-hidden", String(!isOpen));
     };
 
+    /* Abre o cierra el menú al hacer clic en el botón */
     menuBtn?.addEventListener("click", toggleMenu);
 
+    /* Cierra el menú al presionar Escape para mejorar la accesibilidad por teclado */
     document.addEventListener("keydown", (e) => {
-        /* cerrar el menu con ESC */
         if (e.key === "Escape" && header?.classList.contains("is-menu-open"))
             toggleMenu();
     });
 
-    let isNavigating = false; /* estado de animación para evitar la repetición de animaciones */
+    /* ==================================================================================
+        4. Main Links: animación en cascada al navegar entre páginas
+    ================================================================================== */
 
-    /* 4. Main Links: salida organizada de los enlaces ====================================================== */
+    /* Tag para bloquear clics mientras la animación de salida está en curso */
+    let isNavigating = false;
+
+    /* EventListener de click que empieza la animación de salida en cascada y cambia de página al finalizar */
     mainLinks?.addEventListener("click", (e) => {
-        /* obtiene el enlace y el elemento de la lista correspondiente al clic */
-        const link = e.target.closest("a");
-        const item = link?.closest(".main-link-item");
+        /* Hace con que el click funcione en todo el card */
+        const link = e.target.closest("a"); 
+        const item = link?.closest(".main-links__item");
 
+        /* Ignora clics fuera de un enlace válido o durante una navegación activa */
         if (!item || isNavigating) return;
 
-        e.preventDefault(); /* impide el avance automático a la página siguiente */
+        /* Evita que el click cambie de página inmediatamente */
+        e.preventDefault();
         isNavigating = true;
 
-        const href       = link.getAttribute("href");
-        const clickedIdx = parseInt(item.style.getPropertyValue("--index"), 10);
+        const href = link.getAttribute("href");
 
-        /* Paso 1: el ítem sube y los demás se sumergen en cascada */
-        item.classList.add("is-focused");
-        linkItems.forEach((el, i) => {
+        /* Lee el índice del ítem clickeado desde la variable CSS */
+        const clickedIdx = Number(item.style.getPropertyValue("--index"));
+
+        /* Resalta el ítem seleccionado y aplica el retraso en cascada al resto (cuanto más lejos, mayor retraso) */
+        item.classList.add("is-focused"); /* fase 1 animación: el item seleccionado sube y los demás se bajan */
+        linkItems.forEach((el, i) => {  
             if (i === clickedIdx) return;
             el.querySelector("a").style.transitionDelay =
-                `${Math.abs(i - clickedIdx) * 0.2}s`; /* retraso por distancia del item clicado */
+                `${Math.abs(i - clickedIdx) * 0.2}s`;
             el.classList.add("is-diving");
         });
 
-        /* Paso 2: esperamos para cerrar el menu */
-        setTimeout(() => {
-            /* Paso 3: cerrar overlay */
+        /* setTimeout para gestionar el tiempo de la animación */
+        setTimeout(() => { /* fase 2: el item seleccionado baja y el header vuelve a su posición original */
             header?.classList.remove("is-menu-open");
-
-            /* Paso 4: el item enfocado sale de pantalla */
-            setTimeout(() => {
-                item.classList.add("is-leaving");
-
-                /* Paso 5: navegar a la página destino */
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 1000);
+            item.classList.replace("is-focused", "is-leaving");
+            setTimeout(() => { /* fase 3: la pagina cambia */
+                window.location.href = href;
             }, 300);
-        }, 800);
+        }, 700);
     });
 
-    /* 5. Next Section ====================================================== */
-    const nextSections = document.querySelectorAll("[data-next-section]");
-    if (!nextSections.length || !("IntersectionObserver" in window)) return;
+    /* ==================================================================================
+        5. Next Section: Card que aparece al llegar al final de la página para invitar a descubrir la siguiente sección.
+    ================================================================================== */
+    /*
+    - En páginas normales: busca [data-next-section] en el DOM y usa un IntersectionObserver.
+    - En el showcase de proyectos (branding, web-design, etc.): el Módulo 8 accede a nextCard directamente al compartir el mismo ámbito.
+    */
+    const nextSection = document.querySelector("[data-next-section]");
 
-    let isNextNavigating = false;
+    if (nextCard) {
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(({ target, isIntersecting }) => {
-                if (
-                    target.classList.contains("is-rising") ||
-                    target.classList.contains("is-dropping")
-                )
-                    return;
-                target.classList.toggle("is-ready", isIntersecting);
-            });
-        },
-        { threshold: 0 },
-    );
+        if (nextSection) {
+            new IntersectionObserver(([entry]) => {
+                if (!isNavigating) nextCard.classList.toggle("is-ready", entry.isIntersecting);
+            }).observe(nextSection);
+        }
 
-    nextSections.forEach((section) => {
-        observer.observe(section);
-        section.addEventListener("click", (e) => {
-            const link = e.target.closest("a");
-            if (!link || isNextNavigating) return;
+        /* Al hacer click hace una animación y después cambia de pagina. */
+        nextLink?.addEventListener("click", (e) => {
+            if (isNavigating) return;
             e.preventDefault();
-            isNextNavigating = true;
-            const href = link.getAttribute("href");
-            section.classList.add("is-rising");
-            setTimeout(
-                () => section.classList.replace("is-rising", "is-dropping"),
-                950,
-            );
-            setTimeout(() => (window.location.href = href), 1600);
+            isNavigating = true;
+
+            nextCard.classList.replace("is-ready", "is-focused");
+
+            // Timers encadeados de forma mais limpa
+            setTimeout(() => {
+                nextCard.classList.replace("is-focused", "is-leaving");
+                setTimeout(() => window.location.href = nextLink.href, 500);
+            }, 700);
         });
-    });
+    }
 
-    /* 6. Spotlight ====================================================== */
+    /* ==================================================================================
+        6. Spotlight: Preview de proyectos en rotación al pasar el cursor por los ítems del marquee.
+    ================================================================================== */
 
-    const spotlights = document.querySelectorAll("[data-spotlight]");
-    const projects   = window.PROJECTS || [];
+    const marquee = document.querySelector(".marquee");
 
-    if (spotlights.length && projects.length) {
-        /* agrupa las imágenes de portada por categoría */
-        const catImages = projects.reduce((acc, p) => {
-            if (p?.category && p?.cover) {
-                (acc[p.category] ??= []).push(
-                    p.cover.placeholder || `${p.cover.base}.webp`,
-                );
-            }
-            return acc;
-        }, {});
+    if (marquee) {
+        /* 3 imágenes por categoría — rutas reales dentro de media/projects/<cat>/<proyecto>/ */
+        const previews = {
+            "branding": [
+                "media/projects/branding/refiori/branding-refiori-00.jpg",
+                "media/projects/branding/wote/branding-wote-00.jpg",
+                "media/projects/branding/tondafoto/branding-tonda-foto-00.jpg"
+            ],
+            "web-design": [
+                "media/projects/web-design/riwer-labs/web-riwerlabs-desktop-00-hero.jpg",
+                "media/projects/web-design/eners/web-eners-desktop-00-hero.jpg",
+                "media/projects/web-design/identiduca/web-identiduca-desktop-00-hero.jpg"
+            ],
+            "artes-graficas": [
+                "media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-00.jpg",
+                "media/projects/artes-graficas/identiduca/zine-identiduca-00.jpg",
+                "media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-05.jpg"
+            ],
+            "fotografia": [
+                "media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg",
+                "media/projects/fotografia/carol/ensaio-carol-00.jpg",
+                "media/projects/fotografia/valeria/ensaio-valeria-00.jpg"
+            ]
+        };
 
-        spotlights.forEach((container) => {
-            const wrap  = container.querySelector("[data-spotlight-wrap]");
-            const layer = container.querySelector("[data-spotlight-layer]");
-            if (!wrap || !layer) return;
+        marquee.querySelectorAll(".marquee__item").forEach((item) => {
+            const img = item.querySelector("[data-preview]");
+            const images = previews[item.dataset.category];
+            if (!img || !images) return;
 
-            let rotateId, ticking;
+            let rotateId = null;
 
-            /* actualiza la posición del cursor via CSS custom properties.
-               requestAnimationFrame optimiza la renderización */
-            container.addEventListener(
-                "mousemove",
-                (e) => {
-                    if (ticking) return;
-                    ticking = true;
-                    requestAnimationFrame(() => {
-                        const r = wrap.getBoundingClientRect();
-                        wrap.style.setProperty("--cursor-x", `${e.clientX - r.left}px`);
-                        wrap.style.setProperty("--cursor-y", `${e.clientY - r.top}px`);
-                        ticking = false;
-                    });
-                },
-                { passive: true },
-            );
+            item.addEventListener("mouseenter", () => {
+                const r = item.getBoundingClientRect();
+                img.style.left = `${r.left + r.width / 2}px`;
+                img.style.top = `${r.top - img.height - 20}px`;
+                img.classList.add("is-visible");
 
-            container
-                .querySelectorAll("[data-spotlight-trigger]")
-                .forEach((trigger) => {
-                    trigger.addEventListener("mouseenter", () => {
-                        container.classList.add("is-hover");
-                        const imgs = catImages[trigger.dataset.category] || [];
-                        if (!imgs.length) return;
+                let i = 0;
+                img.src = images[0];
+                rotateId = setInterval(() => {
+                    img.src = images[++i % images.length];
+                }, 1000);
+            });
 
-                        let i = 0;
-                        layer.style.backgroundImage = `url("${imgs[0]}")`;
-
-                        if (imgs.length > 1) {
-                            rotateId = setInterval(() => {
-                                layer.style.backgroundImage = `url("${imgs[++i % imgs.length]}")`;
-                            }, 1400);
-                        }
-                    });
-
-                    trigger.addEventListener("mouseleave", () => {
-                        container.classList.remove("is-hover");
-                        clearInterval(rotateId);
-                    });
-                });
+            item.addEventListener("mouseleave", () => {
+                img.classList.remove("is-visible");
+                clearInterval(rotateId);
+                rotateId = null;
+            });
         });
     }
 
     /* 7. Reveal on Scroll ====================================================== */
 
+    /* Selecciona todos los elementos marcados para aparecer al entrar en el viewport */
     const revealEls = document.querySelectorAll(".reveal");
 
-    /* IntersectionObserver evita problemas de performance en el scroll */
     if (revealEls.length && "IntersectionObserver" in window) {
+
+        /**
+         * Observa cada elemento .reveal y añade is-visible cuando entra en el viewport.
+         * Se deja de observar el elemento después de su primera aparición
+         * para no repetir la animación ni consumir recursos innecesarios.
+         */
         const revealObserver = new IntersectionObserver(
             (entries, obs) => {
                 entries.forEach((e) => {
                     if (!e.isIntersecting) return;
                     e.target.classList.add("is-visible");
+
+                    /* Deja de observar tras la primera activación */
                     obs.unobserve(e.target);
                 });
             },
@@ -267,127 +274,133 @@
 
         revealEls.forEach((el) => revealObserver.observe(el));
     }
-})();
 
+    /* ==================================================================================
+        8. Showcase — lógica del layout de dos columnas (branding.html)
+        Se activa solo si el elemento [data-showcase] está presente en el DOM.
+    ================================================================================== */
 
-/* ==================================================================================
-   Módulo 8: Showcase — lógica del layout de dos columnas (branding.html)
-   Se activa solo si el elemento [data-showcase] está presente en el DOM.
-================================================================================== */
-(function () {
-    'use strict';
+    /* Aborta la ejecución si la página no contiene el layout de showcase */
+    const showcaseEl = document.querySelector("[data-showcase]");
+    if (showcaseEl) {
 
-    /* referencias — se leen una sola vez al cargar el DOM */
-    const showcaseEl = document.querySelector('[data-showcase]');
-    if (!showcaseEl) return;
+        /* Elementos estructurales del showcase */
+        const scroller = showcaseEl.querySelector("[data-showcase-scroller]");
+        const sections = showcaseEl.querySelectorAll(".showcase__section");
+        const listItems = showcaseEl.querySelectorAll(".showcase__list-item");
+        const total = sections.length;
 
-    const listItems  = showcaseEl.querySelectorAll('.showcase__list-item');
-    const linkEls    = showcaseEl.querySelectorAll('.showcase__list-link');
-    const sections   = showcaseEl.querySelectorAll('.showcase__section');
-    const scroller   = showcaseEl.querySelector('[data-showcase-scroller]');
-    const counterEl  = showcaseEl.querySelector('[data-showcase-counter]');
-    const progressEl = showcaseEl.querySelector('[data-showcase-progress]');
-    const hintEl     = showcaseEl.querySelector('[data-showcase-hint]');
-    const total      = sections.length;
+        /* Índice de la sección actualmente visible */
+        let currentIndex = 0;
 
-    /* estado mínimo de interacción */
-    let hasScrolled = false;
+        /* ── helpers ──────────────────────────────────────────────────────────────────── */
 
-    /* setActiveHandler — marca el proyecto activo en los 4 sitios:
-       lista izquierda, sección (para la animación del scale), contador
-       y altura de la línea de progreso. ====================================================== */
-    function setActiveHandler(index) {
-        const safeIndex = Math.max(0, Math.min(total - 1, index));
-
-        listItems.forEach(function (el, i) {
-            el.classList.toggle('is-active', i === safeIndex);
-        });
-        sections.forEach(function (el, i) {
-            el.classList.toggle('is-in-view', i === safeIndex);
-        });
-
-        if (counterEl) {
-            counterEl.textContent =
-                String(safeIndex + 1).padStart(2, '0') +
-                ' / ' +
-                String(total).padStart(2, '0');
+        /**
+         * Limita un índice al rango válido de secciones del showcase.
+         *
+         * @param {number} n - El índice a limitar
+         * @returns {number} El índice dentro del rango [0, total - 1]
+         */
+        function clamp(n) {
+            return Math.max(0, Math.min(total - 1, n));
         }
-        if (progressEl) {
-            progressEl.style.height = ((safeIndex + 1) / total) * 100 + '%';
+
+        /**
+         * Desplaza el scroll del showcase hasta la sección indicada.
+         *
+         * @param {number} index - El índice de la sección de destino
+         */
+        function scrollTo(index) {
+            sections[clamp(index)]?.scrollIntoView({ behavior: "smooth" });
         }
-    }
 
-    /* clickHandler — clic sobre un proyecto de la lista: scroll suave
-       a la sección correspondiente (si existe). ====================================================== */
-    function clickHandler(event) {
-        event.preventDefault();
-        const idx = parseInt(this.getAttribute('data-index'), 10) || 0;
-        if (sections[idx]) {
-            sections[idx].scrollIntoView({ behavior: 'smooth' });
+        /* ── estado central ───────────────────────────────────────────────────────────── */
+
+        /**
+         * Sincroniza el estado activo del showcase: actualiza el ítem destacado
+         * en la lista lateral, la sección visible en el scroller y la visibilidad
+         * de la card de siguiente sección al llegar al último proyecto.
+         *
+         * @param {number} index - El índice de la sección que pasa a estar activa
+         */
+        function setActive(index) {
+            currentIndex = clamp(index);
+
+            /* Marca el ítem de lista correspondiente a la sección activa */
+            listItems.forEach((el, j) =>
+                el.classList.toggle("is-active", j === currentIndex),
+            );
+
+            /* Marca la sección activa para controlar su visibilidad desde CSS */
+            sections.forEach((el, j) =>
+                el.classList.toggle("is-in-view", j === currentIndex),
+            );
+
+            /* Muestra la card de siguiente sección solo al llegar al último proyecto */
+            nextCard?.classList.toggle("is-ready", currentIndex === total - 1);
         }
-    }
 
-    /* scrollHandler — primera interacción con el scroller → esconde
-       la pista animada (solo ocurre una vez por carga). ====================================================== */
-    function scrollHandler() {
-        if (hasScrolled) return;
-        hasScrolled = true;
-        if (hintEl) hintEl.classList.add('is-hidden');
-    }
+        /* ── eventos ──────────────────────────────────────────────────────────────────── */
 
-    /* keyHandler — navegación por teclado (↑/↓) entre secciones ====================================================== */
-    function keyHandler(event) {
-        const active  = showcaseEl.querySelector('.showcase__list-item.is-active');
-        const current = active
-            ? parseInt(active.getAttribute('data-index'), 10)
-            : 0;
-
-        if (event.key === 'ArrowDown' && current < total - 1) {
-            sections[current + 1].scrollIntoView({ behavior: 'smooth' });
-        }
-        if (event.key === 'ArrowUp' && current > 0) {
-            sections[current - 1].scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-
-    /* observer — la sección visible >= 50 % dispara el cambio de estado ====================================================== */
-    if ('IntersectionObserver' in window && scroller) {
-        const sectionObserver = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    setActiveHandler(
-                        parseInt(entry.target.getAttribute('data-index'), 10)
-                    );
-                }
+        /**
+         * Navega a la sección correspondiente al hacer clic en un enlace de la lista lateral.
+         * Ignora el clic si el ítem ya está activo para evitar scroll innecesario.
+         *
+         * @param {Event} evento - El evento de clic sobre .showcase__list-link
+         */
+        showcaseEl.querySelectorAll(".showcase__list-link").forEach((link) => {
+            link.addEventListener("click", (e) => {
+                if (
+                    link
+                        .closest(".showcase__list-item")
+                        ?.classList.contains("is-active")
+                )
+                    return;
+                e.preventDefault();
+                scrollTo(+link.dataset.index);
             });
-        }, { root: scroller, threshold: 0.5 });
-
-        sections.forEach(function (section) {
-            sectionObserver.observe(section);
         });
+
+        /**
+         * Redirige el scroll del wheel desde el área exterior hacia el scroller interno.
+         * Evita el scroll nativo de la página cuando el usuario hace wheel fuera del scroller,
+         * manteniendo el control de la navegación dentro del showcase.
+         *
+         * @param {WheelEvent} evento - El evento de rueda del ratón
+         */
+        window.addEventListener(
+            "wheel",
+            (e) => {
+                /* Solo intercepta el wheel si el origen no está dentro del scroller */
+                if (!scroller || scroller.contains(e.target)) return;
+                e.preventDefault();
+                scroller.scrollBy({ top: e.deltaY, behavior: "auto" });
+            },
+            { passive: false },
+        );
+
+        /* ── IntersectionObserver ─────────────────────────────────────────────────────── */
+
+        /**
+         * Detecta qué sección del showcase ocupa más del 50% del scroller visible
+         * y actualiza el estado activo en consecuencia.
+         * Se usa root: scroller para observar dentro del contenedor con scroll propio.
+         */
+        if ("IntersectionObserver" in window && scroller) {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting)
+                            setActive(+entry.target.dataset.index);
+                    });
+                },
+                { root: scroller, threshold: 0.5 },
+            );
+
+            sections.forEach((s) => observer.observe(s));
+        }
+
+        /* Inicializa el showcase con la primera sección activa al cargar la página */
+        setActive(0);
     }
-
-    /* enlaces del listado + eventos globales */
-    linkEls.forEach(function (link) {
-        link.addEventListener('click', clickHandler);
-    });
-
-    if (scroller) {
-        scroller.addEventListener('scroll', scrollHandler, { passive: true });
-    }
-
-    /* delegação de wheel — scroll funciona em qualquer parte da tela,
-       não só sobre as imagens da direita */
-    window.addEventListener('wheel', function (event) {
-        if (!scroller) return;
-        /* evita conflito se o evento já aconteceu dentro do próprio scroller */
-        if (scroller.contains(event.target)) return;
-        event.preventDefault();
-        scroller.scrollBy({ top: event.deltaY, behavior: 'auto' });
-    }, { passive: false });
-
-    document.addEventListener('keydown', keyHandler);
-
-    /* estado inicial explícito */
-    setActiveHandler(0);
 })();

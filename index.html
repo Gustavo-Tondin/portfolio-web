@@ -32,12 +32,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet"/>
+
     <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
     <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet"/>
 
     <!-- Styles & Scripts -->
     <link rel="stylesheet" href="css/index.css" />
-    <script defer src="js/projects-data.js"></script> <!-- Información de los proyectos -->
     <script defer src="js/index.js"></script>
 </head>
 
@@ -47,7 +47,7 @@
 <!-- ======================================================================================= 
     HEADER
 ======================================================================================= -->
-<header class="header" id="siteHeader" style="view-transition-name: site-header">
+<header class="header" id="siteHeader">
     <a href="index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
         <img src="media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
     </a>
@@ -91,28 +91,28 @@
     </ul>
 
     <ul class="main-links">
-        <li class="main-link-item" style="--index: 0;">
+        <li class="main-links__item" style="--index: 0;">
             <a href="branding.html" data-category="branding" aria-current="page">
-                <span class="main-link-subtitle">identidad visual</span>
-                <span class="main-link-title">Branding</span>
+                <span class="main-links__subtitle">identidad visual</span>
+                <span class="main-links__title">Branding</span>
             </a>
         </li>
-        <li class="main-link-item" style="--index: 1;">
+        <li class="main-links__item" style="--index: 1;">
             <a href="web-design.html" data-category="web-design">
-                <span class="main-link-subtitle">sitios y apps</span>
-                <span class="main-link-title">Web Design</span>
+                <span class="main-links__subtitle">sitios y apps</span>
+                <span class="main-links__title">Web Design</span>
             </a>
         </li>
-        <li class="main-link-item" style="--index: 2;">
+        <li class="main-links__item" style="--index: 2;">
             <a href="artes-graficas.html" data-category="artes-graficas">
-                <span class="main-link-subtitle">piezas visuales</span>
-                <span class="main-link-title">Artes Gráficas</span>
+                <span class="main-links__subtitle">piezas visuales</span>
+                <span class="main-links__title">Artes Gráficas</span>
             </a>
         </li>
-        <li class="main-link-item" style="--index: 3;">
+        <li class="main-links__item" style="--index: 3;">
             <a href="fotografia.html" data-category="fotografia">
-                <span class="main-link-subtitle">captura visual</span>
-                <span class="main-link-title">Fotografía</span>
+                <span class="main-links__subtitle">captura visual</span>
+                <span class="main-links__title">Fotografía</span>
             </a>
         </li>
     </ul>
@@ -121,7 +121,7 @@
 <!-- =======================================================================================
     MAIN
 ======================================================================================= -->
-<main style="view-transition-name: content"> <!-- view transitions para mejorar la transición de una página a otra. -->
+<main> 
 
     <!-- Imagen fija que transiciona de hero a about -->
     <div class="scroll-image" id="scrollImage">
@@ -141,8 +141,6 @@
             />
             <img
                 src="media/hero-banner.jpg"
-                width="2400"
-                height="1600"
                 alt="Gustavo Tondin"
                 loading="eager"
                 fetchpriority="high"
@@ -236,31 +234,31 @@
 
     <!-- Áreas de trabajo ======================================================================================= -->
     <!-- data-spotlight activa sirve para mostrar las imagenes correctas en el hover. -->
-    <section class="marquee" aria-label="Áreas de trabajo" data-spotlight>
-        <div class="marquee__spotlight" data-spotlight-wrap aria-hidden="true">
-            <div class="marquee__spotlight-layer" data-spotlight-layer></div>
-        </div>
-        
+
+    
+    <section class="marquee" aria-label="Áreas de trabalho">
         <div class="marquee__track">
-            <span class="marquee__item marquee__item--branding" data-spotlight-trigger data-category="branding">
-                <span class="marquee__text-base">&lt;branding&gt;</span>
-                <span class="marquee__text-overlay">&lt;branding&gt;</span>
-            </span>
-
-            <span class="marquee__item marquee__item--web-design" data-spotlight-trigger data-category="web-design">
-                <span class="marquee__text-base">&lt;web_design&gt;</span>
-                <span class="marquee__text-overlay">&lt;web_design&gt;</span>
-            </span>
-
-            <span class="marquee__item marquee__item--artes-graficas" data-spotlight-trigger data-category="artes-graficas">
-                <span class="marquee__text-base">&lt;diseño_gráfico&gt;</span>
-                <span class="marquee__text-overlay">&lt;diseño_gráfico&gt;</span>
-            </span>
-
-            <span class="marquee__item marquee__item--fotografia" data-spotlight-trigger data-category="fotografia">
-                <span class="marquee__text-base">&lt;fotografía&gt;</span>
-                <span class="marquee__text-overlay">&lt;fotografía&gt;</span>
-            </span>
+    
+            <a href="branding.html" class="marquee__item marquee__item--branding" data-category="branding">
+                <img class="marquee__preview" src="" alt="" data-preview>
+                <span class="marquee__text">&lt;branding&gt;</span>
+            </a>
+    
+            <a href="web-design.html" class="marquee__item marquee__item--web-design" data-category="web-design">
+                <img class="marquee__preview" src="" alt="" data-preview>
+                <span class="marquee__text">&lt;web_design&gt;</span>
+            </a>
+    
+            <a href="artes-graficas.html" class="marquee__item marquee__item--artes-graficas" data-category="artes-graficas">
+                <img class="marquee__preview" src="" alt="" data-preview>
+                <span class="marquee__text">&lt;artes_gráficas&gt;</span>
+            </a>
+    
+            <a href="fotografia.html" class="marquee__item marquee__item--fotografia" data-category="fotografia">
+                <img class="marquee__preview" src="" alt="" data-preview>
+                <span class="marquee__text">&lt;fotografía&gt;</span>
+            </a>
+    
         </div>
     </section>
     
@@ -388,10 +386,10 @@
     <!-- Próxima Sesión ======================================================================================= -->
     <!-- barra reutilizable: cambia href + data-category + textos para usar en otras páginas -->
     <section class="next-section" data-next-section aria-label="Siguiente sección">
-        <div class="next-section__inner">
+        <div class="main-links__item main-links__item--next" style="--index: 0;">
             <a href="portfolio.html" data-category="portfolio">
-                <span class="main-link-subtitle">próxima sección</span>
-                <span class="main-link-title">Portfolio</span>
+                <span class="main-links__subtitle">próxima sección</span>
+                <span class="main-links__title">Portfolio</span>
             </a>
         </div>
     </section>

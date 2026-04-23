@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Aline & Eduardo — Fotografía · Gustavo Tondin</title>
+    <meta name="description" content="Aline & Eduardo — proyecto de fotografía desarrollado por Gustavo Tondin." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/projects/aline-e-eduardo.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://gustavotondin.com/projects/aline-e-eduardo.html" />
+    <meta property="og:title" content="Aline & Eduardo — Fotografía · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de fotografía — Aline & Eduardo." />
+    <meta property="og:image" content="https://gustavotondin.com/media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Aline & Eduardo — Fotografía · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de fotografía — Aline & Eduardo." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+
+    <!-- Icons — RemixIcon -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <script defer src="../js/index.js"></script>
+</head>
+
+<body class="page-fotografia page-project">
+
+<!-- =======================================================================================
+    HEADER — mismo componente de las otras páginas del sitio
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="../index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+        <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../sobre-mi.html" class="nav-link">Sobre mí</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../contacto.html" class="nav-link">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- =======================================================================================
+    NAVIGATION OVERLAY — idéntico a las otras páginas (paths con ../)
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="../sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
+
+    <ul class="main-links">
+        <li class="main-links__item" style="--index: 0;">
+            <a href="../branding.html" data-category="branding">
+                <span class="main-links__subtitle">identidad visual</span>
+                <span class="main-links__title">Branding</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 1;">
+            <a href="../web-design.html" data-category="web-design">
+                <span class="main-links__subtitle">sitios y apps</span>
+                <span class="main-links__title">Web Design</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 2;">
+            <a href="../artes-graficas.html" data-category="artes-graficas">
+                <span class="main-links__subtitle">piezas visuales</span>
+                <span class="main-links__title">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 3;">
+            <a href="../fotografia.html" data-category="fotografia" aria-current="page">
+                <span class="main-links__subtitle">captura visual</span>
+                <span class="main-links__title">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- =======================================================================================
+    MAIN — página del proyecto: cabecera + stack continuo de imágenes
+======================================================================================= -->
+<main class="project">
+
+    <!-- cabecera centrada: categoría · título · año -->
+    <header class="project__header">
+        <span class="project__category">Fotografía</span>
+        <h1 class="project__title">Aline & Eduardo</h1>
+        <p class="project__meta">
+            <span>Ensayo de pareja</span>
+            <span class="project__meta-sep" aria-hidden="true"></span>
+            <span>TODO</span>
+        </p>
+    </header>
+
+    <!-- galería: imágenes apiladas verticalmente, sin gaps, max-width 1440px -->
+    <section class="project__gallery" aria-label="Galería del proyecto Aline & Eduardo">
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" width="1400" height="1000" alt="Aline & Eduardo — imagen 00">
+        </picture>
+
+        <!-- Intro — texto de presentación del proyecto (insertado tras la primera imagen) -->
+        <div class="project__intro">
+            <h2 class="project__intro-title">Aline & Eduardo</h2>
+            <p class="project__intro-text">TODO — breve descripción del proyecto, contexto del cliente y objetivos principales del encargo.</p>
+            <p class="project__intro-text">TODO — enfoque conceptual y visual: paleta, tipografía, referentes y decisiones clave.</p>
+            <p class="project__intro-text">TODO — resultados, piezas entregadas y aprendizajes del proceso.</p>
+        </div>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-01.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-01.jpg" width="600" height="840" loading="lazy" alt="Aline & Eduardo — imagen 01">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 02">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-03.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-03.jpg" width="600" height="840" loading="lazy" alt="Aline & Eduardo — imagen 03">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-04.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-04.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 04">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-05.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-05.jpg" width="1200" height="1680" loading="lazy" alt="Aline & Eduardo — imagen 05">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-06.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-06.jpg" width="1200" height="858" loading="lazy" alt="Aline & Eduardo — imagen 06">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-07.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-07.jpg" width="1200" height="858" loading="lazy" alt="Aline & Eduardo — imagen 07">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-08.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-08.jpg" width="1200" height="858" loading="lazy" alt="Aline & Eduardo — imagen 08">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-09.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-09.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 09">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-10.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-10.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 10">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-11.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-11.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 11">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-12.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-12.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 12">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-13.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-13.jpg" width="1200" height="1680" loading="lazy" alt="Aline & Eduardo — imagen 13">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-14.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-14.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 14">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-15.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-15.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 15">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-16.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-16.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 16">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-17.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-17.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 17">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-18.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-18.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 18">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-19.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-19.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 19">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-20.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-20.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 20">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-21.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-21.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 21">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-22.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-22.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 22">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-23.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-23.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 23">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-24.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-24.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 24">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-25.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-25.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 25">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-26.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-26.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 26">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-27.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-27.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 27">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-28.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-28.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 28">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-29.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-29.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 29">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-30.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-30.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 30">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-31.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-31.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 31">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-32.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-32.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 32">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-33.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-33.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 33">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-34.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-34.jpg" width="1920" height="1372" loading="lazy" alt="Aline & Eduardo — imagen 34">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-35.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-35.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 35">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-36.webp">
+            <img src="../media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-36.jpg" width="1372" height="1920" loading="lazy" alt="Aline & Eduardo — imagen 36">
+        </picture>
+
+    </section>
+
+    <!-- =======================================================================================
+        CRÉDITOS — ficha técnica del proyecto (template con placeholders TODO)
+    ======================================================================================= -->
+    <section class="project__credits" aria-labelledby="credits-title-aline-e-eduardo">
+        <h2 id="credits-title-aline-e-eduardo" class="project__credits-title">Créditos</h2>
+        <dl class="project__credits-list">
+            <div class="project__credits-row">
+                <dt>Cliente</dt>
+                <dd>Aline & Eduardo</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Año</dt>
+                <dd>TODO</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Mi rol</dt>
+                <dd>TODO — dirección de arte · diseño · etc.</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Colaboradores</dt>
+                <dd>TODO — Nombre · rol · enlace</dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION — placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html — el IntersectionObserver del js añade .is-ready)
+    ======================================================================================= -->
+    <section class="next-section" data-next-section aria-label="Siguiente proyecto">
+        <div class="main-links__item main-links__item--next" style="--index: 0;">
+            <a href="bruna-e-rafael.html" data-category="fotografia" title="Siguiente proyecto — Bruna & Rafael">
+                <span class="main-links__subtitle">siguiente proyecto</span>
+                <span class="main-links__title">Bruna & Rafael</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Tondafoto — Branding · Gustavo Tondin</title>
+    <meta name="description" content="Tondafoto — proyecto de branding desarrollado por Gustavo Tondin." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/projects/tondafoto.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://gustavotondin.com/projects/tondafoto.html" />
+    <meta property="og:title" content="Tondafoto — Branding · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de branding — Tondafoto." />
+    <meta property="og:image" content="https://gustavotondin.com/media/projects/branding/tondafoto/branding-tonda-foto-00.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Tondafoto — Branding · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de branding — Tondafoto." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/projects/branding/tondafoto/branding-tonda-foto-00.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+
+    <!-- Icons — RemixIcon -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <script defer src="../js/index.js"></script>
+</head>
+
+<body class="page-branding page-project">
+
+<!-- =======================================================================================
+    HEADER — mismo componente de las otras páginas del sitio
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="../index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+        <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../sobre-mi.html" class="nav-link">Sobre mí</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../contacto.html" class="nav-link">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- =======================================================================================
+    NAVIGATION OVERLAY — idéntico a las otras páginas (paths con ../)
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="../sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
+
+    <ul class="main-links">
+        <li class="main-links__item" style="--index: 0;">
+            <a href="../branding.html" data-category="branding" aria-current="page">
+                <span class="main-links__subtitle">identidad visual</span>
+                <span class="main-links__title">Branding</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 1;">
+            <a href="../web-design.html" data-category="web-design">
+                <span class="main-links__subtitle">sitios y apps</span>
+                <span class="main-links__title">Web Design</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 2;">
+            <a href="../artes-graficas.html" data-category="artes-graficas">
+                <span class="main-links__subtitle">piezas visuales</span>
+                <span class="main-links__title">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 3;">
+            <a href="../fotografia.html" data-category="fotografia">
+                <span class="main-links__subtitle">captura visual</span>
+                <span class="main-links__title">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- =======================================================================================
+    MAIN — página del proyecto: cabecera + stack continuo de imágenes
+======================================================================================= -->
+<main class="project">
+
+    <!-- cabecera centrada: categoría · título · año -->
+    <header class="project__header">
+        <span class="project__category">Branding</span>
+        <h1 class="project__title">Tondafoto</h1>
+        <p class="project__meta">
+            <span>Marca personal</span>
+            <span class="project__meta-sep" aria-hidden="true"></span>
+            <span>2022</span>
+        </p>
+    </header>
+
+    <!-- galería: imágenes apiladas verticalmente, sin gaps, max-width 1440px -->
+    <section class="project__gallery" aria-label="Galería del proyecto Tondafoto">
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-00.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-00.jpg" width="1920" height="1080" alt="Tondafoto — imagen 00">
+        </picture>
+
+        <!-- Intro — texto de presentación del proyecto (insertado tras la primera imagen) -->
+        <div class="project__intro">
+            <h2 class="project__intro-title">Tondafoto</h2>
+            <p class="project__intro-text">TODO — breve descripción del proyecto, contexto del cliente y objetivos principales del encargo.</p>
+            <p class="project__intro-text">TODO — enfoque conceptual y visual: paleta, tipografía, referentes y decisiones clave.</p>
+            <p class="project__intro-text">TODO — resultados, piezas entregadas y aprendizajes del proceso.</p>
+        </div>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-01.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-01.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 01">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-02.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-02.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 02">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-03.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-03.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 03">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-04.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-04.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 04">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-05.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-05.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 05">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-07.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-07.jpg" width="1200" height="942" loading="lazy" alt="Tondafoto — imagen 06">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-08.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-08.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 07">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-09.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-09.jpg" width="1200" height="800" loading="lazy" alt="Tondafoto — imagen 08">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-10.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-10.jpg" width="1030" height="1080" loading="lazy" alt="Tondafoto — imagen 09">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-11.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-11.jpg" width="1200" height="1196" loading="lazy" alt="Tondafoto — imagen 10">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-12.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-12.jpg" width="600" height="923" loading="lazy" alt="Tondafoto — imagen 11">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-13.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-13.jpg" width="1920" height="1372" loading="lazy" alt="Tondafoto — imagen 12">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-14.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-14.jpg" width="1092" height="1333" loading="lazy" alt="Tondafoto — imagen 13">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-15.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-15.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — imagen 14">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/branding/tondafoto/branding-tonda-foto-16.webp">
+            <img src="../media/projects/branding/tondafoto/branding-tonda-foto-16.jpg" width="1920" height="1280" loading="lazy" alt="Tondafoto — imagen 15">
+        </picture>
+
+    </section>
+
+    <!-- =======================================================================================
+        CRÉDITOS — ficha técnica del proyecto (template con placeholders TODO)
+    ======================================================================================= -->
+    <section class="project__credits" aria-labelledby="credits-title-tondafoto">
+        <h2 id="credits-title-tondafoto" class="project__credits-title">Créditos</h2>
+        <dl class="project__credits-list">
+            <div class="project__credits-row">
+                <dt>Cliente</dt>
+                <dd>Tondafoto</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Año</dt>
+                <dd>2022</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Mi rol</dt>
+                <dd>TODO — dirección de arte · diseño · etc.</dd>
+            </div>
+            <div class="project__credits-row">
+                <dt>Colaboradores</dt>
+                <dd>TODO — Nombre · rol · enlace</dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION — placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html — el IntersectionObserver del js añade .is-ready)
+    ======================================================================================= -->
+    <section class="next-section" data-next-section aria-label="Siguiente proyecto">
+        <div class="main-links__item main-links__item--next" style="--index: 0;">
+            <a href="dj-rodmotter.html" data-category="branding" title="Siguiente proyecto — DJ RodMotter">
+                <span class="main-links__subtitle">siguiente proyecto</span>
+                <span class="main-links__title">DJ RodMotter</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
