@@ -1,54 +1,63 @@
-/* ==================================================================================
-   Variables
-================================================================================== */
+/* variables */
+
 :root {
     /* neutros */
-    --color-light:          #f1ede9;
-    --color-light-surface:  #d4cfc9;
-    --color-light-opacity:  #f1ede9cc;
-    --color-dark:           #1b1a1c;
-    --color-dark-surface:   #2e2c30;
-    --color-dark-opacity:   #1b1a1ccc;
-    --color-border:         #9b9590;
+    --color-light: #f1ede9;
+    --color-light-surface: #d4cfc9;
+    --color-light-opacity: #f1ede9cc;
+    --color-dark: #1b1a1c;
+    --color-dark-surface: #2e2c30;
+    --color-dark-subtle: #605c56; /* contraste AA sobre fondo claro */
+    --color-dark-opacity:#1b1a1ccc;
+    --color-border: #9b9590;
 
     /* acentos */
-    --color-accent:         #f74b2a;
-    --color-accent-subtle:  #f74b2a1f;
-    --color-primary:        #305b49;   /* verde musgo, marca */
+    --color-accent: #f74b2a;
+    --color-accent-subtle: #f74b2a1f;
+    --color-primary: #305b49;
+    --color-primary-opacity: #305b49e8;
     --color-primary-light:  #afdbcc;
     --color-primary-dark:   #1f3d30;
-    --color-muted:          #8a857f;
 
-    /* un color por categoría. la variante "-light" va en reposo del marquee,
-       la saturada en hover. el 0 es el fallback neutro del agregador. */
-    --color-comp-0:         #305b49;   /* portfolio (neutro) */
-    --color-comp-1:         #677898;   /* branding */
-    --color-comp-1-light:   #a5b6d4;
-    --color-comp-2:         #bf6031;   /* web design */
-    --color-comp-2-light:   #e3a384;
-    --color-comp-3:         #cb9340;   /* artes gráficas */
-    --color-comp-3-light:   #e7c785;
-    --color-comp-4:         #688f67;   /* fotografía */
-    --color-comp-4-light:   #a3c2a1;
+    /* colores por categoria */
+    --color-comp-0: #305b49;  /* portfolio */
+    --color-comp-1: #677898;  /* branding */
+    --color-comp-1-light: #a5b6d4;
+    --color-comp-2: #bf6031;  /* web design */
+    --color-comp-2-light: #e3a384;
+    --color-comp-3: #cb9340;  /* artes graficas */
+    --color-comp-3-light: #e7c785;
+    --color-comp-4: #688f67;  /* foto */
+    --color-comp-4-light: #a3c2a1;
 
-    /* tipografías */
-    --font-titles:  "Source Serif 4", serif;
-    --font-text:    "Switzer", sans-serif;
-    --font-label:   "DM Mono", monospace;
+    /* fonts */
+    --font-titles: "Source Serif 4", serif;
+    --font-text:   "Switzer", sans-serif;
+    --font-label:  "DM Mono", monospace;
 
-    /* medidas recurrentes */
-    --max-width:         60.25rem;
-    --max-width-xl:      90rem;
-    --padding-section:   clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 2rem);
-    --padding-short:     1.25rem clamp(1rem, 5vw, 2rem);
-    --padding-side:      0 clamp(1rem, 5vw, 2rem);
-    --padding-header:    1.5rem clamp(1.5rem, 5vw, 2.5rem);
-    --header-height:     5rem;
 
-    --radius-s:     0.5rem;
-    --radius-m:     1rem;
-    --radius-l:     1.5rem;
-    --radius-pill:  20rem;
+    --max-width:     60.25rem;
+    --max-width-xl:  90rem;
+    --header-height: 5rem;
+
+    /* spacing */
+    --space-xs: 0.25rem;
+    --space-s:  0.5rem;
+    --space-m:  1rem;
+    --space-l:  2rem;
+
+    --pad-section: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 2rem);
+    --pad-short:   1.25rem clamp(1rem, 5vw, 2rem);
+    --pad-side:    0 clamp(1rem, 5vw, 2rem);
+    --pad-header:  1.5rem clamp(1.5rem, 5vw, 2.5rem);
+    --pad-link:    var(--space-s) var(--space-xs);
+
+    --radius-s: 0.5rem;
+    --radius-m: 1rem;
+    --radius-l: 1.5rem;
+    --radius-pill: 20rem;
+
+    --border-line: 1px solid;
 
     --transition-fast:   0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
     --transition-medium: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -57,12 +66,32 @@
 }
 
 
-/* ==================================================================================
-   Reset
-================================================================================== */
-*,
-*::before,
-*::after { box-sizing: border-box; }
+/* categorias, abre el --theme-color via data-category */
+[data-category="portfolio"] {
+    --theme-color: var(--color-comp-0);
+    --theme-color-light: var(--color-comp-0);
+}
+[data-category="branding"] {
+    --theme-color: var(--color-comp-1);
+    --theme-color-light: var(--color-comp-1-light);
+}
+[data-category="web-design"] {
+    --theme-color: var(--color-comp-2);
+    --theme-color-light: var(--color-comp-2-light);
+}
+[data-category="artes-graficas"] {
+    --theme-color: var(--color-comp-3);
+    --theme-color-light: var(--color-comp-3-light);
+}
+[data-category="fotografia"] {
+    --theme-color: var(--color-comp-4);
+    --theme-color-light: var(--color-comp-4-light);
+}
+
+
+/* reset */
+
+*, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -72,23 +101,21 @@
 body {
     background-color: var(--color-light);
     color: var(--color-dark);
-    font: 400 1rem var(--font-text);
-    line-height: 1.6;
     min-height: 100vh;
     min-height: 100dvh;
     overflow-x: hidden;
 }
 
-/* congela scroll cuando el overlay está abierto */
-body.menu-open { overflow: hidden; }
+body.menu-open { overflow: hidden; } /* trava scroll quando o menu ta aberto */
 
-img, video, svg {
+img, picture, video, svg {
     max-width: 100%;
     width: 100%;
     height: auto;
     display: block;
 }
 ul, ol { list-style: none; }
+
 h1, h2, h3, h4, h5, h6, a, p, li {
     text-decoration: none;
     color: inherit;
@@ -104,67 +131,95 @@ button {
     color: inherit;
 }
 input, textarea, select, button { font: inherit; color: inherit; }
-input:focus,
-textarea:focus,
-select:focus,
-button:focus { outline: none; }
+input:focus, textarea:focus, select:focus, button:focus { outline: none; }
 
 table { width: 100%; border-collapse: collapse; }
 
 
-/* ==================================================================================
-   Tipografía base
-================================================================================== */
-p, input, select, label, textarea, li {
-    font: 400 0.9375rem var(--font-text);
+/* tipografia */
+
+p, input, select, label, textarea, li, .body {
+    font: 400 1rem var(--font-text);
+    color: var(--color-dark-surface);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
 }
-h1, .h1 { font: 400 clamp(2.5rem,   7vw, 4rem)      var(--font-titles); }
-h2, .h2 { font: 400 clamp(1.5rem,   5vw, 2rem)      var(--font-titles); }
-h3, .h3 { font: 400 clamp(1.1875rem,3vw, 1.5rem)    var(--font-titles); }
-h4, .h4 { font: 500 clamp(1.0625rem,3vw, 1.1875rem) var(--font-text);  }
+
+h1, .h1 {
+    font: 400 clamp(3rem, 7vw, 5rem) var(--font-titles);
+    color: var(--color-dark);
+    letter-spacing: 0.05em;
+}
+h2, .h2 {
+    font: 400 clamp(2rem, 5vw, 3.5rem) var(--font-titles);
+    color: var(--color-dark);
+    letter-spacing: 0.05em;
+}
+h3, .h3 {
+    font: 400 clamp(1.25rem, 3vw, 1.75rem) var(--font-titles);
+    color: var(--color-dark);
+    letter-spacing: 0.05em;
+}
+h4, .h4 {
+    font: 500 clamp(1.25rem, 3vw, 1.75rem) var(--font-text);
+    color: var(--color-dark);
+    letter-spacing: 0.05em;
+}
 
 a, .link, button {
-    font: 500 0.9375rem var(--font-text);
+    font: 500 1rem var(--font-text);
+    color: var(--color-dark-subtle);
+    letter-spacing: 0.02em;
     cursor: pointer;
 }
-.link:hover { text-decoration: underline; }
+.link:hover { color: var(--color-primary); }
 
-
-/* ==================================================================================
-   Componentes globales
-================================================================================== */
-
-/* ====== .label ====== */
 .label {
     font-family: var(--font-label);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--color-dark-surface);
 }
 
-/* ====== .tag-pill ====== */
+.heading-display {
+    font-family: var(--font-text);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.heading-italic {
+    font-family: var(--font-titles);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+
+/* componentes */
+
 .tag-pill {
     font: 400 0.8125rem var(--font-label);
     letter-spacing: 0.03em;
     padding: 0.375rem 0.875rem;
-    border: 1px solid var(--color-border);
+    border: var(--border-line) var(--color-border);
     border-radius: var(--radius-pill);
     color: var(--color-dark-surface);
 }
 
-/* ====== .btn ======
-   Botón pill outline, se rellena al hover. Color vía --btn-color (por defecto accent).
-   Para cambiar color en una instancia: `style="--btn-color: var(--color-dark)"` o similar. */
+/* pill outline, se rellena al hover. customizar via vars por instancia: style="--btn-color:...; --btn-padding:..." */
 .btn {
-    --btn-color:      var(--color-accent);
-    --btn-text-hover: var(--color-light);
+    --btn-color: var(--color-accent);
+    --btn-hover-txt: var(--color-light);
+    --btn-padding: 1rem 1.75rem;
 
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
-    padding: 1rem 1.75rem;
+    padding: var(--btn-padding);
 
     font: 500 0.875rem var(--font-label);
     letter-spacing: 0.1em;
@@ -174,44 +229,40 @@ a, .link, button {
     background-color: transparent;
     border: 1.5px solid var(--btn-color);
     border-radius: var(--radius-pill);
+    transition: 0.3s ease;
 
-    transition: background-color var(--transition-medium),
-                color            var(--transition-medium);
-
-    /* icono interno (ej: flecha) desliza en diagonal al hover */
     i {
         font-size: 1.125rem;
-        transition: transform var(--transition-medium);
+        transition: transform 0.3s ease;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         background-color: var(--btn-color);
-        color: var(--btn-text-hover);
+        color: var(--btn-hover-txt);
 
         i { transform: translate(0.25rem, -0.25rem); }
     }
 }
 
-/* ==================================================================================
-    Layout base
-================================================================================== */
+
+/* layout base */
+
 .section {
     max-width: var(--max-width-xl);
     margin: 0 auto;
-    padding: var(--padding-section);
+    padding: var(--pad-section);
 }
 
-/* ==================================================================================
-    .nav-link — píldora base del header y cualquier enlace píldora.
-    --link-color por contexto: el modo claro/oscuro cambia solo esa var.
-================================================================================== */
+
+/* nav link - pill del header. el color cambia por contexto */
 .nav-link {
     --link-color: var(--color-dark);
+    font: 500 0.875rem var(--font-label);
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
-    font: 500 0.875rem var(--font-label);
-    letter-spacing: 0.06em;
+    gap: var(--space-xs);
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--link-color);
     opacity: 0.8;
@@ -220,7 +271,7 @@ a, .link, button {
 
     &:hover { opacity: 1; }
 
-    /* min-width fijo: el JS hace typing animation "Menu"↔"Cerrar" (4→6 chars) */
+    /* min width fijo xq el JS alterna "Menu"/"Cerrar" */
     &--bordered {
         padding: 0.35rem 0.9rem;
         border: 1.5px solid var(--link-color);
@@ -228,28 +279,27 @@ a, .link, button {
         min-width: 6.5rem;
         justify-content: center;
     }
-
     &--light { --link-color: var(--color-light); }
 
-    /* target del typing animation; el centrado evita el parpadeo del caret */
-    &__text { display: inline-block; text-align: center; }
+    &__text {
+        display: inline-block;
+        text-align: center; /* evita que salte el caret al animar */
+    }
 
     &__circle {
         display: inline-block;
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height: 0.5rem;
         border: 1.5px solid var(--link-color);
         border-radius: var(--radius-pill);
         background-color: transparent;
-        transition: var(--transition-fast);
+        transition: 0.2s ease;
     }
 
     &:hover &__circle { background-color: var(--link-color); }
 }
 
-/* ==================================================================================
-   .scroll-image — imagen que mueve del banner hasta el about mediante JavaScript
-================================================================================== */
+
 .scroll-image {
     position: absolute;
     top: 0;
@@ -261,9 +311,7 @@ a, .link, button {
     overflow: hidden;
     will-change: transform, width, height, top, left;
 
-    picture,
-    img {
-        width: 100%;
+    picture, img {
         height: 100%;
         object-fit: cover;
         object-position: left center;
@@ -271,15 +319,11 @@ a, .link, button {
 }
 
 
-/* ==================================================================================
-   .reveal — aparición de elementos con IntersectionObserver.
-   Se puede escalonar añadiendo `style="--reveal-delay: 0.2s"` inline en el HTML.
-================================================================================== */
+/* .reveal - fade in quando entra no viewport (IO) */
 .reveal {
     opacity: 0;
     transform: translateY(2rem);
-    transition: opacity 1s cubic-bezier(0.23, 1, 0.32, 1) var(--reveal-delay, 0s),
-                transform 1s cubic-bezier(0.23, 1, 0.32, 1) var(--reveal-delay, 0s);
+    transition: 0.4s ease;
 
     &.is-visible {
         opacity: 1;
@@ -287,42 +331,42 @@ a, .link, button {
     }
 }
 
-/* ==================================================================================
-   .header
-================================================================================== */
+
+/* header */
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     height: var(--header-height);
-    padding: var(--padding-header);
-
+    padding: var(--pad-header);
     display: flex;
     align-items: start;
     justify-content: space-between;
-
     z-index: 20;
     background-color: transparent;
-    border-bottom: 1px solid var(--color-light-surface);
+    border-bottom: var(--border-line) var(--color-light-surface);
     transform: translateY(-100%);
-
     opacity: 0;
     transition: var(--transition-slow);
 
-    /* Estados de Visibilidade (Scroll ou Classes de Página) */
+    /* visible al scroll o cuando la pagina es interna.
+       nota: la lista explicita es a proposito para que .is-menu-open (misma especificidad, declarado despues)
+       pueda sobrescribir el background. un selector con mayor especificidad como body[class*="page-"]
+       rompe el menu abierto. */
     &.is-visible,
     .page-branding &,
     .page-web-design &,
     .page-artes-graficas &,
     .page-fotografia &,
-    .page-portfolio & {
+    .page-portfolio &,
+    .page-contacto & {
         transform: translateY(0);
         opacity: 1;
         background-color: var(--color-light-opacity);
         backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); /* fix safari */
 
         .header__nav-item--hide {
             opacity: 0.8;
@@ -330,24 +374,16 @@ a, .link, button {
         }
     }
 
-    /* Estado: Menu Aberto */
     &.is-menu-open {
         transform: translateY(0);
         height: 100dvh;
-        padding: var(--padding-header);
-        align-items: start;
         opacity: 1;
         background-color: var(--color-dark);
         border-bottom-color: transparent;
 
-        .header__logo img {
-            filter: brightness(0) invert(1);
-        }
+        .header__logo img { filter: brightness(0) invert(1); }
+        .header__nav-item--hide { display: none; }
 
-        .header__nav-item:not(.header__nav-item--menu) {
-            display: none;
-        }
-        
         .header__logo,
         .nav-link--bordered,
         .nav-link__circle {
@@ -355,15 +391,14 @@ a, .link, button {
         }
     }
 
-    /* Elementos Internos */
     &__logo {
         width: clamp(5rem, 15vw, 6.25rem);
         display: flex;
         align-items: center;
 
-        img {
+        & img {
             color: var(--link-color);
-            transition: var(--transition-fast);
+            transition: 0.2s ease;
         }
     }
 
@@ -374,25 +409,18 @@ a, .link, button {
     }
 
     &__nav-item {
-        transition: var(--transition-fast);
+        transition: 0.2s ease;
 
         &--hide {
             opacity: 0;
             pointer-events: none;
-        }
-
-        /* Responsividade dentro do item */
-        &:not(.header__nav-item--menu) {
-            @media (max-width: 720px) {
-                display: none;
-            }
+            @media (max-width: 768px) { display: none; }
         }
     }
 }
 
-/* ==================================================================================
-   .navigation — Overlay de navegación
-================================================================================== */
+
+/* overlay del menu */
 .navigation {
     position: fixed;
     top: var(--header-height);
@@ -401,7 +429,7 @@ a, .link, button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: var(--transition-medium);
+    transition: 0.4s ease;
 
     &[aria-hidden="false"] {
         opacity: 1;
@@ -413,13 +441,13 @@ a, .link, button {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--padding-short);
+        padding: var(--pad-short);
     }
 }
 
-/* ==================================================================================
-   .main-links — Bloques de categorías para el menú y el next-section
-================================================================================== */
+
+/* main links - tarjetas que suben al abrir el menu */
+
 .main-links {
     position: relative;
     height: 100dvh;
@@ -437,50 +465,42 @@ a, .link, button {
         transform: translateY(100vh);
         transition: var(--transition-medium);
         will-change: transform;
-    
+
         [aria-hidden="false"] & {
             transform: translateY(0);
             transition-delay: calc(var(--index) * 0.08s);
         }
-    
-        > a {
+
+        & > a {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 0.5rem;
             padding-top: clamp(1.5rem, 4vw, 3rem);
             height: 100dvh;
             color: var(--color-light);
-            border-radius: 24px 24px 0 0;
-            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 1.5rem 1.5rem 0 0;
+            box-shadow: 0 -0.625rem 2.5rem rgba(0, 0, 0, 0.15);
             will-change: transform;
         }
-    
+
         &:not(.main-links__item--next):hover {
-            transform: translateY(-50px);
+            transform: translateY(-3.125rem);
         }
-    
-        /* Elemento clicado: sube y ocupa la pantalla */
+
+        /* estados al navegar */
         &.is-focused {
             top: 0;
             transition: var(--transition-jump);
             pointer-events: none;
         }
-    
-        /* El contenido del elemento actual "bucea" al navegar a la sección siguiente */
-        &.is-diving {
+        &.is-diving, &.is-leaving {
             transform: translateY(120vh);
             transition: var(--transition-jump);
             pointer-events: none;
         }
-    
-        /* Los elementos que no fueron clicados salen hacia abajo */
-        &.is-leaving {
-            transform: translateY(120vh);
-            transition: var(--transition-jump);
-            pointer-events: none;
-        }
-    
-        /* Modificador: tarjeta de próxima sección */
+
+        /* card de la próxima seccion (aparece al final de la pagina) */
         &--next {
             position: fixed;
             top: auto;
@@ -491,29 +511,25 @@ a, .link, button {
             will-change: transform;
             z-index: 20;
             pointer-events: none;
-    
+
             --hover-height: clamp(6.5rem, 10vw, 9rem);
             transform: translateY(100%);
-    
-            /* Visible en el fondo de la página */
+
             &.is-ready {
                 transform: translateY(calc(100% - var(--hover-height)));
                 pointer-events: auto;
-    
+
                 &:hover {
                     --hover-height: clamp(11rem, 17vw, 16rem);
                     transform: translateY(calc(100% - var(--hover-height)));
                 }
             }
-    
-            /* Clicado: revela por completo */
+
             &.is-focused {
                 transform: translateY(15%);
                 transition: var(--transition-jump);
                 pointer-events: none;
             }
-    
-            /* Sale cuando el usuario vuelve arriba o cambia de contexto */
             &.is-leaving {
                 transform: translateY(120%);
                 transition: var(--transition-jump);
@@ -522,48 +538,25 @@ a, .link, button {
         }
     }
 
-    /* Elementos de texto compartidos */
     &__subtitle {
-        font-family: var(--font-label);
         color: var(--color-light-opacity);
         font-size: clamp(0.75rem, 2vw, 1rem);
         letter-spacing: 0.1em;
-        text-transform: uppercase;
         opacity: 0.8;
-        margin-bottom: 0.5rem;
     }
 
     &__title {
-        font-family: var(--font-text);
         color: var(--color-light);
-        text-transform: uppercase;
-        font-weight: 600;
-        line-height: 0.9;
-        letter-spacing: -0.02em;
         font-size: clamp(3rem, 11vw, 10rem);
-        margin: 0;
     }
 }
 
-/* Colores por categoría — compartidos entre .main-links__item y .next-section */
-.main-links__item [data-category="branding"],
-.next-section [data-category="branding"] { background-color: var(--color-comp-1); }
+/* el fondo de cada tarjeta sale del data-category */
+.main-links__item [data-category],
+.next-section [data-category] { background-color: var(--theme-color); }
 
-.main-links__item [data-category="web-design"],
-.next-section [data-category="web-design"] { background-color: var(--color-comp-2); }
 
-.main-links__item [data-category="artes-graficas"],
-.next-section [data-category="artes-graficas"] { background-color: var(--color-comp-3); }
-
-.main-links__item [data-category="fotografia"],
-.next-section [data-category="fotografia"] { background-color: var(--color-comp-4); }
-
-.main-links__item [data-category="portfolio"],
-.next-section [data-category="portfolio"] { background-color: var(--color-comp-0); }
-
-/* ==================================================================================
-   .next-section — placeholder en el flujo que reserva el espacio de la tarjeta fija
-================================================================================== */
+/* placeholder en el flujo para reservar el espacio de la tarjeta fixed */
 .next-section {
     position: relative;
     width: 100%;
@@ -571,20 +564,18 @@ a, .link, button {
     z-index: 1;
 }
 
-/* ==================================================================================
-   .hero — sección principal del index
-================================================================================== */
+
+/* hero */
+
 .hero {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(5, 1fr);
-
     width: 100vw;
     height: 100vh;
     height: 100dvh;
     margin: 0 auto;
     padding: 4rem clamp(1.25rem, 5vw, 3rem);
-
     position: relative;
     z-index: 1;
 
@@ -592,26 +583,24 @@ a, .link, button {
         grid-row: 1 / span 1;
         grid-column: 1 / span 4;
         align-self: start;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--space-m);
+        padding-left: 1rem; /* alinea la location con la G del titulo */
         will-change: opacity, transform;
     }
 
     &__title {
-        font-family: var(--font-text);
         font-size: clamp(3.5rem, 11vw, 9.5rem);
         font-weight: 800;
-        color: var(--color-light);
-        text-transform: uppercase;
         letter-spacing: -0.04em;
-        line-height: 0.9;
+        color: var(--color-light);
     }
 
     &__location {
-        font-family: var(--font-label);
         font-size: 0.75rem;
         letter-spacing: 0.1em;
-        text-transform: uppercase;
         color: var(--color-light-opacity);
-        margin: 0.75rem 0 0 1rem;
     }
 
     &__info {
@@ -652,12 +641,11 @@ a, .link, button {
         will-change: opacity, transform;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 768px) {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
 
-        &__top { grid-column: 1; }
-        &__location { margin-left: 0.25rem; }
+        &__top { grid-column: 1; padding-left: 0.25rem; }
         &__info {
             grid-column: 1;
             align-items: flex-start;
@@ -671,9 +659,7 @@ a, .link, button {
 }
 
 
-/* ==================================================================================
-   .about — sección "sobre mí" del index
-================================================================================== */
+/* about */
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -686,8 +672,11 @@ a, .link, button {
         overflow: hidden;
     }
 
+    /* estado inicial del reveal - el JS le pone la is-visible */
     &__content {
-        padding-top: 0.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--space-l);
         opacity: 0;
         transform: translateY(40px);
         transition: opacity 0.8s ease, transform 0.8s ease;
@@ -696,343 +685,736 @@ a, .link, button {
             opacity: 1;
             transform: translateY(0);
         }
-
-        /* Override del componente .label en este contexto */
-        .label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--color-primary);
-        }
     }
 
-    &__title {
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        font-weight: 400;
-        line-height: 1.1;
-        margin-bottom: 1.5rem;
-        color: var(--color-dark);
-    }
+    &__title { font-weight: 600; }
 
-    &__text {
-        color: var(--color-muted);
-        line-height: 1.7;
-        margin-bottom: 1rem;
-        font-size: 0.9375rem;
+    &__paragraphs {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
     }
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: 2rem 0 1.5rem;
     }
-
     &__card {
-        padding: 1rem 1rem 0 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--space-s);
+        padding: var(--space-s);
         border-top: 1.5px solid var(--color-border);
     }
-
-    &__card-title {
-        font-weight: 600;
-        font-size: 0.9375rem;
-        margin-bottom: 0.375rem;
-        color: var(--color-dark);
-    }
-
-    &__card-text {
-        font-size: 0.8125rem;
-        color: var(--color-muted);
-        line-height: 1.5;
-    }
+    &__card-title { font-size: 1.125rem; }
+    &__card-text  { font-size: 0.875rem; }
 
     &__link-arrow {
         display: inline-flex;
         align-items: center;
-        gap: 0.375rem;
-        font-family: var(--font-label);
+        gap: var(--space-s);
         font-size: 0.75rem;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
         color: var(--color-dark);
-        margin-top: 0.5rem;
-        transition: color var(--transition-fast);
+        transition: color 0.2s ease;
 
-        span { font-size: 1rem; }
-
+        & span { font-size: 1rem; }
         &:hover { color: var(--color-primary); }
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 768px) {
         grid-template-columns: 1fr;
-
         &__image { height: 28rem; }
         &__cards { grid-template-columns: 1fr; }
     }
 }
 
 
-/* ==================================================================================
-   .marquee — versión simplificada con previsualización encima del elemento
-================================================================================== */
+/* marquee - (mais um spotlight q um marquee de verdade) */
+.marquee {
+    position: relative;
+    width: 100%;
+    padding: var(--pad-short);
+    background-color: var(--color-dark);
 
-    .marquee {
-        position: relative;
-        width: 100%;
-        padding: var(--padding-short);
-        background-color: var(--color-dark);
+    &__preview {
+        position: fixed;
+        width: 16rem;
+        height: 18.75rem;
+        object-fit: cover;
+        pointer-events: none;
+        z-index: 2;
+        opacity: 0;
+        transform: translate(-50%, 3rem);
+        transition: 0.2s ease, transform 0.4s ease;
+        will-change: left, top, transform;
 
-        &__preview {
-            position: fixed;
-            width: 16rem;
-            height: 18.75rem;
-            object-fit: cover;
-            pointer-events: none;
-            z-index: 2;
-            opacity: 0;
-            transform: translate(-50%, 3rem);
-            transition: var(--transition-fast), transform var(--transition-medium);
-            will-change: left, top, transform;
-        
-            &.is-visible {
-                opacity: 1;
-                transform: translate(-50%, 0);
-            }
-        }
-
-        &__track {
-            display: flex;
-            max-width: var(--max-width-xl);
-            margin: 0 auto;
-            justify-content: space-between;
-        }
-
-        &__item {
-            font-family: var(--font-label);
-            font-size: 1.5rem;
-            letter-spacing: 0.05em;
-            text-transform: lowercase;
-            white-space: nowrap;
-            user-select: none;
-            cursor: pointer;
-            padding: 0.5rem;
-
-            &--branding       { --marquee-color: var(--color-comp-1-light); }
-            &--web-design     { --marquee-color: var(--color-comp-2-light); }
-            &--artes-graficas { --marquee-color: var(--color-comp-3-light); }
-            &--fotografia     { --marquee-color: var(--color-comp-4-light); }
-        }
-
-        &__text {
-            display: block;
-            color: var(--marquee-color, rgba(254, 248, 243, 0.45));
-            transition: color 0.3s ease;
-
-            &:hover { color: var(--color-light); }
-        }
-
-        @media (max-width: 720px) {
-            padding: 1rem 1.25rem;
-
-            &__track {
-                flex-wrap: wrap;
-                gap: 0.5rem 1.5rem;
-                justify-content: center;
-            }
-
-            &__item { font-size: 0.75rem; }
+        &.is-visible {
+            opacity: 1;
+            transform: translate(-50%, 0);
         }
     }
 
-/* ==================================================================================
-   .cv — grid de currículum (index)
-================================================================================== */
-.cv {
-    background-color: var(--color-light);
-
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    &__track {
+        display: flex;
         max-width: var(--max-width-xl);
         margin: 0 auto;
+        justify-content: space-between;
     }
 
-    &__col {
-        padding: 2rem 1.5rem;
-        border-left: 1px solid var(--color-border);
-
-        &:first-child { border-left: none; }
-    }
-
-    &__block {
-        margin-bottom: 2.5rem;
-
-        &:last-child { margin-bottom: 0; }
-    }
-
-    &__heading {
-        font: 500 0.75rem var(--font-label);
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--color-dark);
-        margin-bottom: 1.25rem;
-        padding-bottom: 0.75rem;
-        border-bottom: 1.5px solid var(--color-dark);
+    &__item {
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+        padding: var(--space-s);
+        --marquee-color: var(--theme-color-light);
     }
 
     &__text {
-        font-size: 0.875rem;
-        line-height: 1.6;
-        color: var(--color-muted);
-        margin-bottom: 0.5rem;
+        display: block;
+        color: var(--marquee-color);
+        transition: color 0.3s ease;
+        &:hover { color: var(--color-light); }
+    }
 
-        strong { color: var(--color-dark); font-weight: 600; }
+    @media (max-width: 768px) {
+        padding: 1rem 1.25rem;
+        &__track {
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            justify-content: center;
+        }
+        &__item { font-size: 0.75rem; }
+    }
+}
+
+
+/*
+ * cv - bento grid 4col con slots fijos (--cv-col / --cv-span / --cv-row por modifier).
+ * cada modifier solo configura la posición; colapsa a 2col (tablet) y 1col (mobile) abajo.
+ */
+
+.cv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content;
+    gap: var(--space-m);
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+
+    &__card {
+        grid-column: var(--cv-col, auto) / span var(--cv-span, 1);
+        grid-row: var(--cv-row, auto);
+        border: var(--border-line) var(--color-light-surface);
+        border-radius: var(--radius-l);
+        padding: var(--space-l);
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--space-m);
+        transition: 0.3s ease;
+
+        &:hover { border-color: var(--color-primary); }
+    }
+
+    &__card--focus {
+        --cv-col: 1; --cv-span: 3;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        border: var(--border-line) transparent;
+
+        .cv__heading {
+            color: var(--color-primary-light);
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+        .cv__text { color: var(--color-light-surface); font-size: 1.125rem; }
+        .heading-display { color: var(--color-light); font-size: clamp(2rem, 4vw, 2.5rem); }
+
+        &:hover { border-color: var(--color-primary-dark); background-color: var(--color-primary-opacity); }
+    }
+
+    &__card--contact { --cv-col: 4; }
+    &__card--exp     { --cv-col: 1; --cv-span: 2; --cv-row: span 2; }
+    &__card--do      { --cv-col: 3; }
+    &__card--tools   { --cv-col: 4; }
+    &__card--soft    { --cv-col: 3; }
+    &__card--misc    { --cv-col: 4; }
+
+    &__heading {
+        color: var(--theme-color, var(--color-primary));
+        padding-bottom: var(--space-s);
+        border-bottom: var(--border-line) var(--color-light-surface);
+    }
+    &__text { color: var(--color-dark-subtle); }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-s);
     }
 
     &__link {
-        display: block;
-        font: 400 0.875rem var(--font-text);
-        color: var(--color-muted);
-        transition: color var(--transition-fast);
-        margin-bottom: 0.25rem;
+        position: relative;
+        width: fit-content;
+        padding: var(--pad-link);
+        color: var(--color-dark);
+        transition: color 0.4s ease;
 
-        &:hover { color: var(--color-primary); }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--theme-color, var(--color-primary));
+            transition: width 0.4s ease;
+        }
+
+        &:hover {
+            color: var(--theme-color, var(--color-primary));
+            &::after { width: 100%; }
+        }
     }
 
-    &__entry {
-        margin-bottom: 1.5rem;
-
+    &__content {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--space-xs);
+        margin-bottom: var(--space-s);
         &:last-child { margin-bottom: 0; }
     }
 
     &__date {
-        font: 500 0.75rem var(--font-label);
-        letter-spacing: 0.05em;
-        color: var(--color-primary);
-        display: block;
-        margin-bottom: 0.25rem;
+        font-size: 0.75rem;
+        color: var(--theme-color, var(--color-primary));
     }
+    &__role   { color: var(--color-dark); line-height: 1.3; }
+    &__detail { font-size: 0.8125rem; color: var(--color-dark-subtle); }
 
-    &__role {
-        font: 600 0.9375rem var(--font-text);
-        color: var(--color-dark);
-        margin-bottom: 0.125rem;
-    }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
 
-    &__detail {
-        font: 400 0.8125rem var(--font-text);
-        color: var(--color-border);
-        margin-bottom: 0.5rem;
-    }
+        & .tag-pill {
+            background-color: transparent;
+            transition: all 0.2s ease;
 
-    &__tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-
-    &__tag {
-        font: 400 0.8125rem var(--font-label);
-        letter-spacing: 0.03em;
-        padding: 0.375rem 0.875rem;
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-pill);
-        color: var(--color-dark-surface);
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--color-light);
+                border-color: var(--color-primary);
+                transform: translateY(-0.125rem);
+            }
+        }
     }
 
     &__list {
         list-style: none;
 
-        li {
-            font: 400 0.875rem var(--font-text);
-            color: var(--color-muted);
-            padding: 0.375rem 0;
-            border-bottom: 1px solid var(--color-light-surface);
+        & li {
+            font-size: 0.875rem;
+            color: var(--color-dark-subtle);
+            padding: var(--space-s) 0;
+            border-bottom: 1px dashed var(--color-light-surface);
+            transition: transform 0.2s ease, color 0.2s ease;
 
             &:last-child { border-bottom: none; }
+            &:hover {
+                color: var(--color-dark);
+                transform: translateX(0.25rem);
+            }
+        }
+
+        &--compact li {
+            padding: var(--space-xs) 0;
+            border-bottom: none;
+            line-height: 1.4;
         }
     }
 
+    /* tablet: reacomoda el bento a 2 columnas */
     @media (max-width: 1024px) {
-        &__grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        &__col:nth-child(3) { border-left: none; }
+        grid-template-columns: repeat(2, 1fr);
+        &__card          { --cv-col: auto; --cv-span: 1; --cv-row: auto; }
+        &__card--focus   { --cv-col: 1; --cv-span: 2; }
+        &__card--contact { --cv-col: 1; }
+        &__card--do      { --cv-col: 2; }
+        &__card--exp     { --cv-col: 1; --cv-span: 2; }
+        &__card--tools   { --cv-col: 1; }
+        &__card--soft    { --cv-col: 2; }
+        &__card--misc    { --cv-col: 1; --cv-span: 2; }
     }
 
-    @media (max-width: 720px) {
-        &__grid { grid-template-columns: 1fr; }
+    /* mobile: todo en 1 col, flujo natural */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        &__card { --cv-col: auto; --cv-span: 1; }
+    }
+}
 
-        &__col {
-            border-left: none;
-            border-bottom: 1px solid var(--color-border);
-            padding: 1.5rem 0;
 
-            &:last-child { border-bottom: none; }
+/*
+ * portfolio grid (portfolio.html) - 12col editorial grid.
+ * cada project se posiciona con utility classes en el HTML: col-N (span) y start-N (start col).
+ * las helpers solo se activan en desktop (>=769px); mobile colapsa a 1col automáticamente.
+ */
+
+.portfolio-grid {
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    padding: clamp(5rem, 10vw, 8rem) clamp(1rem, 3vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4rem, 8vw, 6.5rem);
+
+    &__heading {
+        font-size: clamp(3rem, 10vw, 7.5rem);
+        line-height: 0.9;
+        letter-spacing: -0.03em;
+        color: var(--color-primary);
+    }
+
+    &__section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: clamp(3rem, 6vw, 5.5rem);
+        column-gap: clamp(0.5rem, 1vw, 1rem);
+        align-items: start;
+    }
+
+    &__section-header {
+        grid-column: 1 / -1;
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        gap: var(--space-s);
+        padding: 1.25rem 0 0.75rem;
+        border-top: var(--border-line) var(--color-border);
+        text-decoration: none;
+        color: inherit;
+
+        /* linea de color que cresce ao passar o mouse (usa theme-color da categoria) */
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: clamp(3rem, 18%, 7rem);
+            height: 2px;
+            background-color: var(--theme-color, var(--color-primary));
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: 0.4s ease;
+        }
+
+        &.is-visible::before { transform: scaleX(1); }
+
+        &:hover {
+            &::before { width: clamp(4.5rem, 28%, 11rem); }
+            .portfolio-grid__section-title { transform: translateX(0.25rem); }
+            .portfolio-grid__section-arrow {
+                opacity: 1;
+                transform: translate(0.25rem, -0.25rem);
+            }
+        }
+    }
+
+    &__section-eyebrow {
+        font-size: 0.6875rem;
+        letter-spacing: 0.12em;
+        color: var(--color-dark-subtle);
+    }
+
+    &__section-title {
+        font-size: clamp(1.625rem, 3.2vw, 2.75rem);
+        line-height: 1;
+        letter-spacing: -0.01em;
+        color: var(--theme-color, var(--color-dark));
+        transition: transform 0.4s ease;
+    }
+
+    /* arrow junto al título - opacity 0 default, aparece en hover (patron igual al showcase) */
+    &__section-arrow {
+        font-size: clamp(1.25rem, 2vw, 1.75rem);
+        color: var(--theme-color, var(--color-dark));
+        opacity: 0;
+        transform: translateX(-0.5rem);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    &__project {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-s);
+        text-decoration: none;
+        color: inherit;
+        grid-column: 1 / -1;
+    }
+
+    &__project:hover &__project-label {
+        color: var(--theme-color, var(--color-dark));
+    }
+
+    /* activa el layout editorial a partir de 769px (consistente con los demás grids) */
+    @media (min-width: 769px) {
+        .col-3  { grid-column-end: span 3; }
+        .col-4  { grid-column-end: span 4; }
+        .col-5  { grid-column-end: span 5; }
+        .col-6  { grid-column-end: span 6; }
+        .col-7  { grid-column-end: span 7; }
+        .col-8  { grid-column-end: span 8; }
+        .col-9  { grid-column-end: span 9; }
+        .col-10 { grid-column-end: span 10; }
+        .col-11 { grid-column-end: span 11; }
+        .col-12 { grid-column-end: span 12; }
+
+        .start-1  { grid-column-start: 1; }
+        .start-2  { grid-column-start: 2; }
+        .start-3  { grid-column-start: 3; }
+        .start-4  { grid-column-start: 4; }
+        .start-5  { grid-column-start: 5; }
+        .start-6  { grid-column-start: 6; }
+        .start-7  { grid-column-start: 7; }
+        .start-8  { grid-column-start: 8; }
+        .start-9  { grid-column-start: 9; }
+        .start-10 { grid-column-start: 10; }
+        .start-11 { grid-column-start: 11; }
+    }
+
+    &__project-images {
+        display: flex;
+        gap: clamp(0.5rem, 1vw, 1rem);
+        height: clamp(14rem, 24vw, 24rem);
+        width: 100%;
+    }
+
+    &__project-image {
+        flex: var(--img-ratio, 1) 1 0;
+        min-width: 0;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: var(--color-light-surface);
+
+        & picture, & img { height: 100%; }
+
+        & img {
+            object-fit: cover;
+            transform: scale(1.02);
+            transition: transform 1.2s ease;
+            will-change: transform;
+        }
+
+        .portfolio-grid__project:hover & img { transform: scale(1.06); }
+    }
+
+    &__project-label {
+        font-size: 0.6875rem;
+        letter-spacing: 0.12em;
+        color: var(--color-dark-subtle);
+        margin-top: 0.25rem;
+        transition: color 0.2s ease;
+    }
+
+    @media (max-width: 768px) {
+        &__project-images { height: clamp(10rem, 30vw, 14rem); }
+    }
+    @media (max-width: 540px) {
+        &__project-images {
+            flex-direction: column;
+            height: auto;
+
+            & > * {
+                flex: 0 0 auto;
+                height: clamp(12rem, 60vw, 18rem);
+            }
         }
     }
 }
 
 
+/*
+ * showcase (branding/web-design/etc) - layout 2 columnas (lista + galería).
+ * el .showcase__grid usa modifiers --layout-a..g, cada uno es un grid-template completo.
+ * los layouts solo se aplican en desktop (>=769px); mobile hereda 1col por defecto.
+ */
 
-/* ==================================================================================
-   Colores de página por categoría (--page-color)
-================================================================================== */
-body.page-portfolio      { --page-color: var(--color-comp-0); }
-body.page-branding       { --page-color: var(--color-comp-1); }
-body.page-web-design     { --page-color: var(--color-comp-2); }
-body.page-artes-graficas { --page-color: var(--color-comp-3); }
-body.page-fotografia     { --page-color: var(--color-comp-4); }
+body.has-showcase {
+    overflow: hidden;
+    height: 100dvh;
+
+    .main-links__item--next {
+        --hover-height: clamp(6.5rem, 6vw, 7.25rem);
+    }
+}
+
+.showcase {
+    --sc-height: calc(100dvh - var(--header-height));
+    position: relative;
+    width: 100%;
+    top: var(--header-height);
+    overflow: hidden;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    &__line {
+        position: fixed;
+        inset: var(--header-height) auto 0 30%;
+        width: 1px;
+        background: var(--color-light-surface);
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    &__canva {
+        display: flex;
+        height: var(--sc-height);
+    }
+
+    &__left {
+        position: relative;
+        width: 30%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--space-l);
+        padding: 0 clamp(1.5rem, 3vw, 3rem);
+        z-index: 1;
+    }
+
+    &__category {
+        font-size: clamp(1.75rem, 5vw, 3.5rem);
+        color: var(--color-comp-1);
+    }
+
+    &__label {
+        font-size: clamp(.625rem, 3vw, .75rem);
+        letter-spacing: 0.12em;
+        color: var(--color-dark-subtle);
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        gap: var(--space-s);
+    }
+
+    &__list-item {
+        display: flex;
+
+        &.is-active {
+            .showcase__list-link {
+                opacity: 1;
+                color: var(--color-dark);
+            }
+            .showcase__arrow {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &__list-link {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: var(--space-s);
+        font-size: clamp(1.625rem, 2.9vw, 3rem);
+        line-height: 1.12;
+        color: var(--color-dark);
+        opacity: 0.22;
+        cursor: pointer;
+        user-select: none;
+        transition: opacity 0.4s ease, color 0.4s ease;
+
+        &:hover {
+            opacity: 0.55;
+            color: var(--color-dark-surface);
+            .showcase__arrow { transform: translateX(0.25rem); }
+        }
+    }
+
+    &__arrow {
+        font-size: 2rem;
+        color: var(--color-dark);
+        opacity: 0;
+        transition: 0.8s ease;
+    }
+
+    &__right {
+        position: relative;
+        flex: 1;
+        height: var(--sc-height);
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none; /* FF */
+
+        &::-webkit-scrollbar { display: none; } /* chrome/safari */
+
+        &::before, &::after {
+            content: "";
+            position: fixed;
+            left: 30%;
+            right: 0;
+            height: 5rem;
+            pointer-events: none;
+            z-index: 10;
+        }
+        &::before {
+            top: var(--header-height);
+            background: linear-gradient(to bottom, var(--color-light-opacity), transparent);
+        }
+        &::after {
+            bottom: 0;
+            background: linear-gradient(to top, var(--color-light-opacity), transparent);
+        }
+    }
+
+    &__section {
+        position: relative;
+        width: 100%;
+        height: var(--sc-height);
+        padding: clamp(2rem, 5vw, 4.5rem) clamp(1rem, 3vw, 3rem);
+        display: flex;
+        align-items: center;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+    &__grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: var(--space-s);
+        /* default (mobile): 1col - grid-auto-rows garante altura igual */
+        grid-auto-rows: 1fr;
+
+        /* layouts desktop-only; mobile hereda 1col por defecto */
+        @media (min-width: 769px) {
+            /* a · 1 pieza - full frame */
+            &--layout-a { grid-template-columns: 1fr; grid-template-rows: 1fr; }
+
+            /* b · 2 piezas - espacios vacios */
+            &--layout-b {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr 1fr;
+                & > :first-child  { grid-column: 1 / 4; grid-row: 1 / 2; }
+                & > :nth-child(2) { grid-column: 2 / 5; grid-row: 2 / 3; }
+            }
+
+            /* c · 2 piezas - horizontales */
+            &--layout-c { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+
+            /* d · 2 piezas - asimétrico */
+            &--layout-d { grid-template-columns: 3fr 2fr; grid-template-rows: 1fr; }
+
+            /* e · 3 piezas - principal + 2 apiladas a la derecha */
+            &--layout-e {
+                grid-template-columns: 3fr 2fr;
+                grid-template-rows: 1fr 1fr;
+                & > :first-child { grid-row: 1 / 3; }
+            }
+
+            /* f · 3 piezas - 2 horizontales + 1 vertical */
+            &--layout-f {
+                grid-template-columns: 1fr 0.7fr;
+                grid-template-rows: 1fr 1fr;
+                & > :nth-child(2) { grid-column: 2; grid-row: 1 / 3; }
+            }
+
+            /* g · 3 piezas - triple columna */
+            &--layout-g { grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; }
+        }
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+        background: var(--color-light-surface);
+        border-radius: var(--radius-s);
+
+        & img {
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.06);
+            transition: transform 1.1s ease;
+            will-change: transform;
+
+            .showcase__section.is-in-view & { transform: scale(1); }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__line { display: none; }
+
+        &__left {
+            width: 42%;
+            padding: 0 1rem 2.5rem;
+        }
+        &__list-link {
+            font-size: 0.875rem;
+            line-height: 1.3;
+            letter-spacing: -0.005em;
+        }
+        &__arrow { display: none; }
+
+        &__right::before,
+        &__right::after { left: 42%; }
+        /* mobile hereda la 1col default del .showcase__grid; no hace falta override */
+    }
+}
 
 
-/* ==================================================================================
-   PAGES → page-project
-   Layout de página de proyecto individual (projects/*.html).
-   Fondo blanco, cabecera centrada minimalista y stack vertical de imágenes sin gaps
-   — rolagem continua al estilo case-study de Behance. Reutiliza tipografías y cores
-   del :root global (no crea colores nuevos).
-================================================================================== */
+/* page project (projects/*.html) */
+
 body.page-project {
-    background-color: #ffffff;
+    background-color: #fff;
     color: var(--color-dark);
 }
 
 .project {
-    /* respeta el header fixed global */
+    display: flex;
+    flex-flow: column nowrap;
     padding-top: var(--header-height);
 
-    /* cabecera del proyecto — centrada, minimalista */
+    /* todos los bloques hijos comparten el centrado horizontal; solo cambia el max-width y padding */
+    & > * { margin-inline: auto; width: 100%; }
+
     &__header {
-        max-width: var(--max-width-xl);   /* 1440px */
-        margin: 0 auto;
+        max-width: var(--max-width-xl);
         padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 5vw, 2rem) clamp(3rem, 6vw, 5rem);
-        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: var(--space-m);
     }
 
-    /* categoría — heredada de la variable de página (--page-color) */
     &__category {
-        display: inline-block;
-        margin-bottom: 1.25rem;
-        font: 500 0.875rem var(--font-label);
+        font-size: 0.875rem;
+        font-weight: 500;
         letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--page-color, var(--color-primary));
+        color: var(--theme-color, var(--color-primary));
     }
 
-    /* título principal — serif editorial en itálico */
     &__title {
-        margin-bottom: 1.5rem;
-        font: 300 clamp(3rem, 9vw, 6.5rem) var(--font-titles);
-        font-style: italic;
-        line-height: 1;
-        letter-spacing: -0.02em;
-        color: var(--color-dark);
+        font-weight: 300;
+        font-size: clamp(3rem, 9vw, 6.5rem);
     }
 
-    /* meta — subtítulo y año, separados por una regla fina */
     &__meta {
         display: inline-flex;
-        gap: 0.75rem;
+        gap: var(--space-m);
         align-items: center;
         justify-content: center;
-        font: 400 0.8125rem var(--font-label);
+        font-size: 0.8125rem;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--color-muted);
     }
 
     &__meta-sep {
@@ -1041,696 +1423,163 @@ body.page-project {
         background-color: var(--color-border);
     }
 
-    /* galería — stack vertical sin gaps, ancho máximo 1440px centralizado.
-       border-radius + overflow:hidden recortan los extremos del stack en un único bloque;
-       la sombra suave lo separa del fondo blanco de la página. */
     &__gallery {
         max-width: var(--max-width-xl);
-        margin: 0 auto clamp(3rem, 6vw, 5rem);
+        margin-bottom: clamp(3rem, 6vw, 5rem);
         border-radius: var(--radius-l);
         overflow: hidden;
-        box-shadow: 0 1.25rem 3.75rem -1rem rgba(27, 26, 28, 0.18),
-                    0 0 0 1px rgba(27, 26, 28, 0.04);
     }
 
-    /* aplicado directamente al <picture> — sin <figure> wrapper */
-    &__figure {
-        display: block;
-        margin: 0;
-        width: 100%;
+    /* .project__figure usa os defaults do reset (img/picture full width, height auto) */
 
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
+    &__intro,
+    &__credits {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--space-l);
     }
-
-    /* bloque de texto dentro del stack — rompe la secuencia visual sin cortar el contenedor */
     &__intro {
         max-width: 42rem;
-        margin: 0 auto;
         padding: clamp(3rem, 7vw, 6rem) clamp(1.25rem, 5vw, 2rem);
-        background-color: #ffffff;
+        background-color: #fff;
     }
-
     &__intro-title {
-        margin-bottom: 1.5rem;
-        font: 400 clamp(1.75rem, 4vw, 2.5rem) var(--font-titles);
-        font-style: italic;
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
         line-height: 1.2;
         letter-spacing: -0.01em;
-        color: var(--color-dark);
         text-align: center;
     }
-
     &__intro-text {
-        margin-bottom: 1.25rem;
-        font: 400 clamp(0.9375rem, 1.2vw, 1.0625rem) var(--font-text);
+        font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
         line-height: 1.7;
-        color: var(--color-dark-surface);
-
-        &:last-child { margin-bottom: 0; }
     }
 
-    /* créditos — lista de pares label/valor tipo ficha técnica */
     &__credits {
         max-width: 45rem;
-        margin: 0 auto;
         padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 5vw, 2rem) clamp(4rem, 8vw, 6rem);
     }
-
     &__credits-title {
-        margin-bottom: 2rem;
-        font: 400 clamp(1.5rem, 3vw, 2rem) var(--font-titles);
-        font-style: italic;
-        color: var(--color-dark);
+        font-size: clamp(1.5rem, 3vw, 2rem);
         text-align: center;
     }
-
-    &__credits-list {
-        display: grid;
-        gap: 0;
-    }
+    &__credits-list { display: grid; }
 
     &__credits-row {
         display: grid;
         grid-template-columns: 12rem 1fr;
-        gap: 1rem;
-        padding: 1rem 0;
-        border-top: 1px solid var(--color-light-surface);
-
-        &:last-child { border-bottom: 1px solid var(--color-light-surface); }
-
-        dt {
-            font: 500 0.8125rem var(--font-label);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--color-muted);
-        }
-
-        dd {
-            font: 400 0.9375rem var(--font-text);
-            color: var(--color-dark);
-        }
+        gap: var(--space-m);
+        padding: var(--space-m) 0;
+        border-top: var(--border-line) var(--color-light-surface);
+        &:last-child { border-bottom: var(--border-line) var(--color-light-surface); }
 
         @media (max-width: 540px) {
             grid-template-columns: 1fr;
-            gap: 0.375rem;
+            gap: var(--space-s);
         }
     }
 
-    /* visit — wrapper del CTA para visitar el sitio real (usado en web-design).
-       el botón usa el componente global .btn (color --accent por defecto). */
     &__visit {
         max-width: var(--max-width-xl);
-        margin: 0 auto;
         padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 5vw, 2rem);
         text-align: center;
     }
-
-    /* url pequeña dentro del botón — hereda la currentColor del .btn */
     &__visit-url {
-        font-weight: 400;
         letter-spacing: 0.02em;
         text-transform: lowercase;
         opacity: 0.7;
     }
 
-    /* bajo 1440px la galería respira 1rem a cada lado para que la sombra se vea */
     @media (max-width: 1440px) {
-        &__gallery { max-width: calc(100% - 2rem); }
+        &__gallery { max-width: calc(100% - 2rem); } /* que la sombra se vea */
     }
 }
 
 
-/* ==================================================================================
-   .showcase — layout de duas colunas de branding.html
-================================================================================== */
+/* contacto (contacto.html) - formulario minimalista, todo centrado vertical y horizontalmente */
 
-/* corpo congelado: scroll apenas dentro de .showcase__right.
-   aplicado via classe has-showcase (páginas de categoría branding/web-design/artes-graficas/fotografia),
-   não afeta páginas de proyecto (page-project) que tienen scroll vertical normal */
-body.has-showcase {
-    overflow: hidden;
-    height: 100vh;
-    height: 100dvh;
-}
- 
-/* --sc-* agrupa valores reutilizáveis e simplifica media queries.
-   --sc-accent herda a cor de categoria. */
-.showcase {
-    --sc-col-left: 38%;
-    --sc-pad-v:    clamp(2rem, 5vw, 4.5rem);
-    --sc-pad-h:    clamp(1rem, 3vw, 3rem);
-    --sc-gap:      0.625rem;
-    --sc-accent:   var(--color-comp-1);
-    --sc-ease:     cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --sc-height:   calc(100dvh - var(--header-height));
-    --sc-dark-rgb:  27, 26, 28;
-    --sc-light-rgb: 241, 237, 233;
- 
-    position: relative;
-    width: 100%;
-    top: var(--header-height);
-    bottom: 0;
-    overflow: hidden;
-    background-color: var(--color-light);
-    color: var(--color-dark);
- 
-    /* linha vertical fixa que separa as duas colunas */
-    &__line {
-        position: fixed;
-        inset: var(--header-height) auto 0 var(--sc-col-left);
-        width: 1px;
-        background: rgba(var(--sc-dark-rgb), 0.08);
-        z-index: 2;
-        pointer-events: none;
-    }
- 
-    /* linha de progresso (height = % do projeto atual / total) */
-    &__progress {
-        position: fixed;
-        top: var(--header-height);
-        left: var(--sc-col-left);
-        width: 1px;
-        height: 0%;
-        background: var(--sc-accent);
-        z-index: 3;
-        pointer-events: none;
-        transition: height 0.6s var(--sc-ease);
-    }
- 
-    /* layout — flex row com as duas colunas principais */
-    &__canva {
-        display: flex;
-        height: var(--sc-height);
-    }
- 
-    /* coluna esquerda — lista de projetos centralizada verticalmente */
-    &__left {
-        position: relative;
-        width: var(--sc-col-left);
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 clamp(1.5rem, 3vw, 3rem);
-        z-index: 1;
-    }
- 
-    &__label {
-        display: block;
-        margin-bottom: 1.25rem;
-        font-family: var(--font-label);
-        font-size: 0.75rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--color-muted);
-    }
- 
-    &__list {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
- 
-    &__list-item {
-        display: block;
- 
-        &.is-active {
-            .showcase__list-link {
-                opacity: 1;
-                color: var(--color-dark);
-            }
-            .showcase__year {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    }
- 
-    /* link de cada projeto — título em itálico.
-       item ativo chega a 100% de opacidade; demais ficam em 0.22. */
-    &__list-link {
-        display: inline-flex;
-        align-items: baseline;
-        gap: 0.75rem;
-        padding: 0.3125rem 0;
-        font-family: var(--font-titles);
-        font-style: italic;
-        font-weight: 400;
-        font-size: clamp(1.625rem, 2.9vw, 3rem);
-        letter-spacing: -0.02em;
-        line-height: 1.12;
-        color: var(--color-dark);
-        opacity: 0.22;
-        cursor: pointer;
-        user-select: none;
-        transition: opacity 0.4s var(--sc-ease),
-                    color   0.4s var(--sc-ease);
- 
-        &:hover {
-            opacity: 0.55;
-            color: var(--color-dark-surface);
-        }
-    }
- 
-    &__name {
-        display: inline;
-    }
- 
-    /* indicador de link — flecha aparece só no item ativo, deslizando da esquerda */
-    &__year {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-style: normal;
-        font-size: 1.5rem;
-        line-height: 1;
-        color: var(--color-dark);
-        opacity: 0;
-        transform: translateX(-0.375rem);
-        transition: opacity 0.35s 0.1s ease,
-                    transform 0.35s 0.1s ease;
-    }
-
-    &__list-link:hover &__year {
-        transform: translate(0.125rem, -0.125rem);
-    }
- 
-    /* coluna direita — scroll-snap de seções */
-    &__right {
-        position: relative;
-        flex: 1;
-        height: var(--sc-height);
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
- 
-        &::-webkit-scrollbar { display: none; }
- 
-        /* fundidos para revelar suavemente os bordos do scroll */
-        &::before,
-        &::after {
-            content: "";
-            position: fixed;
-            left: var(--sc-col-left);
-            right: 0;
-            height: 80px;
-            pointer-events: none;
-            z-index: 10;
-        }
- 
-        &::before {
-            top: var(--header-height);
-            background: linear-gradient(
-                to bottom,
-                rgba(var(--sc-light-rgb), 0.95) 0%,
-                rgba(var(--sc-light-rgb), 0)    100%
-            );
-        }
- 
-        &::after {
-            bottom: 0;
-            background: linear-gradient(
-                to top,
-                rgba(var(--sc-light-rgb), 0.95) 0%,
-                rgba(var(--sc-light-rgb), 0)    100%
-            );
-        }
-    }
- 
-    /* seção individual — ocupa 100dvh menos o header, snap start */
-    &__section {
-        position: relative;
-        width: 100%;
-        height: var(--sc-height);
-        padding: var(--sc-pad-v) var(--sc-pad-h);
-        display: flex;
-        align-items: center;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
- 
-    /* grid de imagens — variantes por quantidade de peças */
-    &__grid {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        gap: var(--sc-gap);
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
- 
-        &--count-2 {
-            grid-template-columns: 3fr 2fr;
-            grid-template-rows: 1fr;
-        }
- 
-        &--count-3 {
-            grid-template-columns: 3fr 2fr;
-            grid-template-rows: 1fr 1fr;
- 
-            .showcase__cell:first-child { grid-row: 1 / 3; }
-        }
-    }
- 
-    &__cell {
-        position: relative;
-        overflow: hidden;
-        background: var(--color-light-surface);
-        border-radius: var(--radius-s);
- 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transform: scale(1.06);
-            transition: transform 1.1s var(--sc-ease);
-            will-change: transform;
- 
-            .showcase__section.is-in-view & { transform: scale(1); }
-        }
-    }
- 
-    /* meta — título + categoria na esquina inferior direita */
-    &__meta {
-        position: absolute;
-        bottom: calc(var(--sc-pad-v) + 0.75rem);
-        right:  calc(var(--sc-pad-h) + 0.5rem);
-        text-align: right;
-        z-index: 10;
-        pointer-events: none;
-    }
- 
-    &__meta-label,
-    &__meta-category {
-        display: block;
-        font-family: var(--font-label);
-        font-size: 0.625rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: rgba(var(--sc-dark-rgb), 0.35);
-    }
- 
-    &__meta-category {
-        margin-top: 0.25rem;
-        letter-spacing: 0.14em;
-        color: rgba(var(--sc-dark-rgb), 0.2);
-    }
- 
-    /* UI fixa — redes sociais */
-    &__socials {
-        position: fixed;
-        left:   clamp(1.5rem, 3vw, 2.5rem);
-        bottom: clamp(1.5rem, 3vw, 2rem);
-        display: flex;
-        gap: 1rem;
-        z-index: 10;
- 
-        a {
-            font-family: var(--font-label);
-            font-size: 0.625rem;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: rgba(var(--sc-dark-rgb), 0.3);
-            transition: color 0.2s ease;
- 
-            &:hover { color: var(--color-dark); }
-        }
-    }
- 
-    /* responsive — mobile (< 700 px) */
-    @media (max-width: 700px) {
-        --sc-col-left: 6.875rem;
-        --sc-pad-v:    1rem;
-        --sc-pad-h:    0.875rem;
-        --sc-gap:      0.5rem;
- 
-        &__rule,
-        &__progress { display: none; }
- 
-        &__left { padding: 0 1rem 2.5rem; }
- 
-        &__eyebrow { display: none; }
- 
-        &__list-link {
-            font-size: 0.875rem;
-            line-height: 1.3;
-            letter-spacing: -0.005em;
-        }
- 
-        &__year { display: none; }
- 
-        &__right {
-            &::before,
-            &::after {
-                left: 6.875rem;
-                height: 5rem;
-            }
-        }
- 
-        [class*="__grid"] {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 1fr);
- 
-            .showcase__cell:first-child { grid-row: auto; }
-        }
- 
-        &__grid--count-2 { grid-template-rows: repeat(2, 1fr); }
- 
-        &__meta,
-        &__socials { display: none; }
-    }
- 
-    /* acessibilidade — respeita prefers-reduced-motion */
-    @media (prefers-reduced-motion: reduce) {
-        &__cell img,
-        &__list-link,
-        &__progress,
-        &__year { transition: none; }
-    }
-}
-
-
-/* ==================================================================================
-   .portfolio-grid — grid editorial asimétrico del portfolio.html
-
-   Cada tarjeta controla su posición con `grid-column` inline y su proporción con
-   `--card-ratio` (aspect-ratio del media). `grid-auto-flow: dense` deja que el
-   motor del grid rellene los huecos, evitando superposiciones. Para romper la
-   alineación de filas y conseguir el ritmo editorial (inspirado en
-   davidebaratta.com) algunas tarjetas llevan `--row-offset` inline (margin-top
-   adicional).
-
-   - 12 columnas en desktop (> 900 px)
-   - 6 columnas en tablet (720 — 900 px)
-   - 1 columna en móvil (< 720 px)
-
-   Colores por categoría via `[data-category]` -> `--card-color` (se usa en la
-   línea decorativa del marker y en el hover del título).
-================================================================================== */
-/* ==================================================================================
-   Colores de categoría — comparten `--card-color`, aplicado a label, cell y hover.
-================================================================================== */
-[data-category="branding"]        { --card-color: var(--color-comp-1); }
-[data-category="web-design"]      { --card-color: var(--color-comp-2); }
-[data-category="artes-graficas"]  { --card-color: var(--color-comp-3); }
-[data-category="fotografia"]      { --card-color: var(--color-comp-4); }
-
-
-/* ==================================================================================
-   .portfolio-grid — stack vertical de secciones (branding, web-design,
-   artes-graficas, fotografia). Cada sección lleva un header editorial
-   (línea animada + título + flecha) arriba y debajo 2-3 proyectos, cada
-   uno como fila de 2-3 imágenes a la misma altura.
-================================================================================== */
-.portfolio-grid {
-    --pg-pad-v:  clamp(5rem, 10vw, 8rem);
-    --pg-pad-h:  clamp(1rem, 3vw, 2rem);
-    --pg-row-h:  clamp(11rem, 20vw, 15rem);   /* altura fija para alinear imágenes */
-    --pg-gap:    clamp(0.5rem, 1vw, 1rem);
-
+.contact {
+    min-height: calc(100dvh - var(--header-height));
     max-width: var(--max-width-xl);
     margin: 0 auto;
-    padding: var(--pg-pad-v) var(--pg-pad-h);
-
+    padding: calc(var(--header-height) + 2rem) clamp(1rem, 5vw, 3rem) clamp(3rem, 8vw, 6rem);
     display: flex;
-    flex-direction: column;
-    gap: clamp(2.5rem, 5vw, 4.5rem);
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: clamp(2rem, 5vw, 4rem);
 
-    /* Título grande — PORTFOLIO */
-    &__heading {
-        margin: 0 0 clamp(1rem, 3vw, 2.5rem);
-        font: 400 clamp(3rem, 10vw, 7.5rem) var(--font-titles);
-        font-style: italic;
-        line-height: 0.9;
-        letter-spacing: -0.03em;
-        color: var(--color-primary);
+    /* titulo "Hablemos" - font-family y color vienen de .heading-display + tipografia h1 */
+    &__title {
+        font-size: clamp(3.5rem, 15vw, 8em);
+        letter-spacing: -0.04em;
     }
 
-    /* ── Sección de categoría ─────────────────────────────────────────────────────── */
-    &__section {
+    /* frame similar a los .cv__card (sin hover) */
+    &__form {
         display: flex;
-        flex-direction: column;
-        gap: clamp(1rem, 2.5vw, 1.75rem);
+        flex-flow: column nowrap;
+        gap: clamp(1.25rem, 2.5vw, 1.75rem);
+        width: 100%;
+        max-width: 40rem;
+        padding: clamp(var(--space-l), 4vw, 2.5rem);
+        border: var(--border-line) var(--color-light-surface);
+        border-radius: var(--radius-l);
     }
 
-    /* header de sección — funciona como link a la página de la categoría.
-       línea superior anima de 0→100% al entrar en viewport, la flecha desliza al hover. */
-    &__section-header {
-        position: relative;
+    /* grid 2 cols que colapsa a 1 col en movil (ver @media al final) */
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    &__field {
         display: flex;
-        align-items: baseline;
-        gap: 1rem;
-        padding: 1.25rem 0 0.75rem;
-        margin-bottom: 0.5rem;
-
-        border-top: 1px solid var(--color-border);
-        text-decoration: none;
-        color: inherit;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -1px;
-            left: 0;
-            width: clamp(3rem, 18%, 7rem);
-            height: 2px;
-            background-color: var(--card-color, var(--color-primary));
-            transform: scaleX(0);
-            transform-origin: left center;
-            transition: transform 0.9s cubic-bezier(0.23, 1, 0.32, 1) calc(var(--reveal-delay, 0s) + 0.2s),
-                        width var(--transition-medium);
-        }
-
-        &.is-visible::before { transform: scaleX(1); }
-        &:hover::before      { width: clamp(4.5rem, 28%, 11rem); }
+        flex-flow: column nowrap;
+        gap: 0.5rem;
+        text-align: left;
     }
 
-    &__section-eyebrow {
-        font: 500 0.6875rem var(--font-label);
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--color-muted);
+    /* .contact__label hereda todo del componente .label global; overrides locales */
+    &__label {
+        @extend .label;
+        font-size: 0.8125rem;
+        letter-spacing: 0.1em;
+        color: var(--color-dark-subtle);
     }
 
-    &__section-title {
-        font: 400 clamp(1.625rem, 3.2vw, 2.75rem) var(--font-titles);
-        font-style: italic;
-        line-height: 1;
-        letter-spacing: -0.01em;
-        color: var(--card-color, var(--color-dark));
-        transition: transform var(--transition-medium);
-
-        .portfolio-grid__section-header:hover & { transform: translateX(0.25rem); }
-    }
-
-    &__section-arrow {
-        margin-left: auto;
-        font-size: clamp(1rem, 1.5vw, 1.25rem);
+    /* input y textarea - el reset ya da font inherit; solo overrideamos el size y el borde */
+    &__input,
+    &__textarea {
+        font-size: clamp(1rem, 1.5vw, 1.125rem);
         color: var(--color-dark);
-        transition: transform var(--transition-medium);
-
-        .portfolio-grid__section-header:hover & { transform: translate(0.375rem, -0.375rem); }
-    }
-
-    /* ── Proyecto individual ──────────────────────────────────────────────────────── */
-    &__project {
-        display: flex;
-        flex-direction: column;
-        gap: 0.625rem;
-        text-decoration: none;
-        color: inherit;
-    }
-
-    /* fila de 2-3 imágenes: altura fija uniforme, cada imagen en flex equal-width */
-    &__project-images {
-        display: flex;
-        gap: var(--pg-gap);
-        height: var(--pg-row-h);
-    }
-
-    &__project-image {
-        flex: 1 1 0;
-        min-width: 0;
-        height: 100%;
-        overflow: hidden;
+        border: 1.5px solid var(--color-border);
         border-radius: var(--radius-s);
-        background-color: var(--color-light-surface);
+        padding: 0.875rem 1rem;
+        width: 100%;
+        transition: border-color var(--transition-fast);
 
-        picture { display: block; width: 100%; height: 100%; }
-
-        img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: scale(1.02);
-            transition: transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
-            will-change: transform;
-        }
-
-        .portfolio-grid__project:hover & img { transform: scale(1.06); }
+        &:focus { border-color: var(--color-accent); }
     }
 
-    /* label del proyecto — pequeño, uppercase, debajo de las imágenes */
-    &__project-label {
-        font: 500 0.6875rem var(--font-label);
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--color-muted);
-        transition: color var(--transition-fast);
+    &__textarea {
+        resize: vertical;
+        min-height: 8rem;
     }
 
-    &__project:hover &__project-label {
-        color: var(--card-color, var(--color-dark));
-    }
-}
-
-
-/* ==================================================================================
-   .portfolio-grid — responsive.
-   Tablet (≤720px)  → altura de fila reducida, imágenes aún en fila.
-   Móvil  (≤540px)  → imágenes en columna, una debajo de la otra.
-================================================================================== */
-@media (max-width: 720px) {
-    .portfolio-grid {
-        --pg-row-h: clamp(8rem, 28vw, 12rem);
-    }
-}
-
-@media (max-width: 540px) {
-    .portfolio-grid {
-        --pg-row-h: auto;
-
-        &__project-images {
-            flex-direction: column;
-            height: auto;
-
-            > * {
-                flex: 0 0 auto;
-                height: clamp(11rem, 55vw, 16rem);
-            }
-        }
-    }
-}
-
-
-/* ==================================================================================
-   .portfolio-grid — respeta prefers-reduced-motion.
-================================================================================== */
-@media (prefers-reduced-motion: reduce) {
-    .portfolio-grid__project-image img,
-    .portfolio-grid__section-header::before,
-    .portfolio-grid__section-title,
-    .portfolio-grid__section-arrow {
-        transition: none;
+    /* .contact__submit usa o componente .btn (color/padding customizados no HTML via --btn-*) */
+    &__submit {
+        align-self: center;
+        margin-top: clamp(0.5rem, 2vw, 1.5rem);
+        min-width: 16rem;
     }
 
-    .portfolio-grid__section-header::before { transform: scaleX(1); }
+    @media (max-width: 640px) {
+        gap: 2rem;
+
+        &__title  { letter-spacing: -0.03em; }
+        &__row    { grid-template-columns: 1fr; }
+        &__submit { min-width: 100%; }
+    }
 }

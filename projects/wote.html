@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Wotë — Branding · Gustavo Tondin</title>
-    <meta name="description" content="Wotë — proyecto de branding desarrollado por Gustavo Tondin." />
+    <title>Wotë - Branding · Gustavo Tondin</title>
+    <meta name="description" content="Wotë - proyecto de branding desarrollado por Gustavo Tondin." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://gustavotondin.com/projects/wote.html" />
@@ -15,15 +15,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://gustavotondin.com/projects/wote.html" />
-    <meta property="og:title" content="Wotë — Branding · Gustavo Tondin" />
-    <meta property="og:description" content="Proyecto de branding — Wotë." />
+    <meta property="og:title" content="Wotë - Branding · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de branding - Wotë." />
     <meta property="og:image" content="https://gustavotondin.com/media/projects/branding/wote/branding-wote-00.jpg" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Wotë — Branding · Gustavo Tondin" />
-    <meta property="twitter:description" content="Proyecto de branding — Wotë." />
+    <meta property="twitter:title" content="Wotë - Branding · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de branding - Wotë." />
     <meta property="twitter:image" content="https://gustavotondin.com/media/projects/branding/wote/branding-wote-00.jpg" />
 
     <!-- Favicon -->
@@ -32,11 +32,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
 
-    <!-- Icons — RemixIcon -->
+    <!-- Icons - RemixIcon -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -48,17 +48,15 @@
 <body class="page-branding page-project">
 
 <!-- =======================================================================================
-    HEADER — mismo componente de las otras páginas del sitio
+    HEADER - mismo componente de las otras páginas del sitio
 ======================================================================================= -->
 <header class="header" id="siteHeader">
-    <a href="../index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+    <a href="../index.html" class="header__logo" aria-label="Inicio - Gustavo Tondin">
         <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
     </a>
     <nav>
         <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--hide">
-                <a href="../sobre-mi.html" class="nav-link">Sobre mí</a>
-            </li>
+            
             <li class="header__nav-item header__nav-item--hide">
                 <a href="../contacto.html" class="nav-link">Contacto</a>
             </li>
@@ -84,38 +82,39 @@
 </header>
 
 <!-- =======================================================================================
-    NAVIGATION OVERLAY — idéntico a las otras páginas (paths con ../)
+    NAVIGATION OVERLAY - idéntico a las otras páginas (paths con ../)
 ======================================================================================= -->
 <div class="navigation" id="navigation" aria-hidden="true">
     <ul class="navigation__secondary">
-        <li><a href="../sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="../index.html" class="nav-link nav-link--light">Inicio</a></li>
         <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
         <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
     </ul>
 
+    <!-- `style="--index: N"` en los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
     <ul class="main-links">
         <li class="main-links__item" style="--index: 0;">
             <a href="../branding.html" data-category="branding" aria-current="page">
-                <span class="main-links__subtitle">identidad visual</span>
-                <span class="main-links__title">Branding</span>
+                <span class="main-links__subtitle label">identidad visual</span>
+                <span class="main-links__title heading-display">Branding</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 1;">
             <a href="../web-design.html" data-category="web-design">
-                <span class="main-links__subtitle">sitios y apps</span>
-                <span class="main-links__title">Web Design</span>
+                <span class="main-links__subtitle label">sitios y apps</span>
+                <span class="main-links__title heading-display">Web Design</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 2;">
             <a href="../artes-graficas.html" data-category="artes-graficas">
-                <span class="main-links__subtitle">piezas visuales</span>
-                <span class="main-links__title">Artes Gráficas</span>
+                <span class="main-links__subtitle label">piezas visuales</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 3;">
             <a href="../fotografia.html" data-category="fotografia">
-                <span class="main-links__subtitle">captura visual</span>
-                <span class="main-links__title">Fotografía</span>
+                <span class="main-links__subtitle label">captura visual</span>
+                <span class="main-links__title heading-display">Fotografía</span>
             </a>
         </li>
     </ul>
@@ -123,18 +122,18 @@
 
 
 <!-- =======================================================================================
-    MAIN — página del proyecto: cabecera + stack continuo de imágenes
+    MAIN - página del proyecto: cabecera + stack continuo de imágenes
 ======================================================================================= -->
 <main class="project">
 
     <!-- cabecera centrada: categoría · título · año -->
     <header class="project__header">
-        <span class="project__category">Branding</span>
-        <h1 class="project__title">Wotë</h1>
-        <p class="project__meta">
+        <span class="project__category label">Branding</span>
+        <h1 class="project__title heading-italic">Wotë</h1>
+        <p class="project__meta label">
             <span>Cannabidiol</span>
             <span class="project__meta-sep" aria-hidden="true"></span>
-            <span>2023</span>
+            <span>2024</span>
         </p>
     </header>
 
@@ -143,138 +142,138 @@
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-00.webp">
-            <img src="../media/projects/branding/wote/branding-wote-00.jpg" width="1920" height="1080" alt="Wotë — imagen 00">
+            <img src="../media/projects/branding/wote/branding-wote-00.jpg" width="1920" height="1080" alt="Wotë - imagen 00">
         </picture>
 
-        <!-- Intro — texto de presentación del proyecto (insertado tras la primera imagen) -->
+        <!-- Intro - texto de presentación del proyecto (insertado tras la primera imagen) -->
         <div class="project__intro">
-            <h2 class="project__intro-title">Wotë</h2>
-            <p class="project__intro-text">TODO — breve descripción del proyecto, contexto del cliente y objetivos principales del encargo.</p>
-            <p class="project__intro-text">TODO — enfoque conceptual y visual: paleta, tipografía, referentes y decisiones clave.</p>
-            <p class="project__intro-text">TODO — resultados, piezas entregadas y aprendizajes del proceso.</p>
+            <h2 class="project__intro-title heading-italic">La Llave Ancestral</h2>
+            <p class="project__intro-text">WOTË entra al mercado brasileño con el compromiso de ofrecer productos orgánicos y de alta calidad, provenientes de empresas que siguen las mejores prácticas en la producción y comercialización de productos a base de cáñamo. Una marca dedicada a desbloquear los tesoros perdidos del conocimiento ancestral a través de productos CBD sostenibles y auténticos.</p>
+            <p class="project__intro-text">El nombre nace inspirado en la hierba medicinal de los Yanomami, pueblo indígena predominante en la selva amazónica. WOTË une lo natural con lo moderno, ofreciendo productos orgánicos y certificados que respetan las mejores prácticas productivas. El objetivo es educar e inspirar a los consumidores sobre la importancia de un proceso de producción transparente y sostenible.</p>
+            <p class="project__intro-text">Cada llave representa un conocimiento distinto: medicinal, comunitario, de la flora, de la fauna, espiritual, tradicional y, sobre todo, sostenible. La llave sostenible es la principal — uniendo lo natural con lo moderno y traduciendo el objetivo primordial de la marca.</p>
         </div>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-01.webp">
-            <img src="../media/projects/branding/wote/branding-wote-01.jpg" width="1920" height="1080" loading="lazy" alt="Wotë — imagen 01">
+            <img src="../media/projects/branding/wote/branding-wote-01.jpg" width="1920" height="1080" loading="lazy" alt="Wotë - imagen 01">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-03.webp">
-            <img src="../media/projects/branding/wote/branding-wote-03.jpg" width="1920" height="1080" loading="lazy" alt="Wotë — imagen 02">
+            <img src="../media/projects/branding/wote/branding-wote-03.jpg" width="1920" height="1080" loading="lazy" alt="Wotë - imagen 02">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-05.webp">
-            <img src="../media/projects/branding/wote/branding-wote-05.jpg" width="1920" height="1080" loading="lazy" alt="Wotë — imagen 03">
+            <img src="../media/projects/branding/wote/branding-wote-05.jpg" width="1920" height="1080" loading="lazy" alt="Wotë - imagen 03">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-06.webp">
-            <img src="../media/projects/branding/wote/branding-wote-06.jpg" width="1920" height="1344" loading="lazy" alt="Wotë — imagen 04">
+            <img src="../media/projects/branding/wote/branding-wote-06.jpg" width="1920" height="1344" loading="lazy" alt="Wotë - imagen 04">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-07.webp">
-            <img src="../media/projects/branding/wote/branding-wote-07.jpg" width="1920" height="1280" loading="lazy" alt="Wotë — imagen 05">
+            <img src="../media/projects/branding/wote/branding-wote-07.jpg" width="1920" height="1280" loading="lazy" alt="Wotë - imagen 05">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-08.webp">
-            <img src="../media/projects/branding/wote/branding-wote-08.jpg" width="1920" height="1280" loading="lazy" alt="Wotë — imagen 06">
+            <img src="../media/projects/branding/wote/branding-wote-08.jpg" width="1920" height="1280" loading="lazy" alt="Wotë - imagen 06">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-09.webp">
-            <img src="../media/projects/branding/wote/branding-wote-09.jpg" width="1200" height="1800" loading="lazy" alt="Wotë — imagen 07">
+            <img src="../media/projects/branding/wote/branding-wote-09.jpg" width="1200" height="1800" loading="lazy" alt="Wotë - imagen 07">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-10.webp">
-            <img src="../media/projects/branding/wote/branding-wote-10.jpg" width="1920" height="1280" loading="lazy" alt="Wotë — imagen 08">
+            <img src="../media/projects/branding/wote/branding-wote-10.jpg" width="1920" height="1280" loading="lazy" alt="Wotë - imagen 08">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-11.webp">
-            <img src="../media/projects/branding/wote/branding-wote-11.jpg" width="1200" height="1500" loading="lazy" alt="Wotë — imagen 09">
+            <img src="../media/projects/branding/wote/branding-wote-11.jpg" width="1200" height="1500" loading="lazy" alt="Wotë - imagen 09">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-12.webp">
-            <img src="../media/projects/branding/wote/branding-wote-12.jpg" width="1920" height="1920" loading="lazy" alt="Wotë — imagen 10">
+            <img src="../media/projects/branding/wote/branding-wote-12.jpg" width="1920" height="1920" loading="lazy" alt="Wotë - imagen 10">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-13.webp">
-            <img src="../media/projects/branding/wote/branding-wote-13.jpg" width="1200" height="1800" loading="lazy" alt="Wotë — imagen 11">
+            <img src="../media/projects/branding/wote/branding-wote-13.jpg" width="1200" height="1800" loading="lazy" alt="Wotë - imagen 11">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-14.webp">
-            <img src="../media/projects/branding/wote/branding-wote-14.jpg" width="1920" height="1280" loading="lazy" alt="Wotë — imagen 12">
+            <img src="../media/projects/branding/wote/branding-wote-14.jpg" width="1920" height="1280" loading="lazy" alt="Wotë - imagen 12">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-15.webp">
-            <img src="../media/projects/branding/wote/branding-wote-15.jpg" width="1200" height="1800" loading="lazy" alt="Wotë — imagen 13">
+            <img src="../media/projects/branding/wote/branding-wote-15.jpg" width="1200" height="1800" loading="lazy" alt="Wotë - imagen 13">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-16.webp">
-            <img src="../media/projects/branding/wote/branding-wote-16.jpg" width="1091" height="1080" loading="lazy" alt="Wotë — imagen 14">
+            <img src="../media/projects/branding/wote/branding-wote-16.jpg" width="1091" height="1080" loading="lazy" alt="Wotë - imagen 14">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-17.webp">
-            <img src="../media/projects/branding/wote/branding-wote-17.jpg" width="1920" height="1394" loading="lazy" alt="Wotë — imagen 15">
+            <img src="../media/projects/branding/wote/branding-wote-17.jpg" width="1920" height="1394" loading="lazy" alt="Wotë - imagen 15">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-18.webp">
-            <img src="../media/projects/branding/wote/branding-wote-18.jpg" width="1200" height="1800" loading="lazy" alt="Wotë — imagen 16">
+            <img src="../media/projects/branding/wote/branding-wote-18.jpg" width="1200" height="1800" loading="lazy" alt="Wotë - imagen 16">
         </picture>
 
         <picture class="project__figure">
             <source type="image/webp" srcset="../media/projects/branding/wote/branding-wote-19.webp">
-            <img src="../media/projects/branding/wote/branding-wote-19.jpg" width="1920" height="1280" loading="lazy" alt="Wotë — imagen 17">
+            <img src="../media/projects/branding/wote/branding-wote-19.jpg" width="1920" height="1280" loading="lazy" alt="Wotë - imagen 17">
         </picture>
 
     </section>
 
     <!-- =======================================================================================
-        CRÉDITOS — ficha técnica del proyecto (template con placeholders TODO)
+        CRÉDITOS - ficha técnica del proyecto (template con placeholders TODO)
     ======================================================================================= -->
     <section class="project__credits" aria-labelledby="credits-title-wote">
-        <h2 id="credits-title-wote" class="project__credits-title">Créditos</h2>
-        <dl class="project__credits-list">
+        <h2 id="credits-title-wote" class="project__credits-title heading-italic">Créditos</h2>
+        <div class="project__credits-list">
             <div class="project__credits-row">
-                <dt>Cliente</dt>
-                <dd>Wotë</dd>
+                <span class="label">Cliente</span>
+                <p>Wotë</p>
             </div>
             <div class="project__credits-row">
-                <dt>Año</dt>
-                <dd>2023</dd>
+                <span class="label">Año</span>
+                <p>2024</p>
             </div>
             <div class="project__credits-row">
-                <dt>Mi rol</dt>
-                <dd>TODO — dirección de arte · diseño · etc.</dd>
+                <span class="label">Mi rol</span>
+                <p>Dirección de fotografía</p>
             </div>
             <div class="project__credits-row">
-                <dt>Colaboradores</dt>
-                <dd>TODO — Nombre · rol · enlace</dd>
+                <span class="label">Colaboradores</span>
+                <p>Uel Molon · diseño &nbsp;·&nbsp; Gabriel Motter · concepto</p>
             </div>
-        </dl>
+        </div>
     </section>
 
     <!-- =======================================================================================
-        NEXT SECTION — placeholder en el flujo que revela la tarjeta fija de próximo proyecto
-        (misma mecánica que en index.html — el IntersectionObserver del js añade .is-ready)
+        NEXT SECTION - placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html - el IntersectionObserver del js añade .is-ready)
     ======================================================================================= -->
     <section class="next-section" data-next-section aria-label="Siguiente proyecto">
         <div class="main-links__item main-links__item--next" style="--index: 0;">
-            <a href="tondafoto.html" data-category="branding" title="Siguiente proyecto — Tondafoto">
-                <span class="main-links__subtitle">siguiente proyecto</span>
-                <span class="main-links__title">Tondafoto</span>
+            <a href="tondafoto.html" data-category="branding" title="Siguiente proyecto - Tondafoto">
+                <span class="main-links__subtitle label">siguiente proyecto</span>
+                <span class="main-links__title heading-display">Tondafoto</span>
             </a>
         </div>
     </section>

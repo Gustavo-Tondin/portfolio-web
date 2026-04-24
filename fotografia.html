@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Fotografía — Gustavo Tondin · captura visual · fotografía</title>
+    <title>Fotografía - Gustavo Tondin · captura visual · fotografía</title>
     <meta name="description" content="Ensayos fotográficos de pareja, retrato y editorial realizados por Gustavo Tondin. Narrativa visual construida a partir del color, la luz y la intención de cada encuadre." />
 
     <!-- Canonical -->
@@ -15,15 +15,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gustavotondin.com/fotografia.html" />
-    <meta property="og:title" content="Fotografía — Gustavo Tondin" />
-    <meta property="og:description" content="Ensayos de pareja, retrato y editorial — narrativa visual por Gustavo Tondin." />
+    <meta property="og:title" content="Fotografía - Gustavo Tondin" />
+    <meta property="og:description" content="Ensayos de pareja, retrato y editorial - narrativa visual por Gustavo Tondin." />
     <meta property="og:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Fotografía — Gustavo Tondin" />
-    <meta property="twitter:description" content="Ensayos de pareja, retrato y editorial — narrativa visual por Gustavo Tondin." />
+    <meta property="twitter:title" content="Fotografía - Gustavo Tondin" />
+    <meta property="twitter:description" content="Ensayos de pareja, retrato y editorial - narrativa visual por Gustavo Tondin." />
     <meta property="twitter:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
 
     <!-- Favicon -->
@@ -32,11 +32,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
 
-    <!-- Icons — RemixIcon -->
+    <!-- Icons - RemixIcon -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -51,14 +51,11 @@
     HEADER
 ======================================================================================= -->
 <header class="header" id="siteHeader">
-    <a href="index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+    <a href="index.html" class="header__logo" aria-label="Inicio - Gustavo Tondin">
         <img src="media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
     </a>
     <nav>
         <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--hide">
-                <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
-            </li>
             <li class="header__nav-item header__nav-item--hide">
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </li>
@@ -88,34 +85,35 @@
 ======================================================================================= -->
 <div class="navigation" id="navigation" aria-hidden="true">
     <ul class="navigation__secondary">
-        <li><a href="sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="index.html" class="nav-link nav-link--light">Inicio</a></li>
         <li><a href="portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
         <li><a href="contacto.html" class="nav-link nav-link--light">Contacto</a></li>
     </ul>
 
+    <!-- `style="--index: N"` en los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
     <ul class="main-links">
         <li class="main-links__item" style="--index: 0;">
             <a href="branding.html" data-category="branding">
-                <span class="main-links__subtitle">identidad visual</span>
-                <span class="main-links__title">Branding</span>
+                <span class="main-links__subtitle label">identidad visual</span>
+                <span class="main-links__title heading-display">Branding</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 1;">
             <a href="web-design.html" data-category="web-design">
-                <span class="main-links__subtitle">sitios y apps</span>
-                <span class="main-links__title">Web Design</span>
+                <span class="main-links__subtitle label">sitios y apps</span>
+                <span class="main-links__title heading-display">Web Design</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 2;">
             <a href="artes-graficas.html" data-category="artes-graficas">
-                <span class="main-links__subtitle">piezas visuales</span>
-                <span class="main-links__title">Artes Gráficas</span>
+                <span class="main-links__subtitle label">piezas visuales</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 3;">
             <a href="fotografia.html" data-category="fotografia" aria-current="page">
-                <span class="main-links__subtitle">captura visual</span>
-                <span class="main-links__title">Fotografía</span>
+                <span class="main-links__subtitle label">captura visual</span>
+                <span class="main-links__title heading-display">Fotografía</span>
             </a>
         </li>
     </ul>
@@ -128,7 +126,7 @@
 <main>
 
     <!-- =======================================================================================
-        SHOWCASE — lista de proyectos (izq) + galería de piezas (der)
+        SHOWCASE - lista de proyectos (izq) + galería de piezas (der)
     ======================================================================================= -->
     <section class="showcase" data-showcase>
 
@@ -138,37 +136,34 @@
         <div class="showcase__canva">
             <!-- columna izquierda - lista de proyectos -->
             <div class="showcase__left">
-                <span class="showcase__label" id="showcase-title">captura visual · fotografía</span>
+                <div class="showcase__title">
+                    <h1 class="showcase__category heading-italic">Fotografía</h1>
+                    <span class="showcase__label label" id="showcase-title">captura visual</span>
+                </div>
 
                 <ol class="showcase__list">
-                    <li class="showcase__list-item is-active" data-index="0">
-                        <a href="projects/aline-e-eduardo.html" class="showcase__list-link" data-index="0" title="Aline & Eduardo — Fotografía">
-                            <span class="showcase__name">Aline & Eduardo</span>
-                            <i class="showcase__year ri-arrow-right-up-line" aria-hidden="true"></i>
+                    <li class="showcase__list-item" data-index="0">
+                        <a href="projects/bruna-e-rafael.html" class="showcase__list-link heading-italic" data-index="0" title="Bruna & Rafael - Fotografía">
+                            <span class="showcase__name">Bruna & Rafael</span>
+                            <i class="showcase__arrow ri-arrow-right-s-line"></i>
                         </a>
                     </li>
                     <li class="showcase__list-item" data-index="1">
-                        <a href="projects/bruna-e-rafael.html" class="showcase__list-link" data-index="1" title="Bruna & Rafael — Fotografía">
-                            <span class="showcase__name">Bruna & Rafael</span>
-                            <i class="showcase__year ri-arrow-right-up-line" aria-hidden="true"></i>
+                        <a href="projects/carol.html" class="showcase__list-link heading-italic" data-index="1" title="Carol - Fotografía">
+                            <span class="showcase__name">Carol</span>
+                            <i class="showcase__arrow ri-arrow-right-s-line"></i>
                         </a>
                     </li>
                     <li class="showcase__list-item" data-index="2">
-                        <a href="projects/carol.html" class="showcase__list-link" data-index="2" title="Carol — Fotografía">
-                            <span class="showcase__name">Carol</span>
-                            <i class="showcase__year ri-arrow-right-up-line" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="showcase__list-item" data-index="3">
-                        <a href="projects/fiber-concept-photos.html" class="showcase__list-link" data-index="3" title="Fiber Concept — Fotografía">
-                            <span class="showcase__name">Fiber Concept</span>
-                            <i class="showcase__year ri-arrow-right-up-line" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="showcase__list-item" data-index="4">
-                        <a href="projects/valeria.html" class="showcase__list-link" data-index="4" title="Valeria — Fotografía">
+                        <a href="projects/valeria.html" class="showcase__list-link heading-italic" data-index="2" title="Valeria - Fotografía">
                             <span class="showcase__name">Valeria</span>
-                            <i class="showcase__year ri-arrow-right-up-line" aria-hidden="true"></i>
+                            <i class="showcase__arrow ri-arrow-right-s-line"></i>
+                        </a>
+                    </li>
+                    <li class="showcase__list-item is-active" data-index="3">
+                        <a href="projects/aline-e-eduardo.html" class="showcase__list-link heading-italic" data-index="3" title="Aline & Eduardo - Fotografía">
+                            <span class="showcase__name">Aline & Eduardo</span>
+                            <i class="showcase__arrow ri-arrow-right-s-line"></i>
                         </a>
                     </li>
                 </ol>
@@ -176,144 +171,89 @@
 
             <!-- columna derecha · galería con scroll-snap -->
             <div class="showcase__right" data-showcase-scroller>
-
-                <!-- 01 · Aline & Eduardo — 3 piezas -->
-                <article class="showcase__section" data-index="0" aria-labelledby="sc-aline-e-eduardo">
-                    <div class="showcase__grid showcase__grid--count-3">
-                            <div class="showcase__cell">
+                <!-- Bruna & Rafael-->
+                <article class="showcase__section" data-index="0" aria-labelledby="sc-bruna-e-rafael">
+                    <div class="showcase__grid showcase__grid--layout-f">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.webp">
-                                    <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 1">
+                                    <source type="image/webp" srcset="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.webp">
+                                    <img src="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael - imagen 1">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-01.webp">
-                                    <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-01.jpg" width="600" height="840" loading="lazy" alt="Aline & Eduardo — imagen 2">
+                                    <source type="image/webp" srcset="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-01.webp">
+                                    <img src="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-01.jpg" width="600" height="900" loading="lazy" alt="Bruna & Rafael - imagen 2">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.webp">
-                                    <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo — imagen 3">
+                                    <source type="image/webp" srcset="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-02.webp">
+                                    <img src="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-02.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael - imagen 3">
                                 </picture>
                             </div>
-                    </div>
-                    <div class="showcase__meta">
-                        <span class="showcase__meta-label" id="sc-aline-e-eduardo">Aline & Eduardo — TODO</span>
-                        <span class="showcase__meta-category">Ensayo de pareja</span>
                     </div>
                 </article>
 
-                <!-- 02 · Bruna & Rafael — 3 piezas -->
-                <article class="showcase__section" data-index="1" aria-labelledby="sc-bruna-e-rafael">
-                    <div class="showcase__grid showcase__grid--count-3">
-                            <div class="showcase__cell">
+                <!-- Carol-->
+                <article class="showcase__section" data-index="1" aria-labelledby="sc-carol">
+                    <div class="showcase__grid showcase__grid--layout-f">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.webp">
-                                    <img src="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-00.jpg" width="1400" height="934" loading="lazy" alt="Bruna & Rafael — imagen 1">
+                                    <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-00.webp">
+                                    <img src="media/projects/fotografia/carol/ensaio-carol-00.jpg" width="1920" height="1280" loading="lazy" alt="Carol - imagen 1">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
+                            
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-01.webp">
-                                    <img src="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-01.jpg" width="600" height="900" loading="lazy" alt="Bruna & Rafael — imagen 2">
+                                    <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-01.webp">
+                                    <img src="media/projects/fotografia/carol/ensaio-carol-01.jpg" width="1920" height="1280" loading="lazy" alt="Carol - imagen 1">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
+                            
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-02.webp">
-                                    <img src="media/projects/fotografia/bruna-e-rafael/ensaio-bruna-e-rafael-02.jpg" width="1920" height="1280" loading="lazy" alt="Bruna & Rafael — imagen 3">
+                                    <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-02.webp">
+                                    <img src="media/projects/fotografia/carol/ensaio-carol-02.jpg" width="1920" height="1280" loading="lazy" alt="Carol - imagen 1">
                                 </picture>
                             </div>
-                    </div>
-                    <div class="showcase__meta">
-                        <span class="showcase__meta-label" id="sc-bruna-e-rafael">Bruna & Rafael — TODO</span>
-                        <span class="showcase__meta-category">Ensayo de pareja</span>
                     </div>
                 </article>
 
-                <!-- 03 · Carol — 3 piezas -->
-                <article class="showcase__section" data-index="2" aria-labelledby="sc-carol">
-                    <div class="showcase__grid showcase__grid--count-3">
-                            <div class="showcase__cell">
+                <!-- Valeria-->
+                <article class="showcase__section" data-index="2" aria-labelledby="sc-valeria">
+                    <div class="showcase__grid showcase__grid--layout-b">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-00.webp">
-                                    <img src="media/projects/fotografia/carol/ensaio-carol-00.jpg" width="1920" height="1280" loading="lazy" alt="Carol — imagen 1">
+                                    <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-00.webp">
+                                    <img src="media/projects/fotografia/valeria/ensaio-valeria-00.jpg" width="600" height="900" loading="lazy" alt="Valeria - imagen 1">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-01.webp">
-                                    <img src="media/projects/fotografia/carol/ensaio-carol-01.jpg" width="1920" height="1280" loading="lazy" alt="Carol — imagen 2">
+                                    <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-01.webp">
+                                    <img src="media/projects/fotografia/valeria/ensaio-valeria-01.jpg" width="1200" height="1200" loading="lazy" alt="Valeria - imagen 2">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
-                                <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-02.webp">
-                                    <img src="media/projects/fotografia/carol/ensaio-carol-02.jpg" width="1920" height="1280" loading="lazy" alt="Carol — imagen 3">
-                                </picture>
-                            </div>
-                    </div>
-                    <div class="showcase__meta">
-                        <span class="showcase__meta-label" id="sc-carol">Carol — TODO</span>
-                        <span class="showcase__meta-category">Retrato femenino</span>
                     </div>
                 </article>
-
-                <!-- 04 · Fiber Concept — 3 piezas -->
-                <article class="showcase__section" data-index="3" aria-labelledby="sc-fiber-concept-photos">
-                    <div class="showcase__grid showcase__grid--count-3">
-                            <div class="showcase__cell">
+                
+                <!-- Aline & Eduardo -->
+                <article class="showcase__section" data-index="3" aria-labelledby="sc-aline-e-eduardo">
+                    <div class="showcase__grid showcase__grid--layout-d">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/fiber-concept-photos/fiber-concept-photos-00.webp">
-                                    <img src="media/projects/fotografia/fiber-concept-photos/fiber-concept-photos-00.jpg" width="1080" height="1350" loading="lazy" alt="Fiber Concept — imagen 1">
+                                    <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.webp">
+                                    <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo - imagen 1">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
+                            <div class="showcase__img">
                                 <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/fiber-concept-photos/fiber-concept-photos-01.webp">
-                                    <img src="media/projects/fotografia/fiber-concept-photos/fiber-concept-photos-01.jpg" width="1080" height="1347" loading="lazy" alt="Fiber Concept — imagen 2">
+                                    <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.webp">
+                                    <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.jpg" width="1400" height="1000" loading="lazy" alt="Aline & Eduardo - imagen 2">
                                 </picture>
                             </div>
-                            <div class="showcase__cell">
-                                <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/fiber-concept-photos/fiber-concept-photos-02.webp">
-                                    <img src="media/projects/fotografia/fiber-concept-photos/fiber-concept-photos-02.jpg" width="1828" height="1920" loading="lazy" alt="Fiber Concept — imagen 3">
-                                </picture>
-                            </div>
-                    </div>
-                    <div class="showcase__meta">
-                        <span class="showcase__meta-label" id="sc-fiber-concept-photos">Fiber Concept — TODO</span>
-                        <span class="showcase__meta-category">Editorial de producto</span>
-                    </div>
-                </article>
-
-                <!-- 05 · Valeria — 3 piezas -->
-                <article class="showcase__section" data-index="4" aria-labelledby="sc-valeria">
-                    <div class="showcase__grid showcase__grid--count-3">
-                            <div class="showcase__cell">
-                                <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-00.webp">
-                                    <img src="media/projects/fotografia/valeria/ensaio-valeria-00.jpg" width="600" height="900" loading="lazy" alt="Valeria — imagen 1">
-                                </picture>
-                            </div>
-                            <div class="showcase__cell">
-                                <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-01.webp">
-                                    <img src="media/projects/fotografia/valeria/ensaio-valeria-01.jpg" width="1200" height="1200" loading="lazy" alt="Valeria — imagen 2">
-                                </picture>
-                            </div>
-                            <div class="showcase__cell">
-                                <picture>
-                                <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-02.webp">
-                                    <img src="media/projects/fotografia/valeria/ensaio-valeria-02.jpg" width="600" height="836" loading="lazy" alt="Valeria — imagen 3">
-                                </picture>
-                            </div>
-                    </div>
-                    <div class="showcase__meta">
-                        <span class="showcase__meta-label" id="sc-valeria">Valeria — TODO</span>
-                        <span class="showcase__meta-category">Retrato femenino</span>
                     </div>
                 </article>
 
@@ -324,12 +264,12 @@
 </main>
 
 <!-- =======================================================================================
-    NEXT SECTION — próxima categoría
+    NEXT SECTION - próxima categoría
 ======================================================================================= -->
 <div class="main-links__item main-links__item--next">
-    <a href="portfolio.html" data-category="portfolio" title="Siguiente sección — Portfolio">
-        <span class="main-links__subtitle">todos los proyectos</span>
-        <span class="main-links__title">Portfolio</span>
+    <a href="portfolio.html" data-category="portfolio" title="Siguiente sección - Portfolio">
+        <span class="main-links__subtitle label">todos los proyectos</span>
+        <span class="main-links__title heading-display">Portfolio</span>
     </a>
 </div>
 </body>

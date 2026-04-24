@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+
+<!--
+    contacto.html - página de contacto minimalista
+    Estructura: HEAD (meta + fonts + css) → BODY.page-contacto
+        · HEADER (logo + nav + botón menú)
+        · NAVIGATION OVERLAY (mismo patrón de las demás páginas internas)
+        · MAIN → .contacto (título "Hablemos" + formulario)
+    Sin next-section por pedido del usuario.
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Contacto - Gustavo Tondin · Hablemos</title>
+    <meta name="description" content="¿Tienes un proyecto en mente? Escríbeme y hablamos. Branding, web y dirección creativa desde Valencia." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/contacto.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gustavotondin.com/contacto.html" />
+    <meta property="og:title" content="Contacto - Gustavo Tondin" />
+    <meta property="og:description" content="¿Tienes un proyecto en mente? Escríbeme y hablamos." />
+    <meta property="og:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Contacto - Gustavo Tondin" />
+    <meta property="twitter:description" content="¿Tienes un proyecto en mente? Escríbeme y hablamos." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/index.js"></script>
+</head>
+
+<body class="page-contacto">
+
+<!-- =======================================================================================
+    HEADER - logo + nav visible (igual a las otras páginas internas)
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="index.html" class="header__logo" title="Inicio - Gustavo Tondin" aria-label="Inicio - Gustavo Tondin">
+        <img src="media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="contacto.html" class="nav-link" title="Contacto" aria-current="page">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="portfolio.html" class="nav-link" title="Portfolio">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- =======================================================================================
+    NAVIGATION OVERLAY - mismas rutas que las otras páginas
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="index.html" class="nav-link nav-link--light" title="Inicio">Inicio</a></li>
+        <li><a href="portfolio.html" class="nav-link nav-link--light" title="Portfolio">Portfolio</a></li>
+        <li><a href="contacto.html" class="nav-link nav-link--light" title="Contacto">Contacto</a></li>
+    </ul>
+
+    <!-- tarjetas de categoría que suben al abrir el menú -->
+    <ul class="main-links">
+        <li class="main-links__item" style="--index: 0;">
+            <a href="branding.html" data-category="branding" title="Branding">
+                <span class="main-links__subtitle label">identidad visual</span>
+                <span class="main-links__title heading-display">Branding</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 1;">
+            <a href="web-design.html" data-category="web-design" title="Web Design">
+                <span class="main-links__subtitle label">sitios y apps</span>
+                <span class="main-links__title heading-display">Web Design</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 2;">
+            <a href="artes-graficas.html" data-category="artes-graficas" title="Artes Gráficas">
+                <span class="main-links__subtitle label">piezas visuales</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 3;">
+            <a href="fotografia.html" data-category="fotografia" title="Fotografía">
+                <span class="main-links__subtitle label">captura visual</span>
+                <span class="main-links__title heading-display">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- =======================================================================================
+    MAIN - título "Hablemos" + formulario minimalista
+======================================================================================= -->
+<main>
+
+    <!-- Contacto ======================================================================================= -->
+    <section class="contact" aria-labelledby="contactoTitulo">
+
+        <h1 class="contact__title heading-display">Hablemos</h1>
+
+        <form class="contact__form" action="#" method="post">
+
+            <div class="contact__row">
+
+                <!-- Nombre -->
+                <div class="contact__field">
+                    <label class="contact__label" for="contactoNombre">Nombre</label>
+                    <input
+                        class="contact__input"
+                        type="text"
+                        id="contactNombre"
+                        name="nombre"
+                        autocomplete="name"
+                        required
+                    />
+                </div>
+
+                <!-- Correo electrónico -->
+                <div class="contact__field">
+                    <label class="contact__label" for="contactEmail">Correo electrónico</label>
+                    <input
+                        class="contact__input"
+                        type="email"
+                        id="contactEmail"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    />
+                </div>
+
+            </div>
+
+            <!-- Mensaje -->
+            <div class="contact__field">
+                <label class="contact__label" for="contactMensaje">Dime, ¿qué necesitas?</label>
+                <textarea
+                    class="contact__textarea"
+                    id="contactMensaje"
+                    name="mensaje"
+                    rows="4"
+                    required
+                ></textarea>
+            </div>
+
+            <button
+                class="contact__submit btn"
+                type="submit"
+                style="--btn-padding: 1.125rem clamp(3rem, 10vw, 6rem);"
+            >Enviar</button>
+        </form>
+
+    </section>
+
+</main>
+</body>
+</html>

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Portfolio — Gustavo Tondin · Branding, Web, Diseño Gráfico y Fotografía</title>
-    <meta name="description" content="Portfolio editorial de Gustavo Tondin — proyectos seleccionados de branding, web design, artes gráficas y fotografía, realizados entre Brasil y Valencia." />
+    <title>Portfolio - Gustavo Tondin · Branding, Web, Diseño Gráfico y Fotografía</title>
+    <meta name="description" content="Portfolio editorial de Gustavo Tondin - proyectos seleccionados de branding, web design, artes gráficas y fotografía, realizados entre Brasil y Valencia." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://gustavotondin.com/portfolio.html" />
@@ -15,14 +15,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gustavotondin.com/portfolio.html" />
-    <meta property="og:title" content="Portfolio — Gustavo Tondin" />
+    <meta property="og:title" content="Portfolio - Gustavo Tondin" />
     <meta property="og:description" content="Proyectos seleccionados: branding, web design, artes gráficas y fotografía." />
     <meta property="og:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Portfolio — Gustavo Tondin" />
+    <meta property="twitter:title" content="Portfolio - Gustavo Tondin" />
     <meta property="twitter:description" content="Proyectos seleccionados: branding, web design, artes gráficas y fotografía." />
     <meta property="twitter:image" content="https://gustavotondin.com/media/hero-banner.jpg" />
 
@@ -32,9 +32,13 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
+
+    <!-- Icons - RemixIcon -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Styles & Scripts -->
     <link rel="stylesheet" href="css/index.css" />
@@ -44,17 +48,14 @@
 <body class="page-portfolio">
 
 <!-- =======================================================================================
-    HEADER — barra fija, idéntica al resto de páginas internas.
+    HEADER - barra fija, idéntica al resto de páginas internas.
 ======================================================================================= -->
 <header class="header" id="siteHeader">
-    <a href="index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+    <a href="index.html" class="header__logo" aria-label="Inicio - Gustavo Tondin">
         <img src="media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
     </a>
     <nav>
         <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--hide">
-                <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
-            </li>
             <li class="header__nav-item header__nav-item--hide">
                 <a href="contacto.html" class="nav-link">Contacto</a>
             </li>
@@ -80,389 +81,253 @@
 </header>
 
 <!-- =======================================================================================
-    NAVIGATION OVERLAY — se despliega al pulsar "Menu".
+    NAVIGATION OVERLAY - se despliega al pulsar "Menu".
 ======================================================================================= -->
 <div class="navigation" id="navigation" aria-hidden="true">
     <ul class="navigation__secondary">
-        <li><a href="sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="index.html" class="nav-link nav-link--light">Inicio</a></li>
         <li><a href="portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
         <li><a href="contacto.html" class="nav-link nav-link--light">Contacto</a></li>
     </ul>
 
+    <!-- `style="--index: N"` en los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
     <ul class="main-links">
         <li class="main-links__item" style="--index: 0;">
             <a href="branding.html" data-category="branding">
-                <span class="main-links__subtitle">identidad visual</span>
-                <span class="main-links__title">Branding</span>
+                <span class="main-links__subtitle label">identidad visual</span>
+                <span class="main-links__title heading-display">Branding</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 1;">
             <a href="web-design.html" data-category="web-design">
-                <span class="main-links__subtitle">sitios y apps</span>
-                <span class="main-links__title">Web Design</span>
+                <span class="main-links__subtitle label">sitios y apps</span>
+                <span class="main-links__title heading-display">Web Design</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 2;">
             <a href="artes-graficas.html" data-category="artes-graficas">
-                <span class="main-links__subtitle">piezas visuales</span>
-                <span class="main-links__title">Artes Gráficas</span>
+                <span class="main-links__subtitle label">piezas visuales</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 3;">
             <a href="fotografia.html" data-category="fotografia">
-                <span class="main-links__subtitle">captura visual</span>
-                <span class="main-links__title">Fotografía</span>
+                <span class="main-links__subtitle label">captura visual</span>
+                <span class="main-links__title heading-display">Fotografía</span>
             </a>
         </li>
     </ul>
 </div>
 
 <!-- =======================================================================================
-    MAIN — grid uniforme 5 cols, con una sección por categoría
-    (branding → web-design → artes gráficas → fotografía). Cada sección
-    ocupa una fila y la etiqueta alterna lado (derecha / izquierda)
-    para dar ritmo editorial sin romper la rejilla.
+    MAIN CONTENT - grid de proyectos destacados, organizados por categoría.
 ======================================================================================= -->
 <main>
 
+    <!--
+        style="--reveal-delay: Xs" en .reveal  → escalona la aparición cuando el IntersectionObserver añade .is-visible
+        style="--img-ratio: N"    en las imágenes → ratio flex para el layout asimétrico (default 1 si no se indica)
+    -->
     <section class="portfolio-grid" aria-label="Proyectos seleccionados">
 
-        <!-- Título principal — Portfolio, italic serif grande -->
-        <h1 class="portfolio-grid__heading reveal">Portfolio</h1>
+        <h1 class="portfolio-grid__heading">Portfolio</h1>
 
-
-        <!-- =======================================================================================
-            SECCIÓN 1 — BRANDING
-        ======================================================================================= -->
         <section class="portfolio-grid__section" data-category="branding">
             <a href="branding.html" class="portfolio-grid__section-header reveal" title="Ver todos los proyectos de Branding">
-                <span class="portfolio-grid__section-eyebrow">Categoría</span>
-                <span class="portfolio-grid__section-title">Branding</span>
-                <span class="portfolio-grid__section-arrow" aria-hidden="true">&#8599;</span>
+                <h2 class="portfolio-grid__section-title heading-italic">Branding</h2>
+                <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
 
-            <!-- Refiori — 3 imágenes -->
-            <a href="projects/refiori.html" class="portfolio-grid__project reveal" title="Refiori — Branding" style="--reveal-delay: 0.05s;">
+            <a href="projects/refiori.html" class="portfolio-grid__project col-6 start-1 reveal" title="Refiori - Branding" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1.5;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/branding/refiori/branding-refiori-00.webp">
-                            <img src="media/projects/branding/refiori/branding-refiori-00.jpg" width="1920" height="1080" loading="lazy" alt="Refiori — portada del proyecto de branding">
+                            <img src="media/projects/branding/refiori/branding-refiori-00.jpg" width="1920" height="1080" loading="lazy" alt="Refiori - portada del proyecto de branding">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
+                    </div>
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/branding/refiori/branding-refiori-04.webp">
-                            <img src="media/projects/branding/refiori/branding-refiori-04.jpg" width="1920" height="1080" loading="lazy" alt="Refiori — paleta cromática del sistema de marca">
+                            <img src="media/projects/branding/refiori/branding-refiori-04.jpg" width="1920" height="1080" loading="lazy" alt="Refiori - paleta cromática del sistema de marca">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/branding/refiori/branding-refiori-08.webp">
-                            <img src="media/projects/branding/refiori/branding-refiori-08.jpg" width="1920" height="1080" loading="lazy" alt="Refiori — aplicación del sistema visual">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Refiori — Joyería artesanal</span>
+                <div class="portfolio-grid__project-label label">Refiori - Joyería artesanal</div>
             </a>
 
-            <!-- Wote — 3 imágenes -->
-            <a href="projects/wote.html" class="portfolio-grid__project reveal" title="Wotë — Branding" style="--reveal-delay: 0.1s;">
+            <a href="projects/wote.html" class="portfolio-grid__project col-4 start-9 reveal" title="Wotë - Branding" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/branding/wote/branding-wote-00.webp">
-                            <img src="media/projects/branding/wote/branding-wote-00.jpg" width="1920" height="1080" loading="lazy" alt="Wotë — portada de la marca">
+                            <img src="media/projects/branding/wote/branding-wote-00.jpg" width="1920" height="1080" loading="lazy" alt="Wotë - portada de la marca">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/branding/wote/branding-wote-01.webp">
-                            <img src="media/projects/branding/wote/branding-wote-01.jpg" width="1920" height="1080" loading="lazy" alt="Wotë — construcción del logotipo">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/branding/wote/branding-wote-03.webp">
-                            <img src="media/projects/branding/wote/branding-wote-03.jpg" width="1920" height="1080" loading="lazy" alt="Wotë — sistema visual aplicado">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Wotë — Cannabidiol</span>
+                <div class="portfolio-grid__project-label label">Wotë - Cannabidiol</div>
             </a>
 
-            <!-- Tondafoto — 3 imágenes -->
-            <a href="projects/tondafoto.html" class="portfolio-grid__project reveal" title="Tondafoto — Branding" style="--reveal-delay: 0.15s;">
+            <a href="projects/tondafoto.html" class="portfolio-grid__project col-8 start-3 reveal" title="Tondafoto - Branding" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image">
                         <picture>
                             <source type="image/webp" srcset="media/projects/branding/tondafoto/branding-tonda-foto-00.webp">
-                            <img src="media/projects/branding/tondafoto/branding-tonda-foto-00.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — portada del proyecto">
+                            <img src="media/projects/branding/tondafoto/branding-tonda-foto-00.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto - portada del proyecto">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
+                    </div>
+                    <div class="portfolio-grid__project-image">
                         <picture>
-                            <source type="image/webp" srcset="media/projects/branding/tondafoto/branding-tonda-foto-01.webp">
-                            <img src="media/projects/branding/tondafoto/branding-tonda-foto-01.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — concepto visual">
+                            <source type="image/webp" srcset="media/projects/branding/tondafoto/branding-tonda-foto-04.webp">
+                            <img src="media/projects/branding/tondafoto/branding-tonda-foto-04.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto - concepto visual">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
+                    </div>
+                    <div class="portfolio-grid__project-image">
                         <picture>
-                            <source type="image/webp" srcset="media/projects/branding/tondafoto/branding-tonda-foto-02.webp">
-                            <img src="media/projects/branding/tondafoto/branding-tonda-foto-02.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto — logotipo principal">
+                            <source type="image/webp" srcset="media/projects/branding/tondafoto/branding-tonda-foto-05.webp">
+                            <img src="media/projects/branding/tondafoto/branding-tonda-foto-05.jpg" width="1920" height="1080" loading="lazy" alt="Tondafoto - logotipo principal">
                         </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Tondafoto — Marca personal</span>
+                <div class="portfolio-grid__project-label label">Tondafoto - Marca personal</div>
             </a>
         </section>
 
 
-        <!-- =======================================================================================
-            SECCIÓN 2 — WEB DESIGN (sólo fullpages de home)
-        ======================================================================================= -->
         <section class="portfolio-grid__section" data-category="web-design">
             <a href="web-design.html" class="portfolio-grid__section-header reveal" title="Ver todos los proyectos de Web Design">
-                <span class="portfolio-grid__section-eyebrow">Categoría</span>
-                <span class="portfolio-grid__section-title">Web Design</span>
-                <span class="portfolio-grid__section-arrow" aria-hidden="true">&#8599;</span>
+                <h2 class="portfolio-grid__section-title heading-italic">Web Design</h2>
+                <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
+            </a>
+            <a href="projects/eners.html" class="portfolio-grid__project col-5 start-7 reveal" title="Eners - Web Design">
+                <div class="portfolio-grid__project-images">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1.0;">
+                        <picture>
+                            <source type="image/webp" srcset="media/projects/web-design/eners/web-eners-desktop-00-hero.webp">
+                            <img src="media/projects/web-design/eners/web-eners-desktop-00-hero.jpg" width="1440" height="700" loading="lazy" alt="Eners - homepage sección 1">
+                        </picture>
+                    </div>
+                </div>
+                <div class="portfolio-grid__project-label label">Eners - Sitio institucional</div>
             </a>
 
-            <!-- Riwer Labs — 3 fullpages -->
-            <a href="projects/riwer-labs.html" class="portfolio-grid__project reveal" title="Riwer Labs — Web Design" style="--reveal-delay: 0.05s;">
+            <a href="projects/identiduca.html" class="portfolio-grid__project col-9 start-3 reveal" title="Identiduca - Web Design">
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1.0;">
                         <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-01.webp">
-                            <img src="media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-01.jpg" width="1440" height="1920" loading="lazy" alt="Riwer Labs — homepage sección 1">
+                            <source type="image/webp" srcset="media/projects/web-design/identiduca/web-identiduca-desktop-00-hero.webp">
+                            <img src="media/projects/web-design/identiduca/web-identiduca-desktop-00-hero.jpg" width="1440" height="780" loading="lazy" alt="Identiduca - homepage sección 1">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-02.webp">
-                            <img src="media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-02.jpg" width="1440" height="1920" loading="lazy" alt="Riwer Labs — homepage sección 2">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-03.webp">
-                            <img src="media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-03.jpg" width="1440" height="1920" loading="lazy" alt="Riwer Labs — homepage sección 3">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Riwer Labs — Agencia de IA</span>
-            </a>
-
-            <!-- Eners — 3 fullpages -->
-            <a href="projects/eners.html" class="portfolio-grid__project reveal" title="Eners — Web Design" style="--reveal-delay: 0.1s;">
-                <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/eners/web-eners-desktop-fullpage-01.webp">
-                            <img src="media/projects/web-design/eners/web-eners-desktop-fullpage-01.jpg" width="1440" height="1920" loading="lazy" alt="Eners — homepage sección 1">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/eners/web-eners-desktop-fullpage-02.webp">
-                            <img src="media/projects/web-design/eners/web-eners-desktop-fullpage-02.jpg" width="1440" height="1920" loading="lazy" alt="Eners — homepage sección 2">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/eners/web-eners-desktop-fullpage-03.webp">
-                            <img src="media/projects/web-design/eners/web-eners-desktop-fullpage-03.jpg" width="1440" height="1679" loading="lazy" alt="Eners — homepage sección 3">
-                        </picture>
-                    </span>
-                </div>
-                <span class="portfolio-grid__project-label">Eners — Sitio institucional</span>
-            </a>
-
-            <!-- Identiduca — 3 fullpages -->
-            <a href="projects/identiduca.html" class="portfolio-grid__project reveal" title="Identiduca — Web Design" style="--reveal-delay: 0.15s;">
-                <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/identiduca/web-identiduca-desktop-fullpage-01.webp">
-                            <img src="media/projects/web-design/identiduca/web-identiduca-desktop-fullpage-01.jpg" width="1440" height="1920" loading="lazy" alt="Identiduca — homepage sección 1">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/identiduca/web-identiduca-desktop-fullpage-02.webp">
-                            <img src="media/projects/web-design/identiduca/web-identiduca-desktop-fullpage-02.jpg" width="1440" height="1920" loading="lazy" alt="Identiduca — homepage sección 2">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/web-design/identiduca/web-identiduca-desktop-fullpage-03.webp">
-                            <img src="media/projects/web-design/identiduca/web-identiduca-desktop-fullpage-03.jpg" width="1440" height="1920" loading="lazy" alt="Identiduca — homepage sección 3">
-                        </picture>
-                    </span>
-                </div>
-                <span class="portfolio-grid__project-label">Identiduca — Sitio institucional</span>
+                <div class="portfolio-grid__project-label label">Identiduca - Sitio institucional</div>
             </a>
         </section>
 
 
-        <!-- =======================================================================================
-            SECCIÓN 3 — ARTES GRÁFICAS
-        ======================================================================================= -->
         <section class="portfolio-grid__section" data-category="artes-graficas">
             <a href="artes-graficas.html" class="portfolio-grid__section-header reveal" title="Ver todos los proyectos de Artes Gráficas">
-                <span class="portfolio-grid__section-eyebrow">Categoría</span>
-                <span class="portfolio-grid__section-title">Artes Gráficas</span>
-                <span class="portfolio-grid__section-arrow" aria-hidden="true">&#8599;</span>
+                <h2 class="portfolio-grid__section-title heading-italic">Artes Gráficas</h2>
+                <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
 
-            <!-- Gauja Lab — 3 imágenes -->
-            <a href="projects/gauja-lab.html" class="portfolio-grid__project reveal" title="Gauja Lab — Artes Gráficas" style="--reveal-delay: 0.05s;">
+            <a href="projects/gauja-lab.html" class="portfolio-grid__project col-5 start-1 reveal" title="Gauja Lab - Artes Gráficas" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image">
                         <picture>
                             <source type="image/webp" srcset="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-00.webp">
-                            <img src="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-00.jpg" width="1080" height="1350" loading="lazy" alt="Gauja Lab — pieza de social media 1">
+                            <img src="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-00.jpg" width="1080" height="1350" loading="lazy" alt="Gauja Lab - pieza de social media 1">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
+                    </div>
+                    <div class="portfolio-grid__project-image">
                         <picture>
                             <source type="image/webp" srcset="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-01.webp">
-                            <img src="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-01.jpg" width="1080" height="1350" loading="lazy" alt="Gauja Lab — pieza de social media 2">
+                            <img src="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-01.jpg" width="1080" height="1350" loading="lazy" alt="Gauja Lab - pieza de social media 2">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-02.webp">
-                            <img src="media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-02.jpg" width="1080" height="1350" loading="lazy" alt="Gauja Lab — pieza de social media 3">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Gauja Lab — Social media</span>
+                <div class="portfolio-grid__project-label label">Gauja Lab - Social media</div>
             </a>
 
-            <!-- Identiduca Zine — 3 imágenes -->
-            <a href="projects/identiduca-zine.html" class="portfolio-grid__project reveal" title="Identiduca — Zine editorial" style="--reveal-delay: 0.1s;">
+            <a href="projects/identiduca-zine.html" class="portfolio-grid__project col-6 start-7 reveal" title="Identiduca - Zine editorial" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1.4;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/artes-graficas/identiduca/zine-identiduca-00.webp">
-                            <img src="media/projects/artes-graficas/identiduca/zine-identiduca-00.jpg" width="1920" height="1376" loading="lazy" alt="Identiduca zine — portada">
+                            <img src="media/projects/artes-graficas/identiduca/zine-identiduca-00.jpg" width="1920" height="1376" loading="lazy" alt="Identiduca zine - portada">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/artes-graficas/identiduca/zine-identiduca-01.webp">
-                            <img src="media/projects/artes-graficas/identiduca/zine-identiduca-01.jpg" width="1920" height="1376" loading="lazy" alt="Identiduca zine — páginas interiores">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/artes-graficas/identiduca/zine-identiduca-02.webp">
-                            <img src="media/projects/artes-graficas/identiduca/zine-identiduca-02.jpg" width="1920" height="1376" loading="lazy" alt="Identiduca zine — diagramación editorial">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Identiduca — Zine editorial</span>
+                <div class="portfolio-grid__project-label label">Identiduca - Zine editorial</div>
             </a>
         </section>
 
 
-        <!-- =======================================================================================
-            SECCIÓN 4 — FOTOGRAFÍA
-        ======================================================================================= -->
         <section class="portfolio-grid__section" data-category="fotografia">
             <a href="fotografia.html" class="portfolio-grid__section-header reveal" title="Ver todos los proyectos de Fotografía">
-                <span class="portfolio-grid__section-eyebrow">Categoría</span>
-                <span class="portfolio-grid__section-title">Fotografía</span>
-                <span class="portfolio-grid__section-arrow" aria-hidden="true">&#8599;</span>
+                <h2 class="portfolio-grid__section-title heading-italic">Fotografía</h2>
+                <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
 
-            <!-- Aline & Eduardo — 3 imágenes -->
-            <a href="projects/aline-e-eduardo.html" class="portfolio-grid__project reveal" title="Aline & Eduardo — Fotografía" style="--reveal-delay: 0.05s;">
+            <a href="projects/aline-e-eduardo.html" class="portfolio-grid__project col-7 start-1 reveal" title="Aline & Eduardo - Fotografía" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1.2;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.webp">
-                            <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" width="1400" height="1000" loading="lazy" alt="Aline y Eduardo — ensayo fotográfico 1">
+                            <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg" width="1400" height="1000" loading="lazy" alt="Aline y Eduardo - ensayo fotográfico 1">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.webp">
-                            <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-02.jpg" width="1400" height="1000" loading="lazy" alt="Aline y Eduardo — ensayo fotográfico 2">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-04.webp">
-                            <img src="media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-04.jpg" width="1400" height="1000" loading="lazy" alt="Aline y Eduardo — ensayo fotográfico 3">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Aline &amp; Eduardo — Ensayo de pareja</span>
+                <div class="portfolio-grid__project-label label">Aline & Eduardo - Ensayo de pareja</div>
             </a>
 
-            <!-- Carol — 3 imágenes -->
-            <a href="projects/carol.html" class="portfolio-grid__project reveal" title="Carol — Fotografía" style="--reveal-delay: 0.1s;">
+            <a href="projects/carol.html" class="portfolio-grid__project col-4 start-9 reveal" title="Carol - Fotografía" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image">
                         <picture>
                             <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-00.webp">
-                            <img src="media/projects/fotografia/carol/ensaio-carol-00.jpg" width="1920" height="1280" loading="lazy" alt="Carol — retrato 1">
+                            <img src="media/projects/fotografia/carol/ensaio-carol-00.jpg" width="1920" height="1280" loading="lazy" alt="Carol - retrato 1">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-01.webp">
-                            <img src="media/projects/fotografia/carol/ensaio-carol-01.jpg" width="1920" height="1280" loading="lazy" alt="Carol — retrato 2">
-                        </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
-                        <picture>
-                            <source type="image/webp" srcset="media/projects/fotografia/carol/ensaio-carol-02.webp">
-                            <img src="media/projects/fotografia/carol/ensaio-carol-02.jpg" width="1920" height="1280" loading="lazy" alt="Carol — retrato 3">
-                        </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Carol — Retrato femenino</span>
+                <div class="portfolio-grid__project-label label">Carol - Retrato femenino</div>
             </a>
 
-            <!-- Valeria — 3 imágenes -->
-            <a href="projects/valeria.html" class="portfolio-grid__project reveal" title="Valeria — Fotografía" style="--reveal-delay: 0.15s;">
+            <a href="projects/valeria.html" class="portfolio-grid__project col-10 start-1 reveal" title="Valeria - Fotografía" >
                 <div class="portfolio-grid__project-images">
-                    <span class="portfolio-grid__project-image">
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 0.8;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-00.webp">
-                            <img src="media/projects/fotografia/valeria/ensaio-valeria-00.jpg" width="600" height="900" loading="lazy" alt="Valeria — retrato 1">
+                            <img src="media/projects/fotografia/valeria/ensaio-valeria-00.jpg" width="600" height="900" loading="lazy" alt="Valeria - retrato 1">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
+                    </div>
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 1.5;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-01.webp">
-                            <img src="media/projects/fotografia/valeria/ensaio-valeria-01.jpg" width="1200" height="1200" loading="lazy" alt="Valeria — retrato 2">
+                            <img src="media/projects/fotografia/valeria/ensaio-valeria-01.jpg" width="1200" height="1200" loading="lazy" alt="Valeria - retrato 2">
                         </picture>
-                    </span>
-                    <span class="portfolio-grid__project-image">
+                    </div>
+                    <div class="portfolio-grid__project-image" style="--img-ratio: 0.8;">
                         <picture>
                             <source type="image/webp" srcset="media/projects/fotografia/valeria/ensaio-valeria-02.webp">
-                            <img src="media/projects/fotografia/valeria/ensaio-valeria-02.jpg" width="600" height="836" loading="lazy" alt="Valeria — retrato 3">
+                            <img src="media/projects/fotografia/valeria/ensaio-valeria-02.jpg" width="600" height="836" loading="lazy" alt="Valeria - retrato 3">
                         </picture>
-                    </span>
+                    </div>
                 </div>
-                <span class="portfolio-grid__project-label">Valeria — Retrato femenino</span>
+                <div class="portfolio-grid__project-label label">Valeria - Retrato femenino</div>
             </a>
         </section>
 
     </section>
 
     <!-- =======================================================================================
-        NEXT SECTION — card fija al final que lleva al contacto.
+        NEXT SECTION - card fija al final que lleva al contacto.
     ======================================================================================= -->
     <section class="next-section" data-next-section aria-label="Siguiente sección">
         <div class="main-links__item main-links__item--next" style="--index: 0;">
             <a href="contacto.html" data-category="portfolio">
-                <span class="main-links__subtitle">próxima sección</span>
-                <span class="main-links__title">Contacto</span>
+                <span class="main-links__subtitle label">próxima sección</span>
+                <span class="main-links__title heading-display">Contacto</span>
             </a>
         </div>
     </section>

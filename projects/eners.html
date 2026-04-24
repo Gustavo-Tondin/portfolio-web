@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Eners — Web Design · Gustavo Tondin</title>
-    <meta name="description" content="Eners — proyecto de web design desarrollado por Gustavo Tondin." />
+    <title>Eners - Web Design · Gustavo Tondin</title>
+    <meta name="description" content="Eners - proyecto de web design desarrollado por Gustavo Tondin." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://gustavotondin.com/projects/eners.html" />
@@ -15,15 +15,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://gustavotondin.com/projects/eners.html" />
-    <meta property="og:title" content="Eners — Web Design · Gustavo Tondin" />
-    <meta property="og:description" content="Proyecto de web design — Eners." />
+    <meta property="og:title" content="Eners - Web Design · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de web design - Eners." />
     <meta property="og:image" content="https://gustavotondin.com/media/projects/web-design/eners/web-eners-desktop-fullpage-01.jpg" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Eners — Web Design · Gustavo Tondin" />
-    <meta property="twitter:description" content="Proyecto de web design — Eners." />
+    <meta property="twitter:title" content="Eners - Web Design · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de web design - Eners." />
     <meta property="twitter:image" content="https://gustavotondin.com/media/projects/web-design/eners/web-eners-desktop-fullpage-01.jpg" />
 
     <!-- Favicon -->
@@ -32,11 +32,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1,2&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
 
-    <!-- Icons — RemixIcon -->
+    <!-- Icons - RemixIcon -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -48,17 +48,15 @@
 <body class="page-web-design page-project">
 
 <!-- =======================================================================================
-    HEADER — mismo componente de las otras páginas del sitio
+    HEADER - mismo componente de las otras páginas del sitio
 ======================================================================================= -->
 <header class="header" id="siteHeader">
-    <a href="../index.html" class="header__logo" aria-label="Inicio — Gustavo Tondin">
+    <a href="../index.html" class="header__logo" aria-label="Inicio - Gustavo Tondin">
         <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
     </a>
     <nav>
         <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--hide">
-                <a href="../sobre-mi.html" class="nav-link">Sobre mí</a>
-            </li>
+            
             <li class="header__nav-item header__nav-item--hide">
                 <a href="../contacto.html" class="nav-link">Contacto</a>
             </li>
@@ -84,38 +82,39 @@
 </header>
 
 <!-- =======================================================================================
-    NAVIGATION OVERLAY — idéntico a las otras páginas (paths con ../)
+    NAVIGATION OVERLAY - idéntico a las otras páginas (paths con ../)
 ======================================================================================= -->
 <div class="navigation" id="navigation" aria-hidden="true">
     <ul class="navigation__secondary">
-        <li><a href="../sobre-mi.html" class="nav-link nav-link--light">Sobre mí</a></li>
+        <li><a href="../index.html" class="nav-link nav-link--light">Inicio</a></li>
         <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
         <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
     </ul>
 
+    <!-- `style="--index: N"` en los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
     <ul class="main-links">
         <li class="main-links__item" style="--index: 0;">
             <a href="../branding.html" data-category="branding">
-                <span class="main-links__subtitle">identidad visual</span>
-                <span class="main-links__title">Branding</span>
+                <span class="main-links__subtitle label">identidad visual</span>
+                <span class="main-links__title heading-display">Branding</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 1;">
             <a href="../web-design.html" data-category="web-design" aria-current="page">
-                <span class="main-links__subtitle">sitios y apps</span>
-                <span class="main-links__title">Web Design</span>
+                <span class="main-links__subtitle label">sitios y apps</span>
+                <span class="main-links__title heading-display">Web Design</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 2;">
             <a href="../artes-graficas.html" data-category="artes-graficas">
-                <span class="main-links__subtitle">piezas visuales</span>
-                <span class="main-links__title">Artes Gráficas</span>
+                <span class="main-links__subtitle label">piezas visuales</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
             </a>
         </li>
         <li class="main-links__item" style="--index: 3;">
             <a href="../fotografia.html" data-category="fotografia">
-                <span class="main-links__subtitle">captura visual</span>
-                <span class="main-links__title">Fotografía</span>
+                <span class="main-links__subtitle label">captura visual</span>
+                <span class="main-links__title heading-display">Fotografía</span>
             </a>
         </li>
     </ul>
@@ -123,18 +122,18 @@
 
 
 <!-- =======================================================================================
-    MAIN — página del proyecto: cabecera + stack continuo de imágenes
+    MAIN - página del proyecto: cabecera + stack continuo de imágenes
 ======================================================================================= -->
 <main class="project">
 
     <!-- cabecera centrada: categoría · título · año -->
     <header class="project__header">
-        <span class="project__category">Web Design</span>
-        <h1 class="project__title">Eners</h1>
-        <p class="project__meta">
+        <span class="project__category label">Web Design</span>
+        <h1 class="project__title heading-italic">Eners</h1>
+        <p class="project__meta label">
             <span>Sitio institucional</span>
             <span class="project__meta-sep" aria-hidden="true"></span>
-            <span>TODO</span>
+            <span>2023</span>
         </p>
     </header>
 
@@ -142,71 +141,87 @@
     <section class="project__gallery" aria-label="Galería del proyecto Eners">
 
         <picture class="project__figure">
-            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-fullpage-01.webp">
-            <img src="../media/projects/web-design/eners/web-eners-desktop-fullpage-01.jpg" width="1440" height="1920" alt="Eners — imagen 00">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-00-hero.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-00-hero.jpg" width="1440" height="700" alt="Eners - hero">
         </picture>
 
         <picture class="project__figure">
-            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-fullpage-02.webp">
-            <img src="../media/projects/web-design/eners/web-eners-desktop-fullpage-02.jpg" width="1440" height="1920" loading="lazy" alt="Eners — imagen 01">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-01-secao01.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-01-secao01.jpg" width="1440" height="578" loading="lazy" alt="Eners - sección 01">
         </picture>
 
         <picture class="project__figure">
-            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-fullpage-03.webp">
-            <img src="../media/projects/web-design/eners/web-eners-desktop-fullpage-03.jpg" width="1440" height="1679" loading="lazy" alt="Eners — imagen 02">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-02-secao02.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-02-secao02.jpg" width="1440" height="578" loading="lazy" alt="Eners - sección 02">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-03-secao03.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-03-secao03.jpg" width="1440" height="578" loading="lazy" alt="Eners - sección 03">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-04-secao04.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-04-secao04.jpg" width="1440" height="578" loading="lazy" alt="Eners - sección 04">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-05-secao05.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-05-secao05.jpg" width="1440" height="578" loading="lazy" alt="Eners - sección 05">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/eners/web-eners-desktop-06-rodape.webp">
+            <img src="../media/projects/web-design/eners/web-eners-desktop-06-rodape.jpg" width="1440" height="558" loading="lazy" alt="Eners - sección final">
         </picture>
 
     </section>
 
     <!-- =======================================================================================
-        VISIT — CTA para ver el sitio real en producción
+        VISIT - CTA para ver el sitio real en producción
     ======================================================================================= -->
     <section class="project__visit" aria-label="Visitar sitio">
         <a class="btn" href="https://eners.com.br/" target="_blank" rel="noreferrer noopener" title="Visitar Eners en una nueva pestaña">
             <span>Visitar sitio</span>
             <span class="project__visit-url">eners.com.br</span>
-            <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+            <i class="ri-arrow-right-s-line"></i>
         </a>
     </section>
 
     <!-- =======================================================================================
-        CRÉDITOS — ficha técnica del proyecto (template con placeholders TODO)
+        CRÉDITOS - ficha técnica del proyecto (template con placeholders TODO)
     ======================================================================================= -->
     <section class="project__credits" aria-labelledby="credits-title-eners">
-        <h2 id="credits-title-eners" class="project__credits-title">Créditos</h2>
-        <dl class="project__credits-list">
+        <h2 id="credits-title-eners" class="project__credits-title heading-italic">Créditos</h2>
+        <div class="project__credits-list">
             <div class="project__credits-row">
-                <dt>Cliente</dt>
-                <dd>Eners</dd>
+                <span class="label">Cliente</span>
+                <p>Eners</p>
             </div>
             <div class="project__credits-row">
-                <dt>Año</dt>
-                <dd>TODO</dd>
+                <span class="label">Año</span>
+                <p>2023</p>
             </div>
             <div class="project__credits-row">
-                <dt>Mi rol</dt>
-                <dd>TODO — dirección de arte · diseño · etc.</dd>
+                <span class="label">Mi rol</span>
+                <p>Desarrollo Web · diseño</p>
             </div>
             <div class="project__credits-row">
-                <dt>Colaboradores</dt>
-                <dd>TODO — Nombre · rol · enlace</dd>
+                <span class="label">Sitio</span>
+                <p><a href="https://eners.com.br/" target="_blank" rel="noreferrer noopener" title="eners.com.br">eners.com.br</a></p>
             </div>
-            <div class="project__credits-row">
-                <dt>Sitio</dt>
-                <dd><a href="https://eners.com.br/" target="_blank" rel="noreferrer noopener" title="eners.com.br">eners.com.br</a></dd>
-            </div>
-        </dl>
+        </div>
     </section>
 
     <!-- =======================================================================================
-        NEXT SECTION — placeholder en el flujo que revela la tarjeta fija de próximo proyecto
-        (misma mecánica que en index.html — el IntersectionObserver del js añade .is-ready)
+        NEXT SECTION - placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html - el IntersectionObserver del js añade .is-ready)
     ======================================================================================= -->
     <section class="next-section" data-next-section aria-label="Siguiente proyecto">
         <div class="main-links__item main-links__item--next" style="--index: 0;">
-            <a href="identiduca.html" data-category="web-design" title="Siguiente proyecto — Identiduca">
-                <span class="main-links__subtitle">siguiente proyecto</span>
-                <span class="main-links__title">Identiduca</span>
+            <a href="identiduca.html" data-category="web-design" title="Siguiente proyecto - Identiduca">
+                <span class="main-links__subtitle label">siguiente proyecto</span>
+                <span class="main-links__title heading-display">Identiduca</span>
             </a>
         </div>
     </section>
