@@ -902,6 +902,7 @@ button {
 /* desktop bento (4col): cada modifier define sua posicao no grid */
 .cv__card--focus {
     grid-column: 1 / span 3;
+    grid-row: 1;
     background-color: var(--color-primary);
     color: var(--color-light);
     border: var(--border-line) transparent;
@@ -923,13 +924,13 @@ button {
     background-color: var(--color-primary-opacity);
 }
 
-/* ajustes del grid para desktop */
-.cv__card--contact { grid-column: 4; }
-.cv__card--exp { grid-column: 1 / span 3; grid-row: span 2; }
-.cv__card--do { grid-column: 3; }
-.cv__card--tools { grid-column: 4; }
-.cv__card--soft { grid-column: 3; }
-.cv__card--misc { grid-column: 4; }
+/* placement explicito (col + row) - 3 rows, sin holes */
+.cv__card--contact { grid-column: 4;            grid-row: 1; }
+.cv__card--exp     { grid-column: 1 / span 2;   grid-row: 2 / span 2; }
+.cv__card--do      { grid-column: 3;            grid-row: 2; }
+.cv__card--tools   { grid-column: 4;            grid-row: 2; }
+.cv__card--soft    { grid-column: 3;            grid-row: 3; }
+.cv__card--misc    { grid-column: 4;            grid-row: 3; }
 
 .cv__heading {
     color: var(--theme-color, var(--color-primary));
@@ -1037,7 +1038,7 @@ button {
 
 /* tablet: deja el grid a 2 columnas */
 @media (max-width: 1024px) {
-    .cv { grid-template-columns: repeat(2, 1fr); }
+    .cv { grid-template-columns: repeat(2, 1fr); grid-auto-flow: dense; }
     .cv__card { grid-column: auto;   grid-row: auto; }
     .cv__card--focus { grid-column: 1 / span 2; }
     .cv__card--contact { grid-column: 1; }
