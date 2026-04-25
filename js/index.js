@@ -13,53 +13,57 @@
     const isMobile = window.innerWidth <= 768;
 
 
-    // hero scroll - la imagen se va morphando hasta el about ====================================
+    // hero scroll - la imagen se mueve y dimensiona hasta el about ====================================
     const scrollImg = document.getElementById('scrollImage');
     const imgTarget = document.getElementById('aboutImageTarget');
     const aboutContent = document.querySelector('.about__content');
     const heroContent = document.querySelector('.hero');
 
     if (scrollImg && imgTarget && heroContent && aboutContent) {
-        window.addEventListener('scroll', () => {
+        // requestAnimationFrame para optimizar el scroll
+        let scrollTicking = false;
+
+        const onHeroScroll = () => {
+            // Elementos
             const scrollY = window.scrollY;
             const vh = window.innerHeight;
             const vw = document.documentElement.clientWidth;
-
-            const progress = Math.min(scrollY / (vh * 0.8), 1);
             const target = imgTarget.getBoundingClientRect();
+
+            // Cálculos de progreso y transformaciones
+            const progress = Math.min(scrollY / (vh * 0.8), 1);
             const ip = Math.min(progress / 0.8, 1);
-
-            if (ip < 1) {
-                scrollImg.style.cssText = `
-                        top: ${(target.top + scrollY) * ip}px;
-                        left: ${target.left * ip}px;
-                        width: ${vw + (target.width - vw) * ip}px;
-                        height: ${vh + (target.height - vh) * ip}px;
-                    `;
-            } else {
-                scrollImg.style.cssText = `
-                        top: ${target.top + scrollY}px;
-                        left: ${target.left}px;
-                        width: ${target.width}px;
-                        height: ${target.height}px;
-                    `;
-            }
-
             const fade = Math.max(1 - progress * 6, 0);
+            const showHeader = progress > 0.4;
+            const showAbout = progress > 0.8;
+            const ap = !isMobile ? Math.max((progress - 0.8) / 0.2, 0) : 0;
+
+            const top = ip < 1 ? (target.top + scrollY) * ip : target.top + scrollY;
+            const left = ip < 1 ? target.left * ip : target.left;
+            const width = ip < 1 ? vw + (target.width - vw) * ip : target.width;
+            const height = ip < 1 ? vh + (target.height - vh) * ip : target.height;
+
+            // aplica estilos y clases
+            scrollImg.style.cssText = `top:${top}px;left:${left}px;width:${width}px;height:${height}px;`;
             heroContent.style.opacity = fade;
             heroContent.style.transform = `translateY(${-progress * 200}px)`;
+            header?.classList.toggle('is-visible', showHeader);
+            aboutContent.classList.toggle('is-visible', showAbout);
 
-            header?.classList.toggle('is-visible', progress > 0.4);
-            aboutContent.classList.toggle('is-visible', progress > 0.8);
-
-            // Cambios para el mobile
             if (!isMobile) {
-                const ap = Math.max((progress - 0.8) / 0.2, 0);
                 aboutContent.style.transform = `translateY(${(1 - ap) * 50}px) translateX(${(1 - ap) * 200}px)`;
             } else {
                 aboutContent.style.transform = '';
             }
-        });
+
+            scrollTicking = false;
+        };
+
+        window.addEventListener('scroll', () => {
+            if (scrollTicking) return;
+            scrollTicking = true;
+            requestAnimationFrame(onHeroScroll);
+        }, { passive: true });
     }
 
 

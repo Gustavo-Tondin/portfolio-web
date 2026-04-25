@@ -29,16 +29,23 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.fontshare.com" crossorigin />
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
+    <!-- Fonts: preconnects para resolver DNS/TLS en paralelo -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin/>
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 
-    <!-- Icons - RemixIcon -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Switzer (fuente principal): bloqueante (LCP en hero) -->
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap"/>
+
+    <!-- Google Fonts (italics y labels): non-blocking via preload + onload -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap"/></noscript>
+
+    <!-- Icons - RemixIcon (non-blocking) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin/>
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/></noscript>
 
     <!-- Styles & Scripts -->
     <link rel="stylesheet" href="css/index.css" />
@@ -138,7 +145,7 @@
                 <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
 
-            <a href="projects/refiori.html" class="portfolio-grid__project col-6 start-1 reveal" title="Refiori - Branding" >
+            <a href="projects/refiori.html" class="portfolio-grid__project portfolio-grid__project--1 reveal" title="Refiori - Branding" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 1.5;">
                         <picture>
@@ -156,7 +163,7 @@
                 <div class="portfolio-grid__project-label label">Refiori - Joyería artesanal</div>
             </a>
 
-            <a href="projects/wote.html" class="portfolio-grid__project col-4 start-9 reveal" title="Wotë - Branding" >
+            <a href="projects/wote.html" class="portfolio-grid__project portfolio-grid__project--2 reveal" title="Wotë - Branding" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 1;">
                         <picture>
@@ -168,7 +175,7 @@
                 <div class="portfolio-grid__project-label label">Wotë - Cannabidiol</div>
             </a>
 
-            <a href="projects/tondafoto.html" class="portfolio-grid__project col-8 start-3 reveal" title="Tondafoto - Branding" >
+            <a href="projects/tondafoto.html" class="portfolio-grid__project portfolio-grid__project--3 reveal" title="Tondafoto - Branding" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image">
                         <picture>
@@ -199,7 +206,7 @@
                 <h2 class="portfolio-grid__section-title heading-italic">Web Design</h2>
                 <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
-            <a href="projects/eners.html" class="portfolio-grid__project col-5 start-7 reveal" title="Eners - Web Design">
+            <a href="projects/eners.html" class="portfolio-grid__project portfolio-grid__project--4 reveal" title="Eners - Web Design">
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 1.0;">
                         <picture>
@@ -211,7 +218,7 @@
                 <div class="portfolio-grid__project-label label">Eners - Sitio institucional</div>
             </a>
 
-            <a href="projects/identiduca.html" class="portfolio-grid__project col-9 start-3 reveal" title="Identiduca - Web Design">
+            <a href="projects/identiduca.html" class="portfolio-grid__project portfolio-grid__project--5 reveal" title="Identiduca - Web Design">
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 1.0;">
                         <picture>
@@ -231,7 +238,7 @@
                 <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
 
-            <a href="projects/gauja-lab.html" class="portfolio-grid__project col-5 start-1 reveal" title="Gauja Lab - Artes Gráficas" >
+            <a href="projects/gauja-lab.html" class="portfolio-grid__project portfolio-grid__project--6 reveal" title="Gauja Lab - Artes Gráficas" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image">
                         <picture>
@@ -249,7 +256,7 @@
                 <div class="portfolio-grid__project-label label">Gauja Lab - Social media</div>
             </a>
 
-            <a href="projects/identiduca-zine.html" class="portfolio-grid__project col-6 start-7 reveal" title="Identiduca - Zine editorial" >
+            <a href="projects/identiduca-zine.html" class="portfolio-grid__project portfolio-grid__project--7 reveal" title="Identiduca - Zine editorial" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 1.4;">
                         <picture>
@@ -269,7 +276,7 @@
                 <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
             </a>
 
-            <a href="projects/aline-e-eduardo.html" class="portfolio-grid__project col-7 start-1 reveal" title="Aline & Eduardo - Fotografía" >
+            <a href="projects/aline-e-eduardo.html" class="portfolio-grid__project portfolio-grid__project--8 reveal" title="Aline & Eduardo - Fotografía" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 1.2;">
                         <picture>
@@ -281,7 +288,7 @@
                 <div class="portfolio-grid__project-label label">Aline & Eduardo - Ensayo de pareja</div>
             </a>
 
-            <a href="projects/carol.html" class="portfolio-grid__project col-4 start-9 reveal" title="Carol - Fotografía" >
+            <a href="projects/carol.html" class="portfolio-grid__project portfolio-grid__project--9 reveal" title="Carol - Fotografía" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image">
                         <picture>
@@ -293,7 +300,7 @@
                 <div class="portfolio-grid__project-label label">Carol - Retrato femenino</div>
             </a>
 
-            <a href="projects/valeria.html" class="portfolio-grid__project col-10 start-1 reveal" title="Valeria - Fotografía" >
+            <a href="projects/valeria.html" class="portfolio-grid__project portfolio-grid__project--10 reveal" title="Valeria - Fotografía" >
                 <div class="portfolio-grid__project-images">
                     <div class="portfolio-grid__project-image" style="--img-ratio: 0.8;">
                         <picture>
