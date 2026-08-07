@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Riwer Labs - Web Design · Gustavo Tondin</title>
+    <meta name="description" content="Riwer Labs - proyecto de web design desarrollado por Gustavo Tondin." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gustavotondin.com/projects/riwer-labs.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://gustavotondin.com/projects/riwer-labs.html" />
+    <meta property="og:title" content="Riwer Labs - Web Design · Gustavo Tondin" />
+    <meta property="og:description" content="Proyecto de web design - Riwer Labs." />
+    <meta property="og:image" content="https://gustavotondin.com/media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-01.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Riwer Labs - Web Design · Gustavo Tondin" />
+    <meta property="twitter:description" content="Proyecto de web design - Riwer Labs." />
+    <meta property="twitter:image" content="https://gustavotondin.com/media/projects/web-design/riwer-labs/web-riwerlabs-desktop-fullpage-01.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../media/favicon.svg">
+
+    <!-- Fonts: preconnects para resolver DNS/TLS en paralelo -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin/>
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+    <!-- Switzer (fuente principal): bloqueante (LCP en hero) -->
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap"/>
+
+    <!-- Google Fonts (italics y labels): non-blocking via preload + onload -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap"/></noscript>
+
+    <!-- Icons - RemixIcon (non-blocking) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin/>
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/></noscript>
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <script defer src="../js/index.js"></script>
+</head>
+
+<body class="page-web-design page-project">
+
+<!-- =======================================================================================
+    HEADER - mismo componente de las otras páginas del sitio
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="../index.html" class="header__logo" aria-label="Inicio - Gustavo Tondin">
+        <img src="../media/tonda.svg" width="96" height="32" alt="tonda-logo" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../contacto.html" class="nav-link">Contacto</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="../portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    data-label-open="Menu"
+                    data-label-close="Cerrar"
+                >
+                    <span class="nav-link__text">Menu</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- =======================================================================================
+    NAVIGATION OVERLAY - idéntico a las otras páginas (paths con ../)
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="../index.html" class="nav-link nav-link--light">Inicio</a></li>
+        <li><a href="../portfolio.html" class="nav-link nav-link--light">Portfolio</a></li>
+        <li><a href="../contacto.html" class="nav-link nav-link--light">Contacto</a></li>
+    </ul>
+
+    <!-- `style="--index: N"` en los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
+    <ul class="main-links">
+        <li class="main-links__item" style="--index: 0;">
+            <a href="../branding.html" data-category="branding">
+                <span class="main-links__subtitle label">identidad visual</span>
+                <span class="main-links__title heading-display">Branding</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 1;">
+            <a href="../web-design.html" data-category="web-design" aria-current="page">
+                <span class="main-links__subtitle label">sitios y apps</span>
+                <span class="main-links__title heading-display">Web Design</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 2;">
+            <a href="../artes-graficas.html" data-category="artes-graficas">
+                <span class="main-links__subtitle label">piezas visuales</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
+            </a>
+        </li>
+        <li class="main-links__item" style="--index: 3;">
+            <a href="../fotografia.html" data-category="fotografia">
+                <span class="main-links__subtitle label">captura visual</span>
+                <span class="main-links__title heading-display">Fotografía</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- =======================================================================================
+    MAIN - página del proyecto: cabecera + stack continuo de imágenes
+======================================================================================= -->
+<main class="project">
+
+    <!-- cabecera centrada: categoría · título · año -->
+    <header class="project__header">
+        <span class="project__category label">Web Design</span>
+        <h1 class="project__title heading-italic">Riwer Labs</h1>
+        <p class="project__meta label">
+            <span>Agencia de IA</span>
+            <span class="project__meta-sep" aria-hidden="true"></span>
+            <span>2025</span>
+        </p>
+    </header>
+
+    <!-- galería: imágenes apiladas verticalmente, sin gaps, max-width 1440px -->
+    <section class="project__gallery" aria-label="Galería del proyecto Riwer Labs">
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-00-hero.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-00-hero.jpg" width="1440" height="800" alt="Riwer Labs - hero">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-01-secao01.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-01-secao01.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 01">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-02-secao02.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-02-secao02.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 02">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-03-secao03.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-03-secao03.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 03">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-04-secao04.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-04-secao04.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 04">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-05-secao05.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-05-secao05.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 05">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-06-secao06.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-06-secao06.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 06">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-07-secao07.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-07-secao07.jpg" width="1440" height="870" loading="lazy" alt="Riwer Labs - sección 07">
+        </picture>
+
+        <picture class="project__figure">
+            <source type="image/webp" srcset="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-08-rodape.webp">
+            <img src="../media/projects/web-design/riwer-labs/web-riwerlabs-desktop-08-rodape.jpg" width="1440" height="1035" loading="lazy" alt="Riwer Labs - sección final">
+        </picture>
+
+    </section>
+
+    <!-- =======================================================================================
+        VISIT - CTA para ver el sitio real en producción
+    ======================================================================================= -->
+    <section class="project__visit" aria-label="Visitar sitio">
+        <a class="btn" href="https://riwerlabs.com/" target="_blank" rel="noreferrer noopener" title="Visitar Riwer Labs en una nueva pestaña">
+            <span>Visitar sitio</span>
+            <span class="project__visit-url">riwerlabs.com</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+    </section>
+
+    <!-- =======================================================================================
+        CRÉDITOS - ficha técnica del proyecto (template con placeholders TODO)
+    ======================================================================================= -->
+    <section class="project__credits" aria-labelledby="credits-title-riwer-labs">
+        <h2 id="credits-title-riwer-labs" class="project__credits-title heading-italic">Créditos</h2>
+        <div class="project__credits-list">
+            <div class="project__credits-row">
+                <span class="label">Cliente</span>
+                <p>Riwer Labs</p>
+            </div>
+            <div class="project__credits-row">
+                <span class="label">Año</span>
+                <p>2025</p>
+            </div>
+            <div class="project__credits-row">
+                <span class="label">Mi rol</span>
+                <p>Identidad visual · Diseño · Desarrollo web</p>
+            </div>
+            <div class="project__credits-row">
+                <span class="label">Sitio</span>
+                <p><a href="https://riwerlabs.com/" target="_blank" rel="noreferrer noopener" title="riwerlabs.com">riwerlabs.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION - placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (misma mecánica que en index.html - el IntersectionObserver del js añade .is-ready)
+    ======================================================================================= -->
+    <section class="next-section" data-next-section aria-label="Siguiente sección">
+        <div class="main-links__item main-links__item--next" style="--index: 0;">
+            <a href="../artes-graficas.html" data-category="artes-graficas" title="Siguiente sección - Artes Gráficas">
+                <span class="main-links__subtitle label">siguiente sección</span>
+                <span class="main-links__title heading-display">Artes Gráficas</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
