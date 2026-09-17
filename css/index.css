@@ -363,7 +363,7 @@ button {
 }
 
 .scroll-image {
-    position: absolute;
+    position: fixed; /* en vuelo no depende del scroll; el JS la ancla con is-docked */
     top: 0;
     left: 0;
     width: 100vw;
@@ -371,7 +371,10 @@ button {
     height: 100dvh;
     z-index: 0;
     overflow: hidden;
-    will-change: transform, width, height, top, left;
+    will-change: transform; /* solo promueve la capa; top/left/width/height no se componen */
+}
+.scroll-image.is-docked {
+    position: absolute;
 }
 .scroll-image picture,
 .scroll-image img {

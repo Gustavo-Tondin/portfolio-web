@@ -31,20 +31,26 @@
             const target = imgTarget.getBoundingClientRect();
 
             // Cálculos de progreso y transformaciones
-            const progress = Math.min(scrollY / (vh * 0.8), 1);
+            const progress = Math.min(Math.max(scrollY / (vh * 0.8), 0), 1);
             const ip = Math.min(progress / 0.8, 1);
+            const docked = ip >= 1;
             const fade = Math.max(1 - progress * 6, 0);
             const showHeader = progress > 0.4;
             const showAbout = progress > 0.8;
             const ap = !isMobile ? Math.max((progress - 0.8) / 0.2, 0) : 0;
 
-            const top = ip < 1 ? (target.top + scrollY) * ip : target.top + scrollY;
+            // en vuelo la imagen es fixed (coordenadas de viewport): el scroll del compositor
+            // no la arrastra y no hay salto hasta que el JS la recoloca. Anclada en el about
+            // vuelve a absolute (coordenadas de documento) y se mueve sola con la página
+            const targetDocTop = target.top + scrollY;
+            const top = docked ? targetDocTop : targetDocTop * ip - scrollY;
             const left = ip < 1 ? target.left * ip : target.left;
             const width = ip < 1 ? vw + (target.width - vw) * ip : target.width;
             const height = ip < 1 ? vh + (target.height - vh) * ip : target.height;
 
             // aplica estilos y clases
             scrollImg.style.cssText = `top:${top}px;left:${left}px;width:${width}px;height:${height}px;`;
+            scrollImg.classList.toggle('is-docked', docked);
             heroContent.style.opacity = fade;
             heroContent.style.transform = `translateY(${-progress * 200}px)`;
             header?.classList.toggle('is-visible', showHeader);
@@ -59,11 +65,16 @@
             scrollTicking = false;
         };
 
-        window.addEventListener('scroll', () => {
+        const requestHeroUpdate = () => {
             if (scrollTicking) return;
             scrollTicking = true;
             requestAnimationFrame(onHeroScroll);
-        }, { passive: true });
+        };
+
+        window.addEventListener('scroll', requestHeroUpdate, { passive: true });
+        window.addEventListener('resize', requestHeroUpdate, { passive: true });
+        // estado inicial: la página puede cargar con el scroll restaurado
+        onHeroScroll();
     }
 
 
