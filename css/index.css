@@ -1631,6 +1631,7 @@ body.page-project {
     letter-spacing: 0.08em;
 }
 .project__case-item dd {
+    font-family: var(--font-text);
     font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
     line-height: 1.7;
 }
