@@ -393,6 +393,14 @@ button {
     opacity: 1;
     transform: translateY(0);
 }
+/* sin JS nadie añade .is-visible: el contenido queda visible desde el inicio */
+@media (scripting: none) {
+    .reveal,
+    .about__content {
+        opacity: 1;
+        transform: none;
+    }
+}
 
 /* header */
 
@@ -1604,6 +1612,41 @@ body.page-project {
     line-height: 1.7;
 }
 
+/* case - desafío · solución · mi rol · resultado. mismo grid que los créditos */
+.project__case {
+    display: grid;
+}
+.project__case-item {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: var(--space-m);
+    padding: var(--space-m) 0;
+    border-top: var(--border-line) var(--color-light-surface);
+}
+.project__case-item:last-child {
+    border-bottom: var(--border-line) var(--color-light-surface);
+}
+.project__case-item dt {
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+}
+.project__case-item dd {
+    font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+    line-height: 1.7;
+}
+
+/* figura de la galería; la leyenda es opcional y solo va en piezas clave */
+.project__figure {
+    width: 100%;
+}
+.project__caption {
+    padding: 0.75rem clamp(1rem, 3vw, 2rem) 1.25rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--color-dark-subtle);
+}
+
 .project__credits {
     max-width: 45rem;
     padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 5vw, 2rem)
@@ -1629,7 +1672,8 @@ body.page-project {
 }
 
 @media (max-width: 540px) {
-    .project__credits-row {
+    .project__credits-row,
+    .project__case-item {
         grid-template-columns: 1fr;
         gap: var(--space-s);
     }

@@ -184,7 +184,7 @@
         // imagenes de preview por categoria
         const previews = {
             'branding': [
-                'media/projects/branding/refiori/branding-refiori-00.jpg',
+                'media/projects/branding/refiore/branding-refiore-00.jpg',
                 'media/projects/branding/wote/branding-wote-00.jpg',
                 'media/projects/branding/tondafoto/branding-tonda-foto-00.jpg'
             ],
