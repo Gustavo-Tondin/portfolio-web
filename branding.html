@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 
     <!-- Switzer (fuente principal): bloqueante (LCP en hero) -->
-    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap"/>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f%5B%5D=switzer@1&display=swap"/>
 
     <!-- Google Fonts (italics y labels): non-blocking via preload + onload -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,300;1,400;1,700&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
@@ -97,7 +97,7 @@
         <li><a href="contacto.html" class="nav-link nav-link--light">Contacto</a></li>
     </ul>
 
-    <!-- `style="--index: N"` en los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
+    <!-- la variable index del style inline de los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
     <ul class="main-links">
         <li class="main-links__item" style="--index: 0;">
             <a href="branding.html" data-category="branding" aria-current="page">
