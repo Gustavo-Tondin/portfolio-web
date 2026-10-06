@@ -1697,7 +1697,7 @@ body.page-project {
     } /* que la sombra se vea */
 }
 
-/* variante posts - piezas de social media (4:5)
+/* variante posts - piezas sueltas: social media (4:5) y fotos de los ensayos
    cada pieza entra entera en una pantalla: la altura manda sobre el ancho,
    y el padding lateral + gap las separan en vez de apilarlas pegadas */
 .project__gallery.project__gallery--posts {
@@ -1711,11 +1711,11 @@ body.page-project {
     --post-block: calc(100svh - var(--header-height) - clamp(3rem, 8vw, 6rem));
 }
 
-/* el ancho sale del alto disponible (piezas 4:5 -> 0.8) en vez de al revés:
-   así la pieza entra entera y la imagen sigue reservando su espacio (sin CLS) */
+/* el ancho sale del alto disponible por la proporción ancho/alto (--ratio, 4:5 por defecto)
+   en vez de al revés: así la pieza entra entera y la imagen sigue reservando su espacio (sin CLS) */
 .project__gallery--posts .project__figure {
     display: block;
-    inline-size: min(100%, calc(var(--post-block) * 0.8));
+    inline-size: min(100%, calc(var(--post-block) * var(--ratio, 0.8)));
     border-radius: var(--radius-m);
     overflow: hidden;
 }

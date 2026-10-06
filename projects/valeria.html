@@ -7,7 +7,7 @@
 
     <!-- Primary Meta Tags -->
     <title>Valeria - Fotografía · Gustavo Tondin</title>
-    <meta name="description" content="Valeria - proyecto de fotografía desarrollado por Gustavo Tondin." />
+    <meta name="description" content="Ensayo femenino de Valeria, el trabajo más antiguo del portfolio: contraluz, bosque y un retrato natural. Fotografía de Gustavo Tondin." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://gustavo-tondin.github.io/portfolio-web/projects/valeria.html" />
@@ -16,14 +16,14 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://gustavo-tondin.github.io/portfolio-web/projects/valeria.html" />
     <meta property="og:title" content="Valeria - Fotografía · Gustavo Tondin" />
-    <meta property="og:description" content="Proyecto de fotografía - Valeria." />
+    <meta property="og:description" content="Valeria: retrato natural a la última luz del día." />
     <meta property="og:image" content="https://gustavo-tondin.github.io/portfolio-web/media/projects/fotografia/valeria/ensaio-valeria-00.jpg" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Valeria - Fotografía · Gustavo Tondin" />
-    <meta property="twitter:description" content="Proyecto de fotografía - Valeria." />
+    <meta property="twitter:description" content="Valeria: retrato natural a la última luz del día." />
     <meta property="twitter:image" content="https://gustavo-tondin.github.io/portfolio-web/media/projects/fotografia/valeria/ensaio-valeria-00.jpg" />
 
     <!-- Favicon -->
@@ -144,32 +144,38 @@
         </p>
     </header>
 
-    <!-- galería: imágenes apiladas verticalmente, sin gaps, max-width 1440px -->
-    <section class="project__gallery" aria-label="Galería del proyecto Valeria">
+    <!-- galería: fotos sueltas, cada una entra entera en una pantalla -->
+    <section class="project__gallery project__gallery--posts" aria-label="Galería del proyecto Valeria">
 
-        <picture class="project__figure">
+        <picture class="project__figure" style="--ratio: 1.000">
             <source type="image/webp" srcset="../media/projects/fotografia/valeria/ensaio-valeria-00.webp">
-            <img src="../media/projects/fotografia/valeria/ensaio-valeria-00.jpg" width="600" height="900" alt="Valeria - imagen 00">
+            <img src="../media/projects/fotografia/valeria/ensaio-valeria-00.jpg" width="1200" height="1200" alt="Retrato en blanco y negro de Valeria con gafas, a contraluz en un bosque">
         </picture>
 
-        <picture class="project__figure">
+        <!-- intro - texto breve del ensayo -->
+        <div class="project__intro">
+            <h2 class="project__intro-title heading-italic">Donde empezó</h2>
+            <p class="project__intro-text">El trabajo más antiguo del portfolio: un retrato a la última luz del día, entre color y blanco y negro, contraluz y bosque. Aquí empezó la búsqueda de un retrato natural, más cerca de la risa que de la pose.</p>
+        </div>
+
+        <picture class="project__figure" style="--ratio: 0.783">
             <source type="image/webp" srcset="../media/projects/fotografia/valeria/ensaio-valeria-01.webp">
-            <img src="../media/projects/fotografia/valeria/ensaio-valeria-01.jpg" width="1200" height="1200" loading="lazy" alt="Valeria - imagen 01">
+            <img src="../media/projects/fotografia/valeria/ensaio-valeria-01.jpg" width="1400" height="1787" loading="lazy" alt="Valeria sonríe frente a un fondo de franjas roja y amarilla">
         </picture>
 
-        <picture class="project__figure">
+        <picture class="project__figure" style="--ratio: 0.718">
             <source type="image/webp" srcset="../media/projects/fotografia/valeria/ensaio-valeria-02.webp">
-            <img src="../media/projects/fotografia/valeria/ensaio-valeria-02.jpg" width="600" height="836" loading="lazy" alt="Valeria - imagen 02">
+            <img src="../media/projects/fotografia/valeria/ensaio-valeria-02.jpg" width="600" height="836" loading="lazy" alt="Valeria ríe con los brazos abiertos en un camino de tierra">
         </picture>
 
-        <picture class="project__figure">
+        <picture class="project__figure" style="--ratio: 0.667">
             <source type="image/webp" srcset="../media/projects/fotografia/valeria/ensaio-valeria-03.webp">
-            <img src="../media/projects/fotografia/valeria/ensaio-valeria-03.jpg" width="1400" height="1400" loading="lazy" alt="Valeria - imagen 03">
+            <img src="../media/projects/fotografia/valeria/ensaio-valeria-03.jpg" width="600" height="900" loading="lazy" alt="Retrato de Valeria entre troncos de eucalipto">
         </picture>
 
-        <picture class="project__figure">
+        <picture class="project__figure" style="--ratio: 0.667">
             <source type="image/webp" srcset="../media/projects/fotografia/valeria/ensaio-valeria-04.webp">
-            <img src="../media/projects/fotografia/valeria/ensaio-valeria-04.jpg" width="600" height="900" loading="lazy" alt="Valeria - imagen 04">
+            <img src="../media/projects/fotografia/valeria/ensaio-valeria-04.jpg" width="1280" height="1920" loading="lazy" alt="Valeria sentada a contraluz entre plantas, con la cabeza inclinada">
         </picture>
 
     </section>
@@ -190,7 +196,7 @@
             </div>
             <div class="project__credits-row">
                 <span class="label">Mi rol</span>
-                <p>dirección de arte · Fotografía</p>
+                <p>Dirección de arte · Fotografía</p>
             </div>
         </div>
     </section>
