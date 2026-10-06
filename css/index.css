@@ -1680,10 +1680,10 @@ body.page-project {
     }
 }
 
-.project__visit {
-    max-width: var(--max-width-xl);
-    padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 5vw, 2rem);
-    text-align: center;
+/* enlace al sitio en producción, dentro del case de web design */
+.project__intro .btn {
+    align-self: center;
+    white-space: nowrap;
 }
 .project__visit-url {
     letter-spacing: 0.02em;
