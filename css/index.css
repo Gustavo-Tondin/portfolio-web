@@ -591,9 +591,14 @@ button {
     /* card aparece cuando llega al final de pagina */
     transform: translateY(calc(100% - var(--hover-height)));
 }
-.main-links__item--next.is-ready:hover {
+.main-links__item--next.is-ready:not(.is-filling):hover {
     --hover-height: clamp(11rem, 17vw, 16rem);
     transform: translateY(calc(100% - var(--hover-height)));
+}
+.main-links__item--next.is-filling {
+    /* seguir rodando al final: --fill (0 a 1, del JS) sube la tarjeta desde su reposo hasta cubrir el 55% */
+    transform: translateY(calc((100% - var(--hover-height)) * (1 - var(--fill, 0)) + 45% * var(--fill, 0)));
+    transition: transform 0.25s ease-out;
 }
 .main-links__item--next.is-focused {
     /* animación de subida al clickar */

@@ -10,6 +10,7 @@
     const navigation = document.getElementById('navigation');
     const nextCard = document.querySelector('.main-links__item--next');
     const nextLink = nextCard?.querySelector('a');
+    const scroller = document.querySelector('[data-showcase-scroller]'); // el contenedor de las imagenes es el que tiene el scroll
     const isMobile = window.innerWidth <= 768;
 
 
@@ -157,15 +158,13 @@
     });
 
 
-    // next section card - similar al main links ====================================
+    // next section card - click o seguir rodando al final de la pagina ====================================
     if (nextCard && nextLink) {
-        nextLink.addEventListener('click', (e) => {
-            if (isNavigating) return;
-
-            e.preventDefault();
+        // misma secuencia del main links: sube, baja y cambia de pagina
+        const goNext = () => {
             isNavigating = true;
-
-            nextCard.classList.replace('is-ready', 'is-focused');
+            nextCard.classList.remove('is-ready', 'is-filling');
+            nextCard.classList.add('is-focused');
 
             setTimeout(() => {
                 nextCard.classList.replace('is-focused', 'is-leaving');
@@ -173,7 +172,59 @@
                     if (nextLink.href) window.location.href = nextLink.href;
                 }, 500);
             }, 700);
+        };
+
+        nextLink.addEventListener('click', (e) => {
+            if (isNavigating) return;
+            e.preventDefault();
+            goNext();
         });
+
+        // seguir rodando al final: --fill (0 a 1) sube la tarjeta hasta llenar la pantalla y dispara goNext
+        const atEnd = () => scroller
+            ? scroller.scrollTop + scroller.clientHeight >= scroller.scrollHeight - 1
+            : window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 1;
+        let fill = 0;
+        let lastWheel = 0;
+        let armed = false;
+        let touchY = 0;
+
+        const setFill = (value) => {
+            fill = Math.min(Math.max(value, 0), 1);
+            nextCard.style.setProperty('--fill', fill);
+            nextCard.classList.toggle('is-filling', fill > 0);
+            if (fill === 1) goNext();
+        };
+
+        // delta > 0 = seguir bajando; solo llena con la tarjeta visible y la pagina al final
+        const pushFill = (delta) => {
+            if (isNavigating || header?.classList.contains('is-menu-open')) return;
+            if (!nextCard.classList.contains('is-ready') || !atEnd()) {
+                if (fill) setFill(0);
+                return;
+            }
+            setFill(fill + delta / (window.innerHeight * 0.6));
+        };
+
+        window.addEventListener('wheel', (e) => {
+            // la inercia del trackpad llega como rafaga continua: solo un gesto nuevo (pausa > 100 ms)
+            // que empieza con la pagina ya al final arma el llenado, asi un scroll fuerte no cambia de pagina solo
+            if (e.timeStamp - lastWheel > 100) armed = atEnd();
+            lastWheel = e.timeStamp;
+            if (armed) pushFill(e.deltaY * [1, 40, window.innerHeight][e.deltaMode]); // deltaMode: pixel, linea, pagina
+        }, { passive: true });
+
+        window.addEventListener('touchstart', (e) => { touchY = e.touches[0].clientY; }, { passive: true });
+        window.addEventListener('touchmove', (e) => {
+            const y = e.touches[0].clientY;
+            pushFill(touchY - y);
+            touchY = y;
+        }, { passive: true });
+
+        // scroll fuera del final (barra, teclado) devuelve la tarjeta a su lugar
+        (scroller || window).addEventListener('scroll', () => {
+            if (fill && !atEnd()) setFill(0);
+        }, { passive: true });
     }
 
 
@@ -236,7 +287,6 @@
     const showcase = document.querySelector('[data-showcase]');
     if (!showcase) return; // si no hay showcase, no hace falta seguir cargando codigo
 
-    const scroller  = showcase.querySelector('[data-showcase-scroller]'); // el contenedor de las imagenes es el que tiene el scroll
     const sections  = showcase.querySelectorAll('.showcase__section'); 
     const listItems = showcase.querySelectorAll('.showcase__list-item');
     const total     = sections.length;
