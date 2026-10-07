@@ -1528,6 +1528,11 @@ body.has-showcase .main-links__item--next {
     .showcase__img { 
         height: clamp(12rem, 45vh, 20rem);
     }
+    /* piezas 4:5 (posts) entran enteras: la proporción manda sobre la altura fija */
+    .showcase__img--post {
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
 }
 
 /* project pages (projects/*.html) */

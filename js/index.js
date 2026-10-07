@@ -235,24 +235,24 @@
         // imagenes de preview por categoria
         const previews = {
             'branding': [
-                'media/projects/branding/refiore/branding-refiore-00.jpg',
-                'media/projects/branding/wote/branding-wote-00.jpg',
-                'media/projects/branding/tondafoto/branding-tonda-foto-00.jpg'
+                'media/projects/branding/refiore/refiore-portada-logotipo-pareja.jpg',
+                'media/projects/branding/wote/wote-portada-logotipo-chave-ancestral.jpg',
+                'media/projects/branding/tondafoto/tondafoto-logotipo-franjas.jpg'
             ],
             'web-design': [
-                'media/projects/web-design/riwer-labs/web-riwerlabs-desktop-00-hero.jpg',
-                'media/projects/web-design/eners/web-eners-desktop-00-hero.jpg',
-                'media/projects/web-design/identiduca/web-identiduca-desktop-00-hero.jpg'
+                'media/projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar.jpg',
+                'media/projects/web-design/eners/eners-sitio-hero-paneles-solares.jpg',
+                'media/projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente.jpg'
             ],
             'artes-graficas': [
-                'media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-00.jpg',
-                'media/projects/artes-graficas/identiduca/zine-identiduca-00.jpg',
-                'media/projects/artes-graficas/gauja-lab/social-media-gauja-lab-05.jpg'
+                'media/projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar.jpg',
+                'media/projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra.jpg',
+                'media/projects/artes-graficas/gauja-lab/gauja-lab-post-simplifique.jpg'
             ],
             'fotografia': [
-                'media/projects/fotografia/aline-e-eduardo/ensaio-aline-e-eduardo-00.jpg',
-                'media/projects/fotografia/carol/ensaio-carol-00.jpg',
-                'media/projects/fotografia/valeria/ensaio-valeria-00.jpg'
+                'media/projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito.jpg',
+                'media/projects/fotografia/carol/ensayo-carol-gradas-estadio.jpg',
+                'media/projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque.jpg'
             ]
         };
 
