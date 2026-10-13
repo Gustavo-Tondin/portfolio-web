@@ -115,9 +115,12 @@
 
     menuBtn?.addEventListener('click', toggleMenu);
 
-    // escape cierra el menu 
+    // la lista de idiomas es fixed: al hacer scroll se cierra para no quedar separada del botón del hero
+    addEventListener('scroll', () => document.querySelector('.lang__list:popover-open')?.hidePopover(), { passive: true });
+
+    // escape cierra el menu (si hay un popover abierto, el primer escape cierra solo el popover)
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && header?.classList.contains('is-menu-open')) toggleMenu();
+        if (e.key === 'Escape' && header?.classList.contains('is-menu-open') && !document.querySelector(':popover-open')) toggleMenu();
     });
 
 

@@ -1,3 +1,4 @@
+{% from "macros.njk" import langSwitch with context %}
 <!-- =======================================================================================
     HEADER
 ======================================================================================= -->
@@ -7,11 +8,8 @@
     </a>
     <nav>
         <ul class="header__nav-list">
-            <li class="header__nav-item header__nav-item--hide">
-                <a href="{{ 'contacto' | href }}" class="nav-link"{% if navCurrent == "contacto" %} aria-current="page"{% endif %}>{{ t.nav.contact }}</a>
-            </li>
-            <li class="header__nav-item header__nav-item--hide">
-                <a href="{{ 'portfolio' | href }}" class="nav-link"{% if navCurrent == "portfolio" %} aria-current="page"{% endif %}>{{ t.nav.portfolio }}</a>
+            <li class="header__nav-item">
+                {{ langSwitch("lang-header") }}
             </li>
             <li class="header__nav-item header__nav-item--menu">
                 <button

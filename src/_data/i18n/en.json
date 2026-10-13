@@ -6,7 +6,8 @@
     "contact": "Contact",
     "menu": "Menu",
     "menuOpen": "Open menu",
-    "menuClose": "Close"
+    "menuClose": "Close",
+    "language": "Language"
   },
   "next": {
     "section": "Next section",

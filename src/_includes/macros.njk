@@ -24,3 +24,19 @@
 {%- if section %}
 </section>{% endif %}
 {%- endmacro %}
+
+
+{# Language switcher: button with the current language + list in a popover. name: unique popover id; cls: wrapper class; mod: button modifier #}
+{% macro langSwitch(name, cls = "", mod = "") %}
+<div class="lang{{ ' ' + cls if cls }}">
+    <button class="lang__button nav-link{{ ' ' + mod if mod }}" type="button" popovertarget="{{ name }}" aria-label="{{ t.nav.language }} ({{ site.labels[lang] }})">
+        {{ site.labels[lang] }}
+        <span class="lang__caret" aria-hidden="true"></span>
+    </button>
+    <ul class="lang__list" id="{{ name }}" popover>
+{%- for l in site.langs %}
+        <li><a href="{{ pageId | route(l) | rel }}" class="lang__link nav-link" hreflang="{{ site.hreflang[l] }}" lang="{{ site.hreflang[l] }}"{% if l == lang %} aria-current="page"{% endif %}><span class="nav-link__circle"></span>{{ site.names[l] }}</a></li>
+{%- endfor %}
+    </ul>
+</div>
+{%- endmacro %}

@@ -362,6 +362,46 @@ button {
     background-color: var(--link-color);
 }
 
+/* lang - idioma actual + lista en popover (top layer: queda por encima del menú abierto); vars: --lang-top, --lang-right (posición fija de la lista bajo el botón) */
+.lang {
+    /* header: el botón está a la izquierda del menú → padding del header + menú (min-width 6.5rem) + gap (1.5rem) */
+    --lang-top: 3.875rem;
+    --lang-right: calc(clamp(1.5rem, 5vw, 2.5rem) + 8rem);
+}
+.lang__caret {
+    width: 0.375rem;
+    height: 0.375rem;
+    border-right: 1.5px solid var(--link-color);
+    border-bottom: 1.5px solid var(--link-color);
+    transform: translateY(-25%) rotate(45deg);
+    transition: transform var(--transition-fast);
+}
+.lang:has(:popover-open) .lang__caret {
+    transform: translateY(25%) rotate(-135deg);
+}
+.lang__list {
+    position: fixed;
+    inset: auto;
+    top: var(--lang-top);
+    right: var(--lang-right);
+    margin: 0;
+    padding: 1rem 1.25rem;
+    border: var(--border-line) var(--color-light-surface);
+    border-radius: var(--radius-m);
+    background-color: var(--color-light);
+}
+.lang__list:popover-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.lang__link[aria-current] {
+    opacity: 1;
+}
+.lang__link[aria-current] .nav-link__circle {
+    background-color: var(--link-color);
+}
+
 .scroll-image {
     position: fixed; /* en vuelo no depende del scroll; el JS la ancla con is-docked */
     top: 0;
@@ -436,16 +476,6 @@ button {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px); /* fix safari */
 }
-.header.is-visible .header__nav-item--hide,
-.page-branding .header .header__nav-item--hide,
-.page-web-design .header .header__nav-item--hide,
-.page-artes-graficas .header .header__nav-item--hide,
-.page-fotografia .header .header__nav-item--hide,
-.page-portfolio .header .header__nav-item--hide,
-.page-contacto .header .header__nav-item--hide {
-    opacity: 0.8;
-    pointer-events: auto;
-}
 
 .header.is-menu-open {
     transform: translateY(0);
@@ -457,12 +487,9 @@ button {
 .header.is-menu-open .header__logo img {
     filter: brightness(0) invert(1);
 }
-.header.is-menu-open .header__nav-item--hide {
-    display: none;
-}
 .header.is-menu-open .header__logo,
-.header.is-menu-open .nav-link--bordered,
-.header.is-menu-open .nav-link__circle {
+.header.is-menu-open .lang__button,
+.header.is-menu-open .nav-link--bordered {
     --link-color: var(--color-light);
 }
 
@@ -484,16 +511,6 @@ button {
 
 .header__nav-item {
     transition: var(--transition-fast);
-}
-
-.header__nav-item--hide {
-    opacity: 0;
-    pointer-events: none;
-}
-@media (max-width: 768px) {
-    .header__nav-item--hide {
-        display: none;
-    }
 }
 
 /* menu */
@@ -651,6 +668,16 @@ button {
     padding: 4rem clamp(1.25rem, 5vw, 3rem);
     position: relative;
     z-index: 1;
+}
+
+/* idioma en la esquina superior derecha del banner */
+.hero__lang {
+    /* el hero mide 100vw (incluye la barra de scroll): 100vw - 100% vale 0 en el hero y el ancho de la barra en la lista fixed */
+    --lang-top: 3.375rem;
+    --lang-right: calc(clamp(1.25rem, 5vw, 3rem) - (100vw - 100%));
+    position: absolute;
+    top: 1.5rem;
+    right: var(--lang-right);
 }
 
 .hero__top {

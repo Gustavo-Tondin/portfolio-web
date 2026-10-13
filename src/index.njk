@@ -8,7 +8,7 @@ heroPreload: true
 ---
 {% extends "base.njk" %}
 {% set pageId = "index" %}
-{% from "macros.njk" import next with context %}
+{% from "macros.njk" import next, langSwitch with context %}
 {% set head = t.pages.index %}
 
 {% block main %}
@@ -44,6 +44,8 @@ heroPreload: true
 
     <!-- Hero ======================================================================================= -->
     <section class="hero" id="hero">
+        {{ langSwitch("lang-hero", "hero__lang", "nav-link--light") }}
+
         <div class="hero__top">
             <h1 class="hero__title heading-display">Gustavo Tondin</h1>
             <p class="hero__location label">{{ t.home.location }}</p>
