@@ -40,6 +40,11 @@
       "title": "Mensaje enviado - Gustavo Tondin",
       "description": "Gracias por escribir. Te respondo lo antes posible.",
       "ogDescription": "Gracias por escribir. Te respondo lo antes posible."
+    },
+    "privacidad": {
+      "title": "Privacidad - Gustavo Tondin",
+      "description": "Qué datos recoge el formulario de contacto de Gustavo Tondin, para qué se usan, quién los trata y cómo ejercer tus derechos.",
+      "ogDescription": "Qué datos recoge el formulario de contacto y cómo ejercer tus derechos."
     }
   },
   "home": {
@@ -135,11 +140,56 @@
     "message": "Dime, ¿qué necesitas?",
     "send": "Enviar",
     "subject": "Nuevo mensaje desde el portfolio",
-    "privacy": "Tus datos se envían a través de Web3Forms, con verificación de hCaptcha, y solo se usan para responderte."
+    "privacy": "Tus datos se envían a través de Web3Forms, con verificación de hCaptcha, y solo se usan para responderte.",
+    "privacyLink": "Política de privacidad.",
+    "captcha": "Marca la casilla del captcha antes de enviar."
   },
   "thanks": {
     "title": "Gracias",
     "text": "Recibí tu mensaje y te respondo lo antes posible.",
     "back": "Volver al inicio"
+  },
+  "privacy": {
+    "category": "Legal",
+    "title": "Privacidad",
+    "updated": "Actualizada el 13 de octubre de 2026",
+    "intro": {
+      "title": "Qué hago con los datos que me envías",
+      "text": "Este sitio no tiene registro, analítica ni publicidad. Los únicos datos personales que recojo son los que escribes en el formulario de contacto, y solo los uso para responderte."
+    },
+    "items": [
+      {
+        "term": "Responsable",
+        "text": "Gustavo Tondin, diseñador gráfico autónomo en Valencia (España). Contacto: <a class=\"link link--inline\" href=\"mailto:gus.tondin@gmail.com\">gus.tondin@gmail.com</a>."
+      },
+      {
+        "term": "Datos",
+        "text": "Nombre, correo electrónico y el mensaje que escribes. Al verificar el captcha, hCaptcha trata además datos técnicos del navegador, como la IP y la interacción con la página."
+      },
+      {
+        "term": "Finalidad",
+        "text": "Responder a tu mensaje y, si me lo pides, preparar un presupuesto. No envío newsletters ni uso tus datos para publicidad."
+      },
+      {
+        "term": "Base legal",
+        "text": "Tu propia solicitud: al enviar el formulario me pides una respuesta (art. 6.1.b RGPD). El captcha se basa en mi interés legítimo en proteger el formulario del spam (art. 6.1.f RGPD)."
+      },
+      {
+        "term": "Encargados",
+        "text": "<a class=\"link link--inline\" href=\"https://web3forms.com/privacy\" rel=\"noopener\">Web3Forms</a>, que recibe el formulario y me lo reenvía por correo; <a class=\"link link--inline\" href=\"https://www.hcaptcha.com/privacy\" rel=\"noopener\">hCaptcha</a> (Intuition Machines, Inc.), que comprueba que eres una persona; y <a class=\"link link--inline\" href=\"https://policies.google.com/privacy\" rel=\"noopener\">Google</a>, que aloja mi correo. Pueden tratar los datos fuera del Espacio Económico Europeo, sobre todo en Estados Unidos; hCaptcha y Google están adheridas al Marco de Privacidad de Datos UE-EE. UU. No cedo tus datos a nadie más."
+      },
+      {
+        "term": "Conservación",
+        "text": "Guardo el mensaje mientras dure la conversación y, si trabajamos juntos, durante la relación profesional y los plazos legales que correspondan. Si no, lo borro en un máximo de 12 meses. Web3Forms guarda una copia durante 30 días."
+      },
+      {
+        "term": "Derechos",
+        "text": "Puedes pedir acceso, rectificación, supresión, oposición, limitación o portabilidad de tus datos escribiendo a <a class=\"link link--inline\" href=\"mailto:gus.tondin@gmail.com\">gus.tondin@gmail.com</a>. Si crees que no los he tratado bien, puedes reclamar ante la <a class=\"link link--inline\" href=\"https://www.aepd.es\" rel=\"noopener\">Agencia Española de Protección de Datos</a>."
+      }
+    ],
+    "site": {
+      "title": "Lo que carga el sitio",
+      "text": "El sitio está alojado en <a class=\"link link--inline\" href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">GitHub Pages</a> (GitHub, Inc.), que registra la IP de las visitas por seguridad. Las fuentes se descargan de Google Fonts y Fontshare, que también reciben tu IP. No uso cookies propias. hCaptcha solo se carga cuando empiezas a rellenar el formulario y puede usar cookies técnicas necesarias para la verificación."
+    }
   }
 }

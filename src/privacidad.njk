@@ -1,0 +1,42 @@
+---
+pagination:
+  data: langPages
+  size: 1
+  alias: pg
+permalink: "{{ 'privacidad' | route(pg.lang) }}"
+bodyClass: page-project
+---
+{% extends "base.njk" %}
+{% set pageId = "privacidad" %}
+{% set head = t.pages.privacidad %}
+{% set p = t.privacy %}
+
+{% block main %}
+<!-- =======================================================================================
+    MAIN - política de privacidad del formulario, con la maqueta de las páginas de proyecto
+======================================================================================= -->
+<main class="project">
+
+    <header class="project__header">
+        <span class="project__category label">{{ p.category }}</span>
+        <h1 class="project__title heading-italic">{{ p.title }}</h1>
+        <p class="project__meta label">{{ p.updated }}</p>
+    </header>
+
+    <section class="project__intro">
+        <h2 class="project__intro-title heading-italic">{{ p.intro.title }}</h2>
+        <p class="project__intro-text">{{ p.intro.text }}</p>
+        <dl class="project__case">
+{%- for item in p.items %}
+            <div class="project__case-item">
+                <dt class="label">{{ item.term }}</dt>
+                <dd>{{ item.text | safe }}</dd>
+            </div>
+{%- endfor %}
+        </dl>
+        <h2 class="project__intro-title heading-italic">{{ p.site.title }}</h2>
+        <p class="project__intro-text">{{ p.site.text | safe }}</p>
+    </section>
+
+</main>
+{% endblock %}

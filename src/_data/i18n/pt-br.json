@@ -40,6 +40,11 @@
       "title": "Mensagem enviada - Gustavo Tondin",
       "description": "Obrigado por escrever. Respondo o quanto antes.",
       "ogDescription": "Obrigado por escrever. Respondo o quanto antes."
+    },
+    "privacidad": {
+      "title": "Privacidade - Gustavo Tondin",
+      "description": "Quais dados o formulário de contato de Gustavo Tondin coleta, para que são usados, quem os trata e como exercer seus direitos.",
+      "ogDescription": "Quais dados o formulário de contato coleta e como exercer seus direitos."
     }
   },
   "home": {
@@ -135,11 +140,56 @@
     "message": "Me conta, do que você precisa?",
     "send": "Enviar",
     "subject": "Nova mensagem pelo portfólio",
-    "privacy": "Seus dados são enviados pelo Web3Forms, com verificação do hCaptcha, e usados só para responder você."
+    "privacy": "Seus dados são enviados pelo Web3Forms, com verificação do hCaptcha, e usados só para responder você.",
+    "privacyLink": "Política de privacidade.",
+    "captcha": "Marque a caixa do captcha antes de enviar."
   },
   "thanks": {
     "title": "Obrigado",
     "text": "Recebi sua mensagem e respondo o quanto antes.",
     "back": "Voltar ao início"
+  },
+  "privacy": {
+    "category": "Legal",
+    "title": "Privacidade",
+    "updated": "Atualizada em 13 de outubro de 2026",
+    "intro": {
+      "title": "O que faço com os dados que você me envia",
+      "text": "Este site não tem cadastro, analytics nem publicidade. Os únicos dados pessoais que coleto são os que você escreve no formulário de contato, e uso só para responder você."
+    },
+    "items": [
+      {
+        "term": "Responsável",
+        "text": "Gustavo Tondin, designer gráfico autônomo em Valência (Espanha). Contato: <a class=\"link link--inline\" href=\"mailto:gus.tondin@gmail.com\">gus.tondin@gmail.com</a>."
+      },
+      {
+        "term": "Dados",
+        "text": "Nome, e-mail e a mensagem que você escreve. Ao verificar o captcha, o hCaptcha trata também dados técnicos do navegador, como o IP e a interação com a página."
+      },
+      {
+        "term": "Finalidade",
+        "text": "Responder à sua mensagem e, se você pedir, preparar um orçamento. Não envio newsletter nem uso seus dados para publicidade."
+      },
+      {
+        "term": "Base legal",
+        "text": "O seu próprio pedido: ao enviar o formulário, você me pede uma resposta (art. 6.1.b do RGPD). O captcha se baseia no meu interesse legítimo em proteger o formulário contra spam (art. 6.1.f do RGPD)."
+      },
+      {
+        "term": "Operadores",
+        "text": "<a class=\"link link--inline\" href=\"https://web3forms.com/privacy\" rel=\"noopener\">Web3Forms</a>, que recebe o formulário e o encaminha para o meu e-mail; <a class=\"link link--inline\" href=\"https://www.hcaptcha.com/privacy\" rel=\"noopener\">hCaptcha</a> (Intuition Machines, Inc.), que confere se você é uma pessoa; e <a class=\"link link--inline\" href=\"https://policies.google.com/privacy\" rel=\"noopener\">Google</a>, que hospeda o meu e-mail. Eles podem tratar os dados fora do Espaço Econômico Europeu, sobretudo nos Estados Unidos; o hCaptcha e o Google aderem ao Marco de Privacidade de Dados UE-EUA. Não repasso seus dados a mais ninguém."
+      },
+      {
+        "term": "Retenção",
+        "text": "Guardo a mensagem enquanto durar a conversa e, se trabalharmos juntos, durante a relação profissional e os prazos legais aplicáveis. Caso contrário, apago em no máximo 12 meses. O Web3Forms guarda uma cópia por 30 dias."
+      },
+      {
+        "term": "Direitos",
+        "text": "Você pode pedir acesso, retificação, exclusão, oposição, limitação ou portabilidade dos seus dados escrevendo para <a class=\"link link--inline\" href=\"mailto:gus.tondin@gmail.com\">gus.tondin@gmail.com</a>. Se achar que não os tratei bem, pode reclamar na <a class=\"link link--inline\" href=\"https://www.aepd.es\" rel=\"noopener\">Agência Espanhola de Proteção de Dados (AEPD)</a>."
+      }
+    ],
+    "site": {
+      "title": "O que o site carrega",
+      "text": "O site está hospedado no <a class=\"link link--inline\" href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\" rel=\"noopener\">GitHub Pages</a> (GitHub, Inc.), que registra o IP das visitas por segurança. As fontes são baixadas do Google Fonts e do Fontshare, que também recebem o seu IP. Não uso cookies próprios. O hCaptcha só carrega quando você começa a preencher o formulário e pode usar cookies técnicos necessários para a verificação."
+    }
   }
 }

@@ -233,6 +233,12 @@ button {
 .link:hover {
     color: var(--color-primary);
 }
+/* enlace dentro de un texto corrido: toma el tamaño del párrafo y se subraya */
+.link--inline {
+    font-size: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
 
 .label {
     font-family: var(--font-label);

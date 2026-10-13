@@ -263,9 +263,17 @@
 
     // contacto - el hCaptcha (Web3Forms) se carga al interactuar con el form: sin cookies de terceros antes ====================================
 
-    document.querySelector('.contact__form')?.addEventListener('focusin', () => {
+    const contactForm = document.querySelector('.contact__form');
+    contactForm?.addEventListener('focusin', () => {
         document.body.append(Object.assign(document.createElement('script'), { src: 'https://web3forms.com/client/script.js' }));
     }, { once: true });
+
+    // sin el captcha resuelto, Web3Forms responde con su propia página de error: se avisa aquí y no se envía
+    contactForm?.addEventListener('submit', (e) => {
+        const missing = contactForm.querySelector('[name="h-captcha-response"]')?.value === '';
+        contactForm.querySelector('.contact__alert').hidden = !missing;
+        if (missing) e.preventDefault();
+    });
 
 
     // showcase (branding/web-design/etc) ====================================

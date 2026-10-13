@@ -6,5 +6,6 @@
   "web-design": "web-design",
   "artes-graficas": {"es": "artes-graficas", "en": "graphic-arts", "pt-br": "artes-graficas"},
   "fotografia": {"es": "fotografia", "en": "photography", "pt-br": "fotografia"},
-  "gracias": {"es": "gracias", "en": "thank-you", "pt-br": "obrigado"}
+  "gracias": {"es": "gracias", "en": "thank-you", "pt-br": "obrigado"},
+  "privacidad": {"es": "privacidad", "en": "privacy", "pt-br": "privacidade"}
 }

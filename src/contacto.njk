@@ -75,7 +75,8 @@ navCurrent: contacto
 
             <div class="contact__captcha h-captcha" data-captcha="true" data-lang="{{ site.hreflang[lang] }}"></div>
 
-            <p class="contact__note">{{ t.contact.privacy }}</p>
+            <p class="contact__note">{{ t.contact.privacy }} <a class="link link--inline" href="{{ 'privacidad' | href }}">{{ t.contact.privacyLink }}</a></p>
+            <p class="contact__note contact__alert" role="alert" hidden>{{ t.contact.captcha }}</p>
 
             <button
                 class="contact__submit btn"
