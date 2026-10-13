@@ -30,7 +30,7 @@ navCurrent: portfolio
 {%- set c = categories | byId(section.category) %}
 
         <section class="portfolio-grid__section" data-category="{{ c.id }}">
-            <a href="{{ c.id | href }}" class="portfolio-grid__section-header reveal" title="{{ t.portfolio.seeAll }} {{ c.name | tr }}">
+            <a href="{{ c.id | href }}" class="portfolio-grid__section-header{% if not loop.first %} reveal{% endif %}" title="{{ t.portfolio.seeAll }} {{ c.name | tr }}">
                 <h2 class="portfolio-grid__section-title heading-italic">{{ c.name | tr }}</h2>
                 <i class="portfolio-grid__section-arrow icon-chevron"></i>
             </a>
@@ -38,7 +38,7 @@ navCurrent: portfolio
 {%- set n = n + 1 %}
 {%- set first = n == 1 %}
 
-            <a href="{{ ('projects/' + card.project) | href }}" class="portfolio-grid__project portfolio-grid__project--{{ n }} reveal" title="{{ (card.title | tr) if card.title else (projects[card.project].name | tr) + ' - ' + (c.name | tr) }}">
+            <a href="{{ ('projects/' + card.project) | href }}" class="portfolio-grid__project portfolio-grid__project--{{ n }}{% if not first %} reveal{% endif %}" title="{{ (card.title | tr) if card.title else (projects[card.project].name | tr) + ' - ' + (c.name | tr) }}">
                 <div class="portfolio-grid__project-images">
 {%- for img in card.images %}
                     <div class="portfolio-grid__project-image"{% if img.ratio %} style="--img-ratio: {{ img.ratio }};"{% endif %}>
