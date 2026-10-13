@@ -1,0 +1,48 @@
+{
+  "category": "artes-graficas",
+  "name": "Gauja Lab",
+  "type": {"es": "Social media"},
+  "year": "2023",
+  "head": {
+    "title": {"es": "Gauja Lab - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "Social media de Gauja Lab: semitono violeta y amarillo, humor y cultura pop para hablar de creatividad y ventas. Dirección creativa y diseño de Gustavo Tondin."},
+    "ogDescription": {"es": "Gauja Lab: social media con semitono, humor y cultura pop."}
+  },
+  "ogImage": "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar",
+  "posts": true,
+  "intro": {
+    "title": {"es": "Somos a Gauja Lab"},
+    "text": {"es": "Gauja Lab es el estudio creativo donde desarrollé proyectos como Wotë y Refiore. Para sus propias redes creamos una línea editorial con humor y cultura pop, que habla a otros emprendedores sobre creatividad, clientes y ventas."},
+    "case": {
+      "challenge": {"es": "Mostrar la personalidad del estudio en un feed donde las agencias se parecen entre sí, y atraer clientes hablando del día a día sin sonar a anuncio."},
+      "solution": {"es": "Fotografía recortada en semitono violeta y amarillo, titulares en una sans condensada pesada y temas que mezclan oficio y cultura pop: del cliente difícil a los mundiales de fútbol, siempre con una lección para quien vende un producto."},
+      "role": {"es": "Dirección creativa · Diseño · Estrategia de contenido."}
+    }
+  },
+  "sizes": "(max-width: 768px) 100vw, 50vw",
+  "gallery": [
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-retrato-dolar-ojos"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-cliente-chato"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-fotografos-reflex"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-wolverine"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-simplifique"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-job-aprovado"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-fotografo-sonriendo"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-historias-bois"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-saber-dancar"},
+    {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-copa-do-mundo-pele"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Gauja Lab"}
+    },
+    {"label": "year", "value": "2023"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido"}
+    }
+  ],
+  "next": "projects/identiduca-zine"
+}

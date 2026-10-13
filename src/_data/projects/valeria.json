@@ -1,0 +1,37 @@
+{
+  "category": "fotografia",
+  "name": "Valeria",
+  "type": {"es": "Ensayo femenino"},
+  "year": "2021",
+  "head": {
+    "title": {"es": "Valeria - Fotografía · Gustavo Tondin"},
+    "description": {"es": "Ensayo femenino de Valeria, el trabajo más antiguo del portfolio: contraluz, bosque y un retrato natural. Fotografía de Gustavo Tondin."},
+    "ogDescription": {"es": "Valeria: retrato natural a la última luz del día."}
+  },
+  "ogImage": "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque",
+  "posts": true,
+  "intro": {
+    "title": {"es": "Donde empezó"},
+    "text": {"es": "El trabajo más antiguo del portfolio: un retrato a la última luz del día, entre color y blanco y negro, contraluz y bosque. Aquí empezó la búsqueda de un retrato natural, más cerca de la risa que de la pose."}
+  },
+  "sizes": "(max-width: 768px) 100vw, 50vw",
+  "gallery": [
+    {"img": "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque", "ratio": "1.000"},
+    {"img": "projects/fotografia/valeria/ensayo-valeria-franjas-roja-amarilla", "ratio": "0.783"},
+    {"img": "projects/fotografia/valeria/ensayo-valeria-camino-brazos-abiertos", "ratio": "0.718"},
+    {"img": "projects/fotografia/valeria/ensayo-valeria-troncos-eucalipto", "ratio": "0.667"},
+    {"img": "projects/fotografia/valeria/ensayo-valeria-contraluz-plantas", "ratio": "0.667"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Valeria"}
+    },
+    {"label": "year", "value": "2021"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección de arte · Fotografía"}
+    }
+  ],
+  "next": "portfolio"
+}

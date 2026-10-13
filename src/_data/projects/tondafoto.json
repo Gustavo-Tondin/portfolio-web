@@ -1,0 +1,70 @@
+{
+  "category": "branding",
+  "name": "Tondafoto",
+  "type": {"es": "Marca personal"},
+  "year": "2022",
+  "head": {
+    "title": {"es": "Tondafoto - Branding · Gustavo Tondin"},
+    "description": {"es": "Tondafoto, la marca de fotografía de Gustavo Tondin: formas coloridas, estética de cartel antiguo y frases como «Look beyond life». Diseño de Uel Molon."},
+    "ogDescription": {"es": "Tondafoto: una marca de fotografía que invita a dejarse fotografiar."}
+  },
+  "ogImage": "projects/branding/tondafoto/tondafoto-logotipo-franjas",
+  "intro": {
+    "title": {"es": "Mirar más allá de la vida"},
+    "text": {"es": "Tondafoto es mi marca como fotógrafo. Mi forma de trabajar busca el momento auténtico en lugar de inducir poses, y la identidad tenía que contar eso antes de mostrar una sola foto. Las formas coloridas traducen una personalidad vibrante y el gusto por las estéticas antiguas."},
+    "case": {
+      "challenge": {"es": "Una marca de fotografía que escapara de lo tradicional: nada de cámaras, diafragmas ni firmas manuscritas, sino una identidad que transmitiera cercanía y humor, y que invitara a la gente a dejarse fotografiar."},
+      "solution": {"es": "Un logotipo que une franjas de color y el nombre «tonda» en un mismo bloque, una paleta de rosa, amarillo, verde y violeta sobre crudo y negro, y una tipografía condensada con sombra de cartel antiguo. Las frases en inglés hablan como el fotógrafo: «Look beyond life», «Look and smile», «Smile, you can be photographed», «Eternal memories»."},
+      "role": {"es": "Cliente: definí el brief y la dirección de la marca, y la uso en mi trabajo como fotógrafo. El diseño de la identidad es de Uel Molon."},
+      "result": {"es": "Una marca con voz propia que presenta al fotógrafo antes que a la foto, reconocible en redes, impresos y merch."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/branding/tondafoto/tondafoto-logotipo-franjas"},
+    {
+      "img": "projects/branding/tondafoto/tondafoto-reticula-logotipo",
+      "caption": {"es": "Construcción del logotipo"}
+    },
+    {
+      "img": "projects/branding/tondafoto/tondafoto-paleta-colores-cmyk-rgb",
+      "caption": {"es": "Paleta: rosa, amarillo, verde y violeta sobre crudo y negro"}
+    },
+    {
+      "img": "projects/branding/tondafoto/tondafoto-stickers-look-and-smile",
+      "caption": {"es": "Stickers: frases que hablan como el fotógrafo"}
+    },
+    {"img": "projects/branding/tondafoto/tondafoto-pieza-my-name-is-gustavo"},
+    {"img": "projects/branding/tondafoto/tondafoto-titular-look-beyond-life"},
+    {"img": "projects/branding/tondafoto/tondafoto-retrato-cartel-cheeeese"},
+    {"img": "projects/branding/tondafoto/tondafoto-stories-instagram"},
+    {"img": "projects/branding/tondafoto/tondafoto-carteles-diagonal"},
+    {"img": "projects/branding/tondafoto/tondafoto-cuadro-violeta-look-and-smile"},
+    {"img": "projects/branding/tondafoto/tondafoto-cartel-eternal-memories"},
+    {"img": "projects/branding/tondafoto/tondafoto-retrato-marco-logotipo"},
+    {"img": "projects/branding/tondafoto/tondafoto-camiseta-parche-photographer"},
+    {"img": "projects/branding/tondafoto/tondafoto-sudadera-bordada"},
+    {"img": "projects/branding/tondafoto/tondafoto-mupi-look-beyond-life"},
+    {"img": "projects/branding/tondafoto/tondafoto-cartel-verde-calle"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Tondafoto · marca personal"}
+    },
+    {"label": "year", "value": "2022"},
+    {
+      "label": "services",
+      "value": {"es": "Identidad visual · Tono de voz · Piezas gráficas · Merchandising"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Cliente · Brief y dirección de marca"}
+    },
+    {
+      "label": "design",
+      "value": {"es": "Uel Molon"}
+    }
+  ],
+  "next": "projects/dj-rodmotter"
+}

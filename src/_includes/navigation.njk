@@ -1,0 +1,22 @@
+<!-- =======================================================================================
+    NAVIGATION OVERLAY
+======================================================================================= -->
+<div class="navigation" id="navigation" aria-hidden="true">
+    <ul class="navigation__secondary">
+        <li><a href="{{ 'index' | href }}" class="nav-link nav-link--light">{{ t.nav.home }}</a></li>
+        <li><a href="{{ 'portfolio' | href }}" class="nav-link nav-link--light">{{ t.nav.portfolio }}</a></li>
+        <li><a href="{{ 'contacto' | href }}" class="nav-link nav-link--light">{{ t.nav.contact }}</a></li>
+    </ul>
+
+    <!-- la variable index del style inline de los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->
+    <ul class="main-links">
+{%- for c in categories %}
+        <li class="main-links__item" style="--index: {{ loop.index0 }};">
+            <a href="{{ c.id | href }}" data-category="{{ c.id }}"{% if c.id == navCurrent %} aria-current="page"{% endif %}>
+                <span class="main-links__subtitle label">{{ c.subtitle | tr }}</span>
+                <span class="main-links__title heading-display">{{ c.name | tr }}</span>
+            </a>
+        </li>
+{%- endfor %}
+    </ul>
+</div>

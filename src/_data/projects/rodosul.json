@@ -1,0 +1,44 @@
+{
+  "category": "artes-graficas",
+  "name": "RodoSul",
+  "type": {"es": "Social media"},
+  "year": "2025",
+  "head": {
+    "title": {"es": "RodoSul - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "Social media de RodoSul, empresa de gestión de residuos: azul eléctrico, fotografía de campo y mensajes sobre riesgo ambiental. Proyecto de Gustavo Tondin."},
+    "ogDescription": {"es": "RodoSul: social media para una empresa de gestión de residuos."}
+  },
+  "ogImage": "projects/artes-graficas/rodosul/rodosul-post-seguro-ambiental-camion",
+  "posts": true,
+  "intro": {
+    "title": {"es": "Dos décadas cuidando el medio ambiente"},
+    "text": {"es": "RodoSul es una empresa de gestión de residuos de la Serra Gaúcha, en el sur de Brasil, con más de veinte años de trabajo: limpieza técnica, desatasco y transporte de residuos con seguro ambiental."},
+    "case": {
+      "challenge": {"es": "Un servicio poco visible y nada glamuroso: había que explicar por qué importa y diferenciar a la empresa por seguridad y responsabilidad ambiental."},
+      "solution": {"es": "Un sistema en azul eléctrico con las curvas del logotipo, fotografía de campo y titulares directos sobre riesgos y soluciones: descarte incorrecto, cajas de grasa, seguridad del equipo."},
+      "role": {"es": "Dirección creativa · Diseño · Estrategia de contenido."}
+    }
+  },
+  "sizes": "(max-width: 768px) 100vw, 50vw",
+  "gallery": [
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-seguro-ambiental-camion"},
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-evite-entupimentos"},
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-qual-servico"},
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-descarte-incorreto"},
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-duas-decadas"},
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-descarte-indevido"},
+    {"img": "projects/artes-graficas/rodosul/rodosul-post-seguranca-nao-e-opcional"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "RodoSul · Gestión de residuos"}
+    },
+    {"label": "year", "value": "2025"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido"}
+    }
+  ],
+  "next": "projects/otros-clientes"
+}

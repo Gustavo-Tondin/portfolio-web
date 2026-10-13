@@ -1,0 +1,32 @@
+<!-- =======================================================================================
+    HEADER
+======================================================================================= -->
+<header class="header" id="siteHeader">
+    <a href="{{ 'index' | href }}" class="header__logo" aria-label="{{ t.nav.logo }}">
+        <img src="{{ 'media/tonda.svg' | rel }}" width="96" height="32" alt="" aria-hidden="true"/>
+    </a>
+    <nav>
+        <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="{{ 'contacto' | href }}" class="nav-link"{% if navCurrent == "contacto" %} aria-current="page"{% endif %}>{{ t.nav.contact }}</a>
+            </li>
+            <li class="header__nav-item header__nav-item--hide">
+                <a href="{{ 'portfolio' | href }}" class="nav-link"{% if navCurrent == "portfolio" %} aria-current="page"{% endif %}>{{ t.nav.portfolio }}</a>
+            </li>
+            <li class="header__nav-item header__nav-item--menu">
+                <button
+                    class="nav-link nav-link--bordered"
+                    type="button"
+                    id="menuButton"
+                    aria-label="{{ t.nav.menuOpen }}"
+                    aria-expanded="false"
+                    data-label-open="{{ t.nav.menu }}"
+                    data-label-close="{{ t.nav.menuClose }}"
+                >
+                    <span class="nav-link__text">{{ t.nav.menu }}</span>
+                    <span class="nav-link__circle"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>

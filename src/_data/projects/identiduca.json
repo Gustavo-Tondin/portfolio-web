@@ -1,0 +1,55 @@
+{
+  "category": "web-design",
+  "name": "Identiduca",
+  "type": {"es": "Sitio institucional"},
+  "year": "2025",
+  "head": {
+    "title": {"es": "Identiduca - Web Design · Gustavo Tondin"},
+    "description": {"es": "Sitio de Identiduca, red formativa de Valencia en protección infantil: diseño, desarrollo en WordPress y textos de Gustavo Tondin."},
+    "ogDescription": {"es": "Identiduca: diseño, desarrollo y textos para una red formativa en protección infantil."}
+  },
+  "ogImage": "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente",
+  "site": {"href": "https://www.identiduca.org/", "url": "identiduca.org"},
+  "intro": {
+    "title": {"es": "Formación valiente"},
+    "text": {"es": "Identiduca es una red formativa independiente de Valencia especializada en protección infantil y convivencia educativa. Ofrece asesoría, acompañamiento y talleres para centros educativos, profesionales y familias."},
+    "case": {
+      "challenge": {"es": "Presentar un tema delicado con seriedad y calidez a la vez, y ordenar una oferta para públicos muy distintos (direcciones de centro, docentes, profesionales sociales y familias) en un recorrido claro hasta el contacto."},
+      "solution": {"es": "Un sitio con una ilustración del mundo en la portada y el lema «Formación valiente para quienes no quieren mirar hacia otro lado». Las formaciones se presentan como tarjetas con público, contenidos y programa descargable; una sección «¿Identiduca es para ti?» habla a cada perfil, y un paso a paso, las preguntas frecuentes y un formulario que pregunta el perfil cierran el recorrido. Verde azulado y crudo con acentos en coral."},
+      "role": {"es": "Diseño, desarrollo y copywriting: escribí los textos del sitio y lo construí como un tema propio de WordPress."},
+      "result": {"es": "En línea desde 2025 en identiduca.org, con contenido que el propio equipo sigue ampliando. La colaboración continuó en 2026 con una zine impresa."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-educacion-convivencia"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-formaciones"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-equipo"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-perfiles"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-paso-a-paso-faq"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-formulario-transformacion"},
+    {"img": "projects/web-design/identiduca/identiduca-sitio-contacto-pie-de-pagina"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Identiduca"}
+    },
+    {"label": "year", "value": "2025"},
+    {
+      "label": "services",
+      "value": {"es": "Diseño web · Desarrollo · Copywriting"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Diseño · Desarrollo web · Copywriting"}
+    },
+    {
+      "label": "technology",
+      "value": {"es": "WordPress · Tema a medida"}
+    },
+    {"label": "site"}
+  ],
+  "next": "projects/riwer-labs"
+}

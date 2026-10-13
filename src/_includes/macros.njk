@@ -1,0 +1,26 @@
+{# <picture> for an image of the registry. img: key or { img, mobile }; load: "high" | "eager" | "lazy" #}
+{% macro picture(img, sizes, load = "lazy", attrs = "") %}
+{%- set key = img.img or img -%}
+<picture{{ attrs | safe }}>
+{%- if img.mobile %}
+    <source media="(max-width: 540px)" type="image/webp" srcset="{{ ('media/' + img.mobile + '.webp') | rel }}">
+    <source media="(max-width: 540px)" srcset="{{ ('media/' + img.mobile + '.jpg') | rel }}">
+{%- endif %}
+    <source type="image/webp" srcset="{{ key | srcset }}" sizes="{{ sizes }}">
+    <img{% if load == "high" %} fetchpriority="high"{% endif %} src="{{ ('media/' + key + '.jpg') | rel }}" width="{{ images[key].w }}" height="{{ images[key].h }}"{% if load == "lazy" %} loading="lazy"{% endif %} alt="{{ images[key].alt | tr }}">
+</picture>
+{%- endmacro %}
+
+{# "Next" card at the end of a page. id: route id of the target; section: aria-label of the wrapping <section> (none on category pages) #}
+{% macro next(id, category, name, subtitle, title = "", section = "") %}
+{%- if section %}
+<section class="next-section" data-next-section aria-label="{{ section }}">{% endif %}
+<div class="main-links__item main-links__item--next"{% if section %} style="--index: 0;"{% endif %}>
+    <a href="{{ id | href }}" data-category="{{ category }}"{% if title %} title="{{ title }} - {{ name }}"{% endif %}>
+        <span class="main-links__subtitle label">{{ subtitle }}</span>
+        <span class="main-links__title heading-display">{{ name }}</span>
+    </a>
+</div>
+{%- if section %}
+</section>{% endif %}
+{%- endmacro %}

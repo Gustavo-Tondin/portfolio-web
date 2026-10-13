@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "logo": "Inicio - Gustavo Tondin",
+    "home": "Inicio",
+    "portfolio": "Portfolio",
+    "contact": "Contacto",
+    "menu": "Menu",
+    "menuOpen": "Abrir menu",
+    "menuClose": "Cerrar"
+  },
+  "next": {
+    "section": "Siguiente sección",
+    "project": "Siguiente proyecto",
+    "nextSection": "próxima sección",
+    "followingSection": "siguiente sección",
+    "followingProject": "siguiente proyecto",
+    "allProjects": "todos los proyectos"
+  },
+  "pages": {
+    "index": {
+      "title": "Gustavo Tondin - Diseñador Gráfico y Web en Valencia",
+      "description": "Branding, web design, artes gráficas y fotografía por Gustavo Tondin en Valencia. Ayudo a marcas a comunicar con autoridad a través de identidad visual y presencia digital.",
+      "ogTitle": "Gustavo Tondin - Diseñador Gráfico y Web",
+      "ogDescription": "Branding y diseño web en Valencia. Identidad visual, web y narrativa de marca para empresas que quieren comunicar con autoridad."
+    },
+    "portfolio": {
+      "title": "Portfolio - Gustavo Tondin · Branding, Web, Diseño Gráfico y Fotografía",
+      "description": "Portfolio editorial de Gustavo Tondin - proyectos seleccionados de branding, web design, artes gráficas y fotografía, realizados entre Brasil y Valencia.",
+      "ogTitle": "Portfolio - Gustavo Tondin",
+      "ogDescription": "Proyectos seleccionados: branding, web design, artes gráficas y fotografía."
+    },
+    "contacto": {
+      "title": "Contacto - Gustavo Tondin · Hablemos",
+      "description": "¿Tienes un proyecto en mente? Escríbeme y hablamos. Branding, web y dirección creativa desde Valencia.",
+      "ogTitle": "Contacto - Gustavo Tondin",
+      "ogDescription": "¿Tienes un proyecto en mente? Escríbeme y hablamos."
+    }
+  },
+  "home": {
+    "heroAlt": "Gustavo Tondin, diseñador gráfico",
+    "location": "Valencia - España",
+    "tagline": "Diseñador <em class=\"hero__highlight\">estratégico</em><br /> enfocado en darle<br /> <em class=\"hero__highlight\">autoridad</em> a marcas.",
+    "about": "Sobre mí",
+    "hello": "Hola, yo soy",
+    "paragraphs": [
+      "Soy diseñador gráfico y web con base en Valencia. Llevo más de cinco años en branding, diseño digital y desarrollo web, uniendo estrategia, estética y código.",
+      "Mi enfoque: entender qué necesita una marca, darle identidad visual sólida y construir la presencia digital que le respalde. No diseño por decorar. Diseño para que las marcas comuniquen, conecten y crezcan.",
+      "He trabajado con startups, negocios y empresas en Brasil y España. Siempre con el mismo principio: cada pieza tiene un porqué."
+    ],
+    "steps": [
+      {"title": "Entender", "text": "Escuchar, analizar y definir dónde empezar."},
+      {"title": "Diseñar", "text": "Explorar soluciones claras y coherentes."},
+      {"title": "Aplicar", "text": "Llevarlo a lo real, con cuidado en los detalles."}
+    ],
+    "marqueeLabel": "Áreas de trabalho",
+    "marquee": {
+      "branding": {"text": "<branding>", "alt": "Vista previa de proyectos de branding"},
+      "web-design": {"text": "<web_design>", "alt": "Vista previa de proyectos de diseño web"},
+      "artes-graficas": {"text": "<artes_gráficas>", "alt": "Vista previa de proyectos de artes gráficas"},
+      "fotografia": {"text": "<fotografía>", "alt": "Vista previa de ensayos fotográficos"}
+    },
+    "focus": "Enfoque",
+    "focusTitle": "Entender antes de diseñar.",
+    "focusText": "Busco claridad, coherencia y propósito en cada proyecto.<br /> No diseño por estética - diseño para que las marcas comuniquen mejor.",
+    "contact": "Contacto",
+    "city": "Valencia, España",
+    "experience": "Experiencia",
+    "jobs": [
+      {
+        "date": "2025 - presente",
+        "role": "Diseñador gráfico & front-end autónomo",
+        "place": "Valencia, España",
+        "text": "Identidades visuales completas y los sitios web que las sostienen, codificados a mano en HTML, CSS y JavaScript. Piezas impresas y digitales, dirección creativa para redes y gestión integral de cada proyecto, del briefing a la entrega."
+      },
+      {
+        "date": "2022 - 2024",
+        "role": "Diseñador gráfico & web",
+        "place": "Gauja Creative Lab · Brasil, remoto",
+        "text": "Landing pages y sitios institucionales con foco en UX/UI y diseño responsive. Gestión de marca para varios clientes en paralelo y campañas en Meta Ads y Google Ads orientadas a conversión."
+      },
+      {
+        "date": "2021 - 2023",
+        "role": "Fotógrafo",
+        "place": "Tonda.foto · Brasil",
+        "text": "Dirección creativa y producción de sesiones corporativas, de producto y eventos. Edición y retoque profesional en Lightroom y Photoshop."
+      }
+    ],
+    "doTitle": "Lo que hago",
+    "do": [
+      "Identidad visual",
+      "Sistemas de marca",
+      "Dirección creativa",
+      "Diseño editorial",
+      "Web design y front-end",
+      "Diseño tipográfico"
+    ],
+    "tools": "Herramientas",
+    "softSkills": "Soft Skills",
+    "skills": ["Estrategia", "Comunicación", "Narrativa visual", "Organización"],
+    "profile": "Perfil",
+    "languagesLabel": "Idiomas:",
+    "languages": "Portugués, español e inglés.",
+    "interestsLabel": "Intereses:",
+    "interests": "Storytelling, bicicleta, arquitectura, cine."
+  },
+  "portfolio": {"label": "Proyectos seleccionados", "seeAll": "Ver todos los proyectos de"},
+  "project": {
+    "gallery": "Galería del proyecto",
+    "credits": "Créditos",
+    "visit": "Visitar sitio",
+    "visitTitle": "Visitar {name} en una nueva pestaña",
+    "case": {"challenge": "Desafío", "solution": "Solución", "role": "Mi rol", "result": "Resultado"},
+    "creditLabels": {
+      "client": "Cliente",
+      "clients": "Clientes",
+      "year": "Año",
+      "role": "Mi rol",
+      "design": "Diseño",
+      "team": "Equipo",
+      "services": "Servicios",
+      "site": "Sitio",
+      "technology": "Tecnología"
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Dime, ¿qué necesitas?",
+    "send": "Enviar"
+  }
+}

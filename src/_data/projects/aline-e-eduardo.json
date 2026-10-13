@@ -1,0 +1,54 @@
+{
+  "category": "fotografia",
+  "name": "Aline & Eduardo",
+  "type": {"es": "Ensayo de embarazo"},
+  "year": "2022",
+  "head": {
+    "title": {"es": "Aline & Eduardo - Fotografía · Gustavo Tondin"},
+    "description": {"es": "Ensayo de embarazo de Aline y Eduardo: los primeros zapatitos del bebé como hilo de la historia. Dirección de arte y fotografía de Gustavo Tondin."},
+    "ogDescription": {"es": "Aline & Eduardo: ensayo de embarazo al aire libre."}
+  },
+  "ogImage": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito",
+  "posts": true,
+  "intro": {
+    "title": {"es": "A la espera"},
+    "text": {"es": "Un ensayo de embarazo al aire libre, en un barrio tranquilo entre árboles. Los primeros zapatitos del bebé hacen de hilo conductor: aparecen solos, en las manos de la pareja y, al final, entre los dos."}
+  },
+  "sizes": "(max-width: 768px) 100vw, 75vw",
+  "gallery": [
+    {
+      "img": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito",
+      "ratio": "1.400"
+    },
+    {
+      "img": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-manos-zapatitos",
+      "sizes": "(max-width: 768px) 100vw, 50vw",
+      "ratio": "0.714"
+    },
+    {
+      "img": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-mirandose",
+      "ratio": "1.400"
+    },
+    {
+      "img": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-abrazo-barriga",
+      "sizes": "(max-width: 768px) 100vw, 50vw",
+      "ratio": "0.714"
+    },
+    {
+      "img": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-sonriendo",
+      "ratio": "1.400"
+    }
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Aline & Eduardo"}
+    },
+    {"label": "year", "value": "2022"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección de arte · Fotografía"}
+    }
+  ],
+  "next": "projects/bruna-e-rafael"
+}

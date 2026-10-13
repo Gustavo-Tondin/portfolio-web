@@ -1,0 +1,109 @@
+---
+pagination:
+  data: projectPages
+  size: 1
+  alias: pg
+permalink: "{{ ('projects/' + pg.id) | route(pg.lang) }}"
+icons: true
+ogType: article
+---
+{% extends "base.njk" %}
+{% from "macros.njk" import picture, next with context %}
+{% set p = projects[pg.id] %}
+{% set category = categories | byId(p.category) %}
+{% set name = p.name | tr %}
+{% set head = p.head %}
+{% set ogImage = p.ogImage %}
+{% set bodyClass = "page-" + p.category + " page-project" %}
+{% set navCurrent = p.category %}
+
+{% block main %}
+<!-- =======================================================================================
+    MAIN - página del proyecto: cabecera + stack continuo de imágenes
+======================================================================================= -->
+<main class="project">
+
+    <!-- cabecera centrada: categoría · título · año -->
+    <header class="project__header">
+        <span class="project__category label">{{ category.name | tr }}</span>
+        <h1 class="project__title heading-italic">{{ name }}</h1>
+        <p class="project__meta label">
+            <span>{{ p.type | tr }}</span>
+            <span class="project__meta-sep" aria-hidden="true"></span>
+            <span>{{ p.year }}</span>
+        </p>
+    </header>
+
+    <section class="project__gallery{% if p.posts %} project__gallery--posts{% endif %}" aria-label="{{ t.project.gallery }} {{ name }}">
+{% for item in p.gallery %}
+{%- set attrs = ' style="--ratio: ' + item.ratio + '"' if item.ratio else '' %}
+{%- if item.caption %}
+        <figure class="project__figure"{{ attrs | safe }}>
+            {{ picture(item.img, item.sizes or p.sizes, "eager" if loop.first else "lazy") }}
+            <figcaption class="project__caption label">{{ item.caption | tr | safe }}</figcaption>
+        </figure>
+{%- else %}
+        {{ picture(item.img, item.sizes or p.sizes, "eager" if loop.first else "lazy", ' class="project__figure"' + attrs) }}
+{%- endif %}
+{%- if loop.first %}
+
+        <div class="project__intro">
+            <h2 class="project__intro-title heading-italic">{{ p.intro.title | tr }}</h2>
+            <p class="project__intro-text">{{ p.intro.text | tr | safe }}</p>
+{%- if p.intro.case %}
+            <dl class="project__case">
+{%- for k, v in p.intro.case %}
+                <div class="project__case-item">
+                    <dt class="label">{{ t.project.case[k] }}</dt>
+                    <dd>{{ v | tr | safe }}</dd>
+                </div>
+{%- endfor %}
+            </dl>
+{%- endif %}
+{%- if p.site %}
+            <a class="btn" href="{{ p.site.href }}" target="_blank" rel="noreferrer noopener" title="{{ t.project.visitTitle | replace('{name}', name) }}">
+                <span>{{ t.project.visit }}</span>
+                <span class="project__visit-url">{{ p.site.url }}</span>
+                <i class="ri-arrow-right-s-line"></i>
+            </a>
+{%- endif %}
+        </div>
+{%- endif %}
+{% endfor %}
+    </section>
+
+    <!-- =======================================================================================
+        CRÉDITOS - ficha técnica del proyecto
+    ======================================================================================= -->
+    <section class="project__credits" aria-labelledby="credits-title-{{ pg.id }}">
+        <h2 id="credits-title-{{ pg.id }}" class="project__credits-title heading-italic">{{ t.project.credits }}</h2>
+        <div class="project__credits-list">
+{%- for row in p.credits %}
+            <div class="project__credits-row">
+                <span class="label">{{ t.project.creditLabels[row.label] }}</span>
+{%- if row.label == "site" %}
+                <p><a href="{{ p.site.href }}" target="_blank" rel="noreferrer noopener" title="{{ p.site.url }}">{{ p.site.url }}</a></p>
+{%- else %}
+                <p>{{ row.value | tr | safe }}</p>
+{%- endif %}
+            </div>
+{%- endfor %}
+        </div>
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION - placeholder en el flujo que revela la tarjeta fija de próximo proyecto
+        (el IntersectionObserver del js añade .is-ready)
+    ======================================================================================= -->
+{%- if p.next.startsWith("projects/") %}
+{%- set target = projects[p.next.slice(9)] %}
+    {{ next(p.next, target.category, target.name | tr, t.next.followingProject, t.next.project, t.next.project) }}
+{%- elif p.next == "portfolio" %}
+    {{ next("portfolio", "portfolio", t.nav.portfolio, t.next.followingSection, t.next.section, t.next.section) }}
+{%- else %}
+{%- set target = categories | byId(p.next) %}
+    {{ next(p.next, p.next, target.name | tr, t.next.followingSection, t.next.section, t.next.section) }}
+{%- endif %}
+
+</main>
+{% endblock %}

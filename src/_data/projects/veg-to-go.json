@@ -1,0 +1,51 @@
+{
+  "category": "branding",
+  "name": "Veg To Go",
+  "type": {"es": "Proyecto conceptual"},
+  "year": "2021",
+  "head": {
+    "title": {"es": "Veg To Go - Branding · Gustavo Tondin"},
+    "description": {"es": "Veg To Go, identidad conceptual para un food truck vegano: logotipo en Bungee, patrón de frutas, packaging y redes. Proyecto de Gustavo Tondin."},
+    "ogDescription": {"es": "Veg To Go: identidad conceptual para un food truck vegano."}
+  },
+  "ogImage": "projects/branding/veg-to-go/veg-to-go-logotipo-patron-frutas",
+  "intro": {
+    "title": {"es": "Comida vegana sobre ruedas"},
+    "text": {"es": "Veg To Go es un food truck vegano imaginado como ejercicio de identidad: hamburguesas artesanales y opciones a base de plantas, con ingredientes orgánicos, que llevan la comida consciente a la calle. Es un proyecto conceptual, sin cliente real."},
+    "case": {
+      "challenge": {"es": "Sacar la comida vegana del terreno de lo serio y lo restrictivo y darle el tono de la comida callejera: rápida, alegre y apetecible, reconocible desde lejos en un camión aparcado."},
+      "solution": {"es": "Un logotipo de bloque pesado en Bungee, con «To Go» apilado dentro de un cuadrado como una etiqueta de pedido y una hoja como remate. Paleta de verde profundo, amarillo mostaza y rojo tomate, un patrón de frutas ilustradas y aplicaciones que van del camión al packaging y las redes."},
+      "role": {"es": "Dirección de arte y diseño de marca: concepto, logotipo, paleta y aplicaciones."},
+      "result": {"es": "Un ejercicio para poner a prueba un sistema completo, de la identidad a su uso en camión, packaging y redes sociales."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/branding/veg-to-go/veg-to-go-logotipo-patron-frutas"},
+    {
+      "img": "projects/branding/veg-to-go/veg-to-go-paleta-tipografias",
+      "caption": {"es": "Paleta y tipografía: Bungee y Source Sans 3"}
+    },
+    {
+      "img": "projects/branding/veg-to-go/veg-to-go-aplicaciones-packaging-food-truck",
+      "caption": {"es": "Aplicaciones: packaging, food truck y señalización"}
+    },
+    {"img": "projects/branding/veg-to-go/veg-to-go-publicaciones-redes"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Proyecto conceptual · sin cliente"}
+    },
+    {"label": "year", "value": "2021"},
+    {
+      "label": "services",
+      "value": {"es": "Identidad visual · Dirección de arte · Packaging · Redes sociales"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Dirección de arte · Diseño"}
+    }
+  ],
+  "next": "web-design"
+}

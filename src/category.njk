@@ -1,0 +1,80 @@
+---
+pagination:
+  data: categoryPages
+  size: 1
+  alias: pg
+permalink: "{{ pg.id | route(pg.lang) }}"
+icons: true
+---
+{% extends "base.njk" %}
+{% from "macros.njk" import picture, next with context %}
+{% set c = categories | byId(pg.id) %}
+{% set head = c.head %}
+{% set bodyClass = "page-" + c.id + " has-showcase" %}
+{% set navCurrent = c.id %}
+
+{% block main %}
+<!-- =======================================================================================
+    MAIN
+======================================================================================= -->
+<main>
+
+    <!-- =======================================================================================
+        SHOWCASE - lista de proyectos (izq) + galería de piezas (der)
+    ======================================================================================= -->
+    <section class="showcase" data-showcase>
+
+        <!-- regla vertical y línea de progreso -->
+        <div class="showcase__line" aria-hidden="true"></div>
+
+        <div class="showcase__canva">
+            <!-- columna izquierda - lista de proyectos -->
+            <div class="showcase__left">
+                <div class="showcase__title">
+                    <h1 class="showcase__category heading-italic">{{ c.name | tr }}</h1>
+                    <span class="showcase__label label" id="showcase-title">{{ c.subtitle | tr }}</span>
+                </div>
+
+                <ol class="showcase__list">
+{%- for s in c.showcase %}
+{%- set name = projects[s.project].name | tr %}
+                    <li class="showcase__list-item{% if loop.first %} is-active{% endif %}" data-index="{{ loop.index0 }}">
+                        <a href="{{ ('projects/' + s.project) | href }}" class="showcase__list-link heading-italic" data-index="{{ loop.index0 }}" title="{{ name }} - {{ c.name | tr }}">
+                            <span class="showcase__name">{{ name }}</span>
+                            <i class="showcase__arrow ri-arrow-right-s-line"></i>
+                        </a>
+                    </li>
+{%- endfor %}
+                </ol>
+            </div>
+
+            <!-- columna derecha · galería con scroll-snap -->
+            <div class="showcase__right" data-showcase-scroller>
+{% for s in c.showcase %}
+{%- set first = loop.first %}
+                <article class="showcase__section" data-index="{{ loop.index0 }}" aria-labelledby="sc-{{ s.project }}">
+                    <div class="showcase__grid showcase__grid--layout-{{ s.layout }}">
+{%- for img in s.images %}
+                        <div class="showcase__img{% if s.post %} showcase__img--post{% endif %}">
+                            {{ picture(img, "(max-width: 768px) 58vw, 55vw", ("high" if loop.first else "eager") if first else "lazy") }}
+                        </div>
+{%- endfor %}
+                    </div>
+                </article>
+{% endfor %}
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- =======================================================================================
+    NEXT SECTION - próxima categoría
+======================================================================================= -->
+{%- set nextCategory = categories[categories.indexOf(c) + 1] %}
+{%- if nextCategory %}
+{{ next(nextCategory.id, nextCategory.id, nextCategory.name | tr, nextCategory.subtitle | tr, t.next.section) }}
+{%- else %}
+{{ next("portfolio", "portfolio", t.nav.portfolio, t.next.allProjects, t.next.section) }}
+{%- endif %}
+{% endblock %}

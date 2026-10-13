@@ -1,0 +1,54 @@
+{
+  "category": "web-design",
+  "name": "Eners",
+  "type": {"es": "Sitio institucional"},
+  "year": "2023",
+  "head": {
+    "title": {"es": "Eners - Web Design · Gustavo Tondin"},
+    "description": {"es": "Sitio institucional de Eners, empresa brasileña de energía solar: una home guiada por la conversión, en WordPress. Diseño y desarrollo de Gustavo Tondin."},
+    "ogDescription": {"es": "Eners: sitio de energía solar pensado para convertir visitas en estudios de viabilidad."}
+  },
+  "ogImage": "projects/web-design/eners/eners-sitio-hero-paneles-solares",
+  "site": {"href": "https://eners.com.br/", "url": "eners.com.br"},
+  "intro": {
+    "title": {"es": "Independencia energética"},
+    "text": {"es": "Eners es una empresa brasileña de ingeniería especializada en energía solar fotovoltaica. El sitio tenía que explicar, a quien nunca pensó en instalar paneles, por qué la energía solar compensa: ahorro en la factura de luz, independencia de la distribuidora y retorno de la inversión."},
+    "case": {
+      "challenge": {"es": "Convertir un tema técnico (potencia instalada, garantías, financiación) en un argumento simple para clientes residenciales y empresas, y llevarlos a pedir un estudio de viabilidad."},
+      "solution": {"es": "Una home guiada por la conversión: promesa directa en la portada, cifras de la empresa, ventajas con iconos, testimonios en vídeo de clientes y un mismo llamado a la acción repetido a lo largo de la página. Naranja solar sobre azul profundo, en línea con la marca."},
+      "role": {"es": "Diseño y desarrollo del sitio en WordPress con Elementor."},
+      "result": {"es": "En línea desde 2023 en eners.com.br: cada sección termina en la misma acción, solicitar el estudio de viabilidad."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/web-design/eners/eners-sitio-hero-paneles-solares"},
+    {"img": "projects/web-design/eners/eners-sitio-cifras-independencia-energetica"},
+    {"img": "projects/web-design/eners/eners-sitio-ventajas"},
+    {"img": "projects/web-design/eners/eners-sitio-beneficios-energia-solar"},
+    {"img": "projects/web-design/eners/eners-sitio-testimonial-video"},
+    {"img": "projects/web-design/eners/eners-sitio-cases-de-sucesso"},
+    {"img": "projects/web-design/eners/eners-sitio-cta-pie-de-pagina"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Eners · Engenharia e Serviços"}
+    },
+    {"label": "year", "value": "2023"},
+    {
+      "label": "services",
+      "value": {"es": "Diseño web · Desarrollo"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Diseño · Desarrollo web"}
+    },
+    {
+      "label": "technology",
+      "value": {"es": "WordPress · Elementor"}
+    },
+    {"label": "site"}
+  ],
+  "next": "projects/identiduca"
+}

@@ -1,0 +1,58 @@
+{
+  "category": "fotografia",
+  "name": "Bruna & Rafael",
+  "type": {"es": "Ensayo de pareja"},
+  "year": "2023",
+  "head": {
+    "title": {"es": "Bruna & Rafael - Fotografía · Gustavo Tondin"},
+    "description": {"es": "Ensayo de pareja de Bruna y Rafael entre un lago, un prado y un bosque de eucaliptos. Dirección de arte y fotografía de Gustavo Tondin."},
+    "ogDescription": {"es": "Bruna & Rafael: ensayo de pareja en la naturaleza."}
+  },
+  "ogImage": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-cesped",
+  "posts": true,
+  "intro": {
+    "title": {"es": "Sin pose"},
+    "text": {"es": "Un ensayo de pareja en la naturaleza: un lago, un campo de hierba alta y un bosque de eucaliptos. Poca pose y mucho movimiento, para que lo que quede en la foto sea la complicidad entre los dos."}
+  },
+  "sizes": "(max-width: 768px) 100vw, 75vw",
+  "gallery": [
+    {"img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-cesped", "ratio": "1.499"},
+    {
+      "img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-arbol-lago",
+      "ratio": "1.500"
+    },
+    {
+      "img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-hierba-alta",
+      "ratio": "1.500"
+    },
+    {
+      "img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-muro-jardin",
+      "sizes": "(max-width: 768px) 100vw, 50vw",
+      "ratio": "0.667"
+    },
+    {
+      "img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-perro-prado",
+      "ratio": "1.500"
+    },
+    {
+      "img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-giro-eucaliptos",
+      "ratio": "1.500"
+    },
+    {
+      "img": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-beso-troncos",
+      "ratio": "1.500"
+    }
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Bruna & Rafael"}
+    },
+    {"label": "year", "value": "2023"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección de arte · Fotografía"}
+    }
+  ],
+  "next": "projects/carol"
+}

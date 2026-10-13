@@ -1,0 +1,63 @@
+---
+pagination:
+  data: langPages
+  size: 1
+  alias: pg
+permalink: "{{ 'portfolio' | route(pg.lang) }}"
+icons: true
+bodyClass: page-portfolio
+navCurrent: portfolio
+---
+{% extends "base.njk" %}
+{% from "macros.njk" import picture, next with context %}
+{% set head = t.pages.portfolio %}
+
+{% block main %}
+<!-- =======================================================================================
+    MAIN
+======================================================================================= -->
+<main>
+
+    <!--
+        la variable reveal-delay del style inline en .reveal  → escalona la aparición cuando el IntersectionObserver añade .is-visible
+        la variable img-ratio del style inline en las imágenes → ratio flex para el layout asimétrico (default 1 si no se indica)
+    -->
+    <section class="portfolio-grid" aria-label="{{ t.portfolio.label }}">
+
+        <h1 class="portfolio-grid__heading">{{ t.nav.portfolio }}</h1>
+{% set n = 0 %}
+{%- for section in portfolio %}
+{%- set c = categories | byId(section.category) %}
+
+        <section class="portfolio-grid__section" data-category="{{ c.id }}">
+            <a href="{{ c.id | href }}" class="portfolio-grid__section-header reveal" title="{{ t.portfolio.seeAll }} {{ c.name | tr }}">
+                <h2 class="portfolio-grid__section-title heading-italic">{{ c.name | tr }}</h2>
+                <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
+            </a>
+{%- for card in section.cards %}
+{%- set n = n + 1 %}
+{%- set first = n == 1 %}
+
+            <a href="{{ ('projects/' + card.project) | href }}" class="portfolio-grid__project portfolio-grid__project--{{ n }} reveal" title="{{ (card.title | tr) if card.title else (projects[card.project].name | tr) + ' - ' + (c.name | tr) }}">
+                <div class="portfolio-grid__project-images">
+{%- for img in card.images %}
+                    <div class="portfolio-grid__project-image"{% if img.ratio %} style="--img-ratio: {{ img.ratio }};"{% endif %}>
+                        {{ picture(img.img, "(max-width: 768px) 100vw, 40vw", ("high" if loop.first else "eager") if first else "lazy") }}
+                    </div>
+{%- endfor %}
+                </div>
+                <div class="portfolio-grid__project-label label">{{ card.label | tr }}</div>
+            </a>
+{%- endfor %}
+        </section>
+{%- endfor %}
+
+    </section>
+
+    <!-- =======================================================================================
+        NEXT SECTION - card fija al final que lleva al contacto.
+    ======================================================================================= -->
+    {{ next("contacto", "portfolio", t.nav.contact, t.next.nextSection, "", t.next.section) }}
+
+</main>
+{% endblock %}

@@ -1,0 +1,75 @@
+{
+  "category": "branding",
+  "name": "Wotë",
+  "type": {"es": "Cannabidiol"},
+  "year": "2024",
+  "head": {
+    "title": {"es": "Wotë - Branding · Gustavo Tondin"},
+    "description": {"es": "Rebranding de Wotë, marca brasileña de CBD: concepto de la llave ancestral, sistema de siete símbolos, fotografía y packaging. Proyecto de Gustavo Tondin."},
+    "ogDescription": {"es": "Rebranding de Wotë: la llave ancestral, un sistema de siete símbolos para una marca de CBD."}
+  },
+  "ogImage": "projects/branding/wote/wote-portada-logotipo-chave-ancestral",
+  "intro": {
+    "title": {"es": "La llave ancestral"},
+    "text": {"es": "Wotë es una marca brasileña de productos orgánicos a base de cáñamo y CBD. El nombre viene de la hierba medicinal de los Yanomami, pueblo indígena de la Amazonia, y la identidad parte de esa idea: una llave que abre conocimientos perdidos. Cada llave representa un saber distinto (medicinal, comunitario, de la flora, de la fauna, espiritual, tradicional) y la llave sostenible, la principal, une lo natural con lo moderno."},
+    "case": {
+      "challenge": {"es": "Relanzar la marca en un mercado todavía cargado de prejuicio hacia el cannabis. Wotë necesitaba transmitir origen orgánico, certificación y seriedad sin perder calidez ni el vínculo con la naturaleza que la diferencia."},
+      "solution": {"es": "Un rebranding construido sobre el concepto de la llave ancestral: símbolo geométrico inscrito en la O del logotipo, paleta de verde profundo, oro y crudo, fotografía de gente real al aire libre y un sistema de siete llaves que organiza productos, packaging y campañas. El mensaje «A chave para…» cambia según lo que cada producto abre: aventura, descanso, volver a la rutina, volver a vivir."},
+      "role": {"es": "Dirección de fotografía y parte del trío creativo del proyecto en Gauja Lab, junto a Uel Molon y Gabriel Motter: concepto, dirección y decisiones del sistema tomadas en conjunto."},
+      "result": {"es": "El relanzamiento fue bien recibido y la marca sigue en el mercado con esta identidad. El sistema de llaves sostiene hasta hoy su comunicación en producto, packaging y campañas."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/branding/wote/wote-portada-logotipo-chave-ancestral"},
+    {
+      "img": "projects/branding/wote/wote-construccion-simbolo",
+      "caption": {"es": "Construcción del símbolo: una llave inscrita en la O del logotipo"}
+    },
+    {"img": "projects/branding/wote/wote-logotipo-dorado"},
+    {
+      "img": "projects/branding/wote/wote-totem-sistema-de-llaves",
+      "caption": {"es": "Las siete llaves: medicinal, comunitaria, de la flora, de la fauna, espiritual, tradicional y sostenible"}
+    },
+    {"img": "projects/branding/wote/wote-piezas-verticales-chave-para-aventura"},
+    {"img": "projects/branding/wote/wote-papeleria-manifiesto-tarjetas"},
+    {
+      "img": "projects/branding/wote/wote-troquel-caja-verde",
+      "caption": {"es": "Packaging: el troquel se diseñó desde cero para los aceites de CBD"}
+    },
+    {"img": "projects/branding/wote/wote-caja-negra-sua-chave-chegou"},
+    {"img": "projects/branding/wote/wote-aceite-cbd-caja-monstera"},
+    {"img": "projects/branding/wote/wote-app-catalogo-smartphone"},
+    {"img": "projects/branding/wote/wote-instagram-esquiador"},
+    {
+      "img": "projects/branding/wote/wote-carteles-pared-urbana",
+      "caption": {"es": "Campaña «A chave para…»: cada llave abre un mensaje distinto"}
+    },
+    {"img": "projects/branding/wote/wote-poster-duna-chave-para-o-sucesso"},
+    {"img": "projects/branding/wote/wote-mupi-parada-autobus"},
+    {"img": "projects/branding/wote/wote-marquesina-voltar-a-rotina"},
+    {"img": "projects/branding/wote/wote-valla-autopista-voltar-a-viver"},
+    {"img": "projects/branding/wote/wote-bolsa-tela-verde"},
+    {"img": "projects/branding/wote/wote-camiseta-simbolo-bordado"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Wotë"}
+    },
+    {"label": "year", "value": "2024"},
+    {
+      "label": "services",
+      "value": {"es": "Rebranding · Identidad visual · Sistema de símbolos · Fotografía · Packaging"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Dirección de fotografía · Concepto y dirección creativa en equipo"}
+    },
+    {
+      "label": "team",
+      "value": {"es": "Uel Molon · diseño  ·  Gabriel Motter · concepto  ·  Gauja Lab · estudio"}
+    }
+  ],
+  "next": "projects/tondafoto"
+}

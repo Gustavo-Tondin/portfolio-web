@@ -1,0 +1,193 @@
+[
+  {
+    "id": "branding",
+    "name": {"es": "Branding"},
+    "subtitle": {"es": "identidad visual"},
+    "head": {
+      "title": {"es": "Branding - Gustavo Tondin · Identidad visual estratégica"},
+      "description": {"es": "Proyectos de branding e identidad visual desarrollados por Gustavo Tondin en Valencia. Sistemas de marca coherentes que comunican con claridad y construyen autoridad."},
+      "ogTitle": {"es": "Branding - Gustavo Tondin"},
+      "ogDescription": {"es": "Sistemas de marca y identidad visual para empresas que quieren comunicar con autoridad."}
+    },
+    "showcase": [
+      {
+        "project": "refiore",
+        "layout": "c",
+        "images": [
+          {
+            "img": "projects/branding/refiore/refiore-portada-logotipo-pareja",
+            "mobile": "projects/branding/refiore/refiore-portada-movil"
+          },
+          "projects/branding/refiore/refiore-alianzas-monograma-rfr"
+        ]
+      },
+      {
+        "project": "wote",
+        "layout": "a",
+        "images": ["projects/branding/wote/wote-portada-logotipo-chave-ancestral"]
+      },
+      {
+        "project": "tondafoto",
+        "layout": "e",
+        "images": [
+          "projects/branding/tondafoto/tondafoto-logotipo-franjas",
+          "projects/branding/tondafoto/tondafoto-stickers-look-and-smile",
+          "projects/branding/tondafoto/tondafoto-stories-instagram"
+        ]
+      },
+      {
+        "project": "dj-rodmotter",
+        "layout": "d",
+        "images": [
+          "projects/branding/dj-rodmotter/rodmotter-portada-dj-cabina",
+          "projects/branding/dj-rodmotter/rodmotter-pieza-feel-the-music"
+        ]
+      },
+      {
+        "project": "veg-to-go",
+        "layout": "b",
+        "images": [
+          "projects/branding/veg-to-go/veg-to-go-logotipo-patron-frutas",
+          "projects/branding/veg-to-go/veg-to-go-publicaciones-redes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "web-design",
+    "name": {"es": "Web Design"},
+    "subtitle": {"es": "sitios y apps"},
+    "head": {
+      "title": {"es": "Web Design - Gustavo Tondin · sitios y apps · web design"},
+      "description": {"es": "Proyectos de diseño web y sitios institucionales desarrollados por Gustavo Tondin. Interfaces que priorizan la claridad, la conversión y la experiencia del usuario."},
+      "ogTitle": {"es": "Web Design - Gustavo Tondin"},
+      "ogDescription": {"es": "Sitios web y experiencias digitales diseñados con foco en claridad y conversión."}
+    },
+    "showcase": [
+      {
+        "project": "eners",
+        "layout": "a",
+        "images": [
+          {
+            "img": "projects/web-design/eners/eners-sitio-hero-paneles-solares",
+            "mobile": "projects/web-design/eners/eners-sitio-hero-movil"
+          }
+        ]
+      },
+      {
+        "project": "identiduca",
+        "layout": "a",
+        "images": [
+          {
+            "img": "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente",
+            "mobile": "projects/web-design/identiduca/identiduca-sitio-hero-movil"
+          }
+        ]
+      },
+      {
+        "project": "riwer-labs",
+        "layout": "a",
+        "images": [
+          {
+            "img": "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar",
+            "mobile": "projects/web-design/riwer-labs/riwer-labs-sitio-hero-movil"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "artes-graficas",
+    "name": {"es": "Artes Gráficas"},
+    "subtitle": {"es": "piezas visuales"},
+    "head": {
+      "title": {"es": "Artes Gráficas - Gustavo Tondin · piezas visuales · artes gráficas"},
+      "description": {"es": "Piezas editoriales, social media y material gráfico diseñados por Gustavo Tondin. Composición, jerarquía y sistema visual aplicados a formato impreso y digital."},
+      "ogTitle": {"es": "Artes Gráficas - Gustavo Tondin"},
+      "ogDescription": {"es": "Piezas visuales editoriales y gráficas para redes sociales, zines y material impreso."}
+    },
+    "showcase": [
+      {
+        "project": "gauja-lab",
+        "layout": "d",
+        "post": true,
+        "images": [
+          "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar",
+          "projects/artes-graficas/gauja-lab/gauja-lab-post-job-aprovado"
+        ]
+      },
+      {
+        "project": "identiduca-zine",
+        "layout": "a",
+        "images": ["projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra"]
+      },
+      {
+        "project": "rodosul",
+        "layout": "g",
+        "post": true,
+        "images": [
+          "projects/artes-graficas/rodosul/rodosul-post-seguro-ambiental-camion",
+          "projects/artes-graficas/rodosul/rodosul-post-duas-decadas",
+          "projects/artes-graficas/rodosul/rodosul-post-seguranca-nao-e-opcional"
+        ]
+      },
+      {
+        "project": "otros-clientes",
+        "layout": "e",
+        "post": true,
+        "images": [
+          "projects/artes-graficas/otros-clientes/beliscai-post-repartidor-moto",
+          "projects/artes-graficas/otros-clientes/wote-post-selva-aerea",
+          "projects/artes-graficas/otros-clientes/riwer-labs-post-vazamento-funil"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fotografia",
+    "name": {"es": "Fotografía"},
+    "subtitle": {"es": "captura visual"},
+    "head": {
+      "title": {"es": "Fotografía - Gustavo Tondin · captura visual · fotografía"},
+      "description": {"es": "Ensayos fotográficos de pareja, retrato y editorial realizados por Gustavo Tondin. Narrativa visual construida a partir del color, la luz y la intención de cada encuadre."},
+      "ogTitle": {"es": "Fotografía - Gustavo Tondin"},
+      "ogDescription": {"es": "Ensayos de pareja, retrato y editorial - narrativa visual por Gustavo Tondin."}
+    },
+    "showcase": [
+      {
+        "project": "bruna-e-rafael",
+        "layout": "f",
+        "images": [
+          "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-cesped",
+          "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-arbol-lago",
+          "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-hierba-alta"
+        ]
+      },
+      {
+        "project": "carol",
+        "layout": "f",
+        "images": [
+          "projects/fotografia/carol/ensayo-carol-gradas-estadio",
+          "projects/fotografia/carol/ensayo-carol-azotea-ciudad",
+          "projects/fotografia/carol/ensayo-carol-azaleas"
+        ]
+      },
+      {
+        "project": "valeria",
+        "layout": "b",
+        "images": [
+          "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque",
+          "projects/fotografia/valeria/ensayo-valeria-franjas-roja-amarilla"
+        ]
+      },
+      {
+        "project": "aline-e-eduardo",
+        "layout": "d",
+        "images": [
+          "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito",
+          "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-mirandose"
+        ]
+      }
+    ]
+  }
+]

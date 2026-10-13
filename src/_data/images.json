@@ -1,0 +1,747 @@
+{
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-cliente-chato": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Como evitar cliente chato?» con un hombre al teléfono llevándose la mano a la cabeza"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-copa-do-mundo-pele": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Copas do mundo podem te tornar uma lenda» con Pelé besando la copa en semitono"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-fotografo-sonriendo": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Retrato recortado de un fotógrafo sonriendo con una cámara en las manos"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-fotografos-reflex": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Tres fotógrafos con cámara réflex en semitono violeta sobre fondo negro"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-historias-bois": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Contamos histórias para bois não dormirem» con una mujer leyendo junto a un buey en un campo"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-job-aprovado": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «O que fazemos quando um job é aprovado?» con manos chocando en semitono"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Gauja Lab en semitono violeta y amarillo: una nadadora saltando y el titular «Pare de pensar, só faça»"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-retrato-dolar-ojos": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Retrato en semitono violeta con signos de dólar en los ojos"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-saber-dancar": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Você precisa saber dançar para vender seu produto» con un bailarín de traje amarillo"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-simplifique": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Simplifique as coisas» con una cabeza de espaldas y un garabato amarillo"}
+  },
+  "projects/artes-graficas/gauja-lab/gauja-lab-post-wolverine": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Wolverine en semitono amarillo y violeta frente a una X amarilla"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-algo-no-va-bien": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Doble página «Tienes la sensación de que algo no va bien. ¿Y ahora?» con la foto de un niño escribiendo"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-contraportada": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Contraportada con el resumen de la zine y el logotipo de Identiduca"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-cuidar-sin-hacer-dano": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Doble página «Cuidar sin hacer daño» con el cierre sobre fondo azul"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-impresa-mesa": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Zine «Cuando algo no cuadra» impresa, fotografiada en diagonal sobre una mesa"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-indice": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Interior de portada con el logotipo de Identiduca y el índice de la zine"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-lenguaje-del-cuerpo": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Doble página «El lenguaje del cuerpo y la conducta» con tarjetas de señales y la foto de un niño pensativo"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Portada de la zine «Cuando algo no cuadra» de Identiduca: marco ornamental verde azulado con la silueta de un niño leyendo"}
+  },
+  "projects/artes-graficas/identiduca/identiduca-zine-proteger-saber-mirar": {
+    "w": 1920,
+    "h": 1376,
+    "alt": {"es": "Doble página «Proteger también es saber mirar» con una foto de una madre y su hijo caminando"}
+  },
+  "projects/artes-graficas/otros-clientes/beliscai-post-repartidor-moto": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Beliscai con un repartidor en moto y una mano violeta sobre fondo rojo"}
+  },
+  "projects/artes-graficas/otros-clientes/di-veneto-post-pizza-fermentacao": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Di Vêneto con una pizza y el titular «48 hrs de fermentação»"}
+  },
+  "projects/artes-graficas/otros-clientes/innova-fluxo-post-agil-eficiente-preciso": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Innova Fluxo con tres franjas: más ágil, más eficiente y más preciso"}
+  },
+  "projects/artes-graficas/otros-clientes/refiore-post-anel-dos-sonhos": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Refiore «O anel dos sonhos» con un anillo de oro sobre nubes"}
+  },
+  "projects/artes-graficas/otros-clientes/riwer-labs-post-vazamento-funil": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Riwer Labs «Onde está o vazamento no seu funil?» con un embudo de colores"}
+  },
+  "projects/artes-graficas/otros-clientes/sulmig-post-revisao-preventiva": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Revisão preventiva em 5 min» con un operario industrial y una diagonal roja"}
+  },
+  "projects/artes-graficas/otros-clientes/treco-studio-post-televisor": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Treco Studio con un televisor antiguo y el texto «¿Qué hacemos en Treco?»"}
+  },
+  "projects/artes-graficas/otros-clientes/wote-post-selva-aerea": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de Wotë con el logotipo sobre una vista aérea de selva entre nubes"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-descarte-incorreto": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Descarte incorreto de resíduos gera riscos» con una industria reflejada en agua contaminada"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-descarte-indevido": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Descarte indevido, riscos ambientais» con basura en la orilla frente a una fábrica"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-duas-decadas": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Duas décadas cuidando do meio ambiente» con un río entre la vegetación"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-evite-entupimentos": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «O tempo está correndo, evite entupimentos» con un reloj sobre una caja de grasa"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-qual-servico": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Qual serviço sua estrutura precisa?» con un operario limpiando con agua a presión"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-seguranca-nao-e-opcional": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post «Segurança não é opcional» con un operario con casco y uniforme"}
+  },
+  "projects/artes-graficas/rodosul/rodosul-post-seguro-ambiental-camion": {
+    "w": 1080,
+    "h": 1350,
+    "alt": {"es": "Post de RodoSul «Somos os únicos na Serra com seguro ambiental» con un camión cisterna en una carretera"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-banner-panoramico": {
+    "w": 1920,
+    "h": 600,
+    "alt": {"es": "Banner panorámico con el nombre RodMotter sobre un degradado de cian y magenta"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-camiseta-gorra": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Camiseta negra con estampado de degradado y gorra negra con el símbolo de RodMotter"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-cartel-metro": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Cartel de RodMotter dentro de un vagón de metro con el lema «Beyond the beats»"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-carteles-nueva-york": {
+    "w": 1282,
+    "h": 1920,
+    "alt": {"es": "Doble cartel de RodMotter en una calle de Nueva York con «Beyond the beats» e «It’s not music. It’s feeling»"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-collage-concierto-retrato": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Collage con público en un concierto, el logotipo horizontal y retrato del DJ sonriendo en cabina"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-frase-its-not-music": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Frase «It’s not music. It’s feeling» en blanco sobre un degradado oscuro"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-logotipo-degradado": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Logotipo de RodMotter, tres trazos inclinados sobre el nombre, en blanco sobre un degradado de cian y magenta"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-marquesina-autobus": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Marquesina de autobús con un cartel de RodMotter de un retrato en blanco y negro sobre degradado"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-pieza-feel-the-music": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Pieza «Feel the music. Beyond the beats» con degradado de cian, rojo y magenta con grano y el aviso «Play on Spotify»"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-portada-dj-cabina": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Portada de DJ RodMotter: logotipo blanco sobre la silueta del DJ en cabina bañada en luz cian y magenta"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-portada-spotify-tableta": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Tableta con la portada de RodMotter para Spotify bajo una luz de neón cian"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-sitio-web-portatil": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Portátil sobre espuma acústica mostrando la web de RodMotter con la frase «It’s not music. It’s feeling»"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-stickers-monograma-vinilo": {
+    "w": 1400,
+    "h": 800,
+    "alt": {"es": "Composición de stickers de RodMotter en blanco y negro sobre degradado: logotipo, monograma R y vinilo"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-sudadera-beyond-the-beats": {
+    "w": 1200,
+    "h": 1500,
+    "alt": {"es": "Modelo con sudadera negra de RodMotter estampada con «Beyond the beats» y el nombre en la manga"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-tarjetas-visita-espuma": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Tarjetas de visita de RodMotter con degradado sobre espuma acústica negra y un cable cian"}
+  },
+  "projects/branding/dj-rodmotter/rodmotter-valla-avenida": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Valla de RodMotter sobre una avenida con un retrato con auriculares y el lema «Beyond the beats»"}
+  },
+  "projects/branding/refiore/refiore-alianzas-monograma-rfr": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Dos alianzas de oro y plata, una con el monograma RFR grabado en el interior"}
+  },
+  "projects/branding/refiore/refiore-bolsas-compra": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Bolsas de compra de Refiore: una blanca con interior rojo y otra negra con el monograma RFR"}
+  },
+  "projects/branding/refiore/refiore-cuaderno-seu-roteiro": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Cuaderno rojo de Refiore con el título «Seu roteiro» sobre una sábana, junto a una taza y un bolígrafo"}
+  },
+  "projects/branding/refiore/refiore-impresos-anel-dos-sonhos": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Tres impresos de Refiore: «O anel dos sonhos», una foto de manos con alianzas y «A delicadeza do amor»"}
+  },
+  "projects/branding/refiore/refiore-lemas-refine-momentos": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Lemas «Refine momentos» y «Escreva a sua história» separados por una línea fina horizontal"}
+  },
+  "projects/branding/refiore/refiore-logotipo-serif": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Logotipo de Refiore en serif negra de espaciado amplio sobre fondo papel"}
+  },
+  "projects/branding/refiore/refiore-mupi-pantalla-urbana": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Cartel de Refiore en un mupi urbano al atardecer y pantalla en el vestíbulo de un edificio"}
+  },
+  "projects/branding/refiore/refiore-paleta-colores": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Paleta de Refiore en cuatro franjas: pasión, tinta, línea y papel"}
+  },
+  "projects/branding/refiore/refiore-pieza-arte-de-romantizar": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Pieza «A arte de romantizar a vida» con una mujer sonriendo y un anillo solitario en la mano"}
+  },
+  "projects/branding/refiore/refiore-pieza-romantize-sua-vida": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Pieza oscura con el titular «Romantize sua vida» en rojo y el lema «Refine momentos»"}
+  },
+  "projects/branding/refiore/refiore-portada-logotipo-pareja": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Portada de Refiore: logotipo rojo sobre una foto de una pareja sentada en un muro junto a un río"}
+  },
+  "projects/branding/refiore/refiore-sitio-web-portatil": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Portátil sobre un sofá mostrando la web de Refiore con el titular «Refinando momentos»"}
+  },
+  "projects/branding/refiore/refiore-tarjetas-visita": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Mano sosteniendo dos tarjetas de visita de Refiore: «O novo início da sua história» y «Sua vida como um filme»"}
+  },
+  "projects/branding/tondafoto/tondafoto-camiseta-parche-photographer": {
+    "w": 1200,
+    "h": 1196,
+    "alt": {"es": "Camiseta crudo con el parche «Photographer» sobre fondo amarillo"}
+  },
+  "projects/branding/tondafoto/tondafoto-cartel-eternal-memories": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Cartel «Eternal memories» con una foto de dos amigos sentados, pegado sobre una pared negra"}
+  },
+  "projects/branding/tondafoto/tondafoto-cartel-verde-calle": {
+    "w": 1030,
+    "h": 1080,
+    "alt": {"es": "Cartel verde «Look beyond life» de Tondafoto en una calle"}
+  },
+  "projects/branding/tondafoto/tondafoto-carteles-diagonal": {
+    "w": 1920,
+    "h": 1372,
+    "alt": {"es": "Carteles de Tondafoto en distintos colores dispuestos en diagonal"}
+  },
+  "projects/branding/tondafoto/tondafoto-cuadro-violeta-look-and-smile": {
+    "w": 1092,
+    "h": 1333,
+    "alt": {"es": "Manos sosteniendo un cuadro violeta con el óvalo «Look and smile»"}
+  },
+  "projects/branding/tondafoto/tondafoto-logotipo-franjas": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Logotipo de Tondafoto: franjas violeta, verde, amarillo y rosa junto al nombre «tonda» sobre fondo negro"}
+  },
+  "projects/branding/tondafoto/tondafoto-mupi-look-beyond-life": {
+    "w": 1200,
+    "h": 942,
+    "alt": {"es": "Mupi de Tondafoto con el cartel «Look beyond life» en una calle con bicicletas"}
+  },
+  "projects/branding/tondafoto/tondafoto-paleta-colores-cmyk-rgb": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Paleta de Tondafoto en franjas: rosa, amarillo, verde, violeta, crudo y negro con sus valores CMYK y RGB"}
+  },
+  "projects/branding/tondafoto/tondafoto-pieza-my-name-is-gustavo": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Pieza «My name is Gustavo Tondin, photographer» en rosa junto a un retrato sonriente"}
+  },
+  "projects/branding/tondafoto/tondafoto-reticula-logotipo": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Retícula de construcción del logotipo de Tondafoto en líneas grises sobre negro"}
+  },
+  "projects/branding/tondafoto/tondafoto-retrato-cartel-cheeeese": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Retrato de una chica sonriendo junto al cartel amarillo «Look beyond life» con el sticker «Cheeeese»"}
+  },
+  "projects/branding/tondafoto/tondafoto-retrato-marco-logotipo": {
+    "w": 1200,
+    "h": 1846,
+    "alt": {"es": "Retrato de una mujer exhalando humo en un marco negro con el logotipo de Tondafoto"}
+  },
+  "projects/branding/tondafoto/tondafoto-stickers-look-and-smile": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Composición de stickers de Tondafoto con frases como «Look and smile», «Brazilian!» y «Eternal memories»"}
+  },
+  "projects/branding/tondafoto/tondafoto-stories-instagram": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Tres stories de Tondafoto: «Smile, you can be photographed», un retrato con el nombre y «Look and smile»"}
+  },
+  "projects/branding/tondafoto/tondafoto-sudadera-bordada": {
+    "w": 1200,
+    "h": 800,
+    "alt": {"es": "Sudadera negra con el logotipo de Tondafoto bordado en el pecho"}
+  },
+  "projects/branding/tondafoto/tondafoto-titular-look-beyond-life": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Titular «Look beyond life» y nombre Tondafoto en rosa y amarillo sobre fondo verde"}
+  },
+  "projects/branding/veg-to-go/veg-to-go-aplicaciones-packaging-food-truck": {
+    "w": 1600,
+    "h": 3938,
+    "alt": {"es": "Aplicaciones de Veg To Go: cajas de comida, vaso, food truck amarillo pintado con frutas, señalización y bolsa"}
+  },
+  "projects/branding/veg-to-go/veg-to-go-logotipo-patron-frutas": {
+    "w": 1920,
+    "h": 1440,
+    "alt": {"es": "Logotipo de Veg To Go en verde y amarillo sobre un patrón de frutas ilustradas"}
+  },
+  "projects/branding/veg-to-go/veg-to-go-paleta-tipografias": {
+    "w": 1500,
+    "h": 1687,
+    "alt": {"es": "Paleta de Veg To Go en verde, amarillo y rojo, con las tipografías Bungee y Source Sans 3"}
+  },
+  "projects/branding/veg-to-go/veg-to-go-publicaciones-redes": {
+    "w": 1920,
+    "h": 1038,
+    "alt": {"es": "Tres publicaciones de redes sociales de Veg To Go con fotos de verduras, una clienta y un plato vegano"}
+  },
+  "projects/branding/wote/wote-aceite-cbd-caja-monstera": {
+    "w": 1200,
+    "h": 1800,
+    "alt": {"es": "Frasco de aceite de CBD y caja de Wotë apoyados sobre una hoja de monstera"}
+  },
+  "projects/branding/wote/wote-app-catalogo-smartphone": {
+    "w": 1200,
+    "h": 1800,
+    "alt": {"es": "Smartphone con la pantalla verde de Wotë y el símbolo del trébol sobre el catálogo de productos"}
+  },
+  "projects/branding/wote/wote-bolsa-tela-verde": {
+    "w": 1200,
+    "h": 1500,
+    "alt": {"es": "Bolsa de tela verde de Wotë con el símbolo dorado sobre el césped"}
+  },
+  "projects/branding/wote/wote-caja-negra-sua-chave-chegou": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Caja negra de Wotë con el mensaje «Sua chave chegou, aproveite» en las manos de una persona sentada"}
+  },
+  "projects/branding/wote/wote-camiseta-simbolo-bordado": {
+    "w": 1200,
+    "h": 1800,
+    "alt": {"es": "Camiseta verde oscuro de Wotë con el símbolo dorado bordado en el pecho"}
+  },
+  "projects/branding/wote/wote-carteles-pared-urbana": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Tres carteles de Wotë en una pared urbana, cada uno con una llave distinta: relajar, conocimiento y marca"}
+  },
+  "projects/branding/wote/wote-construccion-simbolo": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Construcción geométrica del símbolo de Wotë sobre una retícula de círculos y diagonales"}
+  },
+  "projects/branding/wote/wote-instagram-esquiador": {
+    "w": 1091,
+    "h": 1080,
+    "alt": {"es": "Publicación de Instagram de Wotë: esquiador en la nieve con el mensaje «A chave para aventura»"}
+  },
+  "projects/branding/wote/wote-logotipo-dorado": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Logotipo de Wotë en dorado sobre fondo blanco"}
+  },
+  "projects/branding/wote/wote-marquesina-voltar-a-rotina": {
+    "w": 1920,
+    "h": 1394,
+    "alt": {"es": "Marquesina de Wotë en una calle con el mensaje «A chave para voltar à rotina»"}
+  },
+  "projects/branding/wote/wote-mupi-parada-autobus": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Mupi de Wotë en una parada de autobús con el mensaje «A chave para a aventura»"}
+  },
+  "projects/branding/wote/wote-papeleria-manifiesto-tarjetas": {
+    "w": 1920,
+    "h": 1344,
+    "alt": {"es": "Papelería de Wotë: carta con manifiesto, tarjetas de visita y fotografía de un río amazónico"}
+  },
+  "projects/branding/wote/wote-piezas-verticales-chave-para-aventura": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Tres piezas verticales de Wotë en verde oscuro, verde y crudo con símbolos dorados y el mensaje «A chave para aventura»"}
+  },
+  "projects/branding/wote/wote-portada-logotipo-chave-ancestral": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Portada de Wotë: logotipo y lema «A chave ancestral» sobre una foto de amigos saltando a un lago"}
+  },
+  "projects/branding/wote/wote-poster-duna-chave-para-o-sucesso": {
+    "w": 1920,
+    "h": 1920,
+    "alt": {"es": "Póster enmarcado de Wotë con una persona caminando por una duna y el mensaje «A chave para o sucesso»"}
+  },
+  "projects/branding/wote/wote-totem-sistema-de-llaves": {
+    "w": 1200,
+    "h": 1800,
+    "alt": {"es": "Tótem vertical verde con los siete símbolos del sistema de llaves de Wotë"}
+  },
+  "projects/branding/wote/wote-troquel-caja-verde": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Plano de troquel de la caja verde de Wotë con el símbolo dorado y textos de producto"}
+  },
+  "projects/branding/wote/wote-valla-autopista-voltar-a-viver": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Valla publicitaria de Wotë sobre una autopista con una pareja de la mano y el mensaje «A chave para voltar a viver»"}
+  },
+  "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-abrazo-barriga": {
+    "w": 600,
+    "h": 840,
+    "alt": {"es": "Eduardo abraza a Aline por detrás y ambos sostienen la barriga"}
+  },
+  "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-manos-zapatitos": {
+    "w": 600,
+    "h": 840,
+    "alt": {"es": "Manos de la pareja entrelazadas sosteniendo unos zapatitos de bebé sobre el césped"}
+  },
+  "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-mirandose": {
+    "w": 1400,
+    "h": 1000,
+    "alt": {"es": "Aline y Eduardo mirándose frente a una casa entre árboles; ella embarazada, de negro"}
+  },
+  "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-sonriendo": {
+    "w": 1400,
+    "h": 1000,
+    "alt": {"es": "Aline y Eduardo sonriendo a cámara con los zapatitos del bebé en las manos"}
+  },
+  "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito": {
+    "w": 1400,
+    "h": 1000,
+    "alt": {"es": "Zapatitos blancos de bebé y un osito de peluche sobre una piedra"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-arbol-lago": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "La pareja frente a frente bajo un árbol, con un lago al fondo"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-beso-troncos": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Bruna y Rafael a punto de besarse entre dos troncos"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-cesped": {
+    "w": 1400,
+    "h": 934,
+    "alt": {"es": "Bruna y Rafael tumbados en el césped, ella le acaricia el rostro con los ojos cerrados"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-giro-eucaliptos": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Rafael hace girar a Bruna en un camino entre eucaliptos"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-hierba-alta": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Bruna tumbada sobre las piernas de Rafael en un campo de hierba alta"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-muro-jardin": {
+    "w": 600,
+    "h": 900,
+    "alt": {"es": "Rafael abraza a Bruna por detrás frente a un muro de piedra en un jardín"}
+  },
+  "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-perro-prado": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Bruna y Rafael caminan de la mano con su perro por un prado"}
+  },
+  "projects/fotografia/carol/ensayo-carol-azaleas": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Carol mira por encima del hombro entre azaleas fucsias"}
+  },
+  "projects/fotografia/carol/ensayo-carol-azotea-ciudad": {
+    "w": 1200,
+    "h": 800,
+    "alt": {"es": "Carol camina con vestido negro y chaqueta vaquera sobre una azotea con la ciudad al fondo"}
+  },
+  "projects/fotografia/carol/ensayo-carol-cesped-vestido": {
+    "w": 1920,
+    "h": 1920,
+    "alt": {"es": "Carol sentada en el césped con un vestido estampado y la ciudad detrás"}
+  },
+  "projects/fotografia/carol/ensayo-carol-escalera-gradas": {
+    "w": 1400,
+    "h": 934,
+    "alt": {"es": "Carol de pie en lo alto de la escalera de las gradas de un estadio"}
+  },
+  "projects/fotografia/carol/ensayo-carol-gradas-estadio": {
+    "w": 1920,
+    "h": 1280,
+    "alt": {"es": "Carol con gafas sentada en las gradas rojas de un estadio"}
+  },
+  "projects/fotografia/carol/ensayo-carol-perfil-labios-rojos": {
+    "w": 1920,
+    "h": 1920,
+    "alt": {"es": "Retrato de Carol de perfil con labios rojos frente a un arbusto en flor"}
+  },
+  "projects/fotografia/carol/ensayo-carol-primer-plano-troncos": {
+    "w": 1920,
+    "h": 1920,
+    "alt": {"es": "Primer plano de Carol entre dos troncos desenfocados"}
+  },
+  "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque": {
+    "w": 1200,
+    "h": 1200,
+    "alt": {"es": "Retrato en blanco y negro de Valeria con gafas, a contraluz en un bosque"}
+  },
+  "projects/fotografia/valeria/ensayo-valeria-camino-brazos-abiertos": {
+    "w": 600,
+    "h": 836,
+    "alt": {"es": "Valeria ríe con los brazos abiertos en un camino de tierra"}
+  },
+  "projects/fotografia/valeria/ensayo-valeria-contraluz-plantas": {
+    "w": 1280,
+    "h": 1920,
+    "alt": {"es": "Valeria sentada a contraluz entre plantas, con la cabeza inclinada"}
+  },
+  "projects/fotografia/valeria/ensayo-valeria-franjas-roja-amarilla": {
+    "w": 1400,
+    "h": 1787,
+    "alt": {"es": "Valeria sonríe frente a un fondo de franjas roja y amarilla"}
+  },
+  "projects/fotografia/valeria/ensayo-valeria-troncos-eucalipto": {
+    "w": 600,
+    "h": 900,
+    "alt": {"es": "Retrato de Valeria entre troncos de eucalipto"}
+  },
+  "projects/web-design/eners/eners-sitio-beneficios-energia-solar": {
+    "w": 1440,
+    "h": 578,
+    "alt": {"es": "Sección azul «Você não está cansado de pagar altas contas de luz?» con los beneficios de la energía solar"}
+  },
+  "projects/web-design/eners/eners-sitio-cases-de-sucesso": {
+    "w": 1440,
+    "h": 578,
+    "alt": {"es": "Sección «Cases de sucesso» con tres vídeos de clientes"}
+  },
+  "projects/web-design/eners/eners-sitio-cifras-independencia-energetica": {
+    "w": 1440,
+    "h": 578,
+    "alt": {"es": "Sección de cifras de Eners sobre fondo naranja y el título «Como a Eners vai lhe ajudar a garantir a sua independência energética?»"}
+  },
+  "projects/web-design/eners/eners-sitio-cta-pie-de-pagina": {
+    "w": 1440,
+    "h": 558,
+    "alt": {"es": "Llamado final a solicitar un estudio de viabilidad y pie de página oscuro con contacto y redes"}
+  },
+  "projects/web-design/eners/eners-sitio-hero-paneles-solares": {
+    "w": 1440,
+    "h": 700,
+    "alt": {"es": "Portada del sitio de Eners: titular «Economize na conta de luz e ainda ganhe dinheiro» sobre un campo de paneles solares"}
+  },
+  "projects/web-design/eners/eners-sitio-testimonial-video": {
+    "w": 1440,
+    "h": 578,
+    "alt": {"es": "Sección «Quem conhece, indica!» con el vídeo testimonial de un cliente"}
+  },
+  "projects/web-design/eners/eners-sitio-ventajas": {
+    "w": 1440,
+    "h": 578,
+    "alt": {"es": "Ventajas de Eners con iconos naranjas: soluciones personalizadas, posventa, equipo exclusivo y garantía de 25 años"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-contacto-pie-de-pagina": {
+    "w": 1440,
+    "h": 965,
+    "alt": {"es": "Formulario de contacto con selector de perfil y pie de página con el mapa de la Comunidad Valenciana"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-educacion-convivencia": {
+    "w": 1440,
+    "h": 638,
+    "alt": {"es": "Sección «Educación y convivencia con identidad» con tres tarjetas: qué somos, qué hacemos y cómo lo hacemos"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-equipo": {
+    "w": 1440,
+    "h": 638,
+    "alt": {"es": "Sección «Somos más que un proyecto formativo» con una foto del equipo"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-formaciones": {
+    "w": 1440,
+    "h": 638,
+    "alt": {"es": "Tarjetas de las tres formaciones de Identiduca con público, contenidos y botón para descargar el programa"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-formulario-transformacion": {
+    "w": 1440,
+    "h": 638,
+    "alt": {"es": "Final de las preguntas frecuentes y formulario «Comienza tu transformación»"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente": {
+    "w": 1440,
+    "h": 780,
+    "alt": {"es": "Portada del sitio de Identiduca: ilustración de un globo terráqueo y el titular «Formación valiente para quienes no quieren mirar hacia otro lado»"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-paso-a-paso-faq": {
+    "w": 1440,
+    "h": 638,
+    "alt": {"es": "Paso a paso desplegable y preguntas frecuentes sobre fondo crudo"}
+  },
+  "projects/web-design/identiduca/identiduca-sitio-perfiles": {
+    "w": 1440,
+    "h": 638,
+    "alt": {"es": "Sección «¿Identiduca es para ti?» con cuatro perfiles y el inicio del paso a paso"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-cta-pie-de-pagina": {
+    "w": 1440,
+    "h": 1035,
+    "alt": {"es": "Llamado final al diagnóstico gratuito y pie de página oscuro con el logotipo de Riwer Labs"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar": {
+    "w": 1440,
+    "h": 800,
+    "alt": {"es": "Portada del sitio de Riwer Labs: titular «Seu negócio merece escalar» en blanco y verde lima sobre fondo oscuro, con cifras de resultados"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-historia-numeros": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Sección oscura con la historia de la agencia y bloque «Números não mentem» con cuatro cifras"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-preguntas-frecuentes": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Preguntas frecuentes en acordeón"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-problemas-comunes": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Sección «Isso te parece familiar?» con cuatro tarjetas de problemas comunes de un negocio online"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-proceso-diagnostico": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Línea de tiempo del proceso «Do diagnóstico ao resultado» en cuatro etapas"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-resultados-cases": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Final del proceso y sección «Não acredite em nós. Acredite nos resultados.» con tres cases"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-servicios": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Sección «Tudo o que seu negócio precisa» con tarjetas de servicios: e-commerce, landing pages, anuncios, automatización y datos"}
+  },
+  "projects/web-design/riwer-labs/riwer-labs-sitio-testimonio-diferenciales": {
+    "w": 1440,
+    "h": 870,
+    "alt": {"es": "Testimonio de clienta en un carrusel y diferenciales de la agencia en tarjetas oscuras"}
+  }
+}

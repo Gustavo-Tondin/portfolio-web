@@ -1,0 +1,44 @@
+{
+  "category": "artes-graficas",
+  "name": "Identiduca - Zine",
+  "type": {"es": "Zine editorial"},
+  "year": "2026",
+  "head": {
+    "title": {"es": "Identiduca - Zine - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "«Cuando algo no cuadra», zine impresa de Identiduca sobre protección infantil para familias y educadores. Dirección de arte y diseño editorial de Gustavo Tondin."},
+    "ogDescription": {"es": "Identiduca: una zine impresa para reconocer cuando algo no cuadra."}
+  },
+  "ogImage": "projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra",
+  "intro": {
+    "title": {"es": "Cuando algo no cuadra"},
+    "text": {"es": "Una zine impresa de Identiduca para familias y educadores: una guía breve para reconocer señales de malestar en niños y niñas, y saber qué hacer cuando algo no va bien."},
+    "case": {
+      "challenge": {"es": "Hablar de un tema difícil sin alarmar ni infantilizar, en un formato que se lea en pocos minutos y se quiera guardar."},
+      "solution": {"es": "Una portada con un marco ornamental que encuadra la silueta de un niño leyendo. El interior alterna fotografía, bloques de color y tarjetas de señales, con una serif cálida en los titulares y la misma paleta verde azulada, azul y coral del sitio de Identiduca."},
+      "role": {"es": "Dirección de arte y diseño editorial, como continuación del trabajo en el sitio de Identiduca."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-indice"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-proteger-saber-mirar"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-lenguaje-del-cuerpo"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-algo-no-va-bien"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-cuidar-sin-hacer-dano"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-contraportada"},
+    {"img": "projects/artes-graficas/identiduca/identiduca-zine-impresa-mesa"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Identiduca"}
+    },
+    {"label": "year", "value": "2026"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección de arte · Diseño editorial"}
+    }
+  ],
+  "next": "projects/rodosul"
+}

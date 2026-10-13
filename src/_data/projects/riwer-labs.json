@@ -1,0 +1,56 @@
+{
+  "category": "web-design",
+  "name": "Riwer Labs",
+  "type": {"es": "Agencia de tecnología"},
+  "year": "2025",
+  "head": {
+    "title": {"es": "Riwer Labs - Web Design · Gustavo Tondin"},
+    "description": {"es": "Identidad visual y sitio de Riwer Labs, agencia brasileña de tecnología y performance: diseño y desarrollo a mano de Gustavo Tondin."},
+    "ogDescription": {"es": "Riwer Labs: marca y sitio para una agencia de tecnología y performance."}
+  },
+  "ogImage": "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar",
+  "site": {"href": "https://riwerlabs.com/", "url": "riwerlabs.com"},
+  "intro": {
+    "title": {"es": "Tecnología y performance"},
+    "text": {"es": "Riwer Labs es una agencia brasileña que reúne tecnología y marketing de resultados: tiendas online, landing pages, automatizaciones con IA y gestión de anuncios bajo un mismo equipo."},
+    "case": {
+      "challenge": {"es": "Crear la marca y el sitio de una agencia nueva que compite con proveedores sueltos, y convencer a dueños de negocio de que la tecnología y el tráfico pagado tienen que trabajar juntos."},
+      "solution": {"es": "Una identidad oscura con verde lima y azul eléctrico, de tono técnico y directo. El sitio sigue la lógica de una venta: abre con el problema («Isso te parece familiar?»), cuenta el origen de la agencia, muestra cifras, servicios, el proceso del diagnóstico al resultado, cases, testimonios y preguntas frecuentes, y termina en un diagnóstico gratuito."},
+      "role": {"es": "Identidad visual, diseño y desarrollo del sitio, escrito a mano en HTML, CSS y JavaScript, sin frameworks."},
+      "result": {"es": "En línea desde 2025 en riwerlabs.com. La identidad también se aplica en las redes de la agencia, que diseño de forma recurrente."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-problemas-comunes"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-historia-numeros"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-servicios"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-proceso-diagnostico"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-resultados-cases"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-testimonio-diferenciales"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-preguntas-frecuentes"},
+    {"img": "projects/web-design/riwer-labs/riwer-labs-sitio-cta-pie-de-pagina"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Riwer Labs"}
+    },
+    {"label": "year", "value": "2025"},
+    {
+      "label": "services",
+      "value": {"es": "Identidad visual · Diseño web · Desarrollo"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Identidad visual · Diseño · Desarrollo web"}
+    },
+    {
+      "label": "technology",
+      "value": {"es": "HTML · CSS · JavaScript"}
+    },
+    {"label": "site"}
+  ],
+  "next": "artes-graficas"
+}

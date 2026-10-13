@@ -1,0 +1,70 @@
+{
+  "category": "branding",
+  "name": "DJ RodMotter",
+  "type": {"es": "Identidad DJ"},
+  "year": "2023",
+  "head": {
+    "title": {"es": "DJ RodMotter - Branding · Gustavo Tondin"},
+    "description": {"es": "Identidad visual de DJ RodMotter: «no escuches, siente», degradados de luz con grano, merch y publicidad exterior. Proyecto de Gustavo Tondin."},
+    "ogDescription": {"es": "DJ RodMotter: una identidad para un sonido sin fórmulas."}
+  },
+  "ogImage": "projects/branding/dj-rodmotter/rodmotter-portada-dj-cabina",
+  "intro": {
+    "title": {"es": "No escuches, siente"},
+    "text": {"es": "RodMotter empezó a producir de oído, sin teoría: un proceso caótico en el que lo que importaba no era la fórmula, sino cómo llegaba el sonido a quien lo escucha. La identidad parte de esa idea y representa su dualidad: un sonido sin fórmulas, sostenido por talento e instinto."},
+    "case": {
+      "challenge": {"es": "Dar al DJ una identidad propia en una escena donde los artistas se parecen entre sí, y llevar a la imagen algo que no se ve: la sensación que deja su música."},
+      "solution": {"es": "Un símbolo de tres trazos en movimiento sobre el nombre en una sans pesada, y degradados de cian, magenta y negro con grano que funcionan como la parte visible del sonido. La voz es corta y en inglés, pensada para la pista: «It’s not music. It’s feeling», «Feel the music. Beyond the beats». El sistema se extiende a stickers, merch, web y publicidad exterior."},
+      "role": {"es": "Ajustes finales de la identidad y fotografía del artista. El diseño es de Uel Molon y el concepto, de Gabriel Motter."},
+      "result": {"es": "Una identidad lista para cabina, redes y calle: el mismo degradado y la misma frase reconocibles en cada pieza, de la sudadera a la valla."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/branding/dj-rodmotter/rodmotter-portada-dj-cabina"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-logotipo-degradado"},
+    {
+      "img": "projects/branding/dj-rodmotter/rodmotter-frase-its-not-music",
+      "caption": {"es": "«It’s not music. It’s feeling»: el concepto en una frase"}
+    },
+    {
+      "img": "projects/branding/dj-rodmotter/rodmotter-pieza-feel-the-music",
+      "caption": {"es": "Degradados con grano: el sonido traducido a luz y color"}
+    },
+    {"img": "projects/branding/dj-rodmotter/rodmotter-collage-concierto-retrato"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-stickers-monograma-vinilo"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-tarjetas-visita-espuma"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-sitio-web-portatil"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-portada-spotify-tableta"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-sudadera-beyond-the-beats"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-camiseta-gorra"},
+    {
+      "img": "projects/branding/dj-rodmotter/rodmotter-valla-avenida",
+      "caption": {"es": "Campaña «Beyond the beats» en publicidad exterior"}
+    },
+    {"img": "projects/branding/dj-rodmotter/rodmotter-carteles-nueva-york"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-cartel-metro"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-marquesina-autobus"},
+    {"img": "projects/branding/dj-rodmotter/rodmotter-banner-panoramico"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "DJ RodMotter"}
+    },
+    {"label": "year", "value": "2023"},
+    {
+      "label": "services",
+      "value": {"es": "Identidad visual · Fotografía · Merchandising · Piezas gráficas · Publicidad exterior"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Ajustes finales · Fotografía"}
+    },
+    {
+      "label": "team",
+      "value": {"es": "Uel Molon · diseño  ·  Gabriel Motter · concepto"}
+    }
+  ],
+  "next": "projects/veg-to-go"
+}

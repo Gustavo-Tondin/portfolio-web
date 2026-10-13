@@ -1,0 +1,189 @@
+---
+pagination:
+  data: langPages
+  size: 1
+  alias: pg
+permalink: "{{ 'index' | route(pg.lang) }}"
+heroPreload: true
+---
+{% extends "base.njk" %}
+{% from "macros.njk" import next with context %}
+{% set head = t.pages.index %}
+
+{% block main %}
+<!-- =======================================================================================
+    MAIN
+======================================================================================= -->
+<main>
+
+    <!-- Imagen fija que transiciona de hero a about -->
+    <div class="scroll-image" id="scrollImage">
+        <picture>
+            <source
+                srcset="{{ 'media/hero-banner-mobile.webp' | rel }}"
+                type="image/webp"
+                media="(max-width: 768px)"
+            />
+            <source
+                srcset="{{ 'media/hero-banner-mobile.jpg' | rel }}"
+                media="(max-width: 768px)"
+            />
+            <source
+                srcset="{{ 'media/hero-banner.webp' | rel }}"
+                type="image/webp"
+            />
+            <img
+                src="{{ 'media/hero-banner.jpg' | rel }}"
+                alt="{{ t.home.heroAlt }}"
+                loading="eager"
+                fetchpriority="high"
+            />
+        </picture>
+    </div>
+
+    <!-- Hero ======================================================================================= -->
+    <section class="hero" id="hero">
+        <div class="hero__top">
+            <h1 class="hero__title heading-display">Gustavo Tondin</h1>
+            <p class="hero__location label">{{ t.home.location }}</p>
+        </div>
+
+        <div class="hero__info">
+            <a href="{{ 'portfolio' | href }}" class="nav-link nav-link--light nav-link--bordered">
+                {{ t.nav.portfolio }}
+                <span class="nav-link__circle"></span>
+            </a>
+            <p class="hero__tagline">
+                {{ t.home.tagline | safe }}
+            </p>
+        </div>
+
+        <nav class="hero__side-nav">
+            <a href="#about" class="nav-link nav-link--light">{{ t.home.about }}</a>
+            <a href="{{ 'contacto' | href }}" class="nav-link nav-link--light">{{ t.nav.contact }}</a>
+        </nav>
+    </section>
+
+    <!-- Sobre Mí ======================================================================================= -->
+    <section class="section" id="about">
+        <div class="about">
+            <div class="about__image" id="aboutImageTarget"></div>
+
+            <div class="about__content">
+                <!-- Sub-container: label + título pegados -->
+                <div class="about__lead">
+                    <span class="label">{{ t.home.hello }}</span>
+                    <h2 class="about__title">Gustavo Tondin</h2>
+                </div>
+
+                <!-- Sub-container: los 3 párrafos apilados -->
+                <div class="about__paragraphs">
+{%- for text in t.home.paragraphs %}
+                    <p class="about__text">{{ text }}</p>
+{%- endfor %}
+                </div>
+
+                <div class="about__cards">
+{%- for step in t.home.steps %}
+                    <div class="about__card">
+                        <h3 class="h4 about__card-title">{{ step.title }}</h3>
+                        <p class="about__card-text">{{ step.text }}</p>
+                    </div>
+{%- endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Áreas de trabajo ======================================================================================= -->
+    <!-- data-spotlight activa sirve para mostrar las imagenes correctas en el hover. -->
+    <section class="marquee" aria-label="{{ t.home.marqueeLabel }}">
+        <div class="marquee__track">
+{%- for c in categories %}
+
+            <a href="{{ c.id | href }}" class="marquee__item marquee__item--{{ c.id }} label" data-category="{{ c.id }}">
+                <img class="marquee__preview" src="#" alt="{{ t.home.marquee[c.id].alt }}">
+                <span class="marquee__text">{{ t.home.marquee[c.id].text }}</span>
+            </a>
+{%- endfor %}
+
+        </div>
+    </section>
+
+    <!-- CV Grid ======================================================================================= -->
+    <section class="section">
+        <div class="cv">
+
+            <div class="cv__card cv__card--focus">
+                <h2 class="cv__heading label">{{ t.home.focus }}</h2>
+                <h3 class="heading-display">{{ t.home.focusTitle }}</h3>
+                <p class="cv__text">
+                    {{ t.home.focusText | safe }}
+                </p>
+            </div>
+
+            <div class="cv__card cv__card--contact">
+                <h3 class="cv__heading label">{{ t.home.contact }}</h3>
+                <p class="cv__text">{{ t.home.city }}</p>
+                <div class="cv__links">
+                    <a href="mailto:gus.tondin@gmail.com" class="cv__link link">gus.tondin@gmail.com</a>
+                    <a href="https://www.behance.net/gustavotondin" class="cv__link link">Behance</a>
+                    <a href="https://github.com/Gustavo-Tondin" class="cv__link link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/gustavo-tondin" class="cv__link link">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="cv__card cv__card--exp">
+                <h3 class="cv__heading label">{{ t.home.experience }}</h3>
+{% for job in t.home.jobs %}
+                <div class="cv__content">
+                    <span class="cv__date label">{{ job.date }}</span>
+                    <h4 class="cv__role">{{ job.role }}</h4>
+                    <p class="cv__detail">{{ job.place }}</p>
+                    <p class="cv__text">{{ job.text }}</p>
+                </div>
+{% endfor %}
+            </div>
+
+            <div class="cv__card cv__card--do">
+                <h3 class="cv__heading label">{{ t.home.doTitle }}</h3>
+                <ul class="cv__list">
+{%- for item in t.home.do %}
+                    <li>{{ item }}</li>
+{%- endfor %}
+                </ul>
+            </div>
+
+            <div class="cv__card cv__card--tools">
+                <h3 class="cv__heading label">{{ t.home.tools }}</h3>
+                <div class="cv__tags">
+{%- for tool in ["Illustrator", "Photoshop", "InDesign", "Lightroom", "Figma", "HTML / CSS / JS", "SASS", "WordPress", "Git", "Fontra"] %}
+                    <span class="tag-pill">{{ tool }}</span>
+{%- endfor %}
+                </div>
+            </div>
+
+            <div class="cv__card cv__card--soft">
+                <h3 class="cv__heading label">{{ t.home.softSkills }}</h3>
+                <div class="cv__tags">
+{%- for skill in t.home.skills %}
+                    <span class="tag-pill">{{ skill }}</span>
+{%- endfor %}
+                </div>
+            </div>
+
+            <div class="cv__card cv__card--misc">
+                <h3 class="cv__heading label">{{ t.home.profile }}</h3>
+                <ul class="cv__list cv__list--compact">
+                    <li><strong>{{ t.home.languagesLabel }}</strong> {{ t.home.languages }}</li>
+                    <li><strong>{{ t.home.interestsLabel }}</strong> {{ t.home.interests }}</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Próxima Sesión ======================================================================================= -->
+    {{ next("portfolio", "portfolio", t.nav.portfolio, t.next.nextSection, "", t.next.section) }}
+</main>
+{% endblock %}

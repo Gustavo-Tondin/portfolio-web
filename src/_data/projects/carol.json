@@ -1,0 +1,51 @@
+{
+  "category": "fotografia",
+  "name": "Carol",
+  "type": {"es": "Ensayo femenino"},
+  "year": "2022",
+  "head": {
+    "title": {"es": "Carol - Fotografía · Gustavo Tondin"},
+    "description": {"es": "Ensayo femenino de Carol entre gradas, miradores y azaleas: luz de tarde y color saturado. Dirección de arte y fotografía de Gustavo Tondin."},
+    "ogDescription": {"es": "Carol: un ensayo femenino con la ciudad como escenario."}
+  },
+  "ogImage": "projects/fotografia/carol/ensayo-carol-gradas-estadio",
+  "posts": true,
+  "intro": {
+    "title": {"es": "La ciudad como escenario"},
+    "text": {"es": "Un ensayo femenino por la ciudad: las gradas de un estadio, un mirador sobre los edificios y un jardín de azaleas. La luz del final de la tarde y el color saturado construyen un retrato con actitud."}
+  },
+  "sizes": "(max-width: 768px) 100vw, 75vw",
+  "gallery": [
+    {"img": "projects/fotografia/carol/ensayo-carol-gradas-estadio", "ratio": "1.500"},
+    {"img": "projects/fotografia/carol/ensayo-carol-azotea-ciudad", "ratio": "1.500"},
+    {"img": "projects/fotografia/carol/ensayo-carol-azaleas", "ratio": "1.500"},
+    {
+      "img": "projects/fotografia/carol/ensayo-carol-perfil-labios-rojos",
+      "sizes": "(max-width: 768px) 100vw, 50vw",
+      "ratio": "1.000"
+    },
+    {"img": "projects/fotografia/carol/ensayo-carol-escalera-gradas", "ratio": "1.499"},
+    {
+      "img": "projects/fotografia/carol/ensayo-carol-cesped-vestido",
+      "sizes": "(max-width: 768px) 100vw, 50vw",
+      "ratio": "1.000"
+    },
+    {
+      "img": "projects/fotografia/carol/ensayo-carol-primer-plano-troncos",
+      "sizes": "(max-width: 768px) 100vw, 50vw",
+      "ratio": "1.000"
+    }
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Carol"}
+    },
+    {"label": "year", "value": "2022"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección de arte · Fotografía"}
+    }
+  ],
+  "next": "projects/valeria"
+}

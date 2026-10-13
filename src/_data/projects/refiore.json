@@ -1,0 +1,70 @@
+{
+  "category": "branding",
+  "name": "Refiore",
+  "type": {"es": "Joyería artesanal"},
+  "year": "2024",
+  "head": {
+    "title": {"es": "Refiore - Branding · Gustavo Tondin"},
+    "description": {"es": "Identidad visual de Refiore, joyería artesanal de oro y diamantes: la vida como una película, el monograma RFR y la línea que contornea cada anillo. Proyecto de Gustavo Tondin."},
+    "ogDescription": {"es": "Refiore: identidad para una joyería artesanal inspirada en el cine."}
+  },
+  "ogImage": "projects/branding/refiore/refiore-portada-logotipo-pareja",
+  "intro": {
+    "title": {"es": "Refinar momentos"},
+    "text": {"es": "Refiore es una joyería artesanal de oro y diamantes. El nombre viene de la expresión «refinar oro» y la identidad parte del cine: la vida como una película dirigida por uno mismo, donde cada escena merece ser celebrada. La línea que contornea cada anillo representa la continuidad de esa historia y se convierte en el hilo gráfico de toda la marca."},
+    "case": {
+      "challenge": {"es": "Lanzar una joyería artesanal en un segmento dominado por códigos de lujo fríos y distantes. Refiore necesitaba transmitir sofisticación y calidad de alta gama sin perder cercanía: joyas para momentos reales, no solo para la vitrina."},
+      "solution": {"es": "Una identidad que trata la marca como una película: logotipo en serif clásica de espaciado amplio, monograma RFR grabado en las piezas, una paleta de cuatro tonos (pasión, tinta, línea y papel) y una línea fina que atraviesa las composiciones como el contorno de un anillo. La voz habla en lenguaje de guion: «Escreva a sua história», «Seu roteiro», «Romantize sua vida»."},
+      "role": {"es": "Parte del trío creativo del proyecto en Gauja Lab, junto a Uel Molon y Gabriel Motter: concepto, dirección creativa y decisiones de identidad tomadas en conjunto."},
+      "result": {"es": "Un sistema completo para el lanzamiento, con la misma narrativa en cada punto de contacto: papelería, packaging, piezas impresas, publicidad exterior y web."}
+    }
+  },
+  "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
+  "gallery": [
+    {"img": "projects/branding/refiore/refiore-portada-logotipo-pareja"},
+    {"img": "projects/branding/refiore/refiore-logotipo-serif"},
+    {
+      "img": "projects/branding/refiore/refiore-paleta-colores",
+      "caption": {"es": "Paleta: pasión, tinta, línea y papel"}
+    },
+    {
+      "img": "projects/branding/refiore/refiore-lemas-refine-momentos",
+      "caption": {"es": "La línea que contornea el anillo, convertida en recurso gráfico"}
+    },
+    {
+      "img": "projects/branding/refiore/refiore-alianzas-monograma-rfr",
+      "caption": {"es": "Monograma RFR grabado en el interior de cada pieza"}
+    },
+    {"img": "projects/branding/refiore/refiore-pieza-romantize-sua-vida"},
+    {"img": "projects/branding/refiore/refiore-tarjetas-visita"},
+    {
+      "img": "projects/branding/refiore/refiore-cuaderno-seu-roteiro",
+      "caption": {"es": "Cuaderno «Seu roteiro»: el cine como lenguaje de la marca"}
+    },
+    {"img": "projects/branding/refiore/refiore-impresos-anel-dos-sonhos"},
+    {"img": "projects/branding/refiore/refiore-bolsas-compra"},
+    {"img": "projects/branding/refiore/refiore-mupi-pantalla-urbana"},
+    {"img": "projects/branding/refiore/refiore-sitio-web-portatil"},
+    {"img": "projects/branding/refiore/refiore-pieza-arte-de-romantizar"}
+  ],
+  "credits": [
+    {
+      "label": "client",
+      "value": {"es": "Refiore"}
+    },
+    {"label": "year", "value": "2024"},
+    {
+      "label": "services",
+      "value": {"es": "Identidad visual · Tono de voz · Papelería · Packaging · Piezas gráficas"}
+    },
+    {
+      "label": "role",
+      "value": {"es": "Concepto y dirección creativa en equipo"}
+    },
+    {
+      "label": "team",
+      "value": {"es": "Uel Molon  ·  Gabriel Motter  ·  Gauja Lab · estudio"}
+    }
+  ],
+  "next": "projects/wote"
+}

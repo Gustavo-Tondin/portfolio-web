@@ -1,0 +1,40 @@
+{
+  "category": "artes-graficas",
+  "name": {"es": "Otros Clientes"},
+  "type": {"es": "Social media"},
+  "year": "2022 - 2025",
+  "head": {
+    "title": {"es": "Otros Clientes - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "Social media para Innova, Di Vêneto, Treco Studio, Beliscai, Refiore, Wotë, Riwer Labs y Sulmig. Dirección creativa y diseño de Gustavo Tondin."},
+    "ogDescription": {"es": "Social media para marcas de tecnología, gastronomía, joyería e industria."}
+  },
+  "ogImage": "projects/artes-graficas/otros-clientes/innova-fluxo-post-agil-eficiente-preciso",
+  "posts": true,
+  "intro": {
+    "title": {"es": "Social media"},
+    "text": {"es": "Trabajo recurrente de social media entre 2022 y 2025 para marcas de sectores muy distintos: tecnología, gastronomía, joyería, CBD, agencias e industria. Cada pieza parte de la identidad del cliente, no de una plantilla propia."}
+  },
+  "sizes": "(max-width: 768px) 100vw, 50vw",
+  "gallery": [
+    {"img": "projects/artes-graficas/otros-clientes/innova-fluxo-post-agil-eficiente-preciso"},
+    {"img": "projects/artes-graficas/otros-clientes/di-veneto-post-pizza-fermentacao"},
+    {"img": "projects/artes-graficas/otros-clientes/treco-studio-post-televisor"},
+    {"img": "projects/artes-graficas/otros-clientes/beliscai-post-repartidor-moto"},
+    {"img": "projects/artes-graficas/otros-clientes/refiore-post-anel-dos-sonhos"},
+    {"img": "projects/artes-graficas/otros-clientes/wote-post-selva-aerea"},
+    {"img": "projects/artes-graficas/otros-clientes/riwer-labs-post-vazamento-funil"},
+    {"img": "projects/artes-graficas/otros-clientes/sulmig-post-revisao-preventiva"}
+  ],
+  "credits": [
+    {
+      "label": "clients",
+      "value": {"es": "Innova · Di Vêneto · Treco Studio · Beliscai · Refiore · Wotë · Riwer Labs · Sulmig"}
+    },
+    {"label": "year", "value": "2022 – 2025"},
+    {
+      "label": "role",
+      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido"}
+    }
+  ],
+  "next": "fotografia"
+}
