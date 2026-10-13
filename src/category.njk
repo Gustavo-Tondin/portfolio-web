@@ -4,7 +4,6 @@ pagination:
   size: 1
   alias: pg
 permalink: "{{ pg.id | route(pg.lang) }}"
-icons: true
 ---
 {% extends "base.njk" %}
 {% set pageId = pg.id %}
@@ -42,7 +41,7 @@ icons: true
                     <li class="showcase__list-item{% if loop.first %} is-active{% endif %}" data-index="{{ loop.index0 }}">
                         <a href="{{ ('projects/' + s.project) | href }}" class="showcase__list-link heading-italic" data-index="{{ loop.index0 }}" title="{{ name }} - {{ c.name | tr }}">
                             <span class="showcase__name">{{ name }}</span>
-                            <i class="showcase__arrow ri-arrow-right-s-line"></i>
+                            <i class="showcase__arrow icon-chevron"></i>
                         </a>
                     </li>
 {%- endfor %}

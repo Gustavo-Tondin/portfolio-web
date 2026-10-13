@@ -4,7 +4,6 @@ pagination:
   size: 1
   alias: pg
 permalink: "{{ ('projects/' + pg.id) | route(pg.lang) }}"
-icons: true
 ogType: article
 ---
 {% extends "base.njk" %}
@@ -65,7 +64,7 @@ ogType: article
             <a class="btn" href="{{ p.site.href }}" target="_blank" rel="noreferrer noopener" title="{{ t.project.visitTitle | replace('{name}', name) }}">
                 <span>{{ t.project.visit }}</span>
                 <span class="project__visit-url">{{ p.site.url }}</span>
-                <i class="ri-arrow-right-s-line"></i>
+                <i class="icon-chevron"></i>
             </a>
 {%- endif %}
         </div>

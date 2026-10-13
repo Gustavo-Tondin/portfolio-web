@@ -4,7 +4,6 @@ pagination:
   size: 1
   alias: pg
 permalink: "{{ 'portfolio' | route(pg.lang) }}"
-icons: true
 bodyClass: page-portfolio
 navCurrent: portfolio
 ---
@@ -33,7 +32,7 @@ navCurrent: portfolio
         <section class="portfolio-grid__section" data-category="{{ c.id }}">
             <a href="{{ c.id | href }}" class="portfolio-grid__section-header reveal" title="{{ t.portfolio.seeAll }} {{ c.name | tr }}">
                 <h2 class="portfolio-grid__section-title heading-italic">{{ c.name | tr }}</h2>
-                <i class="portfolio-grid__section-arrow ri-arrow-right-s-line"></i>
+                <i class="portfolio-grid__section-arrow icon-chevron"></i>
             </a>
 {%- for card in section.cards %}
 {%- set n = n + 1 %}

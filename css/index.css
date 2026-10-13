@@ -268,6 +268,15 @@ button {
     color: var(--color-dark-surface);
 }
 
+/* flecha (Remix Icon arrow-right-s-line) como mascara: toma el color del texto y el tamano de la fuente */
+.icon-chevron {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
 /* pill outline, se rellena al hover. customizar via vars por instancia: style="--btn-color:...; --btn-padding:..." */
 .btn {
     --btn-color: var(--color-accent);
@@ -290,8 +299,9 @@ button {
     border-radius: var(--radius-pill);
     transition: var(--transition-fast);
 }
-.btn i {
+.btn .icon-chevron {
     font-size: 1.125rem;
+    height: 1.25rem; /* alto de linea del glifo de RemixIcon que reemplaza: mantiene el alto del boton */
     transition: transform 0.3s ease;
 }
 .btn:hover,
@@ -300,8 +310,8 @@ button {
     color: var(--btn-hover-txt);
 }
 
-.btn:hover i,
-.btn:focus-visible i {
+.btn:hover .icon-chevron,
+.btn:focus-visible .icon-chevron {
     transform: translate(0.25rem, -0.25rem);
 }
 
