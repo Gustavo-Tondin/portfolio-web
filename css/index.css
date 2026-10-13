@@ -362,11 +362,15 @@ button {
     background-color: var(--link-color);
 }
 
-/* lang - idioma actual + lista en popover (top layer: queda por encima del menú abierto); vars: --lang-top, --lang-right (posición fija de la lista bajo el botón) */
+/* lang - idioma actual + lista en popover (top layer: queda por encima del menú abierto); vars: --lang-top, --lang-right (posición fija de la lista bajo el botón), --lang-bg, --lang-border, --lang-pad, --lang-link */
 .lang {
     /* header: el botón está a la izquierda del menú → padding del header + menú (min-width 6.5rem) + gap (1.5rem) */
     --lang-top: 3.875rem;
     --lang-right: calc(clamp(1.5rem, 5vw, 2.5rem) + 8rem);
+    --lang-bg: var(--color-light);
+    --lang-border: var(--color-light-surface);
+    --lang-pad: 1rem 1.25rem;
+    --lang-link: var(--color-dark);
 }
 .lang__caret {
     width: 0.375rem;
@@ -385,15 +389,18 @@ button {
     top: var(--lang-top);
     right: var(--lang-right);
     margin: 0;
-    padding: 1rem 1.25rem;
-    border: var(--border-line) var(--color-light-surface);
+    padding: var(--lang-pad);
+    border: var(--border-line) var(--lang-border);
     border-radius: var(--radius-m);
-    background-color: var(--color-light);
+    background-color: var(--lang-bg);
 }
 .lang__list:popover-open {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+}
+.lang__link {
+    --link-color: var(--lang-link);
 }
 .lang__link[aria-current] {
     opacity: 1;
@@ -675,6 +682,10 @@ button {
     /* el hero mide 100vw (incluye la barra de scroll): 100vw - 100% vale 0 en el hero y el ancho de la barra en la lista fixed */
     --lang-top: 3.375rem;
     --lang-right: calc(clamp(1.25rem, 5vw, 3rem) - (100vw - 100%));
+    --lang-bg: transparent;
+    --lang-border: transparent;
+    --lang-pad: 0;
+    --lang-link: var(--color-light);
     position: absolute;
     top: 1.5rem;
     right: var(--lang-right);
