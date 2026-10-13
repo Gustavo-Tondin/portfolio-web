@@ -61,10 +61,12 @@ export default function (config) {
   config.addFilter("href", function (id) {
     return relative(this.page.url, route(id, this.ctx.lang));
   });
-  config.addFilter("srcset", function (key) {
+  // Empty when the image has no renditions in that format (AVIF only exists where it pays off).
+  config.addFilter("srcset", function (key, ext = "webp") {
+    if (!fs.existsSync(`media/${key}.${ext}`)) return "";
     const base = relative(this.page.url, "media/" + key);
-    const widths = [800, 1280].filter((w) => fs.existsSync(`media/${key}-${w}.webp`));
-    return [...widths.map((w) => `${base}-${w}.webp ${w}w`), `${base}.webp ${images[key].w}w`].join(", ");
+    const widths = [800, 1280].filter((w) => fs.existsSync(`media/${key}-${w}.${ext}`));
+    return [...widths.map((w) => `${base}-${w}.${ext} ${w}w`), `${base}.${ext} ${images[key].w}w`].join(", ");
   });
 
   return { dir: { input: "src", output: "_site" } };
