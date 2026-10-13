@@ -1,5 +1,6 @@
 {
   "url": "https://gustavo-tondin.github.io/portfolio-web/",
+  "web3formsKey": "YOUR_ACCESS_KEY_HERE",
   "langs": ["es", "en", "pt-br"],
   "locales": {"es": "es_ES", "en": "en_US", "pt-br": "pt_BR"},
   "hreflang": {"es": "es", "en": "en", "pt-br": "pt-BR"},

@@ -1,0 +1,28 @@
+---
+pagination:
+  data: langPages
+  size: 1
+  alias: pg
+permalink: "{{ 'gracias' | route(pg.lang) }}"
+bodyClass: page-contacto
+noindex: true
+---
+{% extends "base.njk" %}
+{% set pageId = "gracias" %}
+{% set head = t.pages.gracias %}
+
+{% block main %}
+<!-- =======================================================================================
+    MAIN
+======================================================================================= -->
+<main>
+
+    <!-- Gracias ======================================================================================= -->
+    <section class="contact">
+        <h1 class="contact__title heading-display">{{ t.thanks.title }}</h1>
+        <p class="contact__text">{{ t.thanks.text }}</p>
+        <a class="btn" href="{{ 'index' | href }}">{{ t.thanks.back }}</a>
+    </section>
+
+</main>
+{% endblock %}

@@ -22,7 +22,14 @@ navCurrent: contacto
 
         <h1 class="contact__title heading-display">{{ t.contact.title }}</h1>
 
-        <form class="contact__form" action="#" method="post">
+        <form class="contact__form" action="https://api.web3forms.com/submit" method="post">
+
+            <!-- Web3Forms -->
+            <input type="hidden" name="access_key" value="{{ site.web3formsKey }}">
+            <input type="hidden" name="subject" value="{{ t.contact.subject }}">
+            <input type="hidden" name="from_name" value="Portfolio Gustavo Tondin">
+            <input type="hidden" name="redirect" value="{{ 'gracias' | url(lang) }}">
+            <input type="checkbox" name="botcheck" tabindex="-1" hidden>
 
             <div class="contact__row">
 
@@ -33,10 +40,10 @@ navCurrent: contacto
                         class="contact__input"
                         type="text"
                         id="contactNombre"
-                        name="nombre"
+                        name="name"
                         autocomplete="name"
                         required
-                    />
+                    >
                 </div>
 
                 <!-- Correo electrónico -->
@@ -49,7 +56,7 @@ navCurrent: contacto
                         name="email"
                         autocomplete="email"
                         required
-                    />
+                    >
                 </div>
 
             </div>
@@ -60,11 +67,15 @@ navCurrent: contacto
                 <textarea
                     class="contact__textarea"
                     id="contactMensaje"
-                    name="mensaje"
+                    name="message"
                     rows="4"
                     required
                 ></textarea>
             </div>
+
+            <div class="contact__captcha h-captcha" data-captcha="true" data-lang="{{ site.hreflang[lang] }}"></div>
+
+            <p class="contact__note">{{ t.contact.privacy }}</p>
 
             <button
                 class="contact__submit btn"

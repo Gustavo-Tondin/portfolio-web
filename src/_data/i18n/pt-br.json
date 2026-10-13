@@ -35,6 +35,11 @@
       "description": "Tem um projeto em mente? Me escreva e a gente conversa. Branding, web e direção criativa desde Valência.",
       "ogTitle": "Contato - Gustavo Tondin",
       "ogDescription": "Tem um projeto em mente? Me escreva e a gente conversa."
+    },
+    "gracias": {
+      "title": "Mensagem enviada - Gustavo Tondin",
+      "description": "Obrigado por escrever. Respondo o quanto antes.",
+      "ogDescription": "Obrigado por escrever. Respondo o quanto antes."
     }
   },
   "home": {
@@ -128,6 +133,13 @@
     "name": "Nome",
     "email": "E-mail",
     "message": "Me conta, do que você precisa?",
-    "send": "Enviar"
+    "send": "Enviar",
+    "subject": "Nova mensagem pelo portfólio",
+    "privacy": "Seus dados são enviados pelo Web3Forms, com verificação do hCaptcha, e usados só para responder você."
+  },
+  "thanks": {
+    "title": "Obrigado",
+    "text": "Recebi sua mensagem e respondo o quanto antes.",
+    "back": "Voltar ao início"
   }
 }

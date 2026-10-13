@@ -35,6 +35,11 @@
       "description": "¿Tienes un proyecto en mente? Escríbeme y hablamos. Branding, web y dirección creativa desde Valencia.",
       "ogTitle": "Contacto - Gustavo Tondin",
       "ogDescription": "¿Tienes un proyecto en mente? Escríbeme y hablamos."
+    },
+    "gracias": {
+      "title": "Mensaje enviado - Gustavo Tondin",
+      "description": "Gracias por escribir. Te respondo lo antes posible.",
+      "ogDescription": "Gracias por escribir. Te respondo lo antes posible."
     }
   },
   "home": {
@@ -128,6 +133,13 @@
     "name": "Nombre",
     "email": "Correo electrónico",
     "message": "Dime, ¿qué necesitas?",
-    "send": "Enviar"
+    "send": "Enviar",
+    "subject": "Nuevo mensaje desde el portfolio",
+    "privacy": "Tus datos se envían a través de Web3Forms, con verificación de hCaptcha, y solo se usan para responderte."
+  },
+  "thanks": {
+    "title": "Gracias",
+    "text": "Recibí tu mensaje y te respondo lo antes posible.",
+    "back": "Volver al inicio"
   }
 }

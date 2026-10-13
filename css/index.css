@@ -1851,6 +1851,21 @@ body.page-project {
     min-width: 16rem;
 }
 
+/* alto del widget de hCaptcha, que se carga al interactuar con el form */
+.contact__captcha {
+    min-height: 5rem;
+}
+
+.contact__note {
+    font-size: 0.875rem;
+    color: var(--color-dark-subtle);
+}
+
+.contact__text {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    max-width: 32rem;
+}
+
 @media (max-width: 640px) {
     .contact {
         gap: 2rem;
