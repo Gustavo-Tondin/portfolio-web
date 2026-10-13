@@ -9,6 +9,7 @@ bodyClass: page-portfolio
 navCurrent: portfolio
 ---
 {% extends "base.njk" %}
+{% set pageId = "portfolio" %}
 {% from "macros.njk" import picture, next with context %}
 {% set head = t.pages.portfolio %}
 

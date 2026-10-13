@@ -52,7 +52,7 @@
       {"title": "Diseñar", "text": "Explorar soluciones claras y coherentes."},
       {"title": "Aplicar", "text": "Llevarlo a lo real, con cuidado en los detalles."}
     ],
-    "marqueeLabel": "Áreas de trabalho",
+    "marqueeLabel": "Áreas de trabajo",
     "marquee": {
       "branding": {"text": "<branding>", "alt": "Vista previa de proyectos de branding"},
       "web-design": {"text": "<web_design>", "alt": "Vista previa de proyectos de diseño web"},

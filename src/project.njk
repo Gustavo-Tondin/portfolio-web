@@ -8,6 +8,7 @@ icons: true
 ogType: article
 ---
 {% extends "base.njk" %}
+{% set pageId = "projects/" + pg.id %}
 {% from "macros.njk" import picture, next with context %}
 {% set p = projects[pg.id] %}
 {% set category = categories | byId(p.category) %}

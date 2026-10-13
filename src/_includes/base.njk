@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ lang }}">
+<html lang="{{ site.hreflang[lang] }}">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,6 +12,12 @@
     <!-- Canonical -->
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace('/', '', 1) }}" />
 
+    <!-- Versiones en otros idiomas -->
+{%- for l in site.langs %}
+    <link rel="alternate" hreflang="{{ site.hreflang[l] }}" href="{{ pageId | url(l) }}">
+{%- endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ pageId | url(site.langs[0]) }}">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{{ ogType or 'website' }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url | replace('/', '', 1) }}" />
@@ -19,6 +25,9 @@
     <meta property="og:description" content="{{ head.ogDescription | tr }}" />
     <meta property="og:image" content="{{ site.url }}media/{{ ogImage or 'hero-banner' }}.jpg" />
     <meta property="og:locale" content="{{ site.locales[lang] }}" />
+{%- for l in site.langs %}{% if l != lang %}
+    <meta property="og:locale:alternate" content="{{ site.locales[l] }}">
+{%- endif %}{% endfor %}
 
     <!-- X (Twitter) -->
     <meta property="twitter:card" content="summary_large_image" />

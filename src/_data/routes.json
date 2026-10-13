@@ -1,9 +1,9 @@
 {
   "index": "index",
   "portfolio": "portfolio",
-  "contacto": "contacto",
+  "contacto": {"es": "contacto", "en": "contact", "pt-br": "contato"},
   "branding": "branding",
   "web-design": "web-design",
-  "artes-graficas": "artes-graficas",
-  "fotografia": "fotografia"
+  "artes-graficas": {"es": "artes-graficas", "en": "graphic-arts", "pt-br": "artes-graficas"},
+  "fotografia": {"es": "fotografia", "en": "photography", "pt-br": "fotografia"}
 }

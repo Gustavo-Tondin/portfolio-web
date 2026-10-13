@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "logo": "Home - Gustavo Tondin",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "menu": "Menu",
+    "menuOpen": "Open menu",
+    "menuClose": "Close"
+  },
+  "next": {
+    "section": "Next section",
+    "project": "Next project",
+    "nextSection": "next section",
+    "followingSection": "next section",
+    "followingProject": "next project",
+    "allProjects": "all projects"
+  },
+  "pages": {
+    "index": {
+      "title": "Gustavo Tondin - Graphic & Web Designer in Valencia",
+      "description": "Branding, web design, graphic arts and photography by Gustavo Tondin in Valencia. I help brands communicate with authority through visual identity and digital presence.",
+      "ogTitle": "Gustavo Tondin - Graphic & Web Designer",
+      "ogDescription": "Branding and web design in Valencia. Visual identity, web and brand storytelling for companies that want to communicate with authority."
+    },
+    "portfolio": {
+      "title": "Portfolio - Gustavo Tondin · Branding, Web, Graphic Design and Photography",
+      "description": "Editorial portfolio by Gustavo Tondin - selected branding, web design, graphic arts and photography projects, made between Brazil and Valencia.",
+      "ogTitle": "Portfolio - Gustavo Tondin",
+      "ogDescription": "Selected projects: branding, web design, graphic arts and photography."
+    },
+    "contacto": {
+      "title": "Contact - Gustavo Tondin · Let's talk",
+      "description": "Have a project in mind? Write to me and let's talk. Branding, web and creative direction from Valencia.",
+      "ogTitle": "Contact - Gustavo Tondin",
+      "ogDescription": "Have a project in mind? Write to me and let's talk."
+    }
+  },
+  "home": {
+    "heroAlt": "Gustavo Tondin, graphic designer",
+    "location": "Valencia - Spain",
+    "tagline": "<em class=\"hero__highlight\">Strategic</em> designer<br /> focused on giving<br /> brands <em class=\"hero__highlight\">authority</em>.",
+    "about": "About me",
+    "hello": "Hi, I'm",
+    "paragraphs": [
+      "I'm a graphic and web designer based in Valencia. For more than five years I've worked in branding, digital design and web development, bringing together strategy, aesthetics and code.",
+      "My approach: understand what a brand needs, give it a solid visual identity and build the digital presence that backs it up. I don't design to decorate. I design so brands communicate, connect and grow.",
+      "I've worked with startups, small businesses and companies in Brazil and Spain. Always with the same principle: every piece has a reason."
+    ],
+    "steps": [
+      {"title": "Understand", "text": "Listen, analyze and define where to start."},
+      {"title": "Design", "text": "Explore clear, coherent solutions."},
+      {"title": "Apply", "text": "Bring it to life, with care for the details."}
+    ],
+    "marqueeLabel": "Areas of work",
+    "marquee": {
+      "branding": {"text": "<branding>", "alt": "Preview of branding projects"},
+      "web-design": {"text": "<web_design>", "alt": "Preview of web design projects"},
+      "artes-graficas": {"text": "<graphic_arts>", "alt": "Preview of graphic arts projects"},
+      "fotografia": {"text": "<photography>", "alt": "Preview of photo essays"}
+    },
+    "focus": "Focus",
+    "focusTitle": "Understand before designing.",
+    "focusText": "I look for clarity, coherence and purpose in every project.<br /> I don't design for aesthetics - I design so brands communicate better.",
+    "contact": "Contact",
+    "city": "Valencia, Spain",
+    "experience": "Experience",
+    "jobs": [
+      {
+        "date": "2025 - present",
+        "role": "Freelance graphic designer & front-end developer",
+        "place": "Valencia, Spain",
+        "text": "Complete visual identities and the websites that support them, hand-coded in HTML, CSS and JavaScript. Print and digital pieces, creative direction for social media and end-to-end management of each project, from brief to delivery."
+      },
+      {
+        "date": "2022 - 2024",
+        "role": "Graphic & web designer",
+        "place": "Gauja Creative Lab · Brazil, remote",
+        "text": "Landing pages and corporate websites focused on UX/UI and responsive design. Brand management for several clients at once and conversion-driven campaigns on Meta Ads and Google Ads."
+      },
+      {
+        "date": "2021 - 2023",
+        "role": "Photographer",
+        "place": "Tonda.foto · Brazil",
+        "text": "Creative direction and production of corporate, product and event shoots. Professional editing and retouching in Lightroom and Photoshop."
+      }
+    ],
+    "doTitle": "What I do",
+    "do": [
+      "Visual identity",
+      "Brand systems",
+      "Creative direction",
+      "Editorial design",
+      "Web design and front-end",
+      "Type design"
+    ],
+    "tools": "Tools",
+    "softSkills": "Soft Skills",
+    "skills": ["Strategy", "Communication", "Visual storytelling", "Organization"],
+    "profile": "Profile",
+    "languagesLabel": "Languages:",
+    "languages": "Portuguese, Spanish and English.",
+    "interestsLabel": "Interests:",
+    "interests": "Storytelling, cycling, architecture, film."
+  },
+  "portfolio": {"label": "Selected projects", "seeAll": "See all projects in"},
+  "project": {
+    "gallery": "Project gallery",
+    "credits": "Credits",
+    "visit": "Visit site",
+    "visitTitle": "Visit {name} in a new tab",
+    "case": {"challenge": "Challenge", "solution": "Solution", "role": "My role", "result": "Result"},
+    "creditLabels": {
+      "client": "Client",
+      "clients": "Clients",
+      "year": "Year",
+      "role": "My role",
+      "design": "Design",
+      "team": "Team",
+      "services": "Services",
+      "site": "Website",
+      "technology": "Technology"
+    }
+  },
+  "contact": {
+    "title": "Let's talk",
+    "name": "Name",
+    "email": "Email",
+    "message": "Tell me, what do you need?",
+    "send": "Send"
+  }
+}

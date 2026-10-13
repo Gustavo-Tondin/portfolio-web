@@ -1,18 +1,18 @@
 {
   "category": "fotografia",
   "name": "Valeria",
-  "type": {"es": "Ensayo femenino"},
+  "type": {"es": "Ensayo femenino", "en": "Portrait session", "pt-br": "Ensaio feminino"},
   "year": "2021",
   "head": {
-    "title": {"es": "Valeria - Fotografía · Gustavo Tondin"},
-    "description": {"es": "Ensayo femenino de Valeria, el trabajo más antiguo del portfolio: contraluz, bosque y un retrato natural. Fotografía de Gustavo Tondin."},
-    "ogDescription": {"es": "Valeria: retrato natural a la última luz del día."}
+    "title": {"es": "Valeria - Fotografía · Gustavo Tondin", "en": "Valeria - Photography · Gustavo Tondin", "pt-br": "Valeria - Fotografia · Gustavo Tondin"},
+    "description": {"es": "Ensayo femenino de Valeria, el trabajo más antiguo del portfolio: contraluz, bosque y un retrato natural. Fotografía de Gustavo Tondin.", "en": "A portrait session with Valeria, the oldest work in the portfolio: backlight, forest and a natural portrait. Photography by Gustavo Tondin.", "pt-br": "Ensaio feminino de Valeria, o trabalho mais antigo do portfólio: contraluz, bosque e um retrato natural. Fotografia de Gustavo Tondin."},
+    "ogDescription": {"es": "Valeria: retrato natural a la última luz del día.", "en": "Valeria: a natural portrait in the last light of day.", "pt-br": "Valeria: retrato natural na última luz do dia."}
   },
   "ogImage": "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque",
   "posts": true,
   "intro": {
-    "title": {"es": "Donde empezó"},
-    "text": {"es": "El trabajo más antiguo del portfolio: un retrato a la última luz del día, entre color y blanco y negro, contraluz y bosque. Aquí empezó la búsqueda de un retrato natural, más cerca de la risa que de la pose."}
+    "title": {"es": "Donde empezó", "en": "Where it began", "pt-br": "Onde tudo começou"},
+    "text": {"es": "El trabajo más antiguo del portfolio: un retrato a la última luz del día, entre color y blanco y negro, contraluz y bosque. Aquí empezó la búsqueda de un retrato natural, más cerca de la risa que de la pose.", "en": "The oldest work in the portfolio: a portrait in the last light of day, between color and black and white, backlight and forest. This is where the search for a natural portrait began, closer to laughter than to posing.", "pt-br": "O trabalho mais antigo do portfólio: um retrato na última luz do dia, entre cor e preto e branco, contraluz e bosque. Aqui começou a busca por um retrato natural, mais perto do riso do que da pose."}
   },
   "sizes": "(max-width: 768px) 100vw, 50vw",
   "gallery": [
@@ -25,12 +25,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Valeria"}
+      "value": {"es": "Valeria", "en": "Valeria", "pt-br": "Valeria"}
     },
     {"label": "year", "value": "2021"},
     {
       "label": "role",
-      "value": {"es": "Dirección de arte · Fotografía"}
+      "value": {"es": "Dirección de arte · Fotografía", "en": "Art direction · Photography", "pt-br": "Direção de arte · Fotografia"}
     }
   ],
   "next": "portfolio"

@@ -1,23 +1,23 @@
 {
   "category": "web-design",
   "name": "Riwer Labs",
-  "type": {"es": "Agencia de tecnología"},
+  "type": {"es": "Agencia de tecnología", "en": "Technology agency", "pt-br": "Agência de tecnologia"},
   "year": "2025",
   "head": {
-    "title": {"es": "Riwer Labs - Web Design · Gustavo Tondin"},
-    "description": {"es": "Identidad visual y sitio de Riwer Labs, agencia brasileña de tecnología y performance: diseño y desarrollo a mano de Gustavo Tondin."},
-    "ogDescription": {"es": "Riwer Labs: marca y sitio para una agencia de tecnología y performance."}
+    "title": {"es": "Riwer Labs - Web Design · Gustavo Tondin", "en": "Riwer Labs - Web Design · Gustavo Tondin", "pt-br": "Riwer Labs - Web Design · Gustavo Tondin"},
+    "description": {"es": "Identidad visual y sitio de Riwer Labs, agencia brasileña de tecnología y performance: diseño y desarrollo a mano de Gustavo Tondin.", "en": "Visual identity and website for Riwer Labs, a Brazilian technology and performance agency: designed and hand-coded by Gustavo Tondin.", "pt-br": "Identidade visual e site da Riwer Labs, agência brasileira de tecnologia e performance: design e desenvolvimento feitos à mão por Gustavo Tondin."},
+    "ogDescription": {"es": "Riwer Labs: marca y sitio para una agencia de tecnología y performance.", "en": "Riwer Labs: brand and website for a technology and performance agency.", "pt-br": "Riwer Labs: marca e site para uma agência de tecnologia e performance."}
   },
   "ogImage": "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar",
   "site": {"href": "https://riwerlabs.com/", "url": "riwerlabs.com"},
   "intro": {
-    "title": {"es": "Tecnología y performance"},
-    "text": {"es": "Riwer Labs es una agencia brasileña que reúne tecnología y marketing de resultados: tiendas online, landing pages, automatizaciones con IA y gestión de anuncios bajo un mismo equipo."},
+    "title": {"es": "Tecnología y performance", "en": "Technology and performance", "pt-br": "Tecnologia e performance"},
+    "text": {"es": "Riwer Labs es una agencia brasileña que reúne tecnología y marketing de resultados: tiendas online, landing pages, automatizaciones con IA y gestión de anuncios bajo un mismo equipo.", "en": "Riwer Labs is a Brazilian agency that brings together technology and performance marketing: online stores, landing pages, AI automations and ad management under one team.", "pt-br": "A Riwer Labs é uma agência brasileira que une tecnologia e marketing de resultados: lojas virtuais, landing pages, automações com IA e gestão de anúncios sob uma mesma equipe."},
     "case": {
-      "challenge": {"es": "Crear la marca y el sitio de una agencia nueva que compite con proveedores sueltos, y convencer a dueños de negocio de que la tecnología y el tráfico pagado tienen que trabajar juntos."},
-      "solution": {"es": "Una identidad oscura con verde lima y azul eléctrico, de tono técnico y directo. El sitio sigue la lógica de una venta: abre con el problema («Isso te parece familiar?»), cuenta el origen de la agencia, muestra cifras, servicios, el proceso del diagnóstico al resultado, cases, testimonios y preguntas frecuentes, y termina en un diagnóstico gratuito."},
-      "role": {"es": "Identidad visual, diseño y desarrollo del sitio, escrito a mano en HTML, CSS y JavaScript, sin frameworks."},
-      "result": {"es": "En línea desde 2025 en riwerlabs.com. La identidad también se aplica en las redes de la agencia, que diseño de forma recurrente."}
+      "challenge": {"es": "Crear la marca y el sitio de una agencia nueva que compite con proveedores sueltos, y convencer a dueños de negocio de que la tecnología y el tráfico pagado tienen que trabajar juntos.", "en": "Building the brand and website for a new agency competing against standalone providers, and convincing business owners that technology and paid traffic have to work together.", "pt-br": "Criar a marca e o site de uma agência nova que concorre com fornecedores avulsos, e convencer donos de negócio de que tecnologia e tráfego pago precisam trabalhar juntos."},
+      "solution": {"es": "Una identidad oscura con verde lima y azul eléctrico, de tono técnico y directo. El sitio sigue la lógica de una venta: abre con el problema («Isso te parece familiar?»), cuenta el origen de la agencia, muestra cifras, servicios, el proceso del diagnóstico al resultado, cases, testimonios y preguntas frecuentes, y termina en un diagnóstico gratuito.", "en": "A dark identity with lime green and electric blue, in a technical, direct tone. The site follows the logic of a sale: it opens with the problem («Isso te parece familiar?»), tells the agency's origin story, shows numbers, services, the process from diagnosis to results, case studies, testimonials and FAQs, and ends with a free diagnosis.", "pt-br": "Uma identidade escura com verde-limão e azul elétrico, de tom técnico e direto. O site segue a lógica de uma venda: abre com o problema («Isso te parece familiar?»), conta a origem da agência, mostra números, serviços, o processo do diagnóstico ao resultado, cases, depoimentos e perguntas frequentes, e termina num diagnóstico gratuito."},
+      "role": {"es": "Identidad visual, diseño y desarrollo del sitio, escrito a mano en HTML, CSS y JavaScript, sin frameworks.", "en": "Visual identity, plus website design and development, hand-written in HTML, CSS and JavaScript, with no frameworks.", "pt-br": "Identidade visual, design e desenvolvimento do site, escrito à mão em HTML, CSS e JavaScript, sem frameworks."},
+      "result": {"es": "En línea desde 2025 en riwerlabs.com. La identidad también se aplica en las redes de la agencia, que diseño de forma recurrente.", "en": "Live since 2025 at riwerlabs.com. The identity also carries over to the agency's social media, which I design on an ongoing basis.", "pt-br": "No ar desde 2025 em riwerlabs.com. A identidade também se estende às redes da agência, cujas peças eu crio de forma recorrente."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -35,20 +35,20 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Riwer Labs"}
+      "value": {"es": "Riwer Labs", "en": "Riwer Labs", "pt-br": "Riwer Labs"}
     },
     {"label": "year", "value": "2025"},
     {
       "label": "services",
-      "value": {"es": "Identidad visual · Diseño web · Desarrollo"}
+      "value": {"es": "Identidad visual · Diseño web · Desarrollo", "en": "Visual identity · Web design · Development", "pt-br": "Identidade visual · Web design · Desenvolvimento"}
     },
     {
       "label": "role",
-      "value": {"es": "Identidad visual · Diseño · Desarrollo web"}
+      "value": {"es": "Identidad visual · Diseño · Desarrollo web", "en": "Visual identity · Design · Web development", "pt-br": "Identidade visual · Design · Desenvolvimento web"}
     },
     {
       "label": "technology",
-      "value": {"es": "HTML · CSS · JavaScript"}
+      "value": {"es": "HTML · CSS · JavaScript", "en": "HTML · CSS · JavaScript", "pt-br": "HTML · CSS · JavaScript"}
     },
     {"label": "site"}
   ],

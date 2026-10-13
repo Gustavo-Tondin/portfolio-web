@@ -1,22 +1,22 @@
 {
   "category": "branding",
   "name": "Veg To Go",
-  "type": {"es": "Proyecto conceptual"},
+  "type": {"es": "Proyecto conceptual", "en": "Concept project", "pt-br": "Projeto conceitual"},
   "year": "2021",
   "head": {
-    "title": {"es": "Veg To Go - Branding · Gustavo Tondin"},
-    "description": {"es": "Veg To Go, identidad conceptual para un food truck vegano: logotipo en Bungee, patrón de frutas, packaging y redes. Proyecto de Gustavo Tondin."},
-    "ogDescription": {"es": "Veg To Go: identidad conceptual para un food truck vegano."}
+    "title": {"es": "Veg To Go - Branding · Gustavo Tondin", "en": "Veg To Go - Branding · Gustavo Tondin", "pt-br": "Veg To Go - Branding · Gustavo Tondin"},
+    "description": {"es": "Veg To Go, identidad conceptual para un food truck vegano: logotipo en Bungee, patrón de frutas, packaging y redes. Proyecto de Gustavo Tondin.", "en": "Veg To Go, a concept identity for a vegan food truck: a Bungee logo, fruit pattern, packaging and social media. A project by Gustavo Tondin.", "pt-br": "Veg To Go, identidade conceitual para um food truck vegano: logotipo em Bungee, padrão de frutas, embalagens e redes sociais. Projeto de Gustavo Tondin."},
+    "ogDescription": {"es": "Veg To Go: identidad conceptual para un food truck vegano.", "en": "Veg To Go: a concept identity for a vegan food truck.", "pt-br": "Veg To Go: identidade conceitual para um food truck vegano."}
   },
   "ogImage": "projects/branding/veg-to-go/veg-to-go-logotipo-patron-frutas",
   "intro": {
-    "title": {"es": "Comida vegana sobre ruedas"},
-    "text": {"es": "Veg To Go es un food truck vegano imaginado como ejercicio de identidad: hamburguesas artesanales y opciones a base de plantas, con ingredientes orgánicos, que llevan la comida consciente a la calle. Es un proyecto conceptual, sin cliente real."},
+    "title": {"es": "Comida vegana sobre ruedas", "en": "Vegan food on wheels", "pt-br": "Comida vegana sobre rodas"},
+    "text": {"es": "Veg To Go es un food truck vegano imaginado como ejercicio de identidad: hamburguesas artesanales y opciones a base de plantas, con ingredientes orgánicos, que llevan la comida consciente a la calle. Es un proyecto conceptual, sin cliente real.", "en": "Veg To Go is a vegan food truck imagined as an identity exercise: handcrafted burgers and plant-based options made with organic ingredients, taking conscious food to the street. It's a concept project, with no real client.", "pt-br": "Veg To Go é um food truck vegano imaginado como exercício de identidade: hambúrgueres artesanais e opções à base de plantas, com ingredientes orgânicos, que levam a comida consciente para a rua. É um projeto conceitual, sem cliente real."},
     "case": {
-      "challenge": {"es": "Sacar la comida vegana del terreno de lo serio y lo restrictivo y darle el tono de la comida callejera: rápida, alegre y apetecible, reconocible desde lejos en un camión aparcado."},
-      "solution": {"es": "Un logotipo de bloque pesado en Bungee, con «To Go» apilado dentro de un cuadrado como una etiqueta de pedido y una hoja como remate. Paleta de verde profundo, amarillo mostaza y rojo tomate, un patrón de frutas ilustradas y aplicaciones que van del camión al packaging y las redes."},
-      "role": {"es": "Dirección de arte y diseño de marca: concepto, logotipo, paleta y aplicaciones."},
-      "result": {"es": "Un ejercicio para poner a prueba un sistema completo, de la identidad a su uso en camión, packaging y redes sociales."}
+      "challenge": {"es": "Sacar la comida vegana del terreno de lo serio y lo restrictivo y darle el tono de la comida callejera: rápida, alegre y apetecible, reconocible desde lejos en un camión aparcado.", "en": "Taking vegan food out of the serious, restrictive zone and giving it the tone of street food: fast, cheerful and appetizing, recognizable from afar on a parked truck.", "pt-br": "Tirar a comida vegana do terreno do sério e do restritivo e dar a ela o tom da comida de rua: rápida, alegre e apetitosa, reconhecível de longe num caminhão estacionado."},
+      "solution": {"es": "Un logotipo de bloque pesado en Bungee, con «To Go» apilado dentro de un cuadrado como una etiqueta de pedido y una hoja como remate. Paleta de verde profundo, amarillo mostaza y rojo tomate, un patrón de frutas ilustradas y aplicaciones que van del camión al packaging y las redes.", "en": "A heavy block logo set in Bungee, with «To Go» stacked inside a square like an order label and a leaf as the finishing touch. A palette of deep green, mustard yellow and tomato red, a pattern of illustrated fruit, and applications ranging from the truck to packaging and social media.", "pt-br": "Um logotipo de bloco pesado em Bungee, com «To Go» empilhado dentro de um quadrado como uma etiqueta de pedido e uma folha como arremate. Paleta de verde profundo, amarelo-mostarda e vermelho-tomate, um padrão de frutas ilustradas e aplicações que vão do caminhão às embalagens e às redes."},
+      "role": {"es": "Dirección de arte y diseño de marca: concepto, logotipo, paleta y aplicaciones.", "en": "Art direction and brand design: concept, logo, palette and applications.", "pt-br": "Direção de arte e design de marca: conceito, logotipo, paleta e aplicações."},
+      "result": {"es": "Un ejercicio para poner a prueba un sistema completo, de la identidad a su uso en camión, packaging y redes sociales.", "en": "An exercise to put a complete system to the test, from the identity to its use on the truck, packaging and social media.", "pt-br": "Um exercício para pôr à prova um sistema completo, da identidade ao seu uso no caminhão, nas embalagens e nas redes sociais."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -24,27 +24,27 @@
     {"img": "projects/branding/veg-to-go/veg-to-go-logotipo-patron-frutas"},
     {
       "img": "projects/branding/veg-to-go/veg-to-go-paleta-tipografias",
-      "caption": {"es": "Paleta y tipografía: Bungee y Source Sans 3"}
+      "caption": {"es": "Paleta y tipografía: Bungee y Source Sans 3", "en": "Palette and typography: Bungee and Source Sans 3", "pt-br": "Paleta e tipografia: Bungee e Source Sans 3"}
     },
     {
       "img": "projects/branding/veg-to-go/veg-to-go-aplicaciones-packaging-food-truck",
-      "caption": {"es": "Aplicaciones: packaging, food truck y señalización"}
+      "caption": {"es": "Aplicaciones: packaging, food truck y señalización", "en": "Applications: packaging, food truck and signage", "pt-br": "Aplicações: embalagens, food truck e sinalização"}
     },
     {"img": "projects/branding/veg-to-go/veg-to-go-publicaciones-redes"}
   ],
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Proyecto conceptual · sin cliente"}
+      "value": {"es": "Proyecto conceptual · sin cliente", "en": "Concept project · no client", "pt-br": "Projeto conceitual · sem cliente"}
     },
     {"label": "year", "value": "2021"},
     {
       "label": "services",
-      "value": {"es": "Identidad visual · Dirección de arte · Packaging · Redes sociales"}
+      "value": {"es": "Identidad visual · Dirección de arte · Packaging · Redes sociales", "en": "Visual identity · Art direction · Packaging · Social media", "pt-br": "Identidade visual · Direção de arte · Embalagem · Redes sociais"}
     },
     {
       "label": "role",
-      "value": {"es": "Dirección de arte · Diseño"}
+      "value": {"es": "Dirección de arte · Diseño", "en": "Art direction · Design", "pt-br": "Direção de arte · Design"}
     }
   ],
   "next": "web-design"

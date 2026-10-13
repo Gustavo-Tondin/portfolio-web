@@ -1,22 +1,22 @@
 {
   "category": "branding",
   "name": "Refiore",
-  "type": {"es": "Joyería artesanal"},
+  "type": {"es": "Joyería artesanal", "en": "Handcrafted jewelry", "pt-br": "Joalheria artesanal"},
   "year": "2024",
   "head": {
-    "title": {"es": "Refiore - Branding · Gustavo Tondin"},
-    "description": {"es": "Identidad visual de Refiore, joyería artesanal de oro y diamantes: la vida como una película, el monograma RFR y la línea que contornea cada anillo. Proyecto de Gustavo Tondin."},
-    "ogDescription": {"es": "Refiore: identidad para una joyería artesanal inspirada en el cine."}
+    "title": {"es": "Refiore - Branding · Gustavo Tondin", "en": "Refiore - Branding · Gustavo Tondin", "pt-br": "Refiore - Branding · Gustavo Tondin"},
+    "description": {"es": "Identidad visual de Refiore, joyería artesanal de oro y diamantes: la vida como una película, el monograma RFR y la línea que contornea cada anillo. Proyecto de Gustavo Tondin.", "en": "Visual identity for Refiore, handcrafted gold and diamond jewelry: life as a film, the RFR monogram and the line that outlines every ring. A project by Gustavo Tondin.", "pt-br": "Identidade visual da Refiore, joalheria artesanal de ouro e diamantes: a vida como um filme, o monograma RFR e a linha que contorna cada anel. Projeto de Gustavo Tondin."},
+    "ogDescription": {"es": "Refiore: identidad para una joyería artesanal inspirada en el cine.", "en": "Refiore: identity for a handcrafted jewelry brand inspired by cinema.", "pt-br": "Refiore: identidade para uma joalheria artesanal inspirada no cinema."}
   },
   "ogImage": "projects/branding/refiore/refiore-portada-logotipo-pareja",
   "intro": {
-    "title": {"es": "Refinar momentos"},
-    "text": {"es": "Refiore es una joyería artesanal de oro y diamantes. El nombre viene de la expresión «refinar oro» y la identidad parte del cine: la vida como una película dirigida por uno mismo, donde cada escena merece ser celebrada. La línea que contornea cada anillo representa la continuidad de esa historia y se convierte en el hilo gráfico de toda la marca."},
+    "title": {"es": "Refinar momentos", "en": "Refining moments", "pt-br": "Refinar momentos"},
+    "text": {"es": "Refiore es una joyería artesanal de oro y diamantes. El nombre viene de la expresión «refinar oro» y la identidad parte del cine: la vida como una película dirigida por uno mismo, donde cada escena merece ser celebrada. La línea que contornea cada anillo representa la continuidad de esa historia y se convierte en el hilo gráfico de toda la marca.", "en": "Refiore is a handcrafted jewelry brand working in gold and diamonds. The name comes from the expression «refinar oro» (to refine gold), and the identity draws on cinema: life as a film you direct yourself, where every scene deserves to be celebrated. The line that outlines each ring stands for the continuity of that story and becomes the graphic thread running through the whole brand.", "pt-br": "A Refiore é uma joalheria artesanal de ouro e diamantes. O nome vem da expressão «refinar ouro», e a identidade parte do cinema: a vida como um filme dirigido por você mesmo, em que cada cena merece ser celebrada. A linha que contorna cada anel representa a continuidade dessa história e se torna o fio gráfico de toda a marca."},
     "case": {
-      "challenge": {"es": "Lanzar una joyería artesanal en un segmento dominado por códigos de lujo fríos y distantes. Refiore necesitaba transmitir sofisticación y calidad de alta gama sin perder cercanía: joyas para momentos reales, no solo para la vitrina."},
-      "solution": {"es": "Una identidad que trata la marca como una película: logotipo en serif clásica de espaciado amplio, monograma RFR grabado en las piezas, una paleta de cuatro tonos (pasión, tinta, línea y papel) y una línea fina que atraviesa las composiciones como el contorno de un anillo. La voz habla en lenguaje de guion: «Escreva a sua história», «Seu roteiro», «Romantize sua vida»."},
-      "role": {"es": "Parte del trío creativo del proyecto en Gauja Lab, junto a Uel Molon y Gabriel Motter: concepto, dirección creativa y decisiones de identidad tomadas en conjunto."},
-      "result": {"es": "Un sistema completo para el lanzamiento, con la misma narrativa en cada punto de contacto: papelería, packaging, piezas impresas, publicidad exterior y web."}
+      "challenge": {"es": "Lanzar una joyería artesanal en un segmento dominado por códigos de lujo fríos y distantes. Refiore necesitaba transmitir sofisticación y calidad de alta gama sin perder cercanía: joyas para momentos reales, no solo para la vitrina.", "en": "Launching a handcrafted jewelry brand in a segment dominated by cold, distant luxury codes. Refiore needed to convey sophistication and high-end quality without losing warmth: jewelry for real moments, not just for the display case.", "pt-br": "Lançar uma joalheria artesanal num segmento dominado por códigos de luxo frios e distantes. A Refiore precisava transmitir sofisticação e qualidade de alto padrão sem perder a proximidade: joias para momentos reais, não só para a vitrine."},
+      "solution": {"es": "Una identidad que trata la marca como una película: logotipo en serif clásica de espaciado amplio, monograma RFR grabado en las piezas, una paleta de cuatro tonos (pasión, tinta, línea y papel) y una línea fina que atraviesa las composiciones como el contorno de un anillo. La voz habla en lenguaje de guion: «Escreva a sua história», «Seu roteiro», «Romantize sua vida».", "en": "An identity that treats the brand like a film: a classic, widely spaced serif logotype, the RFR monogram engraved on the pieces, a four-tone palette (passion, ink, line and paper) and a fine line that runs through the compositions like the outline of a ring. The voice speaks in screenplay language: «Escreva a sua história», «Seu roteiro», «Romantize sua vida».", "pt-br": "Uma identidade que trata a marca como um filme: logotipo em serifa clássica de espaçamento amplo, monograma RFR gravado nas peças, uma paleta de quatro tons (paixão, tinta, linha e papel) e uma linha fina que atravessa as composições como o contorno de um anel. A voz fala em linguagem de roteiro: «Escreva a sua história», «Seu roteiro», «Romantize sua vida»."},
+      "role": {"es": "Parte del trío creativo del proyecto en Gauja Lab, junto a Uel Molon y Gabriel Motter: concepto, dirección creativa y decisiones de identidad tomadas en conjunto.", "en": "Part of the project's creative trio at Gauja Lab, alongside Uel Molon and Gabriel Motter: concept, creative direction and identity decisions made together.", "pt-br": "Parte do trio criativo do projeto na Gauja Lab, ao lado de Uel Molon e Gabriel Motter: conceito, direção criativa e decisões de identidade tomadas em conjunto."},
+      "result": {"es": "Un sistema completo para el lanzamiento, con la misma narrativa en cada punto de contacto: papelería, packaging, piezas impresas, publicidad exterior y web.", "en": "A complete launch system, carrying the same narrative across every touchpoint: stationery, packaging, print pieces, outdoor advertising and web.", "pt-br": "Um sistema completo para o lançamento, com a mesma narrativa em cada ponto de contato: papelaria, embalagens, peças impressas, mídia exterior e web."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -25,21 +25,21 @@
     {"img": "projects/branding/refiore/refiore-logotipo-serif"},
     {
       "img": "projects/branding/refiore/refiore-paleta-colores",
-      "caption": {"es": "Paleta: pasión, tinta, línea y papel"}
+      "caption": {"es": "Paleta: pasión, tinta, línea y papel", "en": "Palette: passion, ink, line and paper", "pt-br": "Paleta: paixão, tinta, linha e papel"}
     },
     {
       "img": "projects/branding/refiore/refiore-lemas-refine-momentos",
-      "caption": {"es": "La línea que contornea el anillo, convertida en recurso gráfico"}
+      "caption": {"es": "La línea que contornea el anillo, convertida en recurso gráfico", "en": "The line that outlines the ring, turned into a graphic device", "pt-br": "A linha que contorna o anel, transformada em recurso gráfico"}
     },
     {
       "img": "projects/branding/refiore/refiore-alianzas-monograma-rfr",
-      "caption": {"es": "Monograma RFR grabado en el interior de cada pieza"}
+      "caption": {"es": "Monograma RFR grabado en el interior de cada pieza", "en": "RFR monogram engraved inside every piece", "pt-br": "Monograma RFR gravado no interior de cada peça"}
     },
     {"img": "projects/branding/refiore/refiore-pieza-romantize-sua-vida"},
     {"img": "projects/branding/refiore/refiore-tarjetas-visita"},
     {
       "img": "projects/branding/refiore/refiore-cuaderno-seu-roteiro",
-      "caption": {"es": "Cuaderno «Seu roteiro»: el cine como lenguaje de la marca"}
+      "caption": {"es": "Cuaderno «Seu roteiro»: el cine como lenguaje de la marca", "en": "«Seu roteiro» notebook: cinema as the brand's language", "pt-br": "Caderno «Seu roteiro»: o cinema como linguagem da marca"}
     },
     {"img": "projects/branding/refiore/refiore-impresos-anel-dos-sonhos"},
     {"img": "projects/branding/refiore/refiore-bolsas-compra"},
@@ -50,20 +50,20 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Refiore"}
+      "value": {"es": "Refiore", "en": "Refiore", "pt-br": "Refiore"}
     },
     {"label": "year", "value": "2024"},
     {
       "label": "services",
-      "value": {"es": "Identidad visual · Tono de voz · Papelería · Packaging · Piezas gráficas"}
+      "value": {"es": "Identidad visual · Tono de voz · Papelería · Packaging · Piezas gráficas", "en": "Visual identity · Tone of voice · Stationery · Packaging · Graphic pieces", "pt-br": "Identidade visual · Tom de voz · Papelaria · Embalagem · Peças gráficas"}
     },
     {
       "label": "role",
-      "value": {"es": "Concepto y dirección creativa en equipo"}
+      "value": {"es": "Concepto y dirección creativa en equipo", "en": "Concept and creative direction as a team", "pt-br": "Conceito e direção criativa em equipe"}
     },
     {
       "label": "team",
-      "value": {"es": "Uel Molon  ·  Gabriel Motter  ·  Gauja Lab · estudio"}
+      "value": {"es": "Uel Molon  ·  Gabriel Motter  ·  Gauja Lab · estudio", "en": "Uel Molon  ·  Gabriel Motter  ·  Gauja Lab · studio", "pt-br": "Uel Molon  ·  Gabriel Motter  ·  Gauja Lab · estúdio"}
     }
   ],
   "next": "projects/wote"

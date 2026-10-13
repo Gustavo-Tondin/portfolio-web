@@ -108,7 +108,7 @@
     const toggleMenu = () => {
         if (!menuBtn) return;
         const isOpen = header?.classList.toggle('is-menu-open');
-        menuBtn.querySelector('.nav-link__text').textContent = isOpen ? 'Cerrar' : 'Menu';
+        menuBtn.querySelector('.nav-link__text').textContent = menuBtn.dataset[isOpen ? 'labelClose' : 'labelOpen'];
         menuBtn.setAttribute('aria-expanded', String(!!isOpen)) // activa acesibilidad
         navigation?.setAttribute('aria-hidden', String(!isOpen))
     };
@@ -232,33 +232,9 @@
     const marquee = document.querySelector('.marquee');
 
     if (marquee && !isMobile) {
-        // imagenes de preview por categoria
-        const previews = {
-            'branding': [
-                'media/projects/branding/refiore/refiore-portada-logotipo-pareja.jpg',
-                'media/projects/branding/wote/wote-portada-logotipo-chave-ancestral.jpg',
-                'media/projects/branding/tondafoto/tondafoto-logotipo-franjas.jpg'
-            ],
-            'web-design': [
-                'media/projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar.jpg',
-                'media/projects/web-design/eners/eners-sitio-hero-paneles-solares.jpg',
-                'media/projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente.jpg'
-            ],
-            'artes-graficas': [
-                'media/projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar.jpg',
-                'media/projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra.jpg',
-                'media/projects/artes-graficas/gauja-lab/gauja-lab-post-simplifique.jpg'
-            ],
-            'fotografia': [
-                'media/projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito.jpg',
-                'media/projects/fotografia/carol/ensayo-carol-gradas-estadio.jpg',
-                'media/projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque.jpg'
-            ]
-        };
-
         marquee.querySelectorAll('.marquee__item').forEach((item) => {
             const img = item.querySelector('.marquee__preview');
-            const images = previews[item.dataset.category]; // obtiene las imagenes segun categoria
+            const images = item.dataset.previews.split(' '); // imagenes de la categoria, desde el html
 
             let changeId = null; // para controlar el setInterval
 

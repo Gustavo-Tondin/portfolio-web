@@ -1,21 +1,21 @@
 {
   "category": "artes-graficas",
   "name": "Identiduca - Zine",
-  "type": {"es": "Zine editorial"},
+  "type": {"es": "Zine editorial", "en": "Editorial zine", "pt-br": "Zine editorial"},
   "year": "2026",
   "head": {
-    "title": {"es": "Identiduca - Zine - Artes Gráficas · Gustavo Tondin"},
-    "description": {"es": "«Cuando algo no cuadra», zine impresa de Identiduca sobre protección infantil para familias y educadores. Dirección de arte y diseño editorial de Gustavo Tondin."},
-    "ogDescription": {"es": "Identiduca: una zine impresa para reconocer cuando algo no cuadra."}
+    "title": {"es": "Identiduca - Zine - Artes Gráficas · Gustavo Tondin", "en": "Identiduca - Zine - Graphic Arts · Gustavo Tondin", "pt-br": "Identiduca - Zine - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "«Cuando algo no cuadra», zine impresa de Identiduca sobre protección infantil para familias y educadores. Dirección de arte y diseño editorial de Gustavo Tondin.", "en": "«Cuando algo no cuadra», a printed zine by Identiduca on child protection for families and educators. Art direction and editorial design by Gustavo Tondin.", "pt-br": "«Cuando algo no cuadra», zine impressa da Identiduca sobre proteção infantil para famílias e educadores. Direção de arte e design editorial de Gustavo Tondin."},
+    "ogDescription": {"es": "Identiduca: una zine impresa para reconocer cuando algo no cuadra.", "en": "Identiduca: a printed zine for recognizing when something doesn't add up.", "pt-br": "Identiduca: uma zine impressa para reconhecer quando algo não se encaixa."}
   },
   "ogImage": "projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra",
   "intro": {
-    "title": {"es": "Cuando algo no cuadra"},
-    "text": {"es": "Una zine impresa de Identiduca para familias y educadores: una guía breve para reconocer señales de malestar en niños y niñas, y saber qué hacer cuando algo no va bien."},
+    "title": {"es": "Cuando algo no cuadra", "en": "When something doesn't add up", "pt-br": "Quando algo não se encaixa"},
+    "text": {"es": "Una zine impresa de Identiduca para familias y educadores: una guía breve para reconocer señales de malestar en niños y niñas, y saber qué hacer cuando algo no va bien.", "en": "A printed zine by Identiduca for families and educators: a short guide to recognizing signs of distress in children, and knowing what to do when something isn't right.", "pt-br": "Uma zine impressa da Identiduca para famílias e educadores: um guia breve para reconhecer sinais de mal-estar em crianças e saber o que fazer quando algo não vai bem."},
     "case": {
-      "challenge": {"es": "Hablar de un tema difícil sin alarmar ni infantilizar, en un formato que se lea en pocos minutos y se quiera guardar."},
-      "solution": {"es": "Una portada con un marco ornamental que encuadra la silueta de un niño leyendo. El interior alterna fotografía, bloques de color y tarjetas de señales, con una serif cálida en los titulares y la misma paleta verde azulada, azul y coral del sitio de Identiduca."},
-      "role": {"es": "Dirección de arte y diseño editorial, como continuación del trabajo en el sitio de Identiduca."}
+      "challenge": {"es": "Hablar de un tema difícil sin alarmar ni infantilizar, en un formato que se lea en pocos minutos y se quiera guardar.", "en": "Address a difficult subject without alarming or talking down, in a format that reads in a few minutes and is worth keeping.", "pt-br": "Falar de um tema difícil sem alarmar nem infantilizar, num formato que se leia em poucos minutos e que dê vontade de guardar."},
+      "solution": {"es": "Una portada con un marco ornamental que encuadra la silueta de un niño leyendo. El interior alterna fotografía, bloques de color y tarjetas de señales, con una serif cálida en los titulares y la misma paleta verde azulada, azul y coral del sitio de Identiduca.", "en": "A cover with an ornamental frame around the silhouette of a child reading. Inside, photography, color blocks and warning-sign cards alternate, with a warm serif for headlines and the same teal, blue and coral palette as the Identiduca website.", "pt-br": "Uma capa com uma moldura ornamental que enquadra a silhueta de uma criança lendo. O miolo alterna fotografia, blocos de cor e cartões de sinais, com uma serifada calorosa nos títulos e a mesma paleta verde-azulada, azul e coral do site da Identiduca."},
+      "role": {"es": "Dirección de arte y diseño editorial, como continuación del trabajo en el sitio de Identiduca.", "en": "Art direction and editorial design, continuing the work on the Identiduca website.", "pt-br": "Direção de arte e design editorial, como continuação do trabalho no site da Identiduca."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -32,12 +32,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Identiduca"}
+      "value": {"es": "Identiduca", "en": "Identiduca", "pt-br": "Identiduca"}
     },
     {"label": "year", "value": "2026"},
     {
       "label": "role",
-      "value": {"es": "Dirección de arte · Diseño editorial"}
+      "value": {"es": "Dirección de arte · Diseño editorial", "en": "Art direction · Editorial design", "pt-br": "Direção de arte · Design editorial"}
     }
   ],
   "next": "projects/rodosul"

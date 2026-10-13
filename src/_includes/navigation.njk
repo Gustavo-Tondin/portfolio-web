@@ -6,6 +6,11 @@
         <li><a href="{{ 'index' | href }}" class="nav-link nav-link--light">{{ t.nav.home }}</a></li>
         <li><a href="{{ 'portfolio' | href }}" class="nav-link nav-link--light">{{ t.nav.portfolio }}</a></li>
         <li><a href="{{ 'contacto' | href }}" class="nav-link nav-link--light">{{ t.nav.contact }}</a></li>
+        <li>
+{%- for l in site.langs %}
+            {% if not loop.first %}<span aria-hidden="true">·</span> {% endif %}<a href="{{ pageId | route(l) | rel }}" class="nav-link nav-link--light" hreflang="{{ site.hreflang[l] }}" lang="{{ site.hreflang[l] }}" title="{{ site.names[l] }}"{% if l == lang %} aria-current="page"{% endif %}>{{ site.labels[l] }}</a>
+{%- endfor %}
+        </li>
     </ul>
 
     <!-- la variable index del style inline de los main-links__item alimenta el staggered transition y el cascade animado del JS (main-links module) -->

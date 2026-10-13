@@ -1,23 +1,23 @@
 {
   "category": "web-design",
   "name": "Identiduca",
-  "type": {"es": "Sitio institucional"},
+  "type": {"es": "Sitio institucional", "en": "Corporate website", "pt-br": "Site institucional"},
   "year": "2025",
   "head": {
-    "title": {"es": "Identiduca - Web Design · Gustavo Tondin"},
-    "description": {"es": "Sitio de Identiduca, red formativa de Valencia en protección infantil: diseño, desarrollo en WordPress y textos de Gustavo Tondin."},
-    "ogDescription": {"es": "Identiduca: diseño, desarrollo y textos para una red formativa en protección infantil."}
+    "title": {"es": "Identiduca - Web Design · Gustavo Tondin", "en": "Identiduca - Web Design · Gustavo Tondin", "pt-br": "Identiduca - Web Design · Gustavo Tondin"},
+    "description": {"es": "Sitio de Identiduca, red formativa de Valencia en protección infantil: diseño, desarrollo en WordPress y textos de Gustavo Tondin.", "en": "Website for Identiduca, a Valencia-based training network in child protection: design, WordPress development and copy by Gustavo Tondin.", "pt-br": "Site da Identiduca, rede de formação de Valência em proteção infantil: design, desenvolvimento em WordPress e textos de Gustavo Tondin."},
+    "ogDescription": {"es": "Identiduca: diseño, desarrollo y textos para una red formativa en protección infantil.", "en": "Identiduca: design, development and copy for a training network in child protection.", "pt-br": "Identiduca: design, desenvolvimento e textos para uma rede de formação em proteção infantil."}
   },
   "ogImage": "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente",
   "site": {"href": "https://www.identiduca.org/", "url": "identiduca.org"},
   "intro": {
-    "title": {"es": "Formación valiente"},
-    "text": {"es": "Identiduca es una red formativa independiente de Valencia especializada en protección infantil y convivencia educativa. Ofrece asesoría, acompañamiento y talleres para centros educativos, profesionales y familias."},
+    "title": {"es": "Formación valiente", "en": "Training with courage", "pt-br": "Formação corajosa"},
+    "text": {"es": "Identiduca es una red formativa independiente de Valencia especializada en protección infantil y convivencia educativa. Ofrece asesoría, acompañamiento y talleres para centros educativos, profesionales y familias.", "en": "Identiduca is an independent training network based in Valencia, specializing in child protection and coexistence in schools. It offers advice, support and workshops for schools, professionals and families.", "pt-br": "A Identiduca é uma rede de formação independente de Valência especializada em proteção infantil e convivência escolar. Oferece assessoria, acompanhamento e oficinas para escolas, profissionais e famílias."},
     "case": {
-      "challenge": {"es": "Presentar un tema delicado con seriedad y calidez a la vez, y ordenar una oferta para públicos muy distintos (direcciones de centro, docentes, profesionales sociales y familias) en un recorrido claro hasta el contacto."},
-      "solution": {"es": "Un sitio con una ilustración del mundo en la portada y el lema «Formación valiente para quienes no quieren mirar hacia otro lado». Las formaciones se presentan como tarjetas con público, contenidos y programa descargable; una sección «¿Identiduca es para ti?» habla a cada perfil, y un paso a paso, las preguntas frecuentes y un formulario que pregunta el perfil cierran el recorrido. Verde azulado y crudo con acentos en coral."},
-      "role": {"es": "Diseño, desarrollo y copywriting: escribí los textos del sitio y lo construí como un tema propio de WordPress."},
-      "result": {"es": "En línea desde 2025 en identiduca.org, con contenido que el propio equipo sigue ampliando. La colaboración continuó en 2026 con una zine impresa."}
+      "challenge": {"es": "Presentar un tema delicado con seriedad y calidez a la vez, y ordenar una oferta para públicos muy distintos (direcciones de centro, docentes, profesionales sociales y familias) en un recorrido claro hasta el contacto.", "en": "Present a delicate subject with both seriousness and warmth, and organize an offering for very different audiences (school leadership, teachers, social-care professionals and families) into a clear path to contact.", "pt-br": "Apresentar um tema delicado com seriedade e acolhimento ao mesmo tempo, e organizar uma oferta para públicos muito diferentes (direções de escola, docentes, profissionais da área social e famílias) num percurso claro até o contato."},
+      "solution": {"es": "Un sitio con una ilustración del mundo en la portada y el lema «Formación valiente para quienes no quieren mirar hacia otro lado». Las formaciones se presentan como tarjetas con público, contenidos y programa descargable; una sección «¿Identiduca es para ti?» habla a cada perfil, y un paso a paso, las preguntas frecuentes y un formulario que pregunta el perfil cierran el recorrido. Verde azulado y crudo con acentos en coral.", "en": "A site with an illustration of the world on the homepage and the tagline «Formación valiente para quienes no quieren mirar hacia otro lado». Trainings appear as cards with audience, content and a downloadable syllabus; a «¿Identiduca es para ti?» section speaks to each profile, and a step-by-step guide, FAQs and a form that asks for the visitor's profile close the journey. Teal and off-white with coral accents.", "pt-br": "Um site com uma ilustração do mundo na abertura e o lema «Formación valiente para quienes no quieren mirar hacia otro lado». As formações aparecem como cartões com público, conteúdos e programa para download; uma seção «¿Identiduca es para ti?» fala com cada perfil, e um passo a passo, as perguntas frequentes e um formulário que pergunta o perfil fecham o percurso. Verde-azulado e cru com toques de coral."},
+      "role": {"es": "Diseño, desarrollo y copywriting: escribí los textos del sitio y lo construí como un tema propio de WordPress.", "en": "Design, development and copywriting: I wrote the site's copy and built it as a custom WordPress theme.", "pt-br": "Design, desenvolvimento e copywriting: escrevi os textos do site e o construí como um tema próprio de WordPress."},
+      "result": {"es": "En línea desde 2025 en identiduca.org, con contenido que el propio equipo sigue ampliando. La colaboración continuó en 2026 con una zine impresa.", "en": "Live since 2025 at identiduca.org, with content the team itself keeps expanding. The collaboration continued in 2026 with a printed zine.", "pt-br": "No ar desde 2025 em identiduca.org, com conteúdo que a própria equipe segue ampliando. A colaboração continuou em 2026 com uma zine impressa."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -34,20 +34,20 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Identiduca"}
+      "value": {"es": "Identiduca", "en": "Identiduca", "pt-br": "Identiduca"}
     },
     {"label": "year", "value": "2025"},
     {
       "label": "services",
-      "value": {"es": "Diseño web · Desarrollo · Copywriting"}
+      "value": {"es": "Diseño web · Desarrollo · Copywriting", "en": "Web design · Development · Copywriting", "pt-br": "Web design · Desenvolvimento · Copywriting"}
     },
     {
       "label": "role",
-      "value": {"es": "Diseño · Desarrollo web · Copywriting"}
+      "value": {"es": "Diseño · Desarrollo web · Copywriting", "en": "Design · Web development · Copywriting", "pt-br": "Design · Desenvolvimento web · Copywriting"}
     },
     {
       "label": "technology",
-      "value": {"es": "WordPress · Tema a medida"}
+      "value": {"es": "WordPress · Tema a medida", "en": "WordPress · Custom theme", "pt-br": "WordPress · Tema sob medida"}
     },
     {"label": "site"}
   ],

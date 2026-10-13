@@ -1,18 +1,18 @@
 {
   "category": "fotografia",
   "name": "Bruna & Rafael",
-  "type": {"es": "Ensayo de pareja"},
+  "type": {"es": "Ensayo de pareja", "en": "Couple session", "pt-br": "Ensaio de casal"},
   "year": "2023",
   "head": {
-    "title": {"es": "Bruna & Rafael - Fotografía · Gustavo Tondin"},
-    "description": {"es": "Ensayo de pareja de Bruna y Rafael entre un lago, un prado y un bosque de eucaliptos. Dirección de arte y fotografía de Gustavo Tondin."},
-    "ogDescription": {"es": "Bruna & Rafael: ensayo de pareja en la naturaleza."}
+    "title": {"es": "Bruna & Rafael - Fotografía · Gustavo Tondin", "en": "Bruna & Rafael - Photography · Gustavo Tondin", "pt-br": "Bruna & Rafael - Fotografia · Gustavo Tondin"},
+    "description": {"es": "Ensayo de pareja de Bruna y Rafael entre un lago, un prado y un bosque de eucaliptos. Dirección de arte y fotografía de Gustavo Tondin.", "en": "Bruna and Rafael's couple session by a lake, a meadow and a eucalyptus forest. Art direction and photography by Gustavo Tondin.", "pt-br": "Ensaio de casal de Bruna e Rafael entre um lago, um campo e um bosque de eucaliptos. Direção de arte e fotografia de Gustavo Tondin."},
+    "ogDescription": {"es": "Bruna & Rafael: ensayo de pareja en la naturaleza.", "en": "Bruna & Rafael: a couple session in nature.", "pt-br": "Bruna & Rafael: ensaio de casal na natureza."}
   },
   "ogImage": "projects/fotografia/bruna-e-rafael/ensayo-pareja-bruna-rafael-cesped",
   "posts": true,
   "intro": {
-    "title": {"es": "Sin pose"},
-    "text": {"es": "Un ensayo de pareja en la naturaleza: un lago, un campo de hierba alta y un bosque de eucaliptos. Poca pose y mucho movimiento, para que lo que quede en la foto sea la complicidad entre los dos."}
+    "title": {"es": "Sin pose", "en": "Unposed", "pt-br": "Sem pose"},
+    "text": {"es": "Un ensayo de pareja en la naturaleza: un lago, un campo de hierba alta y un bosque de eucaliptos. Poca pose y mucho movimiento, para que lo que quede en la foto sea la complicidad entre los dos.", "en": "A couple session in nature: a lake, a field of tall grass and a eucalyptus forest. Little posing and plenty of movement, so what stays in the photo is the bond between them.", "pt-br": "Um ensaio de casal na natureza: um lago, um campo de grama alta e um bosque de eucaliptos. Pouca pose e muito movimento, para que o que fique na foto seja a cumplicidade entre os dois."}
   },
   "sizes": "(max-width: 768px) 100vw, 75vw",
   "gallery": [
@@ -46,12 +46,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Bruna & Rafael"}
+      "value": {"es": "Bruna & Rafael", "en": "Bruna & Rafael", "pt-br": "Bruna & Rafael"}
     },
     {"label": "year", "value": "2023"},
     {
       "label": "role",
-      "value": {"es": "Dirección de arte · Fotografía"}
+      "value": {"es": "Dirección de arte · Fotografía", "en": "Art direction · Photography", "pt-br": "Direção de arte · Fotografia"}
     }
   ],
   "next": "projects/carol"

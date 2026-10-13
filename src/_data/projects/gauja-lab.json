@@ -1,22 +1,22 @@
 {
   "category": "artes-graficas",
   "name": "Gauja Lab",
-  "type": {"es": "Social media"},
+  "type": {"es": "Social media", "en": "Social media", "pt-br": "Social media"},
   "year": "2023",
   "head": {
-    "title": {"es": "Gauja Lab - Artes Gráficas · Gustavo Tondin"},
-    "description": {"es": "Social media de Gauja Lab: semitono violeta y amarillo, humor y cultura pop para hablar de creatividad y ventas. Dirección creativa y diseño de Gustavo Tondin."},
-    "ogDescription": {"es": "Gauja Lab: social media con semitono, humor y cultura pop."}
+    "title": {"es": "Gauja Lab - Artes Gráficas · Gustavo Tondin", "en": "Gauja Lab - Graphic Arts · Gustavo Tondin", "pt-br": "Gauja Lab - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "Social media de Gauja Lab: semitono violeta y amarillo, humor y cultura pop para hablar de creatividad y ventas. Dirección creativa y diseño de Gustavo Tondin.", "en": "Social media for Gauja Lab: purple and yellow halftone, humor and pop culture to talk about creativity and sales. Creative direction and design by Gustavo Tondin.", "pt-br": "Social media da Gauja Lab: meio-tom violeta e amarelo, humor e cultura pop para falar de criatividade e vendas. Direção criativa e design de Gustavo Tondin."},
+    "ogDescription": {"es": "Gauja Lab: social media con semitono, humor y cultura pop.", "en": "Gauja Lab: social media with halftone, humor and pop culture.", "pt-br": "Gauja Lab: social media com meio-tom, humor e cultura pop."}
   },
   "ogImage": "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar",
   "posts": true,
   "intro": {
-    "title": {"es": "Somos a Gauja Lab"},
-    "text": {"es": "Gauja Lab es el estudio creativo donde desarrollé proyectos como Wotë y Refiore. Para sus propias redes creamos una línea editorial con humor y cultura pop, que habla a otros emprendedores sobre creatividad, clientes y ventas."},
+    "title": {"es": "Somos a Gauja Lab", "en": "We are Gauja Lab", "pt-br": "Somos a Gauja Lab"},
+    "text": {"es": "Gauja Lab es el estudio creativo donde desarrollé proyectos como Wotë y Refiore. Para sus propias redes creamos una línea editorial con humor y cultura pop, que habla a otros emprendedores sobre creatividad, clientes y ventas.", "en": "Gauja Lab is the creative studio where I developed projects like Wotë and Refiore. For its own channels we created an editorial line with humor and pop culture, speaking to fellow entrepreneurs about creativity, clients and sales.", "pt-br": "A Gauja Lab é o estúdio criativo onde desenvolvi projetos como Wotë e Refiore. Para as redes do próprio estúdio criamos uma linha editorial com humor e cultura pop, que fala com outros empreendedores sobre criatividade, clientes e vendas."},
     "case": {
-      "challenge": {"es": "Mostrar la personalidad del estudio en un feed donde las agencias se parecen entre sí, y atraer clientes hablando del día a día sin sonar a anuncio."},
-      "solution": {"es": "Fotografía recortada en semitono violeta y amarillo, titulares en una sans condensada pesada y temas que mezclan oficio y cultura pop: del cliente difícil a los mundiales de fútbol, siempre con una lección para quien vende un producto."},
-      "role": {"es": "Dirección creativa · Diseño · Estrategia de contenido."}
+      "challenge": {"es": "Mostrar la personalidad del estudio en un feed donde las agencias se parecen entre sí, y atraer clientes hablando del día a día sin sonar a anuncio.", "en": "Show the studio's personality in a feed where agencies all look alike, and attract clients by talking about day-to-day work without sounding like an ad.", "pt-br": "Mostrar a personalidade do estúdio num feed em que as agências se parecem entre si, e atrair clientes falando do dia a dia sem soar como anúncio."},
+      "solution": {"es": "Fotografía recortada en semitono violeta y amarillo, titulares en una sans condensada pesada y temas que mezclan oficio y cultura pop: del cliente difícil a los mundiales de fútbol, siempre con una lección para quien vende un producto.", "en": "Cut-out photography in purple and yellow halftone, headlines in a heavy condensed sans and topics that mix craft and pop culture: from the difficult client to the World Cup, always with a lesson for anyone selling a product.", "pt-br": "Fotografia recortada em meio-tom violeta e amarelo, títulos numa sans condensada pesada e temas que misturam ofício e cultura pop: do cliente difícil às Copas do Mundo, sempre com uma lição para quem vende um produto."},
+      "role": {"es": "Dirección creativa · Diseño · Estrategia de contenido.", "en": "Creative direction · Design · Content strategy.", "pt-br": "Direção criativa · Design · Estratégia de conteúdo."}
     }
   },
   "sizes": "(max-width: 768px) 100vw, 50vw",
@@ -36,12 +36,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Gauja Lab"}
+      "value": {"es": "Gauja Lab", "en": "Gauja Lab", "pt-br": "Gauja Lab"}
     },
     {"label": "year", "value": "2023"},
     {
       "label": "role",
-      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido"}
+      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido", "en": "Creative direction · Design · Content strategy", "pt-br": "Direção criativa · Design · Estratégia de conteúdo"}
     }
   ],
   "next": "projects/identiduca-zine"

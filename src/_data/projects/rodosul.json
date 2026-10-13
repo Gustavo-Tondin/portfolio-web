@@ -1,22 +1,22 @@
 {
   "category": "artes-graficas",
   "name": "RodoSul",
-  "type": {"es": "Social media"},
+  "type": {"es": "Social media", "en": "Social media", "pt-br": "Social media"},
   "year": "2025",
   "head": {
-    "title": {"es": "RodoSul - Artes Gráficas · Gustavo Tondin"},
-    "description": {"es": "Social media de RodoSul, empresa de gestión de residuos: azul eléctrico, fotografía de campo y mensajes sobre riesgo ambiental. Proyecto de Gustavo Tondin."},
-    "ogDescription": {"es": "RodoSul: social media para una empresa de gestión de residuos."}
+    "title": {"es": "RodoSul - Artes Gráficas · Gustavo Tondin", "en": "RodoSul - Graphic Arts · Gustavo Tondin", "pt-br": "RodoSul - Artes Gráficas · Gustavo Tondin"},
+    "description": {"es": "Social media de RodoSul, empresa de gestión de residuos: azul eléctrico, fotografía de campo y mensajes sobre riesgo ambiental. Proyecto de Gustavo Tondin.", "en": "Social media for RodoSul, a waste management company: electric blue, field photography and messages about environmental risk. A project by Gustavo Tondin.", "pt-br": "Social media da RodoSul, empresa de gestão de resíduos: azul elétrico, fotografia de campo e mensagens sobre risco ambiental. Projeto de Gustavo Tondin."},
+    "ogDescription": {"es": "RodoSul: social media para una empresa de gestión de residuos.", "en": "RodoSul: social media for a waste management company.", "pt-br": "RodoSul: social media para uma empresa de gestão de resíduos."}
   },
   "ogImage": "projects/artes-graficas/rodosul/rodosul-post-seguro-ambiental-camion",
   "posts": true,
   "intro": {
-    "title": {"es": "Dos décadas cuidando el medio ambiente"},
-    "text": {"es": "RodoSul es una empresa de gestión de residuos de la Serra Gaúcha, en el sur de Brasil, con más de veinte años de trabajo: limpieza técnica, desatasco y transporte de residuos con seguro ambiental."},
+    "title": {"es": "Dos décadas cuidando el medio ambiente", "en": "Two decades caring for the environment", "pt-br": "Duas décadas cuidando do meio ambiente"},
+    "text": {"es": "RodoSul es una empresa de gestión de residuos de la Serra Gaúcha, en el sur de Brasil, con más de veinte años de trabajo: limpieza técnica, desatasco y transporte de residuos con seguro ambiental.", "en": "RodoSul is a waste management company from the Serra Gaúcha region, in southern Brazil, with over twenty years in operation: technical cleaning, drain unblocking and waste transport with environmental insurance.", "pt-br": "A RodoSul é uma empresa de gestão de resíduos da Serra Gaúcha, no sul do Brasil, com mais de vinte anos de atuação: limpeza técnica, desentupimento e transporte de resíduos com seguro ambiental."},
     "case": {
-      "challenge": {"es": "Un servicio poco visible y nada glamuroso: había que explicar por qué importa y diferenciar a la empresa por seguridad y responsabilidad ambiental."},
-      "solution": {"es": "Un sistema en azul eléctrico con las curvas del logotipo, fotografía de campo y titulares directos sobre riesgos y soluciones: descarte incorrecto, cajas de grasa, seguridad del equipo."},
-      "role": {"es": "Dirección creativa · Diseño · Estrategia de contenido."}
+      "challenge": {"es": "Un servicio poco visible y nada glamuroso: había que explicar por qué importa y diferenciar a la empresa por seguridad y responsabilidad ambiental.", "en": "A low-visibility, far-from-glamorous service: the job was to explain why it matters and set the company apart through safety and environmental responsibility.", "pt-br": "Um serviço pouco visível e nada glamoroso: era preciso explicar por que ele importa e diferenciar a empresa pela segurança e pela responsabilidade ambiental."},
+      "solution": {"es": "Un sistema en azul eléctrico con las curvas del logotipo, fotografía de campo y titulares directos sobre riesgos y soluciones: descarte incorrecto, cajas de grasa, seguridad del equipo.", "en": "An electric-blue system built on the curves of the logo, field photography and direct headlines about risks and solutions: improper disposal, grease traps, crew safety.", "pt-br": "Um sistema em azul elétrico com as curvas do logotipo, fotografia de campo e títulos diretos sobre riscos e soluções: descarte incorreto, caixas de gordura, segurança da equipe."},
+      "role": {"es": "Dirección creativa · Diseño · Estrategia de contenido.", "en": "Creative direction · Design · Content strategy.", "pt-br": "Direção criativa · Design · Estratégia de conteúdo."}
     }
   },
   "sizes": "(max-width: 768px) 100vw, 50vw",
@@ -32,12 +32,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "RodoSul · Gestión de residuos"}
+      "value": {"es": "RodoSul · Gestión de residuos", "en": "RodoSul · Waste management", "pt-br": "RodoSul · Gestão de resíduos"}
     },
     {"label": "year", "value": "2025"},
     {
       "label": "role",
-      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido"}
+      "value": {"es": "Dirección creativa · Diseño · Estrategia de contenido", "en": "Creative direction · Design · Content strategy", "pt-br": "Direção criativa · Design · Estratégia de conteúdo"}
     }
   ],
   "next": "projects/otros-clientes"

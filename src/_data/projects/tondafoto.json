@@ -1,22 +1,22 @@
 {
   "category": "branding",
   "name": "Tondafoto",
-  "type": {"es": "Marca personal"},
+  "type": {"es": "Marca personal", "en": "Personal brand", "pt-br": "Marca pessoal"},
   "year": "2022",
   "head": {
-    "title": {"es": "Tondafoto - Branding · Gustavo Tondin"},
-    "description": {"es": "Tondafoto, la marca de fotografía de Gustavo Tondin: formas coloridas, estética de cartel antiguo y frases como «Look beyond life». Diseño de Uel Molon."},
-    "ogDescription": {"es": "Tondafoto: una marca de fotografía que invita a dejarse fotografiar."}
+    "title": {"es": "Tondafoto - Branding · Gustavo Tondin", "en": "Tondafoto - Branding · Gustavo Tondin", "pt-br": "Tondafoto - Branding · Gustavo Tondin"},
+    "description": {"es": "Tondafoto, la marca de fotografía de Gustavo Tondin: formas coloridas, estética de cartel antiguo y frases como «Look beyond life». Diseño de Uel Molon.", "en": "Tondafoto, Gustavo Tondin's photography brand: colorful shapes, a vintage poster aesthetic and lines like «Look beyond life». Designed by Uel Molon.", "pt-br": "Tondafoto, a marca de fotografia de Gustavo Tondin: formas coloridas, estética de cartaz antigo e frases como «Look beyond life». Design de Uel Molon."},
+    "ogDescription": {"es": "Tondafoto: una marca de fotografía que invita a dejarse fotografiar.", "en": "Tondafoto: a photography brand that invites you to be photographed.", "pt-br": "Tondafoto: uma marca de fotografia que convida a se deixar fotografar."}
   },
   "ogImage": "projects/branding/tondafoto/tondafoto-logotipo-franjas",
   "intro": {
-    "title": {"es": "Mirar más allá de la vida"},
-    "text": {"es": "Tondafoto es mi marca como fotógrafo. Mi forma de trabajar busca el momento auténtico en lugar de inducir poses, y la identidad tenía que contar eso antes de mostrar una sola foto. Las formas coloridas traducen una personalidad vibrante y el gusto por las estéticas antiguas."},
+    "title": {"es": "Mirar más allá de la vida", "en": "Look beyond life", "pt-br": "Olhar além da vida"},
+    "text": {"es": "Tondafoto es mi marca como fotógrafo. Mi forma de trabajar busca el momento auténtico en lugar de inducir poses, y la identidad tenía que contar eso antes de mostrar una sola foto. Las formas coloridas traducen una personalidad vibrante y el gusto por las estéticas antiguas.", "en": "Tondafoto is my brand as a photographer. My approach looks for the authentic moment rather than staging poses, and the identity had to say that before showing a single photo. The colorful shapes translate a vibrant personality and a love of vintage aesthetics.", "pt-br": "Tondafoto é minha marca como fotógrafo. Meu jeito de trabalhar busca o momento autêntico em vez de induzir poses, e a identidade precisava contar isso antes de mostrar uma única foto. As formas coloridas traduzem uma personalidade vibrante e o gosto pelas estéticas antigas."},
     "case": {
-      "challenge": {"es": "Una marca de fotografía que escapara de lo tradicional: nada de cámaras, diafragmas ni firmas manuscritas, sino una identidad que transmitiera cercanía y humor, y que invitara a la gente a dejarse fotografiar."},
-      "solution": {"es": "Un logotipo que une franjas de color y el nombre «tonda» en un mismo bloque, una paleta de rosa, amarillo, verde y violeta sobre crudo y negro, y una tipografía condensada con sombra de cartel antiguo. Las frases en inglés hablan como el fotógrafo: «Look beyond life», «Look and smile», «Smile, you can be photographed», «Eternal memories»."},
-      "role": {"es": "Cliente: definí el brief y la dirección de la marca, y la uso en mi trabajo como fotógrafo. El diseño de la identidad es de Uel Molon."},
-      "result": {"es": "Una marca con voz propia que presenta al fotógrafo antes que a la foto, reconocible en redes, impresos y merch."}
+      "challenge": {"es": "Una marca de fotografía que escapara de lo tradicional: nada de cámaras, diafragmas ni firmas manuscritas, sino una identidad que transmitiera cercanía y humor, y que invitara a la gente a dejarse fotografiar.", "en": "A photography brand that broke away from tradition: no cameras, apertures or handwritten signatures, but an identity that conveyed warmth and humor and invited people to let themselves be photographed.", "pt-br": "Uma marca de fotografia que fugisse do tradicional: nada de câmeras, diafragmas ou assinaturas manuscritas, e sim uma identidade que transmitisse proximidade e humor, e que convidasse as pessoas a se deixarem fotografar."},
+      "solution": {"es": "Un logotipo que une franjas de color y el nombre «tonda» en un mismo bloque, una paleta de rosa, amarillo, verde y violeta sobre crudo y negro, y una tipografía condensada con sombra de cartel antiguo. Las frases en inglés hablan como el fotógrafo: «Look beyond life», «Look and smile», «Smile, you can be photographed», «Eternal memories».", "en": "A logo that joins color stripes and the name «tonda» in a single block, a palette of pink, yellow, green and violet on off-white and black, and a condensed typeface with a vintage-poster drop shadow. The English taglines speak in the photographer's voice: «Look beyond life», «Look and smile», «Smile, you can be photographed», «Eternal memories».", "pt-br": "Um logotipo que une faixas de cor e o nome «tonda» num mesmo bloco, uma paleta de rosa, amarelo, verde e violeta sobre cru e preto, e uma tipografia condensada com sombra de cartaz antigo. As frases em inglês falam como o fotógrafo: «Look beyond life», «Look and smile», «Smile, you can be photographed», «Eternal memories»."},
+      "role": {"es": "Cliente: definí el brief y la dirección de la marca, y la uso en mi trabajo como fotógrafo. El diseño de la identidad es de Uel Molon.", "en": "Client: I defined the brief and brand direction, and I use it in my work as a photographer. The identity was designed by Uel Molon.", "pt-br": "Cliente: defini o briefing e a direção da marca, e a uso no meu trabalho como fotógrafo. O design da identidade é de Uel Molon."},
+      "result": {"es": "Una marca con voz propia que presenta al fotógrafo antes que a la foto, reconocible en redes, impresos y merch.", "en": "A brand with its own voice that introduces the photographer before the photo, recognizable across social media, print and merch.", "pt-br": "Uma marca com voz própria que apresenta o fotógrafo antes da foto, reconhecível nas redes, em impressos e em merch."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -24,15 +24,15 @@
     {"img": "projects/branding/tondafoto/tondafoto-logotipo-franjas"},
     {
       "img": "projects/branding/tondafoto/tondafoto-reticula-logotipo",
-      "caption": {"es": "Construcción del logotipo"}
+      "caption": {"es": "Construcción del logotipo", "en": "Logo construction", "pt-br": "Construção do logotipo"}
     },
     {
       "img": "projects/branding/tondafoto/tondafoto-paleta-colores-cmyk-rgb",
-      "caption": {"es": "Paleta: rosa, amarillo, verde y violeta sobre crudo y negro"}
+      "caption": {"es": "Paleta: rosa, amarillo, verde y violeta sobre crudo y negro", "en": "Palette: pink, yellow, green and violet on off-white and black", "pt-br": "Paleta: rosa, amarelo, verde e violeta sobre cru e preto"}
     },
     {
       "img": "projects/branding/tondafoto/tondafoto-stickers-look-and-smile",
-      "caption": {"es": "Stickers: frases que hablan como el fotógrafo"}
+      "caption": {"es": "Stickers: frases que hablan como el fotógrafo", "en": "Stickers: lines that speak like the photographer", "pt-br": "Adesivos: frases que falam como o fotógrafo"}
     },
     {"img": "projects/branding/tondafoto/tondafoto-pieza-my-name-is-gustavo"},
     {"img": "projects/branding/tondafoto/tondafoto-titular-look-beyond-life"},
@@ -50,20 +50,20 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Tondafoto · marca personal"}
+      "value": {"es": "Tondafoto · marca personal", "en": "Tondafoto · personal brand", "pt-br": "Tondafoto · marca pessoal"}
     },
     {"label": "year", "value": "2022"},
     {
       "label": "services",
-      "value": {"es": "Identidad visual · Tono de voz · Piezas gráficas · Merchandising"}
+      "value": {"es": "Identidad visual · Tono de voz · Piezas gráficas · Merchandising", "en": "Visual identity · Tone of voice · Graphic pieces · Merchandising", "pt-br": "Identidade visual · Tom de voz · Peças gráficas · Merchandising"}
     },
     {
       "label": "role",
-      "value": {"es": "Cliente · Brief y dirección de marca"}
+      "value": {"es": "Cliente · Brief y dirección de marca", "en": "Client · Brief and brand direction", "pt-br": "Cliente · Briefing e direção de marca"}
     },
     {
       "label": "design",
-      "value": {"es": "Uel Molon"}
+      "value": {"es": "Uel Molon", "en": "Uel Molon", "pt-br": "Uel Molon"}
     }
   ],
   "next": "projects/dj-rodmotter"

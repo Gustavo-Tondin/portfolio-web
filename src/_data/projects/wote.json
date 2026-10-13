@@ -1,22 +1,22 @@
 {
   "category": "branding",
   "name": "Wotë",
-  "type": {"es": "Cannabidiol"},
+  "type": {"es": "Cannabidiol", "en": "Cannabidiol", "pt-br": "Canabidiol"},
   "year": "2024",
   "head": {
-    "title": {"es": "Wotë - Branding · Gustavo Tondin"},
-    "description": {"es": "Rebranding de Wotë, marca brasileña de CBD: concepto de la llave ancestral, sistema de siete símbolos, fotografía y packaging. Proyecto de Gustavo Tondin."},
-    "ogDescription": {"es": "Rebranding de Wotë: la llave ancestral, un sistema de siete símbolos para una marca de CBD."}
+    "title": {"es": "Wotë - Branding · Gustavo Tondin", "en": "Wotë - Branding · Gustavo Tondin", "pt-br": "Wotë - Branding · Gustavo Tondin"},
+    "description": {"es": "Rebranding de Wotë, marca brasileña de CBD: concepto de la llave ancestral, sistema de siete símbolos, fotografía y packaging. Proyecto de Gustavo Tondin.", "en": "Rebranding of Wotë, a Brazilian CBD brand: the ancestral key concept, a system of seven symbols, photography and packaging. A project by Gustavo Tondin.", "pt-br": "Rebranding da Wotë, marca brasileira de CBD: o conceito da chave ancestral, um sistema de sete símbolos, fotografia e embalagens. Projeto de Gustavo Tondin."},
+    "ogDescription": {"es": "Rebranding de Wotë: la llave ancestral, un sistema de siete símbolos para una marca de CBD.", "en": "Wotë rebrand: the ancestral key, a system of seven symbols for a CBD brand.", "pt-br": "Rebranding da Wotë: a chave ancestral, um sistema de sete símbolos para uma marca de CBD."}
   },
   "ogImage": "projects/branding/wote/wote-portada-logotipo-chave-ancestral",
   "intro": {
-    "title": {"es": "La llave ancestral"},
-    "text": {"es": "Wotë es una marca brasileña de productos orgánicos a base de cáñamo y CBD. El nombre viene de la hierba medicinal de los Yanomami, pueblo indígena de la Amazonia, y la identidad parte de esa idea: una llave que abre conocimientos perdidos. Cada llave representa un saber distinto (medicinal, comunitario, de la flora, de la fauna, espiritual, tradicional) y la llave sostenible, la principal, une lo natural con lo moderno."},
+    "title": {"es": "La llave ancestral", "en": "The ancestral key", "pt-br": "A chave ancestral"},
+    "text": {"es": "Wotë es una marca brasileña de productos orgánicos a base de cáñamo y CBD. El nombre viene de la hierba medicinal de los Yanomami, pueblo indígena de la Amazonia, y la identidad parte de esa idea: una llave que abre conocimientos perdidos. Cada llave representa un saber distinto (medicinal, comunitario, de la flora, de la fauna, espiritual, tradicional) y la llave sostenible, la principal, une lo natural con lo moderno.", "en": "Wotë is a Brazilian brand of organic hemp- and CBD-based products. The name comes from the medicinal herb of the Yanomami, an Indigenous people of the Amazon, and the identity builds on that idea: a key that unlocks lost knowledge. Each key stands for a different kind of knowledge (medicinal, communal, flora, fauna, spiritual, traditional), and the sustainable key, the main one, unites the natural and the modern.", "pt-br": "A Wotë é uma marca brasileira de produtos orgânicos à base de cânhamo e CBD. O nome vem da erva medicinal dos Yanomami, povo indígena da Amazônia, e a identidade parte dessa ideia: uma chave que abre conhecimentos perdidos. Cada chave representa um saber diferente (medicinal, comunitário, da flora, da fauna, espiritual, tradicional), e a chave sustentável, a principal, une o natural ao moderno."},
     "case": {
-      "challenge": {"es": "Relanzar la marca en un mercado todavía cargado de prejuicio hacia el cannabis. Wotë necesitaba transmitir origen orgánico, certificación y seriedad sin perder calidez ni el vínculo con la naturaleza que la diferencia."},
-      "solution": {"es": "Un rebranding construido sobre el concepto de la llave ancestral: símbolo geométrico inscrito en la O del logotipo, paleta de verde profundo, oro y crudo, fotografía de gente real al aire libre y un sistema de siete llaves que organiza productos, packaging y campañas. El mensaje «A chave para…» cambia según lo que cada producto abre: aventura, descanso, volver a la rutina, volver a vivir."},
-      "role": {"es": "Dirección de fotografía y parte del trío creativo del proyecto en Gauja Lab, junto a Uel Molon y Gabriel Motter: concepto, dirección y decisiones del sistema tomadas en conjunto."},
-      "result": {"es": "El relanzamiento fue bien recibido y la marca sigue en el mercado con esta identidad. El sistema de llaves sostiene hasta hoy su comunicación en producto, packaging y campañas."}
+      "challenge": {"es": "Relanzar la marca en un mercado todavía cargado de prejuicio hacia el cannabis. Wotë necesitaba transmitir origen orgánico, certificación y seriedad sin perder calidez ni el vínculo con la naturaleza que la diferencia.", "en": "Relaunching the brand in a market still weighed down by prejudice against cannabis. Wotë needed to convey organic origins, certification and credibility without losing the warmth and connection to nature that set it apart.", "pt-br": "Relançar a marca num mercado ainda carregado de preconceito contra a cannabis. A Wotë precisava transmitir origem orgânica, certificação e seriedade sem perder o calor nem o vínculo com a natureza que a diferencia."},
+      "solution": {"es": "Un rebranding construido sobre el concepto de la llave ancestral: símbolo geométrico inscrito en la O del logotipo, paleta de verde profundo, oro y crudo, fotografía de gente real al aire libre y un sistema de siete llaves que organiza productos, packaging y campañas. El mensaje «A chave para…» cambia según lo que cada producto abre: aventura, descanso, volver a la rutina, volver a vivir.", "en": "A rebrand built on the ancestral key concept: a geometric symbol set inside the O of the logo, a palette of deep green, gold and off-white, photography of real people outdoors and a system of seven keys that organizes products, packaging and campaigns. The «A chave para…» message changes according to what each product unlocks: adventure, rest, getting back to routine, living again.", "pt-br": "Um rebranding construído sobre o conceito da chave ancestral: símbolo geométrico inscrito no O do logotipo, paleta de verde profundo, ouro e cru, fotografia de gente real ao ar livre e um sistema de sete chaves que organiza produtos, embalagens e campanhas. A mensagem «A chave para…» muda conforme o que cada produto abre: aventura, descanso, voltar à rotina, voltar a viver."},
+      "role": {"es": "Dirección de fotografía y parte del trío creativo del proyecto en Gauja Lab, junto a Uel Molon y Gabriel Motter: concepto, dirección y decisiones del sistema tomadas en conjunto.", "en": "Photography direction and part of the project's creative trio at Gauja Lab, alongside Uel Molon and Gabriel Motter: concept, direction and system decisions made together.", "pt-br": "Direção de fotografia e parte do trio criativo do projeto na Gauja Lab, ao lado de Uel Molon e Gabriel Motter: conceito, direção e decisões do sistema tomadas em conjunto."},
+      "result": {"es": "El relanzamiento fue bien recibido y la marca sigue en el mercado con esta identidad. El sistema de llaves sostiene hasta hoy su comunicación en producto, packaging y campañas.", "en": "The relaunch was well received, and the brand is still on the market with this identity. The key system continues to anchor its communication across product, packaging and campaigns.", "pt-br": "O relançamento foi bem recebido e a marca segue no mercado com esta identidade. O sistema de chaves sustenta até hoje sua comunicação em produto, embalagem e campanhas."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -24,18 +24,18 @@
     {"img": "projects/branding/wote/wote-portada-logotipo-chave-ancestral"},
     {
       "img": "projects/branding/wote/wote-construccion-simbolo",
-      "caption": {"es": "Construcción del símbolo: una llave inscrita en la O del logotipo"}
+      "caption": {"es": "Construcción del símbolo: una llave inscrita en la O del logotipo", "en": "Building the symbol: a key set inside the O of the logo", "pt-br": "Construção do símbolo: uma chave inscrita no O do logotipo"}
     },
     {"img": "projects/branding/wote/wote-logotipo-dorado"},
     {
       "img": "projects/branding/wote/wote-totem-sistema-de-llaves",
-      "caption": {"es": "Las siete llaves: medicinal, comunitaria, de la flora, de la fauna, espiritual, tradicional y sostenible"}
+      "caption": {"es": "Las siete llaves: medicinal, comunitaria, de la flora, de la fauna, espiritual, tradicional y sostenible", "en": "The seven keys: medicinal, communal, flora, fauna, spiritual, traditional and sustainable", "pt-br": "As sete chaves: medicinal, comunitária, da flora, da fauna, espiritual, tradicional e sustentável"}
     },
     {"img": "projects/branding/wote/wote-piezas-verticales-chave-para-aventura"},
     {"img": "projects/branding/wote/wote-papeleria-manifiesto-tarjetas"},
     {
       "img": "projects/branding/wote/wote-troquel-caja-verde",
-      "caption": {"es": "Packaging: el troquel se diseñó desde cero para los aceites de CBD"}
+      "caption": {"es": "Packaging: el troquel se diseñó desde cero para los aceites de CBD", "en": "Packaging: the die-cut was designed from scratch for the CBD oils", "pt-br": "Embalagem: a faca foi desenhada do zero para os óleos de CBD"}
     },
     {"img": "projects/branding/wote/wote-caja-negra-sua-chave-chegou"},
     {"img": "projects/branding/wote/wote-aceite-cbd-caja-monstera"},
@@ -43,7 +43,7 @@
     {"img": "projects/branding/wote/wote-instagram-esquiador"},
     {
       "img": "projects/branding/wote/wote-carteles-pared-urbana",
-      "caption": {"es": "Campaña «A chave para…»: cada llave abre un mensaje distinto"}
+      "caption": {"es": "Campaña «A chave para…»: cada llave abre un mensaje distinto", "en": "«A chave para…» campaign: each key unlocks a different message", "pt-br": "Campanha «A chave para…»: cada chave abre uma mensagem diferente"}
     },
     {"img": "projects/branding/wote/wote-poster-duna-chave-para-o-sucesso"},
     {"img": "projects/branding/wote/wote-mupi-parada-autobus"},
@@ -55,20 +55,20 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Wotë"}
+      "value": {"es": "Wotë", "en": "Wotë", "pt-br": "Wotë"}
     },
     {"label": "year", "value": "2024"},
     {
       "label": "services",
-      "value": {"es": "Rebranding · Identidad visual · Sistema de símbolos · Fotografía · Packaging"}
+      "value": {"es": "Rebranding · Identidad visual · Sistema de símbolos · Fotografía · Packaging", "en": "Rebranding · Visual identity · Symbol system · Photography · Packaging", "pt-br": "Rebranding · Identidade visual · Sistema de símbolos · Fotografia · Embalagem"}
     },
     {
       "label": "role",
-      "value": {"es": "Dirección de fotografía · Concepto y dirección creativa en equipo"}
+      "value": {"es": "Dirección de fotografía · Concepto y dirección creativa en equipo", "en": "Photography direction · Concept and creative direction as a team", "pt-br": "Direção de fotografia · Conceito e direção criativa em equipe"}
     },
     {
       "label": "team",
-      "value": {"es": "Uel Molon · diseño  ·  Gabriel Motter · concepto  ·  Gauja Lab · estudio"}
+      "value": {"es": "Uel Molon · diseño  ·  Gabriel Motter · concepto  ·  Gauja Lab · estudio", "en": "Uel Molon · design  ·  Gabriel Motter · concept  ·  Gauja Lab · studio", "pt-br": "Uel Molon · design  ·  Gabriel Motter · conceito  ·  Gauja Lab · estúdio"}
     }
   ],
   "next": "projects/tondafoto"

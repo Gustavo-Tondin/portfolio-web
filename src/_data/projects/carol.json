@@ -1,18 +1,18 @@
 {
   "category": "fotografia",
   "name": "Carol",
-  "type": {"es": "Ensayo femenino"},
+  "type": {"es": "Ensayo femenino", "en": "Portrait session", "pt-br": "Ensaio feminino"},
   "year": "2022",
   "head": {
-    "title": {"es": "Carol - Fotografía · Gustavo Tondin"},
-    "description": {"es": "Ensayo femenino de Carol entre gradas, miradores y azaleas: luz de tarde y color saturado. Dirección de arte y fotografía de Gustavo Tondin."},
-    "ogDescription": {"es": "Carol: un ensayo femenino con la ciudad como escenario."}
+    "title": {"es": "Carol - Fotografía · Gustavo Tondin", "en": "Carol - Photography · Gustavo Tondin", "pt-br": "Carol - Fotografia · Gustavo Tondin"},
+    "description": {"es": "Ensayo femenino de Carol entre gradas, miradores y azaleas: luz de tarde y color saturado. Dirección de arte y fotografía de Gustavo Tondin.", "en": "Carol's portrait session among stadium stands, lookouts and azaleas: late-afternoon light and saturated color. Art direction and photography by Gustavo Tondin.", "pt-br": "Ensaio feminino de Carol entre arquibancadas, mirantes e azaleias: luz de fim de tarde e cor saturada. Direção de arte e fotografia de Gustavo Tondin."},
+    "ogDescription": {"es": "Carol: un ensayo femenino con la ciudad como escenario.", "en": "Carol: a portrait session with the city as its stage.", "pt-br": "Carol: um ensaio feminino com a cidade como cenário."}
   },
   "ogImage": "projects/fotografia/carol/ensayo-carol-gradas-estadio",
   "posts": true,
   "intro": {
-    "title": {"es": "La ciudad como escenario"},
-    "text": {"es": "Un ensayo femenino por la ciudad: las gradas de un estadio, un mirador sobre los edificios y un jardín de azaleas. La luz del final de la tarde y el color saturado construyen un retrato con actitud."}
+    "title": {"es": "La ciudad como escenario", "en": "The city as a stage", "pt-br": "A cidade como cenário"},
+    "text": {"es": "Un ensayo femenino por la ciudad: las gradas de un estadio, un mirador sobre los edificios y un jardín de azaleas. La luz del final de la tarde y el color saturado construyen un retrato con actitud.", "en": "A portrait session around the city: the stands of a stadium, a lookout over the buildings and an azalea garden. Late-afternoon light and saturated color build a portrait with attitude.", "pt-br": "Um ensaio feminino pela cidade: as arquibancadas de um estádio, um mirante sobre os prédios e um jardim de azaleias. A luz do fim da tarde e a cor saturada constroem um retrato com atitude."}
   },
   "sizes": "(max-width: 768px) 100vw, 75vw",
   "gallery": [
@@ -39,12 +39,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Carol"}
+      "value": {"es": "Carol", "en": "Carol", "pt-br": "Carol"}
     },
     {"label": "year", "value": "2022"},
     {
       "label": "role",
-      "value": {"es": "Dirección de arte · Fotografía"}
+      "value": {"es": "Dirección de arte · Fotografía", "en": "Art direction · Photography", "pt-br": "Direção de arte · Fotografia"}
     }
   ],
   "next": "projects/valeria"

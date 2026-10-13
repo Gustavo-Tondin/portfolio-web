@@ -7,6 +7,7 @@ permalink: "{{ 'index' | route(pg.lang) }}"
 heroPreload: true
 ---
 {% extends "base.njk" %}
+{% set pageId = "index" %}
 {% from "macros.njk" import next with context %}
 {% set head = t.pages.index %}
 
@@ -101,7 +102,7 @@ heroPreload: true
         <div class="marquee__track">
 {%- for c in categories %}
 
-            <a href="{{ c.id | href }}" class="marquee__item marquee__item--{{ c.id }} label" data-category="{{ c.id }}">
+            <a href="{{ c.id | href }}" class="marquee__item marquee__item--{{ c.id }} label" data-category="{{ c.id }}" data-previews="{% for k in c.previews %}{{ ('media/' + k + '.jpg') | rel }}{% if not loop.last %} {% endif %}{% endfor %}">
                 <img class="marquee__preview" src="#" alt="{{ t.home.marquee[c.id].alt }}">
                 <span class="marquee__text">{{ t.home.marquee[c.id].text }}</span>
             </a>

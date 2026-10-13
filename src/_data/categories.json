@@ -1,13 +1,18 @@
 [
   {
     "id": "branding",
-    "name": {"es": "Branding"},
-    "subtitle": {"es": "identidad visual"},
+    "name": {"es": "Branding", "en": "Branding", "pt-br": "Branding"},
+    "subtitle": {"es": "identidad visual", "en": "visual identity", "pt-br": "identidade visual"},
+    "previews": [
+      "projects/branding/refiore/refiore-portada-logotipo-pareja",
+      "projects/branding/wote/wote-portada-logotipo-chave-ancestral",
+      "projects/branding/tondafoto/tondafoto-logotipo-franjas"
+    ],
     "head": {
-      "title": {"es": "Branding - Gustavo Tondin · Identidad visual estratégica"},
-      "description": {"es": "Proyectos de branding e identidad visual desarrollados por Gustavo Tondin en Valencia. Sistemas de marca coherentes que comunican con claridad y construyen autoridad."},
-      "ogTitle": {"es": "Branding - Gustavo Tondin"},
-      "ogDescription": {"es": "Sistemas de marca y identidad visual para empresas que quieren comunicar con autoridad."}
+      "title": {"es": "Branding - Gustavo Tondin · Identidad visual estratégica", "en": "Branding - Gustavo Tondin · Strategic visual identity", "pt-br": "Branding - Gustavo Tondin · Identidade visual estratégica"},
+      "description": {"es": "Proyectos de branding e identidad visual desarrollados por Gustavo Tondin en Valencia. Sistemas de marca coherentes que comunican con claridad y construyen autoridad.", "en": "Branding and visual identity projects by Gustavo Tondin in Valencia. Coherent brand systems that communicate with clarity and build authority.", "pt-br": "Projetos de branding e identidade visual desenvolvidos por Gustavo Tondin em Valência. Sistemas de marca coerentes que comunicam com clareza e constroem autoridade."},
+      "ogTitle": {"es": "Branding - Gustavo Tondin", "en": "Branding - Gustavo Tondin", "pt-br": "Branding - Gustavo Tondin"},
+      "ogDescription": {"es": "Sistemas de marca y identidad visual para empresas que quieren comunicar con autoridad.", "en": "Brand systems and visual identity for companies that want to communicate with authority.", "pt-br": "Sistemas de marca e identidade visual para empresas que querem comunicar com autoridade."}
     },
     "showcase": [
       {
@@ -55,13 +60,18 @@
   },
   {
     "id": "web-design",
-    "name": {"es": "Web Design"},
-    "subtitle": {"es": "sitios y apps"},
+    "name": {"es": "Web Design", "en": "Web Design", "pt-br": "Web Design"},
+    "subtitle": {"es": "sitios y apps", "en": "sites and apps", "pt-br": "sites e apps"},
+    "previews": [
+      "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar",
+      "projects/web-design/eners/eners-sitio-hero-paneles-solares",
+      "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente"
+    ],
     "head": {
-      "title": {"es": "Web Design - Gustavo Tondin · sitios y apps · web design"},
-      "description": {"es": "Proyectos de diseño web y sitios institucionales desarrollados por Gustavo Tondin. Interfaces que priorizan la claridad, la conversión y la experiencia del usuario."},
-      "ogTitle": {"es": "Web Design - Gustavo Tondin"},
-      "ogDescription": {"es": "Sitios web y experiencias digitales diseñados con foco en claridad y conversión."}
+      "title": {"es": "Web Design - Gustavo Tondin · sitios y apps · web design", "en": "Web Design - Gustavo Tondin · sites and apps · web design", "pt-br": "Web Design - Gustavo Tondin · sites e apps · web design"},
+      "description": {"es": "Proyectos de diseño web y sitios institucionales desarrollados por Gustavo Tondin. Interfaces que priorizan la claridad, la conversión y la experiencia del usuario.", "en": "Web design and corporate website projects by Gustavo Tondin. Interfaces that put clarity, conversion and user experience first.", "pt-br": "Projetos de web design e sites institucionais desenvolvidos por Gustavo Tondin. Interfaces que priorizam clareza, conversão e experiência do usuário."},
+      "ogTitle": {"es": "Web Design - Gustavo Tondin", "en": "Web Design - Gustavo Tondin", "pt-br": "Web Design - Gustavo Tondin"},
+      "ogDescription": {"es": "Sitios web y experiencias digitales diseñados con foco en claridad y conversión.", "en": "Websites and digital experiences designed with a focus on clarity and conversion.", "pt-br": "Sites e experiências digitais projetados com foco em clareza e conversão."}
     },
     "showcase": [
       {
@@ -98,13 +108,18 @@
   },
   {
     "id": "artes-graficas",
-    "name": {"es": "Artes Gráficas"},
-    "subtitle": {"es": "piezas visuales"},
+    "name": {"es": "Artes Gráficas", "en": "Graphic Arts", "pt-br": "Artes Gráficas"},
+    "subtitle": {"es": "piezas visuales", "en": "visual pieces", "pt-br": "peças visuais"},
+    "previews": [
+      "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar",
+      "projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra",
+      "projects/artes-graficas/gauja-lab/gauja-lab-post-simplifique"
+    ],
     "head": {
-      "title": {"es": "Artes Gráficas - Gustavo Tondin · piezas visuales · artes gráficas"},
-      "description": {"es": "Piezas editoriales, social media y material gráfico diseñados por Gustavo Tondin. Composición, jerarquía y sistema visual aplicados a formato impreso y digital."},
-      "ogTitle": {"es": "Artes Gráficas - Gustavo Tondin"},
-      "ogDescription": {"es": "Piezas visuales editoriales y gráficas para redes sociales, zines y material impreso."}
+      "title": {"es": "Artes Gráficas - Gustavo Tondin · piezas visuales · artes gráficas", "en": "Graphic Arts - Gustavo Tondin · visual pieces · graphic arts", "pt-br": "Artes Gráficas - Gustavo Tondin · peças visuais · artes gráficas"},
+      "description": {"es": "Piezas editoriales, social media y material gráfico diseñados por Gustavo Tondin. Composición, jerarquía y sistema visual aplicados a formato impreso y digital.", "en": "Editorial pieces, social media and graphic material designed by Gustavo Tondin. Composition, hierarchy and visual systems applied to print and digital formats.", "pt-br": "Peças editoriais, social media e material gráfico criados por Gustavo Tondin. Composição, hierarquia e sistema visual aplicados ao formato impresso e digital."},
+      "ogTitle": {"es": "Artes Gráficas - Gustavo Tondin", "en": "Graphic Arts - Gustavo Tondin", "pt-br": "Artes Gráficas - Gustavo Tondin"},
+      "ogDescription": {"es": "Piezas visuales editoriales y gráficas para redes sociales, zines y material impreso.", "en": "Editorial and graphic pieces for social media, zines and print.", "pt-br": "Peças visuais editoriais e gráficas para redes sociais, zines e material impresso."}
     },
     "showcase": [
       {
@@ -145,13 +160,18 @@
   },
   {
     "id": "fotografia",
-    "name": {"es": "Fotografía"},
-    "subtitle": {"es": "captura visual"},
+    "name": {"es": "Fotografía", "en": "Photography", "pt-br": "Fotografia"},
+    "subtitle": {"es": "captura visual", "en": "visual capture", "pt-br": "captura visual"},
+    "previews": [
+      "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito",
+      "projects/fotografia/carol/ensayo-carol-gradas-estadio",
+      "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque"
+    ],
     "head": {
-      "title": {"es": "Fotografía - Gustavo Tondin · captura visual · fotografía"},
-      "description": {"es": "Ensayos fotográficos de pareja, retrato y editorial realizados por Gustavo Tondin. Narrativa visual construida a partir del color, la luz y la intención de cada encuadre."},
-      "ogTitle": {"es": "Fotografía - Gustavo Tondin"},
-      "ogDescription": {"es": "Ensayos de pareja, retrato y editorial - narrativa visual por Gustavo Tondin."}
+      "title": {"es": "Fotografía - Gustavo Tondin · captura visual · fotografía", "en": "Photography - Gustavo Tondin · visual capture · photography", "pt-br": "Fotografia - Gustavo Tondin · captura visual · fotografia"},
+      "description": {"es": "Ensayos fotográficos de pareja, retrato y editorial realizados por Gustavo Tondin. Narrativa visual construida a partir del color, la luz y la intención de cada encuadre.", "en": "Couple, portrait and editorial photo essays by Gustavo Tondin. Visual storytelling built from color, light and the intent behind every frame.", "pt-br": "Ensaios fotográficos de casal, retrato e editorial feitos por Gustavo Tondin. Narrativa visual construída a partir da cor, da luz e da intenção de cada enquadramento."},
+      "ogTitle": {"es": "Fotografía - Gustavo Tondin", "en": "Photography - Gustavo Tondin", "pt-br": "Fotografia - Gustavo Tondin"},
+      "ogDescription": {"es": "Ensayos de pareja, retrato y editorial - narrativa visual por Gustavo Tondin.", "en": "Couple, portrait and editorial essays - visual storytelling by Gustavo Tondin.", "pt-br": "Ensaios de casal, retrato e editorial - narrativa visual por Gustavo Tondin."}
     },
     "showcase": [
       {

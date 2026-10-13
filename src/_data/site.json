@@ -1,5 +1,8 @@
 {
   "url": "https://gustavo-tondin.github.io/portfolio-web/",
-  "langs": ["es"],
-  "locales": {"es": "es_ES"}
+  "langs": ["es", "en", "pt-br"],
+  "locales": {"es": "es_ES", "en": "en_US", "pt-br": "pt_BR"},
+  "hreflang": {"es": "es", "en": "en", "pt-br": "pt-BR"},
+  "labels": {"es": "ES", "en": "EN", "pt-br": "PT"},
+  "names": {"es": "Español", "en": "English", "pt-br": "Português"}
 }

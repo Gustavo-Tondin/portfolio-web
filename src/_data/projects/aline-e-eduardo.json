@@ -1,18 +1,18 @@
 {
   "category": "fotografia",
   "name": "Aline & Eduardo",
-  "type": {"es": "Ensayo de embarazo"},
+  "type": {"es": "Ensayo de embarazo", "en": "Maternity session", "pt-br": "Ensaio de gestante"},
   "year": "2022",
   "head": {
-    "title": {"es": "Aline & Eduardo - Fotografía · Gustavo Tondin"},
-    "description": {"es": "Ensayo de embarazo de Aline y Eduardo: los primeros zapatitos del bebé como hilo de la historia. Dirección de arte y fotografía de Gustavo Tondin."},
-    "ogDescription": {"es": "Aline & Eduardo: ensayo de embarazo al aire libre."}
+    "title": {"es": "Aline & Eduardo - Fotografía · Gustavo Tondin", "en": "Aline & Eduardo - Photography · Gustavo Tondin", "pt-br": "Aline & Eduardo - Fotografia · Gustavo Tondin"},
+    "description": {"es": "Ensayo de embarazo de Aline y Eduardo: los primeros zapatitos del bebé como hilo de la historia. Dirección de arte y fotografía de Gustavo Tondin.", "en": "Aline and Eduardo's maternity session: the baby's first little shoes as the thread of the story. Art direction and photography by Gustavo Tondin.", "pt-br": "Ensaio de gestante de Aline e Eduardo: os primeiros sapatinhos do bebê como fio da história. Direção de arte e fotografia de Gustavo Tondin."},
+    "ogDescription": {"es": "Aline & Eduardo: ensayo de embarazo al aire libre.", "en": "Aline & Eduardo: an outdoor maternity session.", "pt-br": "Aline & Eduardo: ensaio de gestante ao ar livre."}
   },
   "ogImage": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito",
   "posts": true,
   "intro": {
-    "title": {"es": "A la espera"},
-    "text": {"es": "Un ensayo de embarazo al aire libre, en un barrio tranquilo entre árboles. Los primeros zapatitos del bebé hacen de hilo conductor: aparecen solos, en las manos de la pareja y, al final, entre los dos."}
+    "title": {"es": "A la espera", "en": "Expecting", "pt-br": "À espera"},
+    "text": {"es": "Un ensayo de embarazo al aire libre, en un barrio tranquilo entre árboles. Los primeros zapatitos del bebé hacen de hilo conductor: aparecen solos, en las manos de la pareja y, al final, entre los dos.", "en": "An outdoor maternity session in a quiet, tree-lined neighborhood. The baby's first little shoes are the thread running through it: they appear on their own, in the couple's hands and, at the end, between the two of them.", "pt-br": "Um ensaio de gestante ao ar livre, num bairro tranquilo entre árvores. Os primeiros sapatinhos do bebê são o fio condutor: aparecem sozinhos, nas mãos do casal e, no fim, entre os dois."}
   },
   "sizes": "(max-width: 768px) 100vw, 75vw",
   "gallery": [
@@ -42,12 +42,12 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "Aline & Eduardo"}
+      "value": {"es": "Aline & Eduardo", "en": "Aline & Eduardo", "pt-br": "Aline & Eduardo"}
     },
     {"label": "year", "value": "2022"},
     {
       "label": "role",
-      "value": {"es": "Dirección de arte · Fotografía"}
+      "value": {"es": "Dirección de arte · Fotografía", "en": "Art direction · Photography", "pt-br": "Direção de arte · Fotografia"}
     }
   ],
   "next": "projects/bruna-e-rafael"

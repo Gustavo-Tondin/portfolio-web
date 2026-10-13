@@ -4,7 +4,7 @@
     "cards": [
       {
         "project": "refiore",
-        "label": {"es": "Refiore - Joyería artesanal"},
+        "label": {"es": "Refiore - Joyería artesanal", "en": "Refiore - Handcrafted jewelry", "pt-br": "Refiore - Joalheria artesanal"},
         "images": [
           {"img": "projects/branding/refiore/refiore-portada-logotipo-pareja", "ratio": "1.5"},
           {"img": "projects/branding/refiore/refiore-alianzas-monograma-rfr", "ratio": "1"}
@@ -12,14 +12,14 @@
       },
       {
         "project": "wote",
-        "label": {"es": "Wotë - Cannabidiol"},
+        "label": {"es": "Wotë - Cannabidiol", "en": "Wotë - Cannabidiol", "pt-br": "Wotë - Canabidiol"},
         "images": [
           {"img": "projects/branding/wote/wote-portada-logotipo-chave-ancestral", "ratio": "1"}
         ]
       },
       {
         "project": "tondafoto",
-        "label": {"es": "Tondafoto - Marca personal"},
+        "label": {"es": "Tondafoto - Marca personal", "en": "Tondafoto - Personal brand", "pt-br": "Tondafoto - Marca pessoal"},
         "images": [
           {"img": "projects/branding/tondafoto/tondafoto-logotipo-franjas"},
           {"img": "projects/branding/tondafoto/tondafoto-stickers-look-and-smile"},
@@ -33,14 +33,14 @@
     "cards": [
       {
         "project": "eners",
-        "label": {"es": "Eners - Sitio institucional"},
+        "label": {"es": "Eners - Sitio institucional", "en": "Eners - Corporate website", "pt-br": "Eners - Site institucional"},
         "images": [
           {"img": "projects/web-design/eners/eners-sitio-hero-paneles-solares", "ratio": "1.0"}
         ]
       },
       {
         "project": "identiduca",
-        "label": {"es": "Identiduca - Sitio institucional"},
+        "label": {"es": "Identiduca - Sitio institucional", "en": "Identiduca - Corporate website", "pt-br": "Identiduca - Site institucional"},
         "images": [
           {
             "img": "projects/web-design/identiduca/identiduca-sitio-hero-formacion-valiente",
@@ -55,7 +55,7 @@
     "cards": [
       {
         "project": "gauja-lab",
-        "label": {"es": "Gauja Lab - Social media"},
+        "label": {"es": "Gauja Lab - Social media", "en": "Gauja Lab - Social media", "pt-br": "Gauja Lab - Social media"},
         "images": [
           {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-pare-de-pensar"},
           {"img": "projects/artes-graficas/gauja-lab/gauja-lab-post-retrato-dolar-ojos"}
@@ -63,14 +63,14 @@
       },
       {
         "project": "identiduca-zine",
-        "label": {"es": "Identiduca - Zine editorial"},
+        "label": {"es": "Identiduca - Zine editorial", "en": "Identiduca - Editorial zine", "pt-br": "Identiduca - Zine editorial"},
         "images": [
           {
             "img": "projects/artes-graficas/identiduca/identiduca-zine-portada-cuando-algo-no-cuadra",
             "ratio": "1.4"
           }
         ],
-        "title": {"es": "Identiduca - Zine editorial"}
+        "title": {"es": "Identiduca - Zine editorial", "en": "Identiduca - Editorial zine", "pt-br": "Identiduca - Zine editorial"}
       }
     ]
   },
@@ -79,7 +79,7 @@
     "cards": [
       {
         "project": "aline-e-eduardo",
-        "label": {"es": "Aline & Eduardo - Ensayo de embarazo"},
+        "label": {"es": "Aline & Eduardo - Ensayo de embarazo", "en": "Aline & Eduardo - Maternity session", "pt-br": "Aline & Eduardo - Ensaio de gestante"},
         "images": [
           {
             "img": "projects/fotografia/aline-e-eduardo/ensayo-embarazo-aline-eduardo-zapatitos-osito",
@@ -89,14 +89,14 @@
       },
       {
         "project": "carol",
-        "label": {"es": "Carol - Retrato femenino"},
+        "label": {"es": "Carol - Retrato femenino", "en": "Carol - Female portrait", "pt-br": "Carol - Retrato feminino"},
         "images": [
           {"img": "projects/fotografia/carol/ensayo-carol-gradas-estadio"}
         ]
       },
       {
         "project": "valeria",
-        "label": {"es": "Valeria - Retrato femenino"},
+        "label": {"es": "Valeria - Retrato femenino", "en": "Valeria - Female portrait", "pt-br": "Valeria - Retrato feminino"},
         "images": [
           {"img": "projects/fotografia/valeria/ensayo-valeria-blanco-negro-bosque", "ratio": "0.8"},
           {"img": "projects/fotografia/valeria/ensayo-valeria-franjas-roja-amarilla", "ratio": "1.5"},

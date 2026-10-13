@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "logo": "Início - Gustavo Tondin",
+    "home": "Início",
+    "portfolio": "Portfólio",
+    "contact": "Contato",
+    "menu": "Menu",
+    "menuOpen": "Abrir menu",
+    "menuClose": "Fechar"
+  },
+  "next": {
+    "section": "Próxima seção",
+    "project": "Próximo projeto",
+    "nextSection": "próxima seção",
+    "followingSection": "próxima seção",
+    "followingProject": "próximo projeto",
+    "allProjects": "todos os projetos"
+  },
+  "pages": {
+    "index": {
+      "title": "Gustavo Tondin - Designer Gráfico e Web em Valência",
+      "description": "Branding, web design, artes gráficas e fotografia por Gustavo Tondin em Valência. Ajudo marcas a comunicar com autoridade por meio de identidade visual e presença digital.",
+      "ogTitle": "Gustavo Tondin - Designer Gráfico e Web",
+      "ogDescription": "Branding e web design em Valência. Identidade visual, web e narrativa de marca para empresas que querem comunicar com autoridade."
+    },
+    "portfolio": {
+      "title": "Portfólio - Gustavo Tondin · Branding, Web, Design Gráfico e Fotografia",
+      "description": "Portfólio editorial de Gustavo Tondin - projetos selecionados de branding, web design, artes gráficas e fotografia, feitos entre o Brasil e Valência.",
+      "ogTitle": "Portfólio - Gustavo Tondin",
+      "ogDescription": "Projetos selecionados: branding, web design, artes gráficas e fotografia."
+    },
+    "contacto": {
+      "title": "Contato - Gustavo Tondin · Vamos conversar",
+      "description": "Tem um projeto em mente? Me escreva e a gente conversa. Branding, web e direção criativa desde Valência.",
+      "ogTitle": "Contato - Gustavo Tondin",
+      "ogDescription": "Tem um projeto em mente? Me escreva e a gente conversa."
+    }
+  },
+  "home": {
+    "heroAlt": "Gustavo Tondin, designer gráfico",
+    "location": "Valência - Espanha",
+    "tagline": "Designer <em class=\"hero__highlight\">estratégico</em><br /> focado em dar<br /> <em class=\"hero__highlight\">autoridade</em> a marcas.",
+    "about": "Sobre mim",
+    "hello": "Olá, eu sou",
+    "paragraphs": [
+      "Sou designer gráfico e web baseado em Valência. Há mais de cinco anos trabalho com branding, design digital e desenvolvimento web, unindo estratégia, estética e código.",
+      "Minha abordagem: entender do que uma marca precisa, dar a ela uma identidade visual sólida e construir a presença digital que a sustente. Não desenho para decorar. Desenho para que as marcas comuniquem, se conectem e cresçam.",
+      "Já trabalhei com startups, negócios e empresas no Brasil e na Espanha. Sempre com o mesmo princípio: cada peça tem um porquê."
+    ],
+    "steps": [
+      {"title": "Entender", "text": "Ouvir, analisar e definir por onde começar."},
+      {"title": "Desenhar", "text": "Explorar soluções claras e coerentes."},
+      {"title": "Aplicar", "text": "Levar para o real, com cuidado nos detalhes."}
+    ],
+    "marqueeLabel": "Áreas de trabalho",
+    "marquee": {
+      "branding": {"text": "<branding>", "alt": "Prévia de projetos de branding"},
+      "web-design": {"text": "<web_design>", "alt": "Prévia de projetos de web design"},
+      "artes-graficas": {"text": "<artes_gráficas>", "alt": "Prévia de projetos de artes gráficas"},
+      "fotografia": {"text": "<fotografia>", "alt": "Prévia de ensaios fotográficos"}
+    },
+    "focus": "Foco",
+    "focusTitle": "Entender antes de desenhar.",
+    "focusText": "Busco clareza, coerência e propósito em cada projeto.<br /> Não desenho pela estética - desenho para que as marcas comuniquem melhor.",
+    "contact": "Contato",
+    "city": "Valência, Espanha",
+    "experience": "Experiência",
+    "jobs": [
+      {
+        "date": "2025 - presente",
+        "role": "Designer gráfico & front-end autônomo",
+        "place": "Valência, Espanha",
+        "text": "Identidades visuais completas e os sites que as sustentam, codificados à mão em HTML, CSS e JavaScript. Peças impressas e digitais, direção criativa para redes e gestão completa de cada projeto, do briefing à entrega."
+      },
+      {
+        "date": "2022 - 2024",
+        "role": "Designer gráfico & web",
+        "place": "Gauja Creative Lab · Brasil, remoto",
+        "text": "Landing pages e sites institucionais com foco em UX/UI e design responsivo. Gestão de marca para vários clientes em paralelo e campanhas no Meta Ads e no Google Ads voltadas à conversão."
+      },
+      {
+        "date": "2021 - 2023",
+        "role": "Fotógrafo",
+        "place": "Tonda.foto · Brasil",
+        "text": "Direção criativa e produção de ensaios corporativos, de produto e de eventos. Edição e tratamento profissional no Lightroom e no Photoshop."
+      }
+    ],
+    "doTitle": "O que eu faço",
+    "do": [
+      "Identidade visual",
+      "Sistemas de marca",
+      "Direção criativa",
+      "Design editorial",
+      "Web design e front-end",
+      "Design tipográfico"
+    ],
+    "tools": "Ferramentas",
+    "softSkills": "Soft Skills",
+    "skills": ["Estratégia", "Comunicação", "Narrativa visual", "Organização"],
+    "profile": "Perfil",
+    "languagesLabel": "Idiomas:",
+    "languages": "Português, espanhol e inglês.",
+    "interestsLabel": "Interesses:",
+    "interests": "Storytelling, bicicleta, arquitetura, cinema."
+  },
+  "portfolio": {"label": "Projetos selecionados", "seeAll": "Ver todos os projetos de"},
+  "project": {
+    "gallery": "Galeria do projeto",
+    "credits": "Créditos",
+    "visit": "Visitar site",
+    "visitTitle": "Visitar {name} em uma nova aba",
+    "case": {"challenge": "Desafio", "solution": "Solução", "role": "Meu papel", "result": "Resultado"},
+    "creditLabels": {
+      "client": "Cliente",
+      "clients": "Clientes",
+      "year": "Ano",
+      "role": "Meu papel",
+      "design": "Design",
+      "team": "Equipe",
+      "services": "Serviços",
+      "site": "Site",
+      "technology": "Tecnologia"
+    }
+  },
+  "contact": {
+    "title": "Vamos conversar",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Me conta, do que você precisa?",
+    "send": "Enviar"
+  }
+}

@@ -1,22 +1,22 @@
 {
   "category": "branding",
   "name": "DJ RodMotter",
-  "type": {"es": "Identidad DJ"},
+  "type": {"es": "Identidad DJ", "en": "DJ identity", "pt-br": "Identidade de DJ"},
   "year": "2023",
   "head": {
-    "title": {"es": "DJ RodMotter - Branding · Gustavo Tondin"},
-    "description": {"es": "Identidad visual de DJ RodMotter: «no escuches, siente», degradados de luz con grano, merch y publicidad exterior. Proyecto de Gustavo Tondin."},
-    "ogDescription": {"es": "DJ RodMotter: una identidad para un sonido sin fórmulas."}
+    "title": {"es": "DJ RodMotter - Branding · Gustavo Tondin", "en": "DJ RodMotter - Branding · Gustavo Tondin", "pt-br": "DJ RodMotter - Branding · Gustavo Tondin"},
+    "description": {"es": "Identidad visual de DJ RodMotter: «no escuches, siente», degradados de luz con grano, merch y publicidad exterior. Proyecto de Gustavo Tondin.", "en": "DJ RodMotter's visual identity: «no escuches, siente», grainy light gradients, merch and outdoor advertising. A project by Gustavo Tondin.", "pt-br": "Identidade visual do DJ RodMotter: «no escuches, siente», degradês de luz com granulação, merch e mídia exterior. Projeto de Gustavo Tondin."},
+    "ogDescription": {"es": "DJ RodMotter: una identidad para un sonido sin fórmulas.", "en": "DJ RodMotter: an identity for a sound without formulas.", "pt-br": "DJ RodMotter: uma identidade para um som sem fórmulas."}
   },
   "ogImage": "projects/branding/dj-rodmotter/rodmotter-portada-dj-cabina",
   "intro": {
-    "title": {"es": "No escuches, siente"},
-    "text": {"es": "RodMotter empezó a producir de oído, sin teoría: un proceso caótico en el que lo que importaba no era la fórmula, sino cómo llegaba el sonido a quien lo escucha. La identidad parte de esa idea y representa su dualidad: un sonido sin fórmulas, sostenido por talento e instinto."},
+    "title": {"es": "No escuches, siente", "en": "Don't listen, feel", "pt-br": "Não escute, sinta"},
+    "text": {"es": "RodMotter empezó a producir de oído, sin teoría: un proceso caótico en el que lo que importaba no era la fórmula, sino cómo llegaba el sonido a quien lo escucha. La identidad parte de esa idea y representa su dualidad: un sonido sin fórmulas, sostenido por talento e instinto.", "en": "RodMotter started producing by ear, with no theory: a chaotic process where what mattered wasn't the formula, but how the sound reached the listener. The identity grows from that idea and captures his duality: a sound without formulas, held up by talent and instinct.", "pt-br": "RodMotter começou a produzir de ouvido, sem teoria: um processo caótico em que o que importava não era a fórmula, mas como o som chegava a quem ouve. A identidade parte dessa ideia e representa sua dualidade: um som sem fórmulas, sustentado por talento e instinto."},
     "case": {
-      "challenge": {"es": "Dar al DJ una identidad propia en una escena donde los artistas se parecen entre sí, y llevar a la imagen algo que no se ve: la sensación que deja su música."},
-      "solution": {"es": "Un símbolo de tres trazos en movimiento sobre el nombre en una sans pesada, y degradados de cian, magenta y negro con grano que funcionan como la parte visible del sonido. La voz es corta y en inglés, pensada para la pista: «It’s not music. It’s feeling», «Feel the music. Beyond the beats». El sistema se extiende a stickers, merch, web y publicidad exterior."},
-      "role": {"es": "Ajustes finales de la identidad y fotografía del artista. El diseño es de Uel Molon y el concepto, de Gabriel Motter."},
-      "result": {"es": "Una identidad lista para cabina, redes y calle: el mismo degradado y la misma frase reconocibles en cada pieza, de la sudadera a la valla."}
+      "challenge": {"es": "Dar al DJ una identidad propia en una escena donde los artistas se parecen entre sí, y llevar a la imagen algo que no se ve: la sensación que deja su música.", "en": "Give the DJ an identity of his own in a scene where artists all look alike, and bring something invisible into the image: the feeling his music leaves behind.", "pt-br": "Dar ao DJ uma identidade própria numa cena em que os artistas se parecem entre si, e levar para a imagem algo que não se vê: a sensação que a música dele deixa."},
+      "solution": {"es": "Un símbolo de tres trazos en movimiento sobre el nombre en una sans pesada, y degradados de cian, magenta y negro con grano que funcionan como la parte visible del sonido. La voz es corta y en inglés, pensada para la pista: «It’s not music. It’s feeling», «Feel the music. Beyond the beats». El sistema se extiende a stickers, merch, web y publicidad exterior.", "en": "A three-stroke symbol in motion above the name in a heavy sans, and grainy cyan, magenta and black gradients that act as the visible side of the sound. The voice is short and in English, made for the dance floor: «It’s not music. It’s feeling», «Feel the music. Beyond the beats». The system extends to stickers, merch, web and outdoor advertising.", "pt-br": "Um símbolo de três traços em movimento sobre o nome numa sans pesada, e degradês de ciano, magenta e preto com granulação que funcionam como a parte visível do som. A voz é curta e em inglês, pensada para a pista: «It’s not music. It’s feeling», «Feel the music. Beyond the beats». O sistema se estende a adesivos, merch, web e mídia exterior."},
+      "role": {"es": "Ajustes finales de la identidad y fotografía del artista. El diseño es de Uel Molon y el concepto, de Gabriel Motter.", "en": "Final identity refinements and artist photography. Design by Uel Molon, concept by Gabriel Motter.", "pt-br": "Ajustes finais da identidade e fotografia do artista. O design é de Uel Molon e o conceito, de Gabriel Motter."},
+      "result": {"es": "Una identidad lista para cabina, redes y calle: el mismo degradado y la misma frase reconocibles en cada pieza, de la sudadera a la valla.", "en": "An identity ready for the booth, social media and the street: the same gradient and the same line, recognizable in every piece, from the hoodie to the billboard.", "pt-br": "Uma identidade pronta para a cabine, as redes e a rua: o mesmo degradê e a mesma frase reconhecíveis em cada peça, do moletom ao outdoor."}
     }
   },
   "sizes": "(max-width: 1440px) calc(100vw - 2rem), 1440px",
@@ -25,11 +25,11 @@
     {"img": "projects/branding/dj-rodmotter/rodmotter-logotipo-degradado"},
     {
       "img": "projects/branding/dj-rodmotter/rodmotter-frase-its-not-music",
-      "caption": {"es": "«It’s not music. It’s feeling»: el concepto en una frase"}
+      "caption": {"es": "«It’s not music. It’s feeling»: el concepto en una frase", "en": "«It’s not music. It’s feeling»: the concept in one line", "pt-br": "«It’s not music. It’s feeling»: o conceito numa frase"}
     },
     {
       "img": "projects/branding/dj-rodmotter/rodmotter-pieza-feel-the-music",
-      "caption": {"es": "Degradados con grano: el sonido traducido a luz y color"}
+      "caption": {"es": "Degradados con grano: el sonido traducido a luz y color", "en": "Grainy gradients: sound translated into light and color", "pt-br": "Degradês com granulação: o som traduzido em luz e cor"}
     },
     {"img": "projects/branding/dj-rodmotter/rodmotter-collage-concierto-retrato"},
     {"img": "projects/branding/dj-rodmotter/rodmotter-stickers-monograma-vinilo"},
@@ -40,7 +40,7 @@
     {"img": "projects/branding/dj-rodmotter/rodmotter-camiseta-gorra"},
     {
       "img": "projects/branding/dj-rodmotter/rodmotter-valla-avenida",
-      "caption": {"es": "Campaña «Beyond the beats» en publicidad exterior"}
+      "caption": {"es": "Campaña «Beyond the beats» en publicidad exterior", "en": "«Beyond the beats» campaign in outdoor advertising", "pt-br": "Campanha «Beyond the beats» em mídia exterior"}
     },
     {"img": "projects/branding/dj-rodmotter/rodmotter-carteles-nueva-york"},
     {"img": "projects/branding/dj-rodmotter/rodmotter-cartel-metro"},
@@ -50,20 +50,20 @@
   "credits": [
     {
       "label": "client",
-      "value": {"es": "DJ RodMotter"}
+      "value": {"es": "DJ RodMotter", "en": "DJ RodMotter", "pt-br": "DJ RodMotter"}
     },
     {"label": "year", "value": "2023"},
     {
       "label": "services",
-      "value": {"es": "Identidad visual · Fotografía · Merchandising · Piezas gráficas · Publicidad exterior"}
+      "value": {"es": "Identidad visual · Fotografía · Merchandising · Piezas gráficas · Publicidad exterior", "en": "Visual identity · Photography · Merchandising · Graphic pieces · Outdoor advertising", "pt-br": "Identidade visual · Fotografia · Merchandising · Peças gráficas · Mídia exterior"}
     },
     {
       "label": "role",
-      "value": {"es": "Ajustes finales · Fotografía"}
+      "value": {"es": "Ajustes finales · Fotografía", "en": "Final refinements · Photography", "pt-br": "Ajustes finais · Fotografia"}
     },
     {
       "label": "team",
-      "value": {"es": "Uel Molon · diseño  ·  Gabriel Motter · concepto"}
+      "value": {"es": "Uel Molon · diseño  ·  Gabriel Motter · concepto", "en": "Uel Molon · design  ·  Gabriel Motter · concept", "pt-br": "Uel Molon · design  ·  Gabriel Motter · conceito"}
     }
   ],
   "next": "projects/veg-to-go"

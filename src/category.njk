@@ -7,6 +7,7 @@ permalink: "{{ pg.id | route(pg.lang) }}"
 icons: true
 ---
 {% extends "base.njk" %}
+{% set pageId = pg.id %}
 {% from "macros.njk" import picture, next with context %}
 {% set c = categories | byId(pg.id) %}
 {% set head = c.head %}
