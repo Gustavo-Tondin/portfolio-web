@@ -682,13 +682,18 @@ button {
     /* el hero mide 100vw (incluye la barra de scroll): 100vw - 100% vale 0 en el hero y el ancho de la barra en la lista fixed */
     --lang-top: 3.375rem;
     --lang-right: calc(clamp(1.25rem, 5vw, 3rem) - (100vw - 100%));
-    --lang-bg: transparent;
-    --lang-border: transparent;
-    --lang-pad: 0;
-    --lang-link: var(--color-light);
     position: absolute;
     top: 1.5rem;
     right: var(--lang-right);
+}
+/* en desktop la lista va sin fondo sobre la foto; en móvil mantiene la tarjeta porque cae sobre el título */
+@media (min-width: 769px) {
+    .hero__lang {
+        --lang-bg: transparent;
+        --lang-border: transparent;
+        --lang-pad: 0;
+        --lang-link: var(--color-light);
+    }
 }
 
 .hero__top {
