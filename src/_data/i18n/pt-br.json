@@ -50,29 +50,82 @@
   "home": {
     "heroAlt": "Gustavo Tondin, designer gráfico",
     "location": "Valência - Espanha",
-    "tagline": "Designer <em class=\"hero__highlight\">estratégico</em><br /> focado em dar<br /> <em class=\"hero__highlight\">autoridade</em> a marcas.",
+    "tagline": "Marcas com <em class=\"hero__highlight\">autoridade</em>,<br> do primeiro esboço<br> ao site <em class=\"hero__highlight\">publicado</em>.",
     "about": "Sobre mim",
     "hello": "Olá, eu sou",
     "paragraphs": [
-      "Sou designer gráfico e web baseado em Valência. Há mais de cinco anos trabalho com branding, design digital e desenvolvimento web, unindo estratégia, estética e código.",
-      "Minha abordagem: entender do que uma marca precisa, dar a ela uma identidade visual sólida e construir a presença digital que a sustente. Não desenho para decorar. Desenho para que as marcas comuniquem, se conectem e cresçam.",
-      "Já trabalhei com startups, negócios e empresas no Brasil e na Espanha. Sempre com o mesmo princípio: cada peça tem um porquê."
+      "Muitas marcas perdem força porque cada peça é feita por alguém diferente e nenhuma se parece com a outra. Antes de me dedicar ao design, geri o negócio da minha família, então sei o quanto custa um negócio parecer menos do que é.",
+      "Trabalho cada marca da identidade às aplicações e, quando o projeto pede um site, também o desenvolvo. Conheço bem os dois lados e cuido para que o publicado seja fiel ao que foi desenhado.",
+      "Há cinco anos construo, com estratégia, autoridade para marcas do Brasil e da Espanha."
     ],
+    "stepsTitle": "Como trabalho",
     "steps": [
-      {"title": "Entender", "text": "Ouvir, analisar e definir por onde começar."},
-      {"title": "Desenhar", "text": "Explorar soluções claras e coerentes."},
-      {"title": "Aplicar", "text": "Levar para o real, com cuidado nos detalhes."}
+      {
+        "title": "Entender",
+        "text": "Antes do primeiro traço, escuto e pesquiso para definir o que a marca precisa comunicar."
+      },
+      {
+        "title": "Desenhar",
+        "text": "Construo a identidade como um sistema, pensado para funcionar em qualquer formato."
+      },
+      {
+        "title": "Aplicar",
+        "text": "Levo a identidade a cada peça, do papel à tela, e tudo fala a mesma língua."
+      }
+    ],
+    "testimonialsTitle": "Depoimentos",
+    "testimonialLink": "Ver projeto",
+    "testimonials": [
+      {
+        "quote": "Começamos sem um conceito claro e eles nos ajudaram a definir os objetivos e o rumo da marca. Capricharam em tudo, da estratégia ao visual e ao site.",
+        "name": "Nathan D.",
+        "role": "CEO, Refiore",
+        "place": "Bento Gonçalves",
+        "credit": "com Gauja Creative Lab",
+        "project": "refiore",
+        "image": "projects/branding/refiore/refiore-portada-logotipo-pareja"
+      },
+      {
+        "quote": "Vocês fizeram um sonho se tornar realidade. Agora a marca transmite exatamente o que é a Wotë e está pronta para o mercado internacional.",
+        "name": "Luciana K.",
+        "role": "CEO, Wotë",
+        "place": "Rio de Janeiro",
+        "credit": "com Gauja Creative Lab",
+        "project": "wote",
+        "image": "projects/branding/wote/wote-portada-logotipo-chave-ancestral"
+      },
+      {
+        "quote": "Foi muito bom o processo, do nome à identidade visual. Ficou tudo muito lindo e transmite exatamente o que eu tinha em mente.",
+        "name": "Rafael T.",
+        "role": "Criador, Riwer Labs",
+        "place": "Caxias do Sul",
+        "credit": "",
+        "project": "riwer-labs",
+        "image": "projects/web-design/riwer-labs/riwer-labs-portada-logotipo-degradado"
+      }
     ],
     "marqueeLabel": "Áreas de trabalho",
     "marquee": {
-      "branding": {"text": "<branding>", "alt": "Prévia de projetos de branding"},
-      "web-design": {"text": "<web_design>", "alt": "Prévia de projetos de web design"},
-      "artes-graficas": {"text": "<artes_gráficas>", "alt": "Prévia de projetos de artes gráficas"},
-      "fotografia": {"text": "<fotografia>", "alt": "Prévia de ensaios fotográficos"}
+      "branding": {
+        "text": "<branding>",
+        "alt": "Prévia de projetos de branding"
+      },
+      "web-design": {
+        "text": "<web_design>",
+        "alt": "Prévia de projetos de web design"
+      },
+      "artes-graficas": {
+        "text": "<artes_gráficas>",
+        "alt": "Prévia de projetos de artes gráficas"
+      },
+      "fotografia": {
+        "text": "<fotografia>",
+        "alt": "Prévia de ensaios fotográficos"
+      }
     },
-    "focus": "Foco",
+    "focus": "Sobre mim",
     "focusTitle": "Entender antes de desenhar.",
-    "focusText": "Busco clareza, coerência e propósito em cada projeto.<br /> Não desenho pela estética - desenho para que as marcas comuniquem melhor.",
+    "focusText": "Sou designer gráfico e web, brasileiro, baseado em Valência desde 2023. Há mais de cinco anos trabalho com branding, design digital e desenvolvimento web, unindo estratégia, estética e código. Não desenho para decorar: cada peça tem um porquê.",
     "contact": "Contato",
     "city": "Valência, Espanha",
     "experience": "Experiência",
@@ -105,14 +158,16 @@
       "Web design e front-end",
       "Design tipográfico"
     ],
+    "skillsTitle": "Skills",
     "tools": "Ferramentas",
-    "softSkills": "Soft Skills",
-    "skills": ["Estratégia", "Comunicação", "Narrativa visual", "Organização"],
-    "profile": "Perfil",
-    "languagesLabel": "Idiomas:",
-    "languages": "Português, espanhol e inglês.",
-    "interestsLabel": "Interesses:",
-    "interests": "Storytelling, bicicleta, arquitetura, cinema."
+    "languagesLabel": "Idiomas",
+    "languages": [
+      "Português",
+      "Espanhol",
+      "Inglês"
+    ],
+    "ctaText": "Tem uma marca que precisa sair bem?",
+    "ctaButton": "Vamos conversar"
   },
   "portfolio": {"label": "Projetos selecionados", "seeAll": "Ver todos os projetos de"},
   "project": {

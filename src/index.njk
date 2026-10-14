@@ -8,7 +8,7 @@ heroPreload: true
 ---
 {% extends "base.njk" %}
 {% set pageId = "index" %}
-{% from "macros.njk" import next, langSwitch with context %}
+{% from "macros.njk" import next, langSwitch, picture with context %}
 {% set head = t.pages.index %}
 
 {% block main %}
@@ -85,15 +85,6 @@ heroPreload: true
                     <p class="about__text">{{ text }}</p>
 {%- endfor %}
                 </div>
-
-                <div class="about__cards">
-{%- for step in t.home.steps %}
-                    <div class="about__card">
-                        <h3 class="h4 about__card-title">{{ step.title }}</h3>
-                        <p class="about__card-text">{{ step.text }}</p>
-                    </div>
-{%- endfor %}
-                </div>
             </div>
         </div>
     </section>
@@ -113,19 +104,82 @@ heroPreload: true
         </div>
     </section>
 
+    <!-- Cómo trabajo ======================================================================================= -->
+    <section class="section" aria-labelledby="stepsTitle">
+        <h2 class="section__title" id="stepsTitle">{{ t.home.stepsTitle }}</h2>
+        <ol class="steps">
+{%- for step in t.home.steps %}
+            <li class="steps__item">
+                <span class="steps__number label">0{{ loop.index }}</span>
+                <h3 class="h4 steps__title">{{ step.title }}</h3>
+                <p class="steps__text">{{ step.text }}</p>
+            </li>
+{%- endfor %}
+        </ol>
+    </section>
+
+    <!-- Testimonios ======================================================================================= -->
+    <!-- testimonios en formato stories: la foto del proyecto es el fondo, la barra del cliente activo marca el tiempo y el toque en los lados cambia (js/index.js) -->
+    <section class="testimonials" aria-labelledby="testimonialsTitle">
+        <div class="stories" data-stories>
+            <div class="stories__media" aria-hidden="true">
+{%- for item in t.home.testimonials %}
+                <div class="stories__bg{% if loop.first %} is-active{% endif %}" data-story="{{ loop.index0 }}">
+                    {{ picture(item.image, "100vw") }}
+                </div>
+{%- endfor %}
+            </div>
+            <div class="stories__zones" aria-hidden="true">
+                <span class="stories__zone stories__zone--prev"></span>
+                <span class="stories__zone stories__zone--next"></span>
+            </div>
+            <div class="stories__head">
+                <h2 class="stories__title" id="testimonialsTitle">{{ t.home.testimonialsTitle }}</h2>
+                <div class="stories__tabs" role="tablist" aria-label="{{ t.home.testimonialsTitle }}">
+{%- for item in t.home.testimonials %}
+                    <button class="stories__tab" type="button" role="tab" id="testimonialTab{{ loop.index }}" aria-controls="testimonial{{ loop.index }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ '0' if loop.first else '-1' }}">
+                        <span class="stories__progress"></span>
+                        <span class="stories__client label">{{ projects[item.project].name }}</span>
+                    </button>
+{%- endfor %}
+                </div>
+            </div>
+            <div class="stories__stage">
+{%- for item in t.home.testimonials %}
+{%- set p = projects[item.project] %}
+                <div class="story{% if loop.first %} is-active{% endif %}" id="testimonial{{ loop.index }}" role="tabpanel" aria-labelledby="testimonialTab{{ loop.index }}" data-story="{{ loop.index0 }}" data-category="{{ p.category }}">
+                    <figure class="story__figure">
+                        <blockquote class="story__quote">
+                            <p>“{{ item.quote }}”</p>
+                        </blockquote>
+                        <figcaption class="story__author">
+                            <span class="story__name">{{ item.name }}</span>
+                            <span class="story__role">{{ item.role }} · {{ item.place }}</span>
+{%- if item.credit %}
+                            <span class="story__credit label">{{ item.credit }}</span>
+{%- endif %}
+                        </figcaption>
+                    </figure>
+                    <a href="{{ ('projects/' + item.project) | href }}" class="btn story__link" style="--btn-color: var(--color-light); --btn-hover-txt: var(--color-dark)" aria-label="{{ t.home.testimonialLink }}: {{ p.name }}">
+                        {{ t.home.testimonialLink }} <span class="icon-chevron" aria-hidden="true"></span>
+                    </a>
+                </div>
+{%- endfor %}
+            </div>
+        </div>
+    </section>
+
     <!-- CV Grid ======================================================================================= -->
     <section class="section">
         <div class="cv">
 
-            <div class="cv__card cv__card--focus">
+            <div class="card cv__card cv__card--focus">
                 <h2 class="cv__heading label">{{ t.home.focus }}</h2>
                 <h3 class="heading-display">{{ t.home.focusTitle }}</h3>
-                <p class="cv__text">
-                    {{ t.home.focusText | safe }}
-                </p>
+                <p class="cv__text">{{ t.home.focusText }}</p>
             </div>
 
-            <div class="cv__card cv__card--contact">
+            <div class="card cv__card cv__card--contact">
                 <h3 class="cv__heading label">{{ t.home.contact }}</h3>
                 <p class="cv__text">{{ t.home.city }}</p>
                 <div class="cv__links">
@@ -136,7 +190,7 @@ heroPreload: true
                 </div>
             </div>
 
-            <div class="cv__card cv__card--exp">
+            <div class="card cv__card cv__card--exp">
                 <h3 class="cv__heading label">{{ t.home.experience }}</h3>
 {% for job in t.home.jobs %}
                 <div class="cv__content">
@@ -148,7 +202,7 @@ heroPreload: true
 {% endfor %}
             </div>
 
-            <div class="cv__card cv__card--do">
+            <div class="card cv__card cv__card--do">
                 <h3 class="cv__heading label">{{ t.home.doTitle }}</h3>
                 <ul class="cv__list">
 {%- for item in t.home.do %}
@@ -157,33 +211,31 @@ heroPreload: true
                 </ul>
             </div>
 
-            <div class="cv__card cv__card--tools">
-                <h3 class="cv__heading label">{{ t.home.tools }}</h3>
+            <div class="card cv__card cv__card--skills">
+                <h3 class="cv__heading label">{{ t.home.skillsTitle }}</h3>
+                <h4 class="cv__subheading">{{ t.home.tools }}</h4>
                 <div class="cv__tags">
 {%- for tool in ["Illustrator", "Photoshop", "InDesign", "Lightroom", "Figma", "HTML / CSS / JS", "SASS", "WordPress", "Git", "Fontra"] %}
                     <span class="tag-pill">{{ tool }}</span>
 {%- endfor %}
                 </div>
-            </div>
-
-            <div class="cv__card cv__card--soft">
-                <h3 class="cv__heading label">{{ t.home.softSkills }}</h3>
+                <h4 class="cv__subheading">{{ t.home.languagesLabel }}</h4>
                 <div class="cv__tags">
-{%- for skill in t.home.skills %}
-                    <span class="tag-pill">{{ skill }}</span>
+{%- for language in t.home.languages %}
+                    <span class="tag-pill">{{ language }}</span>
 {%- endfor %}
                 </div>
             </div>
 
-            <div class="cv__card cv__card--misc">
-                <h3 class="cv__heading label">{{ t.home.profile }}</h3>
-                <ul class="cv__list cv__list--compact">
-                    <li><strong>{{ t.home.languagesLabel }}</strong> {{ t.home.languages }}</li>
-                    <li><strong>{{ t.home.interestsLabel }}</strong> {{ t.home.interests }}</li>
-                </ul>
-            </div>
-
         </div>
+    </section>
+
+    <!-- CTA ======================================================================================= -->
+    <section class="section cta" aria-labelledby="ctaTitle">
+        <h2 class="cta__title" id="ctaTitle">{{ t.home.ctaText }}</h2>
+        <a href="{{ 'contacto' | href }}" class="btn">
+            {{ t.home.ctaButton }} <span class="icon-chevron" aria-hidden="true"></span>
+        </a>
     </section>
 
     <!-- Próxima Sesión ======================================================================================= -->

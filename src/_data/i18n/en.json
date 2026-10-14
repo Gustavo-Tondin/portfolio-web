@@ -50,29 +50,82 @@
   "home": {
     "heroAlt": "Gustavo Tondin, graphic designer",
     "location": "Valencia - Spain",
-    "tagline": "<em class=\"hero__highlight\">Strategic</em> designer<br /> focused on giving<br /> brands <em class=\"hero__highlight\">authority</em>.",
+    "tagline": "Brands with <em class=\"hero__highlight\">authority</em>,<br> from the first sketch<br> to the <em class=\"hero__highlight\">published</em> site.",
     "about": "About me",
     "hello": "Hi, I'm",
     "paragraphs": [
-      "I'm a graphic and web designer based in Valencia. For more than five years I've worked in branding, digital design and web development, bringing together strategy, aesthetics and code.",
-      "My approach: understand what a brand needs, give it a solid visual identity and build the digital presence that backs it up. I don't design to decorate. I design so brands communicate, connect and grow.",
-      "I've worked with startups, small businesses and companies in Brazil and Spain. Always with the same principle: every piece has a reason."
+      "Many brands lose strength because every piece is made by someone different and none of them look alike. Before I turned to design, I ran my family's business, so I know what it costs when a business looks like less than it is.",
+      "I work on each brand from the identity to its applications, and when the project calls for a website, I build that too. I know both sides well, and I make sure what gets published stays true to what was designed.",
+      "For five years I've been strategically building authority for brands in Brazil and Spain."
     ],
+    "stepsTitle": "How I work",
     "steps": [
-      {"title": "Understand", "text": "Listen, analyze and define where to start."},
-      {"title": "Design", "text": "Explore clear, coherent solutions."},
-      {"title": "Apply", "text": "Bring it to life, with care for the details."}
+      {
+        "title": "Understand",
+        "text": "Before I sketch anything, I listen and research to define what the brand needs to communicate."
+      },
+      {
+        "title": "Design",
+        "text": "I build the identity as a system, made to work in any format."
+      },
+      {
+        "title": "Apply",
+        "text": "I carry it into every piece, from paper to screen, and everything speaks the same language."
+      }
+    ],
+    "testimonialsTitle": "Testimonials",
+    "testimonialLink": "See project",
+    "testimonials": [
+      {
+        "quote": "We started without a clear concept, and they helped us define the brand's goals and direction. They put care into everything, from the strategy to the visuals and the website.",
+        "name": "Nathan D.",
+        "role": "CEO, Refiore",
+        "place": "Bento Gonçalves",
+        "credit": "with Gauja Creative Lab",
+        "project": "refiore",
+        "image": "projects/branding/refiore/refiore-portada-logotipo-pareja"
+      },
+      {
+        "quote": "You made a dream come true. Now the brand conveys exactly what Wotë is, and it's ready for the international market.",
+        "name": "Luciana K.",
+        "role": "CEO, Wotë",
+        "place": "Rio de Janeiro",
+        "credit": "with Gauja Creative Lab",
+        "project": "wote",
+        "image": "projects/branding/wote/wote-portada-logotipo-chave-ancestral"
+      },
+      {
+        "quote": "It was a great process, from the name to the visual identity. It all turned out beautiful and conveys exactly what I had in mind.",
+        "name": "Rafael T.",
+        "role": "Creator, Riwer Labs",
+        "place": "Caxias do Sul",
+        "credit": "",
+        "project": "riwer-labs",
+        "image": "projects/web-design/riwer-labs/riwer-labs-portada-logotipo-degradado"
+      }
     ],
     "marqueeLabel": "Areas of work",
     "marquee": {
-      "branding": {"text": "<branding>", "alt": "Preview of branding projects"},
-      "web-design": {"text": "<web_design>", "alt": "Preview of web design projects"},
-      "artes-graficas": {"text": "<graphic_arts>", "alt": "Preview of graphic arts projects"},
-      "fotografia": {"text": "<photography>", "alt": "Preview of photo essays"}
+      "branding": {
+        "text": "<branding>",
+        "alt": "Preview of branding projects"
+      },
+      "web-design": {
+        "text": "<web_design>",
+        "alt": "Preview of web design projects"
+      },
+      "artes-graficas": {
+        "text": "<graphic_arts>",
+        "alt": "Preview of graphic arts projects"
+      },
+      "fotografia": {
+        "text": "<photography>",
+        "alt": "Preview of photo essays"
+      }
     },
-    "focus": "Focus",
+    "focus": "About me",
     "focusTitle": "Understand before designing.",
-    "focusText": "I look for clarity, coherence and purpose in every project.<br /> I don't design for aesthetics - I design so brands communicate better.",
+    "focusText": "I'm a Brazilian graphic and web designer, based in Valencia since 2023. For more than five years I've worked in branding, digital design and web development, bringing together strategy, aesthetics and code. I don't design to decorate: every piece has a reason.",
     "contact": "Contact",
     "city": "Valencia, Spain",
     "experience": "Experience",
@@ -105,14 +158,16 @@
       "Web design and front-end",
       "Type design"
     ],
+    "skillsTitle": "Skills",
     "tools": "Tools",
-    "softSkills": "Soft Skills",
-    "skills": ["Strategy", "Communication", "Visual storytelling", "Organization"],
-    "profile": "Profile",
-    "languagesLabel": "Languages:",
-    "languages": "Portuguese, Spanish and English.",
-    "interestsLabel": "Interests:",
-    "interests": "Storytelling, cycling, architecture, film."
+    "languagesLabel": "Languages",
+    "languages": [
+      "Portuguese",
+      "Spanish",
+      "English"
+    ],
+    "ctaText": "Have a brand that needs to get it right?",
+    "ctaButton": "Let's talk"
   },
   "portfolio": {"label": "Selected projects", "seeAll": "See all projects in"},
   "project": {

@@ -276,6 +276,67 @@
     });
 
 
+    // testimonios - stories: la barra del cliente activo corre en CSS y al terminar pasa al siguiente ====================================
+
+    const stories = document.querySelector('[data-stories]');
+    if (stories) {
+        const tabs = [...stories.querySelectorAll('[role="tab"]')];
+        const n = tabs.length;
+
+        const select = (i, focus) => {
+            tabs.forEach((tab, j) => {
+                tab.setAttribute('aria-selected', i === j);
+                tab.tabIndex = i === j ? 0 : -1;
+            });
+            stories.querySelectorAll('[data-story]').forEach(el => el.classList.toggle('is-active', +el.dataset.story === i));
+            if (focus) tabs[i].focus({ preventScroll: true });
+        };
+        const current = () => tabs.findIndex(tab => tab.getAttribute('aria-selected') === 'true');
+        // elegir a mano (pestaña, toque o teclado) detiene el avance automático
+        const choose = (i, focus) => {
+            stories.classList.add('is-manual');
+            select((i + n) % n, focus);
+        };
+
+        tabs.forEach((tab, i) => tab.addEventListener('click', () => choose(i)));
+        stories.addEventListener('keydown', (e) => {
+            const i = tabs.indexOf(e.target);
+            const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: n - 1 }[e.key];
+            if (i < 0 || next === undefined) return;
+            e.preventDefault();
+            choose(next, true);
+        });
+        stories.addEventListener('animationend', (e) => {
+            const i = tabs.indexOf(e.target.closest('[role="tab"]'));
+            if (i >= 0) select((i + 1) % n);
+        });
+
+        // sobre la foto: toque corto a la derecha avanza y a la izquierda vuelve; mantener pulsado pausa; deslizar cambia
+        let press;
+        stories.addEventListener('pointerdown', (e) => {
+            if (e.button || e.target.closest('a, button')) return;
+            press = { x: e.clientX, t: e.timeStamp };
+            stories.setPointerCapture(e.pointerId);
+            stories.classList.add('is-held');
+        });
+        const release = (e) => {
+            if (!press) return;
+            stories.classList.remove('is-held');
+            const dx = e.clientX - press.x;
+            const tap = e.type === 'pointerup' && e.timeStamp - press.t < 300 && Math.abs(dx) < 10;
+            if (Math.abs(dx) > 40) choose(current() - Math.sign(dx));
+            else if (tap) choose(current() + (e.clientX - stories.getBoundingClientRect().left < stories.offsetWidth / 3 ? -1 : 1));
+            press = null;
+        };
+        stories.addEventListener('pointerup', release);
+        stories.addEventListener('pointercancel', release);
+
+        // la barra solo corre con la sección a la vista
+        new IntersectionObserver(([entry]) => stories.classList.toggle('is-inview', entry.isIntersecting), { threshold: 0.5 })
+            .observe(stories);
+    }
+
+
     // showcase (branding/web-design/etc) ====================================
     
     const showcase = document.querySelector('[data-showcase]');

@@ -704,6 +704,11 @@
     "h": 1035,
     "alt": {"es": "Llamado final al diagnóstico gratuito y pie de página oscuro con el logotipo de Riwer Labs", "en": "Closing call for the free assessment and a dark footer with the Riwer Labs logo", "pt-br": "Chamada final para o diagnóstico gratuito e rodapé escuro com o logotipo da Riwer Labs"}
   },
+  "projects/web-design/riwer-labs/riwer-labs-portada-logotipo-degradado": {
+    "w": 1920,
+    "h": 1080,
+    "alt": {"es": "Portada de Riwer Labs: logotipo blanco con el símbolo verde lima sobre un degradado granulado de verde, rosa y violeta", "en": "Riwer Labs cover: white logotype with the lime green symbol over a grainy green, pink and violet gradient", "pt-br": "Capa da Riwer Labs: logotipo branco com o símbolo verde-limão sobre um degradê granulado de verde, rosa e violeta"}
+  },
   "projects/web-design/riwer-labs/riwer-labs-sitio-hero-escalar": {
     "w": 1440,
     "h": 800,
